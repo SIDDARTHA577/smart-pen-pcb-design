@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\output\\RevG\\Front_MPU\\Front_MPU.kicad_sch")
-		(date "2026-11-13T22:26:29")
+		(date "2026-11-13T23:24:42")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")

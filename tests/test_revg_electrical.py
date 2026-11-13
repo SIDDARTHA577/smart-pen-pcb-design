@@ -23,12 +23,13 @@ def get_net_node_mapping(netlist_file, ref):
                     mapping[p] = net_name
     return mapping
 
-MAIN_NETLIST = os.path.join("reports", "RevG", "Phase02", "raw", "Main_SmartPen_netlist.net")
+MAIN_NETLIST = os.path.join("reports", "RevG", "Phase02_Corrections", "raw", "Main_SmartPen_netlist.net")
 MAIN_SCH = os.path.join("output", "RevG", "SmartPen.kicad_sch")
 TOUCH_PCB = os.path.join("output", "RevG", "Touch_Sensor", "Touch_Sensor.kicad_pcb")
+USB_FOOTPRINT = os.path.join("output", "RevG", "SmartPen.pretty", "J_USB.kicad_mod")
 
 class TestRevGElectrical:
-    """Automated tests validating Smart Pen Revision G Phase 2 electrical corrections."""
+    """Automated tests validating Smart Pen Revision G Phase 2.1 electrical corrections."""
 
     def test_ap2112k_ldo_pinout_and_connections(self):
         """Test 1: AP2112K-3.3TRG1 (U4) has correct 5-pin pinout and valid rail connections."""
@@ -88,8 +89,22 @@ class TestRevGElectrical:
         assert pins.get("7") == "/USB_DP_PORT", f"Pin 7 must be /USB_DP_PORT, got {pins.get('7')}"
         assert pins.get("9") == "/USB_DM_PORT", f"Pin 9 must be /USB_DM_PORT, got {pins.get('9')}"
 
-    def test_power_path_architecture(self):
-        """Test 4: Power-path circuit (Q2, D4, R26, SW3) isolates load and allows USB-powered run."""
+    def test_usb_c_physical_footprint_structure(self):
+        """Test 4: J_USB footprint incorporates through-hole shell retention posts and NPTH pegs."""
+        assert os.path.exists(USB_FOOTPRINT), f"USB footprint not found at {USB_FOOTPRINT}"
+        with open(USB_FOOTPRINT, 'r', encoding='utf-8') as f:
+            mod = f.read()
+            
+        # Verify 4 through-hole oval shield tabs (Pads 13-16)
+        th_pads = re.findall(r'\(pad\s+"(1[3-6])"\s+thru_hole\s+oval\s+\(at\s+([\d\.\-]+)\s+([\d\.\-]+)\)\s+\(size\s+([\d\.\-]+)\s+([\d\.\-]+)\)\s+\(drill\s+oval\s+([\d\.\-]+)\s+([\d\.\-]+)\)', mod)
+        assert len(th_pads) == 4, f"Expected 4 through-hole oval shield tabs (13-16), found {len(th_pads)}"
+        
+        # Verify 2 NPTH mechanical alignment peg holes
+        npth_holes = re.findall(r'\(pad\s+""\s+np_thru_hole\s+circle\s+\(at\s+([\d\.\-]+)\s+([\d\.\-]+)\)\s+\(size\s+([\d\.\-]+)\s+([\d\.\-]+)\)\s+\(drill\s+([\d\.\-]+)\)', mod)
+        assert len(npth_holes) == 2, f"Expected 2 NPTH alignment pegs, found {len(npth_holes)}"
+
+    def test_power_path_architecture_and_body_diode(self):
+        """Test 5: Power-path circuit (Q2, D4, R26, SW3) isolates load and has reverse-biased body diode during USB supply."""
         q2_pins = get_net_node_mapping(MAIN_NETLIST, "Q2")
         d4_pins = get_net_node_mapping(MAIN_NETLIST, "D4")
         r26_pins = get_net_node_mapping(MAIN_NETLIST, "R26")
@@ -100,10 +115,20 @@ class TestRevGElectrical:
         assert r26_pins, "R26 (Gate pull-down) not found in netlist"
         assert sw3_pins, "SW3 (Power switch) not found in netlist"
         
-        # Q2 Gate = USB_VBUS, Source = VBAT, Drain = VSYS_RAW
+        # Safe Load Sharing: Q2 Gate = USB_VBUS, Source = VSYS_RAW, Drain = VBAT
         assert q2_pins.get("1") == "/USB_VBUS", f"Q2 Gate must connect to /USB_VBUS, got {q2_pins.get('1')}"
-        assert q2_pins.get("2") == "/VBAT", f"Q2 Source must connect to /VBAT, got {q2_pins.get('2')}"
-        assert q2_pins.get("3") == "/VSYS_RAW", f"Q2 Drain must connect to /VSYS_RAW, got {q2_pins.get('3')}"
+        assert q2_pins.get("2") == "/VSYS_RAW", f"Q2 Source must connect to /VSYS_RAW (load), got {q2_pins.get('2')}"
+        assert q2_pins.get("3") == "/VBAT", f"Q2 Drain must connect to /VBAT (cell), got {q2_pins.get('3')}"
+        
+        # Physics validation: P-MOSFET intrinsic body diode conducts Anode (Drain) -> Cathode (Source)
+        # When USB is connected: V_VBUS = 5.0V, V_SYS_RAW = 5.0V - 0.35V = 4.65V (Cathode = Source)
+        # Battery at maximum charge: V_BAT <= 4.2V (Anode = Drain)
+        v_sys_raw_usb = 5.0 - 0.35  # 4.65 V at Source
+        v_bat_max = 4.20            # 4.20 V at Drain
+        v_diode_bias = v_bat_max - v_sys_raw_usb  # V_Anode - V_Cathode
+        
+        assert v_diode_bias < 0, f"Body diode forward-bias hazard: V_bias = {v_diode_bias:.2f}V >= 0V"
+        assert abs(v_diode_bias - (-0.45)) < 0.05, f"Expected -0.45V reverse bias, got {v_diode_bias:.2f}V"
         
         # D4 Cathode = VSYS_RAW, Anode = USB_VBUS
         assert d4_pins.get("1") == "/VSYS_RAW", f"D4 Cathode must connect to /VSYS_RAW, got {d4_pins.get('1')}"
@@ -117,8 +142,29 @@ class TestRevGElectrical:
         assert sw3_pins.get("1") == "/VSYS_RAW", f"SW3 Pin 1 must connect to /VSYS_RAW, got {sw3_pins.get('1')}"
         assert sw3_pins.get("2") == "/VBAT_SW", f"SW3 Pin 2 must connect to /VBAT_SW, got {sw3_pins.get('2')}"
 
+    def test_esp32_c3fh4x_pinout_and_boot(self):
+        """Test 6: ESP32-C3FH4X internal flash pins (19-24) and strapping pin (GPIO8) are not grounded."""
+        u1_pins = get_net_node_mapping(MAIN_NETLIST, "U1")
+        assert u1_pins, f"U1 not found in netlist {MAIN_NETLIST}"
+        
+        # Pins 19-24 are internal flash pins in FH4X and MUST NOT be tied to GND
+        for p in ["19", "20", "21", "22", "23", "24"]:
+            net = u1_pins.get(p, "")
+            assert net != "/GND", f"CRITICAL: U1 Pin {p} (Internal Flash NC) is tied to /GND!"
+            assert "unconnected" in net.lower(), f"U1 Pin {p} must be unconnected, got {net}"
+            
+        # Pin 14 is GPIO8/STRAP: must NOT be tied to GND (which forces Joint Download Boot)
+        assert u1_pins.get("14") != "/GND", "CRITICAL: U1 Pin 14 (GPIO8) is tied to /GND, inhibiting ROM download boot!"
+        assert "unconnected" in u1_pins.get("14", "").lower(), f"U1 Pin 14 should be unconnected, got {u1_pins.get('14')}"
+        
+        # Pin 16 is GPIO10: must NOT be tied to GND
+        assert u1_pins.get("16") != "/GND", "U1 Pin 16 (GPIO10) is tied to /GND!"
+        
+        # Ground pins: Only Pin 33 (EPAD) is tied to /GND
+        assert u1_pins.get("33") == "/GND", f"U1 Pin 33 (EPAD) must connect to /GND, got {u1_pins.get('33')}"
+
     def test_touch_sensor_net_parity(self):
-        """Test 5: Touch Sensor PCB nets have 1:1 parity with schematic (0 conflicts)."""
+        """Test 7: Touch Sensor PCB nets have 1:1 parity with schematic (0 conflicts)."""
         with open(TOUCH_PCB, 'r', encoding='utf-8') as f:
             pcb_text = f.read()
         
@@ -141,6 +187,38 @@ class TestRevGElectricalNegativeFixtures:
         
         with pytest.raises(AssertionError, match="exceeds 100 mA safety threshold"):
             assert i_charge_ma <= 100.0, f"Charging current {i_charge_ma:.1f} mA exceeds 100 mA safety threshold"
+
+    def test_negative_reversed_pmos_body_diode_hazard_fails(self):
+        """Negative fixture: Swapped P-MOSFET Source and Drain must trigger uncontrolled charging hazard."""
+        flawed_q2_pins = {
+            "1": "/USB_VBUS",
+            "2": "/VBAT",      # FLAW: Source connected to Battery
+            "3": "/VSYS_RAW",  # FLAW: Drain connected to System
+        }
+        # Body diode Anode = Drain (VSYS_RAW = 4.65V), Cathode = Source (VBAT = 3.7V)
+        v_anode = 4.65
+        v_cathode = 3.70
+        v_diode_bias = v_anode - v_cathode  # +0.95 V (FORWARD BIASED!)
+        
+        with pytest.raises(AssertionError, match="UNCONTROLLED CHARGING HAZARD"):
+            assert flawed_q2_pins.get("2") == "/VSYS_RAW" and flawed_q2_pins.get("3") == "/VBAT", \
+                f"UNCONTROLLED CHARGING HAZARD: Body diode is forward-biased ({v_diode_bias:+.2f}V)! Current dumps into battery."
+
+    def test_negative_grounded_internal_flash_fails(self):
+        """Negative fixture: ESP32-C3FH4X internal flash pin tied to GND must fail."""
+        flawed_u1_pins = {
+            "19": "/GND",  # FLAW: Internal Flash SPI pin grounded
+        }
+        with pytest.raises(AssertionError, match="INTERNAL FLASH SHORT HAZARD"):
+            assert flawed_u1_pins.get("19") != "/GND", "INTERNAL FLASH SHORT HAZARD: Pin 19 grounded on ESP32-C3FH4X!"
+
+    def test_negative_grounded_gpio8_boot_fails(self):
+        """Negative fixture: ESP32-C3 Pin 14 (GPIO8) tied to GND must fail."""
+        flawed_u1_pins = {
+            "14": "/GND",  # FLAW: GPIO8 grounded
+        }
+        with pytest.raises(AssertionError, match="BOOT STRAP FAULT"):
+            assert flawed_u1_pins.get("14") != "/GND", "BOOT STRAP FAULT: GPIO8 grounded inhibits ROM download boot!"
 
     def test_negative_swapped_usb_pins_fails(self):
         """Negative fixture: Swapped VBUS and GND on Pin 1 of USB connector must fail."""

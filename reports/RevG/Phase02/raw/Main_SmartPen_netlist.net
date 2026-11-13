@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\output\\RevG\\SmartPen.kicad_sch")
-		(date "2026-11-13T22:26:19")
+		(date "2026-11-13T23:24:31")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -6050,54 +6050,6 @@
 			)
 			(node
 				(ref "U1")
-				(pin "14")
-				(pinfunction "GPIO8/STRAP_14")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "16")
-				(pinfunction "GPIO10_16")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "19")
-				(pinfunction "NC/INTERNAL_FLASH_19")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "20")
-				(pinfunction "NC/INTERNAL_FLASH_20")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "21")
-				(pinfunction "NC/INTERNAL_FLASH_21")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "22")
-				(pinfunction "NC/INTERNAL_FLASH_22")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "23")
-				(pinfunction "NC/INTERNAL_FLASH_23")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "24")
-				(pinfunction "NC/INTERNAL_FLASH_24")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
 				(pin "33")
 				(pinfunction "EPAD/GND_33")
 				(pintype "passive")
@@ -6790,8 +6742,8 @@
 			)
 			(node
 				(ref "Q2")
-				(pin "2")
-				(pinfunction "S_2")
+				(pin "3")
+				(pinfunction "D_3")
 				(pintype "passive")
 			)
 			(node
@@ -6865,8 +6817,8 @@
 			)
 			(node
 				(ref "Q2")
-				(pin "3")
-				(pinfunction "D_3")
+				(pin "2")
+				(pinfunction "S_2")
 				(pintype "passive")
 			)
 			(node
@@ -6941,6 +6893,94 @@
 		)
 		(net
 			(code "44")
+			(name "unconnected-(U1-GPIO8{slash}STRAP-Pad14)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "GPIO8/STRAP_14")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "45")
+			(name "unconnected-(U1-GPIO10-Pad16)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "GPIO10_16")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "46")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad19)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "NC/INTERNAL_FLASH_19")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "47")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad20)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "NC/INTERNAL_FLASH_20")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "48")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad21)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "21")
+				(pinfunction "NC/INTERNAL_FLASH_21")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "49")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad22)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "22")
+				(pinfunction "NC/INTERNAL_FLASH_22")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "50")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad23)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "23")
+				(pinfunction "NC/INTERNAL_FLASH_23")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "51")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad24)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "NC/INTERNAL_FLASH_24")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "52")
 			(name "unconnected-(U4-NC-Pad4)")
 			(class "Default")
 			(node

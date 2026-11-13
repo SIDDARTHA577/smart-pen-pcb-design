@@ -1,0 +1,6994 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\output\\RevG\\SmartPen.kicad_sch")
+		(date "2026-11-13T23:24:31")
+		(tool "Eeschema 10.0.7")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "Smart Pen Hardware System - Revision F")
+				(company "RadixView Technologies")
+				(rev "Rev F")
+				(date "2026-11-02")
+				(source "SmartPen.kicad_sch")
+				(comment
+					(number "1")
+					(value "Full Engineering Validation - 60 Components")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "CL05A105KA5NQNC")
+			(footprint "SmartPen:C1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "789476a2-de2a-4a64-a385-11c0ec7051b9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "GRM188R61A106KE69D")
+			(footprint "SmartPen:C2")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5c8a4219-a882-4f2b-824e-abf5ca6384d0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "CL05B104KO5NNNC")
+			(footprint "SmartPen:C3")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fe98e3e9-96d7-465c-87e8-887b3a9b9aad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "CL05B104KO5NNNC")
+			(footprint "SmartPen:C4")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3ed533fb-ff0c-4fdd-95a2-0b71c629c077")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "CL05A105KA5NQNC")
+			(footprint "SmartPen:C5")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C5")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e8b2fad0-0008-4d97-8f59-c91b39f7c452")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "GRM1555C1H150JA01D")
+			(footprint "SmartPen:C6")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C6")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "51809d75-a576-4712-b824-8c595e80ac0e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "GRM1555C1H150JA01D")
+			(footprint "SmartPen:C7")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C7")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C7")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e9afae04-1606-4f25-97d2-7872c5c0b63c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "GRM0335C1H1R5BA01D")
+			(footprint "SmartPen:C8")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C8")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C8")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "94572e89-bc9c-4c9a-b50a-a691214a7f44")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C9")
+			(value "GRM0335C1H1R5BA01D")
+			(footprint "SmartPen:C9")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C9")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C9")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c6e555f9-3ea9-43d5-89f1-6b3b70f00a4d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C10")
+			(value "GRM188R61E106MA73D")
+			(footprint "SmartPen:C10")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C10")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C10")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ece334ba-513c-4ae6-a194-84bf464f13ac")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C11")
+			(value "GRM188R61C475KAAJD")
+			(footprint "SmartPen:C11")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C11")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C11")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "644f4898-c0ca-4674-98fe-2441df0505ad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C12")
+			(value "GRM188R61C475KAAJD")
+			(footprint "SmartPen:C12")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C12")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C12")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "31be66e8-3401-4b7d-a57b-65df95318876")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "CL05B104KO5NNNC")
+			(footprint "SmartPen:C13")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C13")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C13")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "37a8ff48-0deb-4989-b17f-799ba3666b0b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
+			(value "GRM188R61A106KE69D")
+			(footprint "SmartPen:C14")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C14")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C14")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eb145a8c-540f-4fb8-a8e1-abd93c39dd44")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "CL05B104KO5NNNC")
+			(footprint "SmartPen:C15")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:C15")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "C15")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "df542520-a384-44b0-8bbd-70ec82344a86")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "KP-1005SGC")
+			(footprint "SmartPen:D1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:D1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "D1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9e2900bf-d836-46e9-937b-1ed8202854ab")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "KP-1005SURC")
+			(footprint "SmartPen:D2")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:D2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "D2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "16bc5108-3961-40f7-9ca2-dc8bfca57fd7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D3")
+			(value "1N5819HW-7-F")
+			(footprint "SmartPen:D3")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:D3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "D3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "01ebd91c-c7f3-4628-921f-b00e0f1d3d86")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D4")
+			(value "1N5819HW-7-F")
+			(footprint "SmartPen:D3")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:D3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "D4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bbccddee-ff00-4112-2233-445566778899")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "FB1")
+			(value "BLM18PG121SN1D")
+			(footprint "SmartPen:FB1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:FB1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "FB1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4ff69df8-ff21-44c1-93a2-0880af4c670d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_BAT")
+			(value "SM02B-SRSS-TB(LF)(SN)")
+			(footprint "SmartPen:J_BAT")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_BAT")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_BAT")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f6b72084-ab71-4d2b-8581-564185b12b74")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_IMU")
+			(value "SM04B-SRSS-TB(LF)(SN)")
+			(footprint "SmartPen:J_IMU")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_IMU")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_IMU")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0b2dda1b-66dd-4d50-93a6-8368ba64b805")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_MOT")
+			(value "SM02B-SRSS-TB(LF)(SN)")
+			(footprint "SmartPen:J_MOT")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_MOT")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_MOT")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a1ecb908-76fd-49db-bf80-5e577435c4fd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_RF")
+			(value "U.FL-R-SMT-1(10)")
+			(footprint "SmartPen:J_RF")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_RF")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_RF")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "04dabc3b-13bd-42bc-8816-8997ecf4d0a1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_SD")
+			(value "FH12-6S-0.5SH(55)")
+			(footprint "SmartPen:J_SD")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_SD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_SD")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e5d5c61d-85de-4047-b6e0-e91b570b1476")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_TOUCH")
+			(value "SM03B-SRSS-TB(LF)(SN)")
+			(footprint "SmartPen:J_TOUCH")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_TOUCH")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_TOUCH")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0f14a12a-e71d-4b8b-874c-1b23a92476de")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_UART")
+			(value "TP-SMD-4P-1.27MM")
+			(footprint "SmartPen:J_UART")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_UART")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_UART")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4aceb21d-8165-492e-8ce8-ccde552b1d83")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J_USB")
+			(value "TYPE-C-31-M-12")
+			(footprint "SmartPen:J_USB")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_USB")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "J_USB")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "be1de1d9-5f04-41c4-a4d9-a2f87eb6a924")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L1")
+			(value "LQG15HN24NJ02D")
+			(footprint "SmartPen:L1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:L1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "L1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5d34b4be-f771-4e8f-bb71-7b7bafa6689e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L2")
+			(value "LQP03TN2N4B02D")
+			(footprint "SmartPen:L2")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:L2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "L2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ba61dd76-8f08-407d-bc11-9df1284e91af")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "AO3400A")
+			(footprint "SmartPen:Q1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:Q1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "Q1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ec03eebb-b6ca-415e-9554-36ac6254ebc1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q2")
+			(value "DMG2305UX")
+			(footprint "SmartPen:Q1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:Q1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "Q2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "11223344-5566-4778-8899-aabbccddeeff")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "RC0402FR-0710KL")
+			(footprint "SmartPen:R1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "868497e5-88f4-4f90-aa2f-bfb9cb56d52a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "RC0402FR-0710KL")
+			(footprint "SmartPen:R2")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3a34679e-4759-4d27-b663-a19fe1df1137")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "RC0402FR-0710KL")
+			(footprint "SmartPen:R3")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "14b6571b-c2e5-4317-a8f5-3bf57405b126")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "RC0402JR-070RL")
+			(footprint "SmartPen:R4")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d3364fc9-b5bc-490c-978d-7ea04d012d2b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "RC0402FR-075K1L")
+			(footprint "SmartPen:R5")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R5")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2f8959ba-10ce-42fc-9377-d4a02992e33c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "RC0402FR-075K1L")
+			(footprint "SmartPen:R6")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R6")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6a005cda-46f1-49bb-afea-db1d3a9a992c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "RC0402FR-0722RL")
+			(footprint "SmartPen:R7")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R7")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R7")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "984f45a2-e7eb-482c-9fe8-698f5ec59f82")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "RC0402FR-0722RL")
+			(footprint "SmartPen:R8")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R8")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R8")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a14fe67f-0d40-4431-8719-4b10cf1eed47")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "RC0402FR-0710KL")
+			(footprint "SmartPen:R9")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R9")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R9")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9037a657-97bd-4d44-87da-92a3e4007ba9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "RC0402FR-074K7L")
+			(footprint "SmartPen:R10")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R10")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R10")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "94fba225-a6cb-4035-9fae-4241c585f1f3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "RC0402FR-074K7L")
+			(footprint "SmartPen:R11")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R11")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R11")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5b4004bd-e3ff-4634-8b59-d968cdee5c87")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "RC0402FR-0710KL")
+			(footprint "SmartPen:R12")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R12")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R12")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "75f63265-ff6e-458c-ac8d-aea14a792c04")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "RC0402FR-0710KL")
+			(footprint "SmartPen:R13")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R13")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R13")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "97609a15-e7f3-4a2c-96ce-e70198470f26")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
+			(value "RC0402FR-071KL")
+			(footprint "SmartPen:R14")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R14")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R14")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d1181268-e93b-4204-b72e-b314e3acb074")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R15")
+			(value "RC0402FR-071KL")
+			(footprint "SmartPen:R15")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R15")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R15")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "68c1d251-c387-4f91-bf96-44d87a498634")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "RC0402FR-07100RL")
+			(footprint "SmartPen:R16")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R16")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R16")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ced6c255-5599-437a-bae6-e6ce161984e5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R17")
+			(value "RC0402FR-07100KL")
+			(footprint "SmartPen:R17")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R17")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R17")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "06638c44-c6b0-4465-ac76-e376f7f77e3f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R18")
+			(value "RC0402FR-0710KL")
+			(footprint "SmartPen:R18")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R18")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R18")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "79fc88fd-4084-4065-a38d-bd0e3fa93364")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R19")
+			(value "RC0402FR-07100KL")
+			(footprint "SmartPen:R19")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R19")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R19")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4b379dec-658b-41a4-8716-9ecb6bbe3859")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R26")
+			(value "RC0402FR-07100KL")
+			(footprint "SmartPen:R1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:R1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "R26")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "22334455-6677-4889-99aa-bbccddeeff01")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "EVQ-P2B02B")
+			(footprint "SmartPen:SW1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:SW1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "SW1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3c2ffd32-ad21-4c81-aac9-94d3a11751a1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW2")
+			(value "EVQ-P2B02B")
+			(footprint "SmartPen:SW2")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:SW2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "SW2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2e920ffd-ec96-4799-86f9-3597d245c026")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW3")
+			(value "MK-12C02-G025")
+			(footprint "SmartPen:SW3")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:SW3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "SW3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3c5ca43d-822f-4990-9eaf-aed6ab014eb5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW4")
+			(value "EVQ-P2B02B")
+			(footprint "SmartPen:SW4")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:SW4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "SW4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5c80a7ad-dbb3-4f36-9cae-887dff3893b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW5")
+			(value "EVQ-P2B02B")
+			(footprint "SmartPen:SW5")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:SW5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "SW5")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "209992db-f581-4cd2-ad78-cd5d2a9ee9a9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "ESP32-C3FH4X")
+			(footprint "SmartPen:U1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:U1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "U1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "142de3ff-3fd7-4263-b422-60ebe0c56118")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "25")
+						)
+						(pin
+							(num "26")
+						)
+						(pin
+							(num "27")
+						)
+						(pin
+							(num "28")
+						)
+						(pin
+							(num "29")
+						)
+						(pin
+							(num "30")
+						)
+						(pin
+							(num "31")
+						)
+						(pin
+							(num "32")
+						)
+						(pin
+							(num "33")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "MCP73831T-2ACI/OT")
+			(footprint "SmartPen:U2")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:U2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "U2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "03ebe39b-bfeb-4152-9334-d2cb03d59c10")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "MCP23008T-E/ML")
+			(footprint "SmartPen:U3")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:U3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "U3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1205db06-8747-4e52-b75d-30ce269d081a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "20")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U4")
+			(value "AP2112K-3.3TRG1")
+			(footprint "SmartPen:J_PWR")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:J_PWR")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "U4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0f9de0f5-e8c4-4282-a8a4-9acd96cf456d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U_ESD")
+			(value "USBLC6-2SC6")
+			(footprint "SmartPen:U_ESD")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:U_ESD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "U_ESD")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f3fdcf84-14a8-479b-9a39-a4fc87ae6678")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Y1")
+			(value "FA-20H 40.0000MF10Z-K3")
+			(footprint "SmartPen:Y1")
+			(fields
+				(field
+					(name "Footprint") "SmartPen:Y1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "SmartPen_Lib")
+				(part "Y1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "SmartPen")
+			)
+			(property
+				(name "Sheetfile")
+				(value "SmartPen.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "faa60851-9cd5-4963-a686-9a2e7ec5ea88")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C1")
+			(fields
+				(field
+					(name "Reference") "C1")
+				(field
+					(name "Value") "CL05A105KA5NQNC")
+				(field
+					(name "Footprint") "SmartPen:C1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C10")
+			(fields
+				(field
+					(name "Reference") "C10")
+				(field
+					(name "Value") "GRM188R61E106MA73D")
+				(field
+					(name "Footprint") "SmartPen:C10")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C11")
+			(fields
+				(field
+					(name "Reference") "C11")
+				(field
+					(name "Value") "GRM188R61C475KAAJD")
+				(field
+					(name "Footprint") "SmartPen:C11")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C12")
+			(fields
+				(field
+					(name "Reference") "C12")
+				(field
+					(name "Value") "GRM188R61C475KAAJD")
+				(field
+					(name "Footprint") "SmartPen:C12")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C13")
+			(fields
+				(field
+					(name "Reference") "C13")
+				(field
+					(name "Value") "CL05B104KO5NNNC")
+				(field
+					(name "Footprint") "SmartPen:C13")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C14")
+			(fields
+				(field
+					(name "Reference") "C14")
+				(field
+					(name "Value") "GRM188R61A106KE69D")
+				(field
+					(name "Footprint") "SmartPen:C14")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C15")
+			(fields
+				(field
+					(name "Reference") "C15")
+				(field
+					(name "Value") "CL05B104KO5NNNC")
+				(field
+					(name "Footprint") "SmartPen:C15")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C2")
+			(fields
+				(field
+					(name "Reference") "C2")
+				(field
+					(name "Value") "GRM188R61A106KE69D")
+				(field
+					(name "Footprint") "SmartPen:C2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C3")
+			(fields
+				(field
+					(name "Reference") "C3")
+				(field
+					(name "Value") "CL05B104KO5NNNC")
+				(field
+					(name "Footprint") "SmartPen:C3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C4")
+			(fields
+				(field
+					(name "Reference") "C4")
+				(field
+					(name "Value") "CL05B104KO5NNNC")
+				(field
+					(name "Footprint") "SmartPen:C4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C5")
+			(fields
+				(field
+					(name "Reference") "C5")
+				(field
+					(name "Value") "CL05A105KA5NQNC")
+				(field
+					(name "Footprint") "SmartPen:C5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C6")
+			(fields
+				(field
+					(name "Reference") "C6")
+				(field
+					(name "Value") "GRM1555C1H150JA01D")
+				(field
+					(name "Footprint") "SmartPen:C6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C7")
+			(fields
+				(field
+					(name "Reference") "C7")
+				(field
+					(name "Value") "GRM1555C1H150JA01D")
+				(field
+					(name "Footprint") "SmartPen:C7")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C8")
+			(fields
+				(field
+					(name "Reference") "C8")
+				(field
+					(name "Value") "GRM0335C1H1R5BA01D")
+				(field
+					(name "Footprint") "SmartPen:C8")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "C9")
+			(fields
+				(field
+					(name "Reference") "C9")
+				(field
+					(name "Value") "GRM0335C1H1R5BA01D")
+				(field
+					(name "Footprint") "SmartPen:C9")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "D1")
+			(fields
+				(field
+					(name "Reference") "D1")
+				(field
+					(name "Value") "KP-1005SGC")
+				(field
+					(name "Footprint") "SmartPen:D1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "K")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "D2")
+			(fields
+				(field
+					(name "Reference") "D2")
+				(field
+					(name "Value") "KP-1005SURC")
+				(field
+					(name "Footprint") "SmartPen:D2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "K")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "D3")
+			(fields
+				(field
+					(name "Reference") "D3")
+				(field
+					(name "Value") "1N5819HW-7-F")
+				(field
+					(name "Footprint") "SmartPen:D3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "D4")
+			(fields
+				(field
+					(name "Reference") "D4")
+				(field
+					(name "Value") "1N5819HW-7-F")
+				(field
+					(name "Footprint") "SmartPen:D3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "FB1")
+			(fields
+				(field
+					(name "Reference") "FB1")
+				(field
+					(name "Value") "BLM18PG121SN1D")
+				(field
+					(name "Footprint") "SmartPen:FB1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_BAT")
+			(fields
+				(field
+					(name "Reference") "J_BAT")
+				(field
+					(name "Value") "SM02B-SRSS-TB(LF)(SN)")
+				(field
+					(name "Footprint") "SmartPen:J_BAT")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "BATT+")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "BATT-")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_IMU")
+			(fields
+				(field
+					(name "Reference") "J_IMU")
+				(field
+					(name "Value") "SM04B-SRSS-TB(LF)(SN)")
+				(field
+					(name "Footprint") "SmartPen:J_IMU")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VCC")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "SCL")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_MOT")
+			(fields
+				(field
+					(name "Reference") "J_MOT")
+				(field
+					(name "Value") "SM02B-SRSS-TB(LF)(SN)")
+				(field
+					(name "Footprint") "SmartPen:J_MOT")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "+")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "-")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_RF")
+			(fields
+				(field
+					(name "Reference") "J_RF")
+				(field
+					(name "Value") "U.FL-R-SMT-1(10)")
+				(field
+					(name "Footprint") "SmartPen:J_RF")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "RF")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_SD")
+			(fields
+				(field
+					(name "Reference") "J_SD")
+				(field
+					(name "Value") "FH12-6S-0.5SH(55)")
+				(field
+					(name "Footprint") "SmartPen:J_SD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "3V3")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "CLK")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "MOSI")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "MISO")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "CS")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_TOUCH")
+			(fields
+				(field
+					(name "Reference") "J_TOUCH")
+				(field
+					(name "Value") "SM03B-SRSS-TB(LF)(SN)")
+				(field
+					(name "Footprint") "SmartPen:J_TOUCH")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "3V3")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "OUTPUT")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_UART")
+			(fields
+				(field
+					(name "Reference") "J_UART")
+				(field
+					(name "Value") "TP-SMD-4P-1.27MM")
+				(field
+					(name "Footprint") "SmartPen:J_UART")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "TX")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "RX")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "3V3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "J_USB")
+			(fields
+				(field
+					(name "Reference") "J_USB")
+				(field
+					(name "Value") "TYPE-C-31-M-12")
+				(field
+					(name "Footprint") "SmartPen:J_USB")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "VBUS")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "CC1")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "CC2")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "DP")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "DM")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "VBUS")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "SHIELD1")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "SHIELD2")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "SHIELD3")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "SHIELD4")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "L1")
+			(fields
+				(field
+					(name "Reference") "L1")
+				(field
+					(name "Value") "LQG15HN24NJ02D")
+				(field
+					(name "Footprint") "SmartPen:L1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "L2")
+			(fields
+				(field
+					(name "Reference") "L2")
+				(field
+					(name "Value") "LQP03TN2N4B02D")
+				(field
+					(name "Footprint") "SmartPen:L2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "Q1")
+			(fields
+				(field
+					(name "Reference") "Q1")
+				(field
+					(name "Value") "AO3400A")
+				(field
+					(name "Footprint") "SmartPen:Q1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "G")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "Q2")
+			(fields
+				(field
+					(name "Reference") "Q2")
+				(field
+					(name "Value") "DMG2305UX")
+				(field
+					(name "Footprint") "SmartPen:Q1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "G")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R1")
+			(fields
+				(field
+					(name "Reference") "R1")
+				(field
+					(name "Value") "RC0402FR-0710KL")
+				(field
+					(name "Footprint") "SmartPen:R1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R10")
+			(fields
+				(field
+					(name "Reference") "R10")
+				(field
+					(name "Value") "RC0402FR-074K7L")
+				(field
+					(name "Footprint") "SmartPen:R10")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R11")
+			(fields
+				(field
+					(name "Reference") "R11")
+				(field
+					(name "Value") "RC0402FR-074K7L")
+				(field
+					(name "Footprint") "SmartPen:R11")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R12")
+			(fields
+				(field
+					(name "Reference") "R12")
+				(field
+					(name "Value") "RC0402FR-0710KL")
+				(field
+					(name "Footprint") "SmartPen:R12")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R13")
+			(fields
+				(field
+					(name "Reference") "R13")
+				(field
+					(name "Value") "RC0402FR-0710KL")
+				(field
+					(name "Footprint") "SmartPen:R13")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R14")
+			(fields
+				(field
+					(name "Reference") "R14")
+				(field
+					(name "Value") "RC0402FR-071KL")
+				(field
+					(name "Footprint") "SmartPen:R14")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R15")
+			(fields
+				(field
+					(name "Reference") "R15")
+				(field
+					(name "Value") "RC0402FR-071KL")
+				(field
+					(name "Footprint") "SmartPen:R15")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R16")
+			(fields
+				(field
+					(name "Reference") "R16")
+				(field
+					(name "Value") "RC0402FR-07100RL")
+				(field
+					(name "Footprint") "SmartPen:R16")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R17")
+			(fields
+				(field
+					(name "Reference") "R17")
+				(field
+					(name "Value") "RC0402FR-07100KL")
+				(field
+					(name "Footprint") "SmartPen:R17")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R18")
+			(fields
+				(field
+					(name "Reference") "R18")
+				(field
+					(name "Value") "RC0402FR-0710KL")
+				(field
+					(name "Footprint") "SmartPen:R18")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R19")
+			(fields
+				(field
+					(name "Reference") "R19")
+				(field
+					(name "Value") "RC0402FR-07100KL")
+				(field
+					(name "Footprint") "SmartPen:R19")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R2")
+			(fields
+				(field
+					(name "Reference") "R2")
+				(field
+					(name "Value") "RC0402FR-0710KL")
+				(field
+					(name "Footprint") "SmartPen:R2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R26")
+			(fields
+				(field
+					(name "Reference") "R26")
+				(field
+					(name "Value") "RC0402FR-07100KL")
+				(field
+					(name "Footprint") "SmartPen:R1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R3")
+			(fields
+				(field
+					(name "Reference") "R3")
+				(field
+					(name "Value") "RC0402FR-0710KL")
+				(field
+					(name "Footprint") "SmartPen:R3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R4")
+			(fields
+				(field
+					(name "Reference") "R4")
+				(field
+					(name "Value") "RC0402JR-070RL")
+				(field
+					(name "Footprint") "SmartPen:R4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R5")
+			(fields
+				(field
+					(name "Reference") "R5")
+				(field
+					(name "Value") "RC0402FR-075K1L")
+				(field
+					(name "Footprint") "SmartPen:R5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R6")
+			(fields
+				(field
+					(name "Reference") "R6")
+				(field
+					(name "Value") "RC0402FR-075K1L")
+				(field
+					(name "Footprint") "SmartPen:R6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R7")
+			(fields
+				(field
+					(name "Reference") "R7")
+				(field
+					(name "Value") "RC0402FR-0722RL")
+				(field
+					(name "Footprint") "SmartPen:R7")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R8")
+			(fields
+				(field
+					(name "Reference") "R8")
+				(field
+					(name "Value") "RC0402FR-0722RL")
+				(field
+					(name "Footprint") "SmartPen:R8")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "R9")
+			(fields
+				(field
+					(name "Reference") "R9")
+				(field
+					(name "Value") "RC0402FR-0710KL")
+				(field
+					(name "Footprint") "SmartPen:R9")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "SW1")
+			(fields
+				(field
+					(name "Reference") "SW1")
+				(field
+					(name "Value") "EVQ-P2B02B")
+				(field
+					(name "Footprint") "SmartPen:SW1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "SW2")
+			(fields
+				(field
+					(name "Reference") "SW2")
+				(field
+					(name "Value") "EVQ-P2B02B")
+				(field
+					(name "Footprint") "SmartPen:SW2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "SW3")
+			(fields
+				(field
+					(name "Reference") "SW3")
+				(field
+					(name "Value") "MK-12C02-G025")
+				(field
+					(name "Footprint") "SmartPen:SW3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VBAT")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "SYS")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "SW4")
+			(fields
+				(field
+					(name "Reference") "SW4")
+				(field
+					(name "Value") "EVQ-P2B02B")
+				(field
+					(name "Footprint") "SmartPen:SW4")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "BTN")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "SW5")
+			(fields
+				(field
+					(name "Reference") "SW5")
+				(field
+					(name "Value") "EVQ-P2B02B")
+				(field
+					(name "Footprint") "SmartPen:SW5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "BTN")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "U1")
+			(fields
+				(field
+					(name "Reference") "U1")
+				(field
+					(name "Value") "ESP32-C3FH4X")
+				(field
+					(name "Footprint") "SmartPen:U1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "LNA_IN")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "VDD3P3_1")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "VDD3P3_2")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "XTAL_32K_P/GPIO0")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "XTAL_32K_N/GPIO1")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "GPIO2/STRAP")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "CHIP_EN")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "GPIO3")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "MTMS/GPIO4")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "MTDI/GPIO5")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "VDD3P3_RTC")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "MTCK/GPIO6")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "MTDO/GPIO7")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "GPIO8/STRAP")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "GPIO9/BOOT")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "GPIO10")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "VDD3P3_CPU")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "VDD_SPI")
+					(type "passive")
+				)
+				(pin
+					(num "19")
+					(name "NC/INTERNAL_FLASH")
+					(type "passive")
+				)
+				(pin
+					(num "20")
+					(name "NC/INTERNAL_FLASH")
+					(type "passive")
+				)
+				(pin
+					(num "21")
+					(name "NC/INTERNAL_FLASH")
+					(type "passive")
+				)
+				(pin
+					(num "22")
+					(name "NC/INTERNAL_FLASH")
+					(type "passive")
+				)
+				(pin
+					(num "23")
+					(name "NC/INTERNAL_FLASH")
+					(type "passive")
+				)
+				(pin
+					(num "24")
+					(name "NC/INTERNAL_FLASH")
+					(type "passive")
+				)
+				(pin
+					(num "25")
+					(name "GPIO18/USB_DM")
+					(type "passive")
+				)
+				(pin
+					(num "26")
+					(name "GPIO19/USB_DP")
+					(type "passive")
+				)
+				(pin
+					(num "27")
+					(name "U0RXD/GPIO20")
+					(type "passive")
+				)
+				(pin
+					(num "28")
+					(name "U0TXD/GPIO21")
+					(type "passive")
+				)
+				(pin
+					(num "29")
+					(name "XTAL_N")
+					(type "passive")
+				)
+				(pin
+					(num "30")
+					(name "XTAL_P")
+					(type "passive")
+				)
+				(pin
+					(num "31")
+					(name "VDDA_1")
+					(type "passive")
+				)
+				(pin
+					(num "32")
+					(name "VDDA_2")
+					(type "passive")
+				)
+				(pin
+					(num "33")
+					(name "EPAD/GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "U2")
+			(fields
+				(field
+					(name "Reference") "U2")
+				(field
+					(name "Value") "MCP73831T-2ACI/OT")
+				(field
+					(name "Footprint") "SmartPen:U2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "STAT")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "VSS")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "VBAT")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "VDD")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "PROG")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "U3")
+			(fields
+				(field
+					(name "Reference") "U3")
+				(field
+					(name "Value") "MCP23008T-E/ML")
+				(field
+					(name "Footprint") "SmartPen:U3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "SCL")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "A2")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "A1")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "A0")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "RESET")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "NC")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "INT")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "VSS")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "GP0")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "GP1")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "GP2")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "GP3")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "GP4")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "GP5")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "GP6")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "GP7")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "VDD")
+					(type "passive")
+				)
+				(pin
+					(num "19")
+					(name "NC19")
+					(type "passive")
+				)
+				(pin
+					(num "20")
+					(name "NC20")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "U4")
+			(fields
+				(field
+					(name "Reference") "U4")
+				(field
+					(name "Value") "AP2112K-3.3TRG1")
+				(field
+					(name "Footprint") "SmartPen:J_PWR")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VIN")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "EN")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "5")
+					(name "VOUT")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "U_ESD")
+			(fields
+				(field
+					(name "Reference") "U_ESD")
+				(field
+					(name "Value") "USBLC6-2SC6")
+				(field
+					(name "Footprint") "SmartPen:U_ESD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "DP")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "DM")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "SmartPen_Lib")
+			(part "Y1")
+			(fields
+				(field
+					(name "Reference") "Y1")
+				(field
+					(name "Value") "FA-20H 40.0000MF10Z-K3")
+				(field
+					(name "Footprint") "SmartPen:Y1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "X1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "G1")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "X2")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "G2")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "SmartPen_Lib")
+			(uri "${KIPRJMOD}/SmartPen_Lib.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/3V3")
+			(class "Default")
+			(node
+				(ref "C13")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "FB1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_IMU")
+				(pin "1")
+				(pinfunction "VCC_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_SD")
+				(pin "1")
+				(pinfunction "3V3_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_TOUCH")
+				(pin "1")
+				(pinfunction "3V3_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_UART")
+				(pin "4")
+				(pinfunction "3V3_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "17")
+				(pinfunction "VDD3P3_CPU_17")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "18")
+				(pinfunction "VDD_18")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "6")
+				(pinfunction "RESET_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "5")
+				(pinfunction "VOUT_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "/3V3_RF")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "FB1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "VDD3P3_1_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "VDD3P3_2_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "31")
+				(pinfunction "VDDA_1_31")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "32")
+				(pinfunction "VDDA_2_32")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/3V3_RTC")
+			(class "Default")
+			(node
+				(ref "C4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "VDD3P3_RTC_11")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/BOOT9")
+			(class "Default")
+			(node
+				(ref "R2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "15")
+				(pinfunction "GPIO9/BOOT_15")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/BTN_ERASE")
+			(class "Default")
+			(node
+				(ref "R12")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "1")
+				(pinfunction "BTN_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "10")
+				(pinfunction "GP0_10")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/BTN_MODE")
+			(class "Default")
+			(node
+				(ref "R13")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "1")
+				(pinfunction "BTN_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "11")
+				(pinfunction "GP1_11")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/CHG_PROG")
+			(class "Default")
+			(node
+				(ref "R9")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "PROG_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "/CHG_STAT")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "STAT_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "15")
+				(pinfunction "GP5_15")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/GND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C10")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_BAT")
+				(pin "2")
+				(pinfunction "BATT-_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_IMU")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_RF")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_SD")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_TOUCH")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_UART")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "1")
+				(pinfunction "GND_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "12")
+				(pinfunction "GND_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "13")
+				(pinfunction "SHIELD1_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "14")
+				(pinfunction "SHIELD2_14")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "15")
+				(pinfunction "SHIELD3_15")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "16")
+				(pinfunction "SHIELD4_16")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "33")
+				(pinfunction "EPAD/GND_33")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "VSS_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "16")
+				(pinfunction "GP6_16")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "17")
+				(pinfunction "GP7_17")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "19")
+				(pinfunction "NC19_19")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "20")
+				(pinfunction "NC20_20")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "A2_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "A1_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "A0_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "7")
+				(pinfunction "NC_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "8")
+				(pinfunction "INT_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "9")
+				(pinfunction "VSS_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U_ESD")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "Y1")
+				(pin "2")
+				(pinfunction "G1_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Y1")
+				(pin "4")
+				(pinfunction "G2_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "/HAPTIC_GATE")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "G_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/HAPTIC_GATE_DRIVE")
+			(class "Default")
+			(node
+				(ref "R16")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "14")
+				(pinfunction "GP4_14")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/HAPTIC_LOW")
+			(class "Default")
+			(node
+				(ref "D3")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_MOT")
+				(pin "2")
+				(pinfunction "-_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/I2C_SCL")
+			(class "Default")
+			(node
+				(ref "J_IMU")
+				(pin "4")
+				(pinfunction "SCL_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "XTAL_32K_N/GPIO1_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "SCL_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "/I2C_SDA")
+			(class "Default")
+			(node
+				(ref "J_IMU")
+				(pin "3")
+				(pinfunction "SDA_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "XTAL_32K_P/GPIO0_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "SDA_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "/LED_GREEN_A")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "/LED_GREEN_SINK")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "K_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "12")
+				(pinfunction "GP2_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "/LED_RED_A")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "/LED_RED_SINK")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "K_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "13")
+				(pinfunction "GP3_13")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "/MCU_EN")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "CHIP_EN_7")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "/RF_LNA")
+			(class "Default")
+			(node
+				(ref "C8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "LNA_IN_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "/RF_OUT")
+			(class "Default")
+			(node
+				(ref "C9")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_RF")
+				(pin "1")
+				(pinfunction "RF_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "22")
+			(name "/SD_CS")
+			(class "Default")
+			(node
+				(ref "J_SD")
+				(pin "6")
+				(pinfunction "CS_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "MTDO/GPIO7_13")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "/SD_MISO")
+			(class "Default")
+			(node
+				(ref "J_SD")
+				(pin "5")
+				(pinfunction "MISO_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "MTDI/GPIO5_10")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "/SD_MOSI")
+			(class "Default")
+			(node
+				(ref "J_SD")
+				(pin "4")
+				(pinfunction "MOSI_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "MTMS/GPIO4_9")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "25")
+			(name "/SD_SCK")
+			(class "Default")
+			(node
+				(ref "J_SD")
+				(pin "3")
+				(pinfunction "CLK_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "MTCK/GPIO6_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "26")
+			(name "/STRAP2")
+			(class "Default")
+			(node
+				(ref "R3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "GPIO2/STRAP_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "27")
+			(name "/TOUCH_OUT")
+			(class "Default")
+			(node
+				(ref "J_TOUCH")
+				(pin "3")
+				(pinfunction "OUTPUT_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "GPIO3_8")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "28")
+			(name "/UART_RX")
+			(class "Default")
+			(node
+				(ref "J_UART")
+				(pin "2")
+				(pinfunction "RX_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "27")
+				(pinfunction "U0RXD/GPIO20_27")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "29")
+			(name "/UART_TX")
+			(class "Default")
+			(node
+				(ref "J_UART")
+				(pin "1")
+				(pinfunction "TX_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "28")
+				(pinfunction "U0TXD/GPIO21_28")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "30")
+			(name "/USB_CC1")
+			(class "Default")
+			(node
+				(ref "J_USB")
+				(pin "5")
+				(pinfunction "CC1_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "31")
+			(name "/USB_CC2")
+			(class "Default")
+			(node
+				(ref "J_USB")
+				(pin "6")
+				(pinfunction "CC2_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "32")
+			(name "/USB_DM_CORE")
+			(class "Default")
+			(node
+				(ref "R7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "25")
+				(pinfunction "GPIO18/USB_DM_25")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "33")
+			(name "/USB_DM_PORT")
+			(class "Default")
+			(node
+				(ref "J_USB")
+				(pin "9")
+				(pinfunction "DM_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U_ESD")
+				(pin "2")
+				(pinfunction "DM_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "34")
+			(name "/USB_DP_CORE")
+			(class "Default")
+			(node
+				(ref "R8")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "26")
+				(pinfunction "GPIO19/USB_DP_26")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "35")
+			(name "/USB_DP_PORT")
+			(class "Default")
+			(node
+				(ref "J_USB")
+				(pin "7")
+				(pinfunction "DP_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U_ESD")
+				(pin "1")
+				(pinfunction "DP_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "36")
+			(name "/USB_VBUS")
+			(class "Default")
+			(node
+				(ref "C10")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D4")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "10")
+				(pinfunction "VBUS_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_USB")
+				(pin "2")
+				(pinfunction "VBUS_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "1")
+				(pinfunction "G_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "VDD_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "37")
+			(name "/VBAT")
+			(class "Default")
+			(node
+				(ref "C12")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_BAT")
+				(pin "1")
+				(pinfunction "BATT+_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "VBAT_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "38")
+			(name "/VBAT_SW")
+			(class "Default")
+			(node
+				(ref "D3")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J_MOT")
+				(pin "1")
+				(pinfunction "+_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "2")
+				(pinfunction "SYS_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "1")
+				(pinfunction "VIN_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "39")
+			(name "/VDD_SPI")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "VDD_SPI_18")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "40")
+			(name "/VSYS_RAW")
+			(class "Default")
+			(node
+				(ref "D4")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "1")
+				(pinfunction "VBAT_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "41")
+			(name "/XTAL_N")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "29")
+				(pinfunction "XTAL_N_29")
+				(pintype "passive")
+			)
+			(node
+				(ref "Y1")
+				(pin "1")
+				(pinfunction "X1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "42")
+			(name "/XTAL_P_CORE")
+			(class "Default")
+			(node
+				(ref "L1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "30")
+				(pinfunction "XTAL_P_30")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "43")
+			(name "/XTAL_P_MATCH")
+			(class "Default")
+			(node
+				(ref "C7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Y1")
+				(pin "3")
+				(pinfunction "X2_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "44")
+			(name "unconnected-(U1-GPIO8{slash}STRAP-Pad14)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "GPIO8/STRAP_14")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "45")
+			(name "unconnected-(U1-GPIO10-Pad16)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "GPIO10_16")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "46")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad19)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "NC/INTERNAL_FLASH_19")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "47")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad20)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "NC/INTERNAL_FLASH_20")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "48")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad21)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "21")
+				(pinfunction "NC/INTERNAL_FLASH_21")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "49")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad22)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "22")
+				(pinfunction "NC/INTERNAL_FLASH_22")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "50")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad23)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "23")
+				(pinfunction "NC/INTERNAL_FLASH_23")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "51")
+			(name "unconnected-(U1-NC{slash}INTERNAL_FLASH-Pad24)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "NC/INTERNAL_FLASH_24")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "52")
+			(name "unconnected-(U4-NC-Pad4)")
+			(class "Default")
+			(node
+				(ref "U4")
+				(pin "4")
+				(pinfunction "NC_4")
+				(pintype "no_connect")
+			)
+		)
+	)
+)

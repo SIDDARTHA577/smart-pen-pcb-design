@@ -1,9 +1,198 @@
-ERC report (2026-11-13T22:26:18, Encoding UTF8)
+ERC report (2026-11-13T23:24:29, Encoding UTF8)
 Report includes: Errors, Warnings
 
 ***** Sheet /
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 50.80 mm): Symbol C1 [C1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 76.20 mm): Symbol C10 [C10]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 101.60 mm): Symbol C11 [C11]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 127.00 mm): Symbol C12 [C12]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 152.40 mm): Symbol C13 [C13]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 177.80 mm): Symbol C14 [C14]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 203.20 mm): Symbol C15 [C15]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 228.60 mm): Symbol C2 [C2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 254.00 mm): Symbol C3 [C3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 279.40 mm): Symbol C4 [C4]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 304.80 mm): Symbol C5 [C5]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 330.20 mm): Symbol C6 [C6]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 355.60 mm): Symbol C7 [C7]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 381.00 mm): Symbol C8 [C8]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 406.40 mm): Symbol C9 [C9]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 431.80 mm): Symbol D1 [D1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(50.80 mm, 457.20 mm): Symbol D2 [D2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 50.80 mm): Symbol D3 [D3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 76.20 mm): Symbol FB1 [FB1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 101.60 mm): Symbol J_BAT [J_BAT]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 127.00 mm): Symbol J_IMU [J_IMU]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 157.48 mm): Symbol J_MOT [J_MOT]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 182.88 mm): Symbol U4 [U4]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 210.82 mm): Symbol J_RF [J_RF]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 236.22 mm): Symbol J_SD [J_SD]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 271.78 mm): Symbol J_TOUCH [J_TOUCH]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 299.72 mm): Symbol J_UART [J_UART]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 330.20 mm): Symbol J_USB [J_USB]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 378.46 mm): Symbol L1 [L1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 403.86 mm): Symbol L2 [L2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 429.26 mm): Symbol Q1 [Q1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(152.40 mm, 457.20 mm): Symbol R1 [R1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 50.80 mm): Symbol R10 [R10]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 76.20 mm): Symbol R11 [R11]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 101.60 mm): Symbol R12 [R12]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 127.00 mm): Symbol R13 [R13]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 152.40 mm): Symbol R14 [R14]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 177.80 mm): Symbol R15 [R15]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 203.20 mm): Symbol R16 [R16]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 228.60 mm): Symbol R17 [R17]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 254.00 mm): Symbol R18 [R18]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 279.40 mm): Symbol R19 [R19]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 304.80 mm): Symbol R2 [R2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 330.20 mm): Symbol R3 [R3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 355.60 mm): Symbol R4 [R4]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 381.00 mm): Symbol R5 [R5]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 406.40 mm): Symbol R6 [R6]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 431.80 mm): Symbol R7 [R7]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(254.00 mm, 457.20 mm): Symbol R8 [R8]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 50.80 mm): Symbol R9 [R9]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 76.20 mm): Symbol SW1 [SW1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 101.60 mm): Symbol SW2 [SW2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 127.00 mm): Symbol SW3 [SW3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 152.40 mm): Symbol SW4 [SW4]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 177.80 mm): Symbol SW5 [SW5]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 203.20 mm): Symbol U1 [U1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 307.34 mm): Symbol U2 [U2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 340.36 mm): Symbol U3 [U3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 411.48 mm): Symbol U_ESD [U_ESD]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(355.60 mm, 439.42 mm): Symbol Y1 [Y1]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(457.20 mm, 50.80 mm): Symbol Q2 [Q2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(457.20 mm, 76.20 mm): Symbol D4 [D4]
+[footprint_link_issues]: The current configuration does not include the footprint library 'SmartPen'
+    ; warning
+    @(457.20 mm, 101.60 mm): Symbol R26 [R26]
 
- ** ERC messages: 0  Errors 0  Warnings 0
+ ** ERC messages: 63  Errors 0  Warnings 63
 
  ** Ignored checks:
     - Global label only appears once in the schematic
