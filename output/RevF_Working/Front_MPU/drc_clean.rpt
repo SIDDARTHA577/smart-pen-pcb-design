@@ -1,0 +1,94 @@
+** Drc report for Front_MPU.kicad_pcb **
+** Created on 2026-11-02T20:56:37 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 19 DRC violations **
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(3.6000 mm, 5.5000 mm): Track [/GND] on B.Cu, length 3.8500 mm
+    @(0.5500 mm, 9.6000 mm): Track [/3V3] on B.Cu, length 4.9500 mm
+[shorting_items]: Items shorting two nets (nets /GND and /I2C_SCL)
+    Local override; error
+    @(3.1000 mm, 1.8000 mm): Pad 2 [/GND] of J1 on F.Cu
+    @(2.8500 mm, 2.3000 mm): Via [/I2C_SCL] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets /GND and /I2C_SCL)
+    Local override; error
+    @(3.1000 mm, 1.8000 mm): Pad 2 [/GND] of J1 on F.Cu
+    @(2.8500 mm, 2.8500 mm): Track [/I2C_SCL] on F.Cu, length 0.5500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0775 mm)
+    Local override; error
+    @(5.1000 mm, 2.2000 mm): Track [/I2C_SCL] on F.Cu, length 2.3420 mm
+    @(4.1000 mm, 1.8000 mm): Track [/I2C_SDA] on F.Cu, length 0.4000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1217 mm)
+    Local override; error
+    @(1.8500 mm, 9.3500 mm): Via [/I2C_SCL] on F.Cu - B.Cu
+    @(1.4500 mm, 2.8500 mm): Track [/I2C_SDA] on B.Cu, length 6.2500 mm
+[shorting_items]: Items shorting two nets (nets /I2C_SDA and /I2C_SCL)
+    Local override; error
+    @(4.1000 mm, 2.2000 mm): Track [/I2C_SDA] on F.Cu, length 1.8668 mm
+    @(2.8500 mm, 2.3000 mm): Via [/I2C_SCL] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1000 mm)
+    Local override; error
+    @(1.4500 mm, 2.8500 mm): Via [/I2C_SDA] on F.Cu - B.Cu
+    @(2.1000 mm, 2.4000 mm): Track [/3V3] on B.Cu, length 1.5500 mm
+[shorting_items]: Items shorting two nets (nets /3V3 and /GND)
+    Local override; error
+    @(0.5500 mm, 9.6000 mm): Track [/3V3] on B.Cu, length 4.9500 mm
+    @(3.6000 mm, 9.3500 mm): Via [/GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets /3V3 and /I2C_SDA)
+    Local override; error
+    @(0.5500 mm, 8.4500 mm): Track [/3V3] on B.Cu, length 1.1500 mm
+    @(0.9000 mm, 9.3500 mm): Via [/I2C_SDA] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets /3V3 and /I2C_SCL)
+    Local override; error
+    @(2.1000 mm, 2.4000 mm): Track [/3V3] on B.Cu, length 1.5500 mm
+    @(2.8500 mm, 2.3000 mm): Track [/I2C_SCL] on B.Cu, length 0.7000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0242 mm)
+    Local override; error
+    @(4.3500 mm, 3.6000 mm): Track [/CPOUT] on F.Cu, length 0.9500 mm
+    @(5.1000 mm, 2.2000 mm): Track [/I2C_SCL] on F.Cu, length 2.3420 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1000 mm)
+    Local override; error
+    @(2.1000 mm, 2.4000 mm): Via [/3V3] on F.Cu - B.Cu
+    @(2.3500 mm, 2.8500 mm): Track [/I2C_SDA] on F.Cu, length 0.9000 mm
+[shorting_items]: Items shorting two nets (nets /3V3 and /I2C_SCL)
+    Local override; error
+    @(2.1000 mm, 2.4000 mm): Via [/3V3] on F.Cu - B.Cu
+    @(2.8500 mm, 2.3000 mm): Track [/I2C_SCL] on B.Cu, length 0.7000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0242 mm)
+    Local override; error
+    @(4.3500 mm, 2.6500 mm): Track [/CPOUT] on F.Cu, length 2.0000 mm
+    @(5.1000 mm, 2.2000 mm): Track [/I2C_SCL] on F.Cu, length 2.3420 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(0.9000 mm, 9.1000 mm): Track [/I2C_SDA] on B.Cu, length 0.2500 mm
+    @(0.5500 mm, 9.6000 mm): Track [/3V3] on B.Cu, length 4.9500 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(3.1000 mm, 1.8000 mm): Pad 2 [/GND] of J1 on F.Cu
+    @(2.8500 mm, 2.3000 mm): Via [/I2C_SCL] on F.Cu - B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.1000 mm, 2.2000 mm): Track [/I2C_SCL] on F.Cu, length 2.3420 mm
+    @(4.1000 mm, 1.8000 mm): Pad 3 [/I2C_SDA] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(2.8500 mm, 2.8500 mm): Track [/I2C_SCL] on F.Cu, length 0.5500 mm
+    @(3.1000 mm, 1.8000 mm): Pad 2 [/GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(2.8500 mm, 2.3000 mm): Via [/I2C_SCL] on F.Cu - B.Cu
+    @(3.1000 mm, 1.8000 mm): Pad 2 [/GND] of J1 on F.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

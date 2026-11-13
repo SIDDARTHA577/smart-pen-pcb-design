@@ -1,0 +1,61 @@
+Item,Reference,Value / Device,Package / Footprint,Manufacturer,Manufacturer Part Number,Description,Quantity
+1,C1,1uF EN delay,C0402,Samsung Electro-Mechanics,CL05A105KA5NQNC,1uF EN delay for Smart Pen Rev F,1
+2,C10,10uF USB VBUS bulk,C0603,Murata,GRM188R61E106MA73D,10uF USB VBUS bulk for Smart Pen Rev F,1
+3,C11,4.7uF charger input cap,C0603,Murata,GRM188R61C475KAAJD,4.7uF charger input cap for Smart Pen Rev F,1
+4,C12,4.7uF charger output cap,C0603,Murata,GRM188R61C475KAAJD,4.7uF charger output cap for Smart Pen Rev F,1
+5,C13,0.1uF Expander bypass cap,C0402,Samsung,CL05B104KO5NNNC,0.1uF Expander bypass cap for Smart Pen Rev F,1
+6,C14,10uF System 3.3V bulk cap,C0603,Murata,GRM188R61A106KE69D,10uF System 3.3V bulk cap for Smart Pen Rev F,1
+7,C15,0.1uF Front IMU cable filter cap,C0402,Samsung,CL05B104KO5NNNC,0.1uF Front IMU cable filter cap for Smart Pen Rev F,1
+8,C2,10uF RF bulk,C0603,Murata,GRM188R61A106KE69D,10uF RF bulk for Smart Pen Rev F,1
+9,C3,0.1uF CPU bypass,C0402,Samsung,CL05B104KO5NNNC,0.1uF CPU bypass for Smart Pen Rev F,1
+10,C4,0.1uF RTC bypass,C0402,Samsung,CL05B104KO5NNNC,0.1uF RTC bypass for Smart Pen Rev F,1
+11,C5,1uF VDD_SPI bypass,C0402,Samsung,CL05A105KA5NQNC,1uF VDD_SPI bypass for Smart Pen Rev F,1
+12,C6,15pF XTAL_N load cap,C0402,Murata,GRM1555C1H150JA01D,15pF XTAL_N load cap for Smart Pen Rev F,1
+13,C7,15pF XTAL_P load cap,C0402,Murata,GRM1555C1H150JA01D,15pF XTAL_P load cap for Smart Pen Rev F,1
+14,C8,1.5pF RF shunt cap,C0201,Murata,GRM0335C1H1R5BA01D,1.5pF RF shunt cap for Smart Pen Rev F,1
+15,C9,1.5pF RF shunt cap,C0201,Murata,GRM0335C1H1R5BA01D,1.5pF RF shunt cap for Smart Pen Rev F,1
+16,D1,Green SMD Mode LED,LED0402,Kingbright,KP-1005SGC,Green SMD Mode LED for Smart Pen Rev F,1
+17,D2,Red SMD Mode LED,LED0402,Kingbright,KP-1005SURC,Red SMD Mode LED for Smart Pen Rev F,1
+18,D3,Schottky Flyback Diode,SOD-123,Diodes Inc.,1N5819HW-7-F,Schottky Flyback Diode for Smart Pen Rev F,1
+19,FB1,RF ferrite bead,L0603,Murata,BLM18PG121SN1D,RF ferrite bead for Smart Pen Rev F,1
+20,J_BAT,2-Pin Keyed LiPo Battery Header,CONN-SMD_JST-SH-BM02B-SRSS,JST,SM02B-SRSS-TB(LF)(SN),2-Pin Keyed LiPo Battery Header for Smart Pen Rev F,1
+21,J_IMU,4-Pin Keyed Front IMU Connector,CONN-SMD_JST-SH-4P-SM04B-SRSS,JST,SM04B-SRSS-TB(LF)(SN),4-Pin Keyed Front IMU Connector for Smart Pen Rev F,1
+22,J_MOT,2-Pin Vibration Motor Connector / Pads,CONN-SMD_JST-SH-BM02B-SRSS,JST,SM02B-SRSS-TB(LF)(SN),2-Pin Vibration Motor Connector / Pads for Smart Pen Rev F,1
+23,J_PWR,High-Current Low-Dropout 3.3V Regulator,SOT-23-5,Diodes Inc. / Micrel,AP2112K-3.3TRG1,High-Current Low-Dropout 3.3V Regulator for Smart Pen Rev F,1
+24,J_RF,U.FL RF receptacle,CONN-SMD_U.FL-R-SMT,Hirose,U.FL-R-SMT-1(10),U.FL RF receptacle for Smart Pen Rev F,1
+25,J_SD,MicroSD SPI 6-Pin FPC Connector,CONN-FPC_6P_P0.5mm_SMD,Hirose / Molex,FH12-6S-0.5SH(55),MicroSD SPI 6-Pin FPC Connector for Smart Pen Rev F,1
+26,J_TOUCH,External Touch Controller / Electrode Header,CONN-SMD_JST-SH-3P-SM03B-SRSS,JST / TonTek,SM03B-SRSS-TB(LF)(SN),External Touch Controller / Electrode Header for Smart Pen Rev F,1
+27,J_UART,4-Pin UART & Programming Test Pads,TESTPAD_4P_1x4_P1.27mm,RadixView / Custom SMD,TP-SMD-4P-1.27MM,4-Pin UART & Programming Test Pads for Smart Pen Rev F,1
+28,J_USB,USB Type-C receptacle 16-pin,USB-C-SMD_16PIN_TYPE-C-31-M-12,Korean HRO / JLCPCB,TYPE-C-31-M-12,USB Type-C receptacle 16-pin for Smart Pen Rev F,1
+29,L1,24nH clock harmonic filter,L0402,Murata,LQG15HN24NJ02D,24nH clock harmonic filter for Smart Pen Rev F,1
+30,L2,2.4nH RF matching inductor,L0201,Murata,LQP03TN2N4B02D,2.4nH RF matching inductor for Smart Pen Rev F,1
+31,Q1,N-Channel Logic MOSFET,SOT-23-3,Alpha & Omega,AO3400A,N-Channel Logic MOSFET for Smart Pen Rev F,1
+32,R1,10k EN pullup,R0402,Yageo,RC0402FR-0710KL,10k EN pullup for Smart Pen Rev F,1
+33,R10,4.7k I2C SDA pullup,R0402,Yageo,RC0402FR-074K7L,4.7k I2C SDA pullup for Smart Pen Rev F,1
+34,R11,4.7k I2C SCL pullup,R0402,Yageo,RC0402FR-074K7L,4.7k I2C SCL pullup for Smart Pen Rev F,1
+35,R12,10k ERASE button pullup,R0402,Yageo,RC0402FR-0710KL,10k ERASE button pullup for Smart Pen Rev F,1
+36,R13,10k MODE button pullup,R0402,Yageo,RC0402FR-0710KL,10k MODE button pullup for Smart Pen Rev F,1
+37,R14,1k Green LED current limit,R0402,Yageo,RC0402FR-071KL,1k Green LED current limit for Smart Pen Rev F,1
+38,R15,1k Red LED current limit,R0402,Yageo,RC0402FR-071KL,1k Red LED current limit for Smart Pen Rev F,1
+39,R16,100R Haptic gate resistor,R0402,Yageo,RC0402FR-07100RL,100R Haptic gate resistor for Smart Pen Rev F,1
+40,R17,100k Haptic gate pulldown,R0402,Yageo,RC0402FR-07100KL,100k Haptic gate pulldown for Smart Pen Rev F,1
+41,R18,10k MicroSD CS pullup,R0402,Yageo,RC0402FR-0710KL,10k MicroSD CS pullup for Smart Pen Rev F,1
+42,R19,100k Touch pulldown option,R0402,Yageo,RC0402FR-07100KL,100k Touch pulldown option for Smart Pen Rev F,1
+43,R2,10k GPIO9 pullup,R0402,Yageo,RC0402FR-0710KL,10k GPIO9 pullup for Smart Pen Rev F,1
+44,R3,10k GPIO2 pullup,R0402,Yageo,RC0402FR-0710KL,10k GPIO2 pullup for Smart Pen Rev F,1
+45,R4,0R RTC tie,R0402,Yageo,RC0402JR-070RL,0R RTC tie for Smart Pen Rev F,1
+46,R5,5.1k CC1 pulldown,R0402,Yageo,RC0402FR-075K1L,5.1k CC1 pulldown for Smart Pen Rev F,1
+47,R6,5.1k CC2 pulldown,R0402,Yageo,RC0402FR-075K1L,5.1k CC2 pulldown for Smart Pen Rev F,1
+48,R7,22R USB D- series damping,R0402,Yageo,RC0402FR-0722RL,22R USB D- series damping for Smart Pen Rev F,1
+49,R8,22R USB D+ series damping,R0402,Yageo,RC0402FR-0722RL,22R USB D+ series damping for Smart Pen Rev F,1
+50,R9,"3.3k PROG resistor (303mA charge, safe <=1.0C)",R0402,Yageo,RC0402FR-073K3L,"3.3k PROG resistor (303mA charge, safe <=1.0C) for Smart Pen Rev F",1
+51,SW1,RESET switch NO,SW-SMD_3.0x2.5mm,Panasonic / C&K,EVQ-P2B02B,RESET switch NO for Smart Pen Rev F,1
+52,SW2,BOOT switch NO,SW-SMD_3.0x2.5mm,Panasonic / C&K,EVQ-P2B02B,BOOT switch NO for Smart Pen Rev F,1
+53,SW3,SPDT Slide Power Switch,SW-SLIDE-SMD_MK12C02,C&K / Korean HRO,MK-12C02-G025,SPDT Slide Power Switch for Smart Pen Rev F,1
+54,SW4,ERASE Tactile Button NO,SW-SMD_3.0x2.5mm,Panasonic / C&K,EVQ-P2B02B,ERASE Tactile Button NO for Smart Pen Rev F,1
+55,SW5,MODE Tactile Button NO,SW-SMD_3.0x2.5mm,Panasonic / C&K,EVQ-P2B02B,MODE Tactile Button NO for Smart Pen Rev F,1
+56,U1,ESP32-C3FH4X,QFN-32_5x5mm_P0.5mm_EP3.7mm,Espressif Systems,ESP32-C3FH4X,ESP32-C3FH4X for Smart Pen Rev F,1
+57,U2,LiPo Linear Charger,SOT-23-5,Microchip,MCP73831T-2ACI/OT,LiPo Linear Charger for Smart Pen Rev F,1
+58,U3,8-Bit I2C GPIO Expander,QFN-20_4x4mm_P0.5mm_EP2.7mm,Microchip,MCP23008T-E/ML,8-Bit I2C GPIO Expander for Smart Pen Rev F,1
+59,U_ESD,USB ESD Protection Array,SOT-23-6,STMicroelectronics,USBLC6-2SC6,USB ESD Protection Array for Smart Pen Rev F,1
+60,Y1,40MHz +/-10ppm Crystal,CRYSTAL-SMD_2.5x2.0mm_4P,Epson,FA-20H 40.0000MF10Z-K3,40MHz +/-10ppm Crystal for Smart Pen Rev F,1

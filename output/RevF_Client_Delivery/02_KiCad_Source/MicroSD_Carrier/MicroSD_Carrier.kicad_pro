@@ -1,0 +1,32 @@
+{
+  "board": {
+    "design_settings": {
+      "defaults": {
+        "board_thickness": 0.8,
+        "copper_line_width": 0.2,
+        "min_clearance": 0.127,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.127,
+        "min_via_diameter": 0.5
+      },
+      "rules": {
+        "min_clearance": 0.127,
+        "min_track_width": 0.127,
+        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.3,
+        "hole_clearance": 0.2,
+        "solder_mask_min_width": 0.0
+      }
+    }
+  },
+  "meta": {
+    "filename": "MicroSD_Carrier.kicad_pro",
+    "version": 1
+  },
+  "sheets": [
+    [
+      "",
+      ""
+    ]
+  ]
+}

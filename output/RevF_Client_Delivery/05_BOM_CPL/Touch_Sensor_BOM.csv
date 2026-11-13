@@ -1,0 +1,6 @@
+Item,Designator,Quantity,Value,Footprint,Manufacturer,MPN,Description
+1,U1,1,TTP223-BA6,SOT-23-6,TonTek,TTP223-BA6,1-Channel Capacitive Touch Sensor IC
+2,C1,1,0.1uF,C0402,Samsung,CL05B104KO5NNNC,Capacitor Ceramic 0.1uF 16V X7R 0402
+3,C2,1,10pF,C0402,Murata,GRM1555C1H100JA01D,Capacitor Ceramic 10pF 50V C0G 0402 (Touch Sensitivity)
+4,J1,1,SM03B-SRSS-TB,JST_SH_3P,JST,SM03B-SRSS-TB(LF)(SN),Connector Header SMD 3-Position 1.0mm Pitch
+5,E1,1,TOUCH_PAD,Touch_Pad_5x10mm,Custom,TOUCH_ELECTRODE,Capacitive Touch Sensing Electrode

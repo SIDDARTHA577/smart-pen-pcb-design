@@ -1,0 +1,21 @@
+Not placed because manufacturer-verified footprints/fit are unavailable:
+SW1
+SW2
+Y1
+J_RF
+J_USB
+U_ESD
+J_BAT
+J_PWR
+SW3
+J_IMU
+SW4
+SW5
+D1
+D2
+Q1
+J_MOT
+D3
+J_SD
+J_TOUCH
+J_UART

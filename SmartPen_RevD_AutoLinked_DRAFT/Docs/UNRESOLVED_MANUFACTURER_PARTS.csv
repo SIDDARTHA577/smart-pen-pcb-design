@@ -1,0 +1,22 @@
+Ref,Existing placeholder,Component,Required review
+U1,QFN32_5x5_P0.5_EP3.7,ESP32-C3FH4X,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+SW1,TACT_2PAD_TBD,RESET switch NO,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+SW2,TACT_2PAD_TBD,BOOT switch NO,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+Y1,CRYSTAL_4PAD_TBD,40MHz +/-10ppm crystal,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_RF,UFL_CONNECTOR_TBD,U.FL RF ANTENNA,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_USB,USB_C_16PIN_TBD,USB2.0 Type-C receptacle,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+U_ESD,USB_ESD_PART_TBD,USB ESD array TBD,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+U2,SOT23-5,MCP73831T-2ACI/OT,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_BAT,BAT_2PIN_CONNECTOR_TBD,2P KEYED BATTERY,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_PWR,REGULATOR_CARD_TBD,3V3 converter interface,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+SW3,SLIDE_SWITCH_TBD,POWER on/off,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_IMU,CONN_4P_TBD,4P KEYED FRONT IMU,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+U3,QFN20_4x4_P0.5_TBD,MCP23008 QFN20,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+SW4,TACT_2PAD_TBD,ERASE button NO,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+SW5,TACT_2PAD_TBD,MODE button NO,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+Q1,SOT23_GSD_TBD,N-MOS logic level,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_MOT,MOTOR_2PIN_TBD,2P vibration motor,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+D3,DIODE_SMD_TBD,Flyback diode TBD,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_SD,CONN_6P_TBD,REMOTE MicroSD SPI carrier,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_TOUCH,TOUCH_3PIN_TBD,EXTERNAL touch controller,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit
+J_UART,TESTPAD_4P_TBD,UART debug pads,Select exact MPN; datasheet-land-pattern check; pin-to-pad check; 3D fit

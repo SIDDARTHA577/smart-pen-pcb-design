@@ -1,0 +1,1857 @@
+** Drc report for SmartPen.kicad_pcb **
+** Created on 2026-11-03T12:09:14 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 312 DRC violations **
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(51.2700 mm, 2.2500 mm): Track [3V3] on F.Cu, length 1.7000 mm
+    @(45.7000 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 6.5300 mm
+[shorting_items]: Items shorting two nets (nets MCU_EN and TOUCH_OUT)
+    Local override; error
+    @(39.7220 mm, 1.5200 mm): Pad 1 [MCU_EN] of C1 on F.Cu
+    @(39.5000 mm, 1.2500 mm): Via [TOUCH_OUT] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(45.4800 mm, 7.7000 mm): Track [3V3] on F.Cu, length 4.7700 mm
+    @(46.9800 mm, 7.7000 mm): Track [3V3_RF] on F.Cu, length 1.1100 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0100 mm)
+    Local override; error
+    @(21.3500 mm, 4.1500 mm): Pad 19 [GND] of U3 on F.Cu
+    @(21.3500 mm, 4.4000 mm): Track [3V3] on F.Cu, length 0.2500 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and LED_GREEN_SINK)
+    Local override; error
+    @(8.0000 mm, 0.5500 mm): Track [3V3] on B.Cu, length 74.5000 mm
+    @(17.0000 mm, 0.9000 mm): Via [LED_GREEN_SINK] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0200 mm)
+    Local override; error
+    @(22.7500 mm, 8.2000 mm): Track [HAPTIC_GATE_DRIVE] on B.Cu, length 3.7700 mm
+    @(20.9800 mm, 8.4000 mm): Track [BTN_MODE] on B.Cu, length 3.2700 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(23.0200 mm, 7.0000 mm): Track [3V3] on F.Cu, length 1.0000 mm
+    @(23.2500 mm, 6.5500 mm): Track [LED_RED_SINK] on F.Cu, length 0.7500 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and CHG_STAT)
+    Local override; error
+    @(20.0200 mm, 7.0000 mm): Track [3V3] on F.Cu, length 3.0000 mm
+    @(22.2500 mm, 7.3000 mm): Via [CHG_STAT] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets 3V3 and BTN_MODE)
+    Local override; error
+    @(23.0200 mm, 8.6500 mm): Track [3V3] on B.Cu, length 59.4800 mm
+    @(24.2500 mm, 8.4000 mm): Via [BTN_MODE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets I2C_SDA and I2C_SCL)
+    Local override; error
+    @(6.6700 mm, 3.0000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(4.7000 mm, 3.3500 mm): Track [I2C_SCL] on B.Cu, length 34.8000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1200 mm)
+    Local override; error
+    @(46.0000 mm, 3.0800 mm): Track [3V3] on F.Cu, length 2.5300 mm
+    @(45.7000 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 0.6000 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and GND)
+    Local override; error
+    @(5.7200 mm, 2.0000 mm): Track [3V3] on F.Cu, length 2.2800 mm
+    @(6.6750 mm, 2.0000 mm): Pad 2 [GND] of C15 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0100 mm)
+    Local override; error
+    @(21.3500 mm, 4.1500 mm): Pad 19 [GND] of U3 on F.Cu
+    @(18.5200 mm, 4.4000 mm): Track [3V3] on F.Cu, length 2.8300 mm
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(2.7000 mm, 4.6000 mm): Pad 2 [GND] of J_IMU on F.Cu
+    @(1.7000 mm, 4.6000 mm): Track [3V3] on F.Cu, length 4.0200 mm
+[shorting_items]: Items shorting two nets (nets BTN_ERASE and 3V3)
+    Local override; error
+    @(14.9750 mm, 7.0000 mm): Pad 2 [BTN_ERASE] of R12 on F.Cu
+    @(14.0300 mm, 7.0000 mm): Track [3V3] on F.Cu, length 5.9900 mm
+[shorting_items]: Items shorting two nets (nets STRAP2 and 3V3)
+    Local override; error
+    @(48.7750 mm, 2.8000 mm): Pad 2 [STRAP2] of R3 on F.Cu
+    @(47.8300 mm, 2.8000 mm): Track [3V3] on F.Cu, length 3.4400 mm
+[shorting_items]: Items shorting two nets (nets UART_RX and RF_LNA)
+    Local override; error
+    @(43.6300 mm, 6.8500 mm): Track [UART_RX] on B.Cu, length 13.5900 mm
+    @(51.3000 mm, 6.5900 mm): Via [RF_LNA] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets UART_TX and RF_LNA)
+    Local override; error
+    @(43.1300 mm, 6.5000 mm): Track [UART_TX] on B.Cu, length 12.8200 mm
+    @(51.3000 mm, 6.5900 mm): Via [RF_LNA] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_VBUS and VBAT)
+    Local override; error
+    @(66.1300 mm, 5.1000 mm): Track [USB_VBUS] on B.Cu, length 14.6700 mm
+    @(67.2300 mm, 4.7500 mm): Via [VBAT] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DP_CORE and USB_DM_CORE)
+    Local override; error
+    @(44.1300 mm, 7.5500 mm): Track [USB_DP_CORE] on B.Cu, length 28.8300 mm
+    @(44.6300 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets I2C_SDA and I2C_SCL)
+    Local override; error
+    @(3.7000 mm, 3.0000 mm): Track [I2C_SDA] on B.Cu, length 35.5000 mm
+    @(21.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets SD_MOSI and SD_SCK)
+    Local override; error
+    @(41.1300 mm, 2.3000 mm): Track [SD_MOSI] on B.Cu, length 17.5200 mm
+    @(42.6300 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets SD_SCK and SD_CS)
+    Local override; error
+    @(42.6300 mm, 1.9500 mm): Track [SD_SCK] on B.Cu, length 15.5200 mm
+    @(43.1300 mm, 1.6000 mm): Via [SD_CS] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets 3V3_RTC and TOUCH_OUT)
+    Local override; error
+    @(36.3600 mm, 0.9000 mm): Track [3V3_RTC] on B.Cu, length 5.7700 mm
+    @(39.5000 mm, 1.2500 mm): Via [TOUCH_OUT] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DM_CORE and UART_RX)
+    Local override; error
+    @(44.6300 mm, 7.2000 mm): Track [USB_DM_CORE] on B.Cu, length 28.3400 mm
+    @(57.2200 mm, 6.8500 mm): Via [UART_RX] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DM_PORT and USB_VBUS)
+    Local override; error
+    @(71.8000 mm, 8.2000 mm): Track [USB_DM_PORT] on B.Cu, length 6.7000 mm
+    @(71.8000 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DM_PORT and USB_DP_PORT)
+    Local override; error
+    @(72.0200 mm, 6.8500 mm): Track [USB_DM_PORT] on F.Cu, length 1.3500 mm
+    @(72.0100 mm, 8.2000 mm): Via [USB_DP_PORT] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DM_PORT and GND)
+    Local override; error
+    @(71.8000 mm, 3.1900 mm): Track [USB_DM_PORT] on F.Cu, length 1.6900 mm
+    @(71.7420 mm, 2.0490 mm): Pad 2 [GND] of C14 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(70.8500 mm, 8.2000 mm): Track [USB_DP_PORT] on B.Cu, length 6.0000 mm
+    @(44.6300 mm, 7.2000 mm): Track [USB_DM_CORE] on B.Cu, length 28.3400 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0100 mm, 8.2000 mm): Track [USB_DP_PORT] on B.Cu, length 1.1600 mm
+    @(72.0200 mm, 8.2000 mm): Track [USB_DM_PORT] on B.Cu, length 0.2200 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0970 mm)
+    Local override; error
+    @(72.7470 mm, 5.7870 mm): Pad 4 [USB_DM_CORE] of U_ESD on F.Cu
+    @(72.9600 mm, 1.5000 mm): Track [USB_VBUS] on F.Cu, length 3.6000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(70.2500 mm, 6.1500 mm): Track [USB_CC1] on B.Cu, length 7.3500 mm
+    @(71.8000 mm, 8.2000 mm): Track [USB_DM_PORT] on B.Cu, length 6.7000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0101 mm)
+    Local override; error
+    @(72.9600 mm, 7.7000 mm): Track [USB_DP_CORE] on F.Cu, length 0.1500 mm
+    @(72.9700 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DP_CORE and USB_VBUS)
+    Local override; error
+    @(71.4000 mm, 5.7900 mm): Track [USB_DP_CORE] on F.Cu, length 1.7600 mm
+    @(71.7970 mm, 5.7870 mm): Pad 5 [USB_VBUS] of U_ESD on F.Cu
+[shorting_items]: Items shorting two nets (nets TOUCH_OUT and LED_GREEN_SINK)
+    Local override; error
+    @(13.0300 mm, 1.2500 mm): Track [TOUCH_OUT] on B.Cu, length 26.4700 mm
+    @(17.0000 mm, 0.9000 mm): Via [LED_GREEN_SINK] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0850 mm)
+    Local override; error
+    @(72.9560 mm, 7.7000 mm): Pad 2 [USB_DP_CORE] of R8 on F.Cu
+    @(72.9700 mm, 6.8500 mm): Track [USB_DM_CORE] on F.Cu, length 0.3500 mm
+[shorting_items]: Items shorting two nets (nets USB_CC2 and GND)
+    Local override; error
+    @(73.5600 mm, 2.4600 mm): Track [USB_CC2] on F.Cu, length 1.9400 mm
+    @(74.1000 mm, 4.6000 mm): Pad 13 [GND] of J_USB on F.Cu
+[shorting_items]: Items shorting two nets (nets USB_CC1 and GND)
+    Local override; error
+    @(70.2500 mm, 7.7000 mm): Track [USB_CC1] on F.Cu, length 1.5500 mm
+    @(70.0140 mm, 6.5630 mm): Pad 4 [GND] of J_PWR on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and CHG_PROG)
+    Local override; error
+    @(64.9630 mm, 6.8240 mm): Pad 3 [GND] of SW3 on F.Cu
+    @(65.3300 mm, 6.5400 mm): Track [CHG_PROG] on F.Cu, length 0.8000 mm
+[shorting_items]: Items shorting two nets (nets GND and CHG_PROG)
+    Local override; error
+    @(64.9630 mm, 6.8240 mm): Pad 3 [GND] of SW3 on F.Cu
+    @(65.3300 mm, 5.3700 mm): Track [CHG_PROG] on F.Cu, length 1.1700 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0100 mm)
+    Local override; error
+    @(67.2300 mm, 5.3700 mm): Track [USB_VBUS] on F.Cu, length 0.2700 mm
+    @(67.2300 mm, 4.7500 mm): Via [VBAT] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(66.1300 mm, 7.7000 mm): Track [USB_VBUS] on F.Cu, length 2.6000 mm
+    @(65.3300 mm, 6.5400 mm): Track [CHG_PROG] on F.Cu, length 0.8000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0330 mm)
+    Local override; error
+    @(67.2300 mm, 1.5000 mm): Track [VBAT] on F.Cu, length 3.2500 mm
+    @(67.2290 mm, 5.3730 mm): Pad 4 [USB_VBUS] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0330 mm)
+    Local override; error
+    @(67.2300 mm, 2.7700 mm): Track [VBAT] on F.Cu, length 1.9800 mm
+    @(67.2290 mm, 5.3730 mm): Pad 4 [USB_VBUS] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0430 mm)
+    Local override; error
+    @(70.8500 mm, 3.1900 mm): Track [USB_DP_PORT] on F.Cu, length 0.9900 mm
+    @(70.2420 mm, 2.0490 mm): Pad 1 [3V3] of C14 on F.Cu
+[shorting_items]: Items shorting two nets (nets VBAT and 3V3)
+    Local override; error
+    @(60.9600 mm, 6.8200 mm): Track [VBAT] on F.Cu, length 0.7600 mm
+    @(59.7600 mm, 7.3470 mm): Pad 4 [3V3] of J_UART on F.Cu
+[shorting_items]: Items shorting two nets (nets VBAT and 3V3)
+    Local override; error
+    @(60.2000 mm, 6.8200 mm): Track [VBAT] on F.Cu, length 2.0700 mm
+    @(59.7600 mm, 7.3470 mm): Pad 4 [3V3] of J_UART on F.Cu
+[shorting_items]: Items shorting two nets (nets STRAP2 and MCU_EN)
+    Local override; error
+    @(38.8000 mm, 4.0800 mm): Track [STRAP2] on B.Cu, length 3.3800 mm
+    @(38.9200 mm, 1.5000 mm): Via [MCU_EN] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(48.7700 mm, 2.8000 mm): Track [STRAP2] on F.Cu, length 2.1000 mm
+    @(45.7000 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 6.5300 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0350 mm)
+    Local override; error
+    @(58.1500 mm, 4.2000 mm): Track [SD_SCK] on F.Cu, length 2.2500 mm
+    @(57.9140 mm, 1.5000 mm): Pad 1 [3V3] of R18 on F.Cu
+[shorting_items]: Items shorting two nets (nets RF_OUT and GND)
+    Local override; error
+    @(53.7700 mm, 5.1500 mm): Track [RF_OUT] on F.Cu, length 1.0800 mm
+    @(53.4000 mm, 5.1500 mm): Pad 2 [GND] of J_RF on F.Cu
+[shorting_items]: Items shorting two nets (nets RF_OUT and GND)
+    Local override; error
+    @(52.4800 mm, 5.3000 mm): Track [RF_OUT] on F.Cu, length 1.2900 mm
+    @(53.4000 mm, 5.1500 mm): Pad 2 [GND] of J_RF on F.Cu
+[shorting_items]: Items shorting two nets (nets RF_LNA and UART_TX)
+    Local override; error
+    @(39.5000 mm, 6.5900 mm): Track [RF_LNA] on B.Cu, length 11.8000 mm
+    @(43.1300 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets RF_OUT and GND)
+    Local override; error
+    @(53.7700 mm, 5.3000 mm): Track [RF_OUT] on F.Cu, length 1.7500 mm
+    @(53.4000 mm, 5.1500 mm): Pad 2 [GND] of J_RF on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(46.9800 mm, 7.7000 mm): Track [3V3_RF] on F.Cu, length 1.9000 mm
+    @(45.4800 mm, 7.7000 mm): Track [3V3] on F.Cu, length 4.7700 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(48.0900 mm, 7.7000 mm): Track [3V3_RF] on F.Cu, length 1.1000 mm
+    @(45.4800 mm, 7.7000 mm): Track [3V3] on F.Cu, length 4.7700 mm
+[shorting_items]: Items shorting two nets (nets USB_DP_CORE and USB_VBUS)
+    Local override; error
+    @(70.8500 mm, 5.7900 mm): Track [USB_DP_CORE] on F.Cu, length 0.5500 mm
+    @(71.7970 mm, 5.7870 mm): Pad 5 [USB_VBUS] of U_ESD on F.Cu
+[shorting_items]: Items shorting two nets (nets UART_TX and GND)
+    Local override; error
+    @(43.1300 mm, 7.2400 mm): Track [UART_TX] on F.Cu, length 0.7400 mm
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets XTAL_N and XTAL_P_CORE)
+    Local override; error
+    @(34.7200 mm, 8.4000 mm): Track [XTAL_N] on B.Cu, length 7.9100 mm
+    @(39.1200 mm, 8.5000 mm): Via [XTAL_P_CORE] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0900 mm)
+    Local override; error
+    @(43.6300 mm, 7.2400 mm): Track [UART_RX] on F.Cu, length 0.3900 mm
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets XTAL_P_CORE and 3V3)
+    Local override; error
+    @(39.1200 mm, 8.5000 mm): Track [XTAL_P_CORE] on B.Cu, length 3.0100 mm
+    @(23.0200 mm, 8.6500 mm): Track [3V3] on B.Cu, length 59.4800 mm
+[shorting_items]: Items shorting two nets (nets VDD_SPI and STRAP2)
+    Local override; error
+    @(46.5000 mm, 0.7000 mm): Track [VDD_SPI] on F.Cu, length 3.0200 mm
+    @(48.7700 mm, 0.7000 mm): Via [STRAP2] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(45.7000 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 6.5300 mm
+    @(49.5200 mm, 0.7000 mm): Track [VDD_SPI] on F.Cu, length 0.8500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1200 mm)
+    Local override; error
+    @(44.1300 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 1.5700 mm
+    @(46.0000 mm, 3.0800 mm): Track [3V3] on F.Cu, length 2.5300 mm
+[shorting_items]: Items shorting two nets (nets MCU_EN and TOUCH_OUT)
+    Local override; error
+    @(39.7220 mm, 1.5200 mm): Pad 1 [MCU_EN] of C1 on F.Cu
+    @(39.5000 mm, 3.0800 mm): Track [TOUCH_OUT] on F.Cu, length 1.8300 mm
+[shorting_items]: Items shorting two nets (nets TOUCH_OUT and I2C_SCL)
+    Local override; error
+    @(40.4800 mm, 3.0800 mm): Track [TOUCH_OUT] on F.Cu, length 0.9800 mm
+    @(39.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(40.4800 mm, 4.0800 mm): Track [STRAP2] on F.Cu, length 1.6800 mm
+    @(39.2000 mm, 5.0800 mm): Track [I2C_SDA] on F.Cu, length 2.0800 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1200 mm)
+    Local override; error
+    @(39.5000 mm, 4.5900 mm): Track [I2C_SCL] on F.Cu, length 1.2400 mm
+    @(39.2000 mm, 5.0800 mm): Track [I2C_SDA] on F.Cu, length 2.0800 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1200 mm)
+    Local override; error
+    @(40.4800 mm, 4.5900 mm): Track [I2C_SCL] on F.Cu, length 0.9800 mm
+    @(39.2000 mm, 5.0800 mm): Track [I2C_SDA] on F.Cu, length 2.0800 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1200 mm)
+    Local override; error
+    @(39.2000 mm, 5.0800 mm): Track [I2C_SDA] on F.Cu, length 2.0800 mm
+    @(39.5000 mm, 3.0800 mm): Track [TOUCH_OUT] on F.Cu, length 1.8300 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(39.1200 mm, 7.7000 mm): Track [XTAL_P_CORE] on F.Cu, length 0.8000 mm
+    @(37.3600 mm, 8.2000 mm): Track [XTAL_P_MATCH] on F.Cu, length 2.7100 mm
+[shorting_items]: Items shorting two nets (nets XTAL_N and GND)
+    Local override; error
+    @(34.7200 mm, 8.4000 mm): Track [XTAL_N] on F.Cu, length 2.6800 mm
+    @(34.7230 mm, 7.0220 mm): Pad 4 [GND] of Y1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0850 mm)
+    Local override; error
+    @(37.3600 mm, 8.2000 mm): Track [XTAL_P_MATCH] on F.Cu, length 2.7100 mm
+    @(38.3080 mm, 7.7000 mm): Pad 2 [GND] of C7 on F.Cu
+[shorting_items]: Items shorting two nets (nets 3V3 and 3V3_RTC)
+    Local override; error
+    @(35.4100 mm, 2.6000 mm): Track [3V3] on F.Cu, length 2.5700 mm
+    @(36.3570 mm, 2.6010 mm): Pad 2 [3V3_RTC] of R4 on F.Cu
+[shorting_items]: Items shorting two nets (nets MCU_EN and I2C_SCL)
+    Local override; error
+    @(39.7200 mm, 2.3600 mm): Track [MCU_EN] on F.Cu, length 1.2300 mm
+    @(39.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(38.9200 mm, 2.3600 mm): Track [MCU_EN] on F.Cu, length 0.8000 mm
+    @(39.5000 mm, 3.0800 mm): Track [TOUCH_OUT] on F.Cu, length 1.8300 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0400 mm)
+    Local override; error
+    @(39.7200 mm, 2.3600 mm): Track [MCU_EN] on F.Cu, length 0.8400 mm
+    @(39.5000 mm, 3.0800 mm): Track [TOUCH_OUT] on F.Cu, length 1.8300 mm
+[shorting_items]: Items shorting two nets (nets HAPTIC_LOW and VBAT_SW)
+    Local override; error
+    @(31.2860 mm, 4.7040 mm): Pad 2 [HAPTIC_LOW] of D3 on F.Cu
+    @(30.7500 mm, 6.2900 mm): Track [VBAT_SW] on F.Cu, length 2.2400 mm
+[shorting_items]: Items shorting two nets (nets VBAT_SW and GND)
+    Local override; error
+    @(28.0900 mm, 7.0000 mm): Track [VBAT_SW] on F.Cu, length 2.6600 mm
+    @(29.1530 mm, 6.2850 mm): Pad 3 [GND] of J_MOT on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(25.5000 mm, 2.2000 mm): Track [HAPTIC_GATE] on F.Cu, length 1.9800 mm
+    @(26.5200 mm, 2.2000 mm): Track [HAPTIC_GATE_DRIVE] on F.Cu, length 1.0000 mm
+[shorting_items]: Items shorting two nets (nets HAPTIC_GATE and 3V3)
+    Local override; error
+    @(25.5000 mm, 3.9100 mm): Track [HAPTIC_GATE] on F.Cu, length 1.7100 mm
+    @(25.1500 mm, 3.6500 mm): Pad 6 [3V3] of U3 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(22.2500 mm, 7.3000 mm): Track [CHG_STAT] on B.Cu, length 3.6000 mm
+    @(17.8000 mm, 7.3000 mm): Track [LED_RED_SINK] on B.Cu, length 5.4500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0200 mm)
+    Local override; error
+    @(25.1500 mm, 3.6500 mm): Pad 6 [3V3] of U3 on F.Cu
+    @(26.0300 mm, 3.9100 mm): Track [HAPTIC_GATE] on F.Cu, length 0.5300 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(26.5200 mm, 8.2000 mm): Track [HAPTIC_GATE_DRIVE] on B.Cu, length 7.0000 mm
+    @(4.7000 mm, 3.3500 mm): Track [I2C_SCL] on B.Cu, length 34.8000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0900 mm)
+    Local override; error
+    @(22.7500 mm, 6.5500 mm): Track [HAPTIC_GATE_DRIVE] on F.Cu, length 1.6500 mm
+    @(23.0200 mm, 8.0000 mm): Track [3V3] on F.Cu, length 0.6500 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(19.4800 mm, 5.2500 mm): Track [LED_RED_A] on F.Cu, length 0.8500 mm
+    @(18.5200 mm, 4.4000 mm): Track [3V3] on F.Cu, length 2.8300 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0600 mm)
+    Local override; error
+    @(21.3500 mm, 3.6500 mm): Pad 20 [GND] of U3 on F.Cu
+    @(21.5000 mm, 2.7500 mm): Track [I2C_SCL] on F.Cu, length 0.6000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(17.0000 mm, 0.9000 mm): Track [LED_GREEN_SINK] on B.Cu, length 7.0000 mm
+    @(13.0300 mm, 1.2500 mm): Track [TOUCH_OUT] on B.Cu, length 26.4700 mm
+[shorting_items]: Items shorting two nets (nets LED_GREEN_SINK and HAPTIC_GATE_DRIVE)
+    Local override; error
+    @(17.0000 mm, 7.9000 mm): Track [LED_GREEN_SINK] on B.Cu, length 6.7500 mm
+    @(22.7500 mm, 8.2000 mm): Via [HAPTIC_GATE_DRIVE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets LED_GREEN_SINK and GND)
+    Local override; error
+    @(23.7500 mm, 6.5500 mm): Track [LED_GREEN_SINK] on F.Cu, length 1.6500 mm
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(16.0000 mm, 1.3500 mm): Track [LED_GREEN_A] on F.Cu, length 3.4800 mm
+    @(18.5200 mm, 2.2000 mm): Track [3V3] on F.Cu, length 1.6500 mm
+[shorting_items]: Items shorting two nets (nets BTN_MODE and 3V3)
+    Local override; error
+    @(20.9800 mm, 8.4000 mm): Track [BTN_MODE] on B.Cu, length 3.2700 mm
+    @(23.0200 mm, 8.6500 mm): Via [3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets BTN_MODE and GND)
+    Local override; error
+    @(24.2500 mm, 8.4000 mm): Track [BTN_MODE] on F.Cu, length 1.8500 mm
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(16.1000 mm, 7.0000 mm): Track [BTN_MODE] on F.Cu, length 1.4000 mm
+    @(14.0300 mm, 7.0000 mm): Track [3V3] on F.Cu, length 5.9900 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(14.9700 mm, 7.0000 mm): Track [BTN_ERASE] on F.Cu, length 1.4000 mm
+    @(14.0300 mm, 7.0000 mm): Track [3V3] on F.Cu, length 5.9900 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and GND)
+    Local override; error
+    @(59.6500 mm, 4.2000 mm): Track [SD_CS] on F.Cu, length 2.6000 mm
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(4.7000 mm, 4.6000 mm): Track [I2C_SCL] on F.Cu, length 1.2500 mm
+    @(1.7000 mm, 4.6000 mm): Track [3V3] on F.Cu, length 4.0200 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0100 mm)
+    Local override; error
+    @(6.6700 mm, 8.2000 mm): Track [I2C_SCL] on B.Cu, length 4.8500 mm
+    @(6.6700 mm, 3.0000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(3.7000 mm, 4.6000 mm): Track [I2C_SDA] on F.Cu, length 1.6000 mm
+    @(1.7000 mm, 4.6000 mm): Track [3V3] on F.Cu, length 4.0200 mm
+[shorting_items]: Items shorting two nets (nets GND and USB_CC2)
+    Local override; error
+    @(74.1000 mm, 4.6000 mm): Pad 13 [GND] of J_USB on F.Cu
+    @(73.5600 mm, 4.4000 mm): Via [USB_CC2] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DP_CORE and USB_DM_CORE)
+    Local override; error
+    @(72.9560 mm, 7.7000 mm): Pad 2 [USB_DP_CORE] of R8 on F.Cu
+    @(72.9700 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0101 mm)
+    Local override; error
+    @(72.9600 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(72.9700 mm, 6.8500 mm): Track [USB_DM_CORE] on F.Cu, length 0.3500 mm
+[shorting_items]: Items shorting two nets (nets USB_DM_CORE and USB_VBUS)
+    Local override; error
+    @(72.7470 mm, 5.7870 mm): Pad 4 [USB_DM_CORE] of U_ESD on F.Cu
+    @(72.9600 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DP_CORE and USB_DM_CORE)
+    Local override; error
+    @(72.9600 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(44.6300 mm, 7.2000 mm): Track [USB_DM_CORE] on B.Cu, length 28.3400 mm
+[shorting_items]: Items shorting two nets (nets STRAP2 and 3V3_RTC)
+    Local override; error
+    @(38.8000 mm, 0.7000 mm): Track [STRAP2] on B.Cu, length 9.9700 mm
+    @(42.1300 mm, 0.9000 mm): Via [3V3_RTC] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets 3V3_RF and GND)
+    Local override; error
+    @(41.1300 mm, 7.2400 mm): Track [3V3_RF] on F.Cu, length 1.4400 mm
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets USB_DM_PORT and GND)
+    Local override; error
+    @(71.8000 mm, 1.5000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+    @(71.7420 mm, 2.0490 mm): Pad 2 [GND] of C14 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0750 mm)
+    Local override; error
+    @(72.0100 mm, 8.2000 mm): Via [USB_DP_PORT] on F.Cu - B.Cu
+    @(23.0200 mm, 8.6500 mm): Track [3V3] on B.Cu, length 59.4800 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0460 mm)
+    Local override; error
+    @(71.4000 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(72.0060 mm, 7.7000 mm): Pad 1 [USB_DP_PORT] of R8 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and USB_CC1)
+    Local override; error
+    @(70.0140 mm, 6.5630 mm): Pad 4 [GND] of J_PWR on F.Cu
+    @(70.2500 mm, 6.1500 mm): Via [USB_CC1] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DP_PORT and 3V3)
+    Local override; error
+    @(70.8500 mm, 2.2000 mm): Via [USB_DP_PORT] on F.Cu - B.Cu
+    @(70.2420 mm, 2.0490 mm): Pad 1 [3V3] of C14 on F.Cu
+[shorting_items]: Items shorting two nets (nets USB_VBUS and VBAT)
+    Local override; error
+    @(67.2300 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+    @(67.2300 mm, 4.7500 mm): Via [VBAT] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_DP_CORE and USB_DM_CORE)
+    Local override; error
+    @(71.4000 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(44.6300 mm, 7.2000 mm): Track [USB_DM_CORE] on B.Cu, length 28.3400 mm
+[shorting_items]: Items shorting two nets (nets VBAT and USB_VBUS)
+    Local override; error
+    @(67.2300 mm, 4.7500 mm): Via [VBAT] on F.Cu - B.Cu
+    @(67.2290 mm, 5.3730 mm): Pad 4 [USB_VBUS] of U2 on F.Cu
+[shorting_items]: Items shorting two nets (nets USB_VBUS and VBAT)
+    Local override; error
+    @(67.2300 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+    @(60.2000 mm, 4.7500 mm): Track [VBAT] on B.Cu, length 7.0300 mm
+[shorting_items]: Items shorting two nets (nets USB_DM_PORT and USB_DP_PORT)
+    Local override; error
+    @(72.0200 mm, 8.2000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+    @(72.0100 mm, 8.2000 mm): Via [USB_DP_PORT] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0750 mm)
+    Local override; error
+    @(72.0200 mm, 8.2000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+    @(23.0200 mm, 8.6500 mm): Track [3V3] on B.Cu, length 59.4800 mm
+[shorting_items]: Items shorting two nets (nets CHG_STAT and VBAT_SW)
+    Local override; error
+    @(65.3300 mm, 3.7000 mm): Via [CHG_STAT] on F.Cu - B.Cu
+    @(30.7500 mm, 4.0500 mm): Track [VBAT_SW] on B.Cu, length 37.3600 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0010 mm)
+    Local override; error
+    @(59.6500 mm, 1.6000 mm): Via [SD_CS] on F.Cu - B.Cu
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0006 mm)
+    Local override; error
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+    @(59.1500 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(58.6500 mm, 2.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+    @(59.1500 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(58.1500 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+    @(58.6500 mm, 2.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets SD_MOSI and SD_MISO)
+    Local override; error
+    @(58.6500 mm, 2.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+    @(41.6300 mm, 2.6500 mm): Track [SD_MISO] on B.Cu, length 17.5200 mm
+[shorting_items]: Items shorting two nets (nets SD_SCK and SD_MOSI)
+    Local override; error
+    @(58.1500 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+    @(41.1300 mm, 2.3000 mm): Track [SD_MOSI] on B.Cu, length 17.5200 mm
+[shorting_items]: Items shorting two nets (nets GND and UART_TX)
+    Local override; error
+    @(56.3000 mm, 5.1500 mm): Pad 3 [GND] of J_RF on F.Cu
+    @(55.9500 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets USB_VBUS and VBAT)
+    Local override; error
+    @(66.1300 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+    @(60.2000 mm, 4.7500 mm): Track [VBAT] on B.Cu, length 7.0300 mm
+[shorting_items]: Items shorting two nets (nets STRAP2 and BOOT9)
+    Local override; error
+    @(48.7700 mm, 0.7000 mm): Via [STRAP2] on F.Cu - B.Cu
+    @(45.7000 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 6.5300 mm
+[shorting_items]: Items shorting two nets (nets UART_TX and UART_RX)
+    Local override; error
+    @(55.9500 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+    @(43.6300 mm, 6.8500 mm): Track [UART_RX] on B.Cu, length 13.5900 mm
+[shorting_items]: Items shorting two nets (nets STRAP2 and 3V3)
+    Local override; error
+    @(48.7700 mm, 0.7000 mm): Via [STRAP2] on F.Cu - B.Cu
+    @(8.0000 mm, 0.5500 mm): Track [3V3] on B.Cu, length 74.5000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1210 mm)
+    Local override; error
+    @(46.0000 mm, 0.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(44.1300 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 1.5700 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2323 mm)
+    Rule: board setup constraints hole; error
+    @(45.4840 mm, 7.7000 mm): Pad 1 [3V3] of FB1 on F.Cu
+    @(44.6300 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets UART_TX and GND)
+    Local override; error
+    @(43.1300 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(43.6300 mm, 6.8500 mm): Via [UART_RX] on F.Cu - B.Cu
+    @(43.1300 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(43.1300 mm, 1.6000 mm): Via [SD_CS] on F.Cu - B.Cu
+    @(42.6300 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(43.6300 mm, 6.8500 mm): Via [UART_RX] on F.Cu - B.Cu
+    @(43.1300 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(43.1300 mm, 1.6000 mm): Via [SD_CS] on F.Cu - B.Cu
+    @(42.6300 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0099 mm)
+    Local override; error
+    @(42.6300 mm, 8.4000 mm): Via [XTAL_N] on F.Cu - B.Cu
+    @(42.1300 mm, 8.5000 mm): Via [XTAL_P_CORE] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0099 mm)
+    Local override; error
+    @(42.6300 mm, 8.4000 mm): Via [XTAL_N] on F.Cu - B.Cu
+    @(42.1300 mm, 8.5000 mm): Via [XTAL_P_CORE] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(44.1300 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(44.6300 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1000 mm)
+    Local override; error
+    @(41.1300 mm, 2.4350 mm): Pad 9 [SD_MOSI] of U1 on F.Cu
+    @(41.6300 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(44.1300 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(44.6300 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets 3V3_RF and GND)
+    Local override; error
+    @(41.1300 mm, 5.8000 mm): Via [3V3_RF] on F.Cu - B.Cu
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1103 mm)
+    Local override; error
+    @(41.6300 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+    @(41.1300 mm, 2.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1102 mm)
+    Local override; error
+    @(42.1300 mm, 2.4350 mm): Pad 11 [3V3_RTC] of U1 on F.Cu
+    @(42.6300 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1000 mm)
+    Local override; error
+    @(41.1300 mm, 2.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+    @(41.6300 mm, 2.4350 mm): Pad 10 [SD_MISO] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets I2C_SCL and I2C_SDA)
+    Local override; error
+    @(39.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(39.2000 mm, 5.0800 mm): Track [I2C_SDA] on F.Cu, length 2.0800 mm
+[shorting_items]: Items shorting two nets (nets XTAL_P_CORE and XTAL_P_MATCH)
+    Local override; error
+    @(39.1200 mm, 8.5000 mm): Via [XTAL_P_CORE] on F.Cu - B.Cu
+    @(37.3600 mm, 8.2000 mm): Track [XTAL_P_MATCH] on F.Cu, length 2.7100 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2316 mm)
+    Rule: board setup constraints hole; error
+    @(38.9200 mm, 1.5000 mm): Via [MCU_EN] on F.Cu - B.Cu
+    @(39.5000 mm, 1.2500 mm): Via [TOUCH_OUT] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets XTAL_P_CORE and 3V3)
+    Local override; error
+    @(39.1200 mm, 8.5000 mm): Via [XTAL_P_CORE] on F.Cu - B.Cu
+    @(23.0200 mm, 8.6500 mm): Track [3V3] on B.Cu, length 59.4800 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0600 mm)
+    Local override; error
+    @(38.8000 mm, 4.0800 mm): Via [STRAP2] on F.Cu - B.Cu
+    @(39.2000 mm, 5.0800 mm): Track [I2C_SDA] on F.Cu, length 2.0800 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2316 mm)
+    Rule: board setup constraints hole; error
+    @(38.9200 mm, 1.5000 mm): Via [MCU_EN] on F.Cu - B.Cu
+    @(39.5000 mm, 1.2500 mm): Via [TOUCH_OUT] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets STRAP2 and VBAT_SW)
+    Local override; error
+    @(38.8000 mm, 4.0800 mm): Via [STRAP2] on F.Cu - B.Cu
+    @(30.7500 mm, 4.0500 mm): Track [VBAT_SW] on B.Cu, length 37.3600 mm
+[shorting_items]: Items shorting two nets (nets XTAL_N and 3V3)
+    Local override; error
+    @(34.7200 mm, 8.4000 mm): Via [XTAL_N] on F.Cu - B.Cu
+    @(23.0200 mm, 8.6500 mm): Track [3V3] on B.Cu, length 59.4800 mm
+[shorting_items]: Items shorting two nets (nets HAPTIC_LOW and VBAT_SW)
+    Local override; error
+    @(31.2860 mm, 4.7040 mm): Pad 2 [HAPTIC_LOW] of D3 on F.Cu
+    @(30.7500 mm, 4.0500 mm): Via [VBAT_SW] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and BTN_MODE)
+    Local override; error
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+    @(24.2500 mm, 8.4000 mm): Via [BTN_MODE] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0385 mm)
+    Local override; error
+    @(23.7500 mm, 8.2000 mm): Via [LED_GREEN_SINK] on F.Cu - B.Cu
+    @(24.2500 mm, 8.4000 mm): Via [BTN_MODE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets LED_GREEN_SINK and BTN_MODE)
+    Local override; error
+    @(23.7500 mm, 8.2000 mm): Via [LED_GREEN_SINK] on F.Cu - B.Cu
+    @(20.9800 mm, 8.4000 mm): Track [BTN_MODE] on B.Cu, length 3.2700 mm
+[shorting_items]: Items shorting two nets (nets LED_RED_SINK and 3V3)
+    Local override; error
+    @(23.2500 mm, 7.3000 mm): Via [LED_RED_SINK] on F.Cu - B.Cu
+    @(23.0200 mm, 7.0000 mm): Track [3V3] on F.Cu, length 1.0000 mm
+[shorting_items]: Items shorting two nets (nets GND and I2C_SCL)
+    Local override; error
+    @(21.3500 mm, 3.6500 mm): Pad 20 [GND] of U3 on F.Cu
+    @(21.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0248 mm)
+    Local override; error
+    @(22.7500 mm, 8.2000 mm): Via [HAPTIC_GATE_DRIVE] on F.Cu - B.Cu
+    @(23.0200 mm, 8.6500 mm): Via [3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets HAPTIC_GATE_DRIVE and BTN_MODE)
+    Local override; error
+    @(22.7500 mm, 8.2000 mm): Via [HAPTIC_GATE_DRIVE] on F.Cu - B.Cu
+    @(20.9800 mm, 8.4000 mm): Track [BTN_MODE] on B.Cu, length 3.2700 mm
+[shorting_items]: Items shorting two nets (nets CHG_STAT and LED_RED_SINK)
+    Local override; error
+    @(22.2500 mm, 7.3000 mm): Via [CHG_STAT] on F.Cu - B.Cu
+    @(17.8000 mm, 7.3000 mm): Track [LED_RED_SINK] on B.Cu, length 5.4500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0100 mm)
+    Local override; error
+    @(51.2700 mm, 0.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(45.7000 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 6.5300 mm
+[shorting_items]: Items shorting two nets (nets I2C_SCL and I2C_SDA)
+    Local override; error
+    @(4.7000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(3.7000 mm, 3.0000 mm): Track [I2C_SDA] on B.Cu, length 35.5000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0650 mm)
+    Local override; error
+    @(38.9250 mm, 2.3600 mm): Pad 2 [MCU_EN] of R1 on F.Cu
+    @(39.2000 mm, 3.0000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets I2C_SDA and I2C_SCL)
+    Local override; error
+    @(39.2000 mm, 3.0000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(4.7000 mm, 3.3500 mm): Track [I2C_SCL] on B.Cu, length 34.8000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(39.7220 mm, 1.5200 mm): Pad 1 [MCU_EN] of C1 on F.Cu
+    @(39.5000 mm, 1.2500 mm): Via [TOUCH_OUT] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0370 mm)
+    Rule: board setup constraints hole; error
+    @(72.7470 mm, 5.7870 mm): Pad 4 [USB_DM_CORE] of U_ESD on F.Cu
+    @(72.9600 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(67.2290 mm, 5.3730 mm): Pad 4 [USB_VBUS] of U2 on F.Cu
+    @(67.2300 mm, 4.7500 mm): Via [VBAT] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1000 mm)
+    Rule: board setup constraints hole; error
+    @(45.7040 mm, 1.5000 mm): Pad 1 [BOOT9] of SW2 on F.Cu
+    @(46.0000 mm, 0.5500 mm): Via [3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1220 mm)
+    Rule: board setup constraints hole; error
+    @(70.8470 mm, 5.7870 mm): Pad 6 [USB_DP_CORE] of U_ESD on F.Cu
+    @(70.2500 mm, 6.1500 mm): Via [USB_CC1] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(48.5040 mm, 1.5000 mm): Pad 2 [GND] of SW2 on F.Cu
+    @(48.7700 mm, 0.7000 mm): Via [STRAP2] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0250 mm)
+    Rule: board setup constraints hole; error
+    @(72.0060 mm, 7.7000 mm): Pad 1 [USB_DP_PORT] of R8 on F.Cu
+    @(72.0200 mm, 8.2000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1460 mm)
+    Rule: board setup constraints hole; error
+    @(72.0060 mm, 7.7000 mm): Pad 1 [USB_DP_PORT] of R8 on F.Cu
+    @(71.4000 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(71.2030 mm, 7.7000 mm): Pad 2 [GND] of R5 on F.Cu
+    @(71.4000 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1650 mm)
+    Rule: board setup constraints hole; error
+    @(38.9250 mm, 2.3600 mm): Pad 2 [MCU_EN] of R1 on F.Cu
+    @(39.2000 mm, 3.0000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2210 mm)
+    Rule: board setup constraints hole; error
+    @(72.9740 mm, 6.8540 mm): Pad 2 [USB_DM_CORE] of R7 on F.Cu
+    @(72.9600 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(57.9140 mm, 1.5000 mm): Pad 1 [3V3] of R18 on F.Cu
+    @(58.1500 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1000 mm)
+    Rule: board setup constraints hole; error
+    @(56.3000 mm, 5.1500 mm): Pad 3 [GND] of J_RF on F.Cu
+    @(55.9500 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0250 mm)
+    Rule: board setup constraints hole; error
+    @(72.9560 mm, 7.7000 mm): Pad 2 [USB_DP_CORE] of R8 on F.Cu
+    @(72.9700 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2323 mm)
+    Rule: board setup constraints hole; error
+    @(45.4840 mm, 7.7000 mm): Pad 1 [3V3] of FB1 on F.Cu
+    @(44.6300 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0040 mm)
+    Rule: board setup constraints hole; error
+    @(31.2860 mm, 4.7040 mm): Pad 2 [HAPTIC_LOW] of D3 on F.Cu
+    @(30.7500 mm, 4.0500 mm): Via [VBAT_SW] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(70.2420 mm, 2.0490 mm): Pad 1 [3V3] of C14 on F.Cu
+    @(70.8500 mm, 2.2000 mm): Via [USB_DP_PORT] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(23.0250 mm, 8.0000 mm): Pad 1 [3V3] of C13 on F.Cu
+    @(22.7500 mm, 8.2000 mm): Via [HAPTIC_GATE_DRIVE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2250 mm)
+    Rule: board setup constraints hole; error
+    @(23.0250 mm, 8.0000 mm): Pad 1 [3V3] of C13 on F.Cu
+    @(23.2500 mm, 7.3000 mm): Via [LED_RED_SINK] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+    @(23.7500 mm, 8.2000 mm): Via [LED_GREEN_SINK] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+    @(24.2500 mm, 8.4000 mm): Via [BTN_MODE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(74.1000 mm, 4.6000 mm): Pad 13 [GND] of J_USB on F.Cu
+    @(73.5600 mm, 4.4000 mm): Via [USB_CC2] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(70.0140 mm, 6.5630 mm): Pad 4 [GND] of J_PWR on F.Cu
+    @(70.2500 mm, 6.1500 mm): Via [USB_CC1] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1006 mm)
+    Rule: board setup constraints hole; error
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+    @(59.1500 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+    @(59.6500 mm, 1.6000 mm): Via [SD_CS] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(71.7420 mm, 2.0490 mm): Pad 2 [GND] of C14 on F.Cu
+    @(71.8000 mm, 1.5000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(41.1300 mm, 2.4350 mm): Pad 9 [SD_MOSI] of U1 on F.Cu
+    @(41.6300 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(41.6300 mm, 2.4350 mm): Pad 10 [SD_MISO] of U1 on F.Cu
+    @(41.1300 mm, 2.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2102 mm)
+    Rule: board setup constraints hole; error
+    @(42.1300 mm, 2.4350 mm): Pad 11 [3V3_RTC] of U1 on F.Cu
+    @(42.6300 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(42.1300 mm, 2.4350 mm): Pad 11 [3V3_RTC] of U1 on F.Cu
+    @(41.6300 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(21.3500 mm, 3.6500 mm): Pad 20 [GND] of U3 on F.Cu
+    @(21.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2102 mm)
+    Rule: board setup constraints hole; error
+    @(43.1300 mm, 2.4350 mm): Pad 13 [SD_CS] of U1 on F.Cu
+    @(42.6300 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(44.6300 mm, 7.2350 mm): Pad 25 [USB_DM_CORE] of U1 on F.Cu
+    @(44.1300 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(44.1300 mm, 7.2350 mm): Pad 26 [USB_DP_CORE] of U1 on F.Cu
+    @(44.6300 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(44.1300 mm, 7.2350 mm): Pad 26 [USB_DP_CORE] of U1 on F.Cu
+    @(43.6300 mm, 6.8500 mm): Via [UART_RX] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(43.6300 mm, 7.2350 mm): Pad 27 [UART_RX] of U1 on F.Cu
+    @(44.1300 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(43.1300 mm, 7.2350 mm): Pad 28 [UART_TX] of U1 on F.Cu
+    @(43.6300 mm, 6.8500 mm): Via [UART_RX] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+    @(41.1300 mm, 5.8000 mm): Via [3V3_RF] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+    @(43.1300 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0150 mm)
+    Rule: board setup constraints hole; error
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+    @(43.6300 mm, 6.8500 mm): Via [UART_RX] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1850 mm)
+    Rule: board setup constraints hole; error
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+    @(41.6300 mm, 2.6500 mm): Via [SD_MISO] on F.Cu - B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.7000 mm, 4.6000 mm): Track [3V3] on F.Cu, length 4.0200 mm
+    @(2.7000 mm, 4.6000 mm): Pad 2 [GND] of J_IMU on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(24.2500 mm, 8.4000 mm): Track [BTN_MODE] on F.Cu, length 1.8500 mm
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.7500 mm, 6.5500 mm): Track [LED_GREEN_SINK] on F.Cu, length 1.6500 mm
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(21.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(21.3500 mm, 3.6500 mm): Pad 20 [GND] of U3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.7000 mm, 4.6000 mm): Track [3V3] on F.Cu, length 4.0200 mm
+    @(3.7000 mm, 4.6000 mm): Pad 3 [I2C_SDA] of J_IMU on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.7000 mm, 4.6000 mm): Track [3V3] on F.Cu, length 4.0200 mm
+    @(4.7000 mm, 4.6000 mm): Pad 4 [I2C_SCL] of J_IMU on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(22.7500 mm, 6.5500 mm): Track [HAPTIC_GATE_DRIVE] on F.Cu, length 1.6500 mm
+    @(23.0250 mm, 8.0000 mm): Pad 1 [3V3] of C13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(22.7500 mm, 8.2000 mm): Via [HAPTIC_GATE_DRIVE] on F.Cu - B.Cu
+    @(23.0250 mm, 8.0000 mm): Pad 1 [3V3] of C13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.7200 mm, 2.0000 mm): Track [3V3] on F.Cu, length 2.2800 mm
+    @(6.6750 mm, 2.0000 mm): Pad 2 [GND] of C15 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(14.0300 mm, 7.0000 mm): Track [3V3] on F.Cu, length 5.9900 mm
+    @(14.9750 mm, 7.0000 mm): Pad 2 [BTN_ERASE] of R12 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.7500 mm, 8.2000 mm): Via [LED_GREEN_SINK] on F.Cu - B.Cu
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(24.2500 mm, 8.4000 mm): Via [BTN_MODE] on F.Cu - B.Cu
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(14.0300 mm, 7.0000 mm): Track [3V3] on F.Cu, length 5.9900 mm
+    @(16.1000 mm, 7.0000 mm): Pad 1 [BTN_MODE] of SW5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(14.0300 mm, 7.0000 mm): Track [3V3] on F.Cu, length 5.9900 mm
+    @(18.9000 mm, 7.0000 mm): Pad 2 [GND] of SW5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(30.7500 mm, 4.0500 mm): Via [VBAT_SW] on F.Cu - B.Cu
+    @(31.2860 mm, 4.7040 mm): Pad 2 [HAPTIC_LOW] of D3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(20.0200 mm, 7.0000 mm): Track [3V3] on F.Cu, length 3.0000 mm
+    @(20.9750 mm, 7.0000 mm): Pad 2 [BTN_MODE] of R13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(18.5200 mm, 4.4000 mm): Track [3V3] on F.Cu, length 2.8300 mm
+    @(19.4750 mm, 4.4000 mm): Pad 2 [LED_RED_A] of R15 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(39.5000 mm, 1.2500 mm): Via [TOUCH_OUT] on F.Cu - B.Cu
+    @(39.7220 mm, 1.5200 mm): Pad 1 [MCU_EN] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(35.4100 mm, 2.6000 mm): Track [3V3] on F.Cu, length 2.5700 mm
+    @(36.3570 mm, 2.6010 mm): Pad 2 [3V3_RTC] of R4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.0000 mm, 3.0800 mm): Track [3V3] on F.Cu, length 2.5300 mm
+    @(45.7040 mm, 1.5000 mm): Pad 1 [BOOT9] of SW2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(45.4800 mm, 7.7000 mm): Track [3V3] on F.Cu, length 4.7700 mm
+    @(46.9840 mm, 7.7000 mm): Pad 2 [3V3_RF] of FB1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(25.5000 mm, 3.9100 mm): Track [HAPTIC_GATE] on F.Cu, length 1.7100 mm
+    @(25.1500 mm, 3.6500 mm): Pad 6 [3V3] of U3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(59.6500 mm, 4.2000 mm): Track [SD_CS] on F.Cu, length 2.6000 mm
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(47.8300 mm, 2.8000 mm): Track [3V3] on F.Cu, length 3.4400 mm
+    @(48.7750 mm, 2.8000 mm): Pad 2 [STRAP2] of R3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(39.5000 mm, 3.0800 mm): Track [TOUCH_OUT] on F.Cu, length 1.8300 mm
+    @(39.7220 mm, 1.5200 mm): Pad 1 [MCU_EN] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(25.5000 mm, 2.2000 mm): Track [HAPTIC_GATE] on F.Cu, length 1.9800 mm
+    @(26.5250 mm, 2.2000 mm): Pad 1 [HAPTIC_GATE_DRIVE] of R16 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(28.0900 mm, 7.0000 mm): Track [VBAT_SW] on F.Cu, length 2.6600 mm
+    @(29.1530 mm, 6.2850 mm): Pad 3 [GND] of J_MOT on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(60.9600 mm, 6.8200 mm): Track [VBAT] on F.Cu, length 0.7600 mm
+    @(59.7600 mm, 7.3470 mm): Pad 4 [3V3] of J_UART on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(30.7500 mm, 6.2900 mm): Track [VBAT_SW] on F.Cu, length 2.2400 mm
+    @(31.2860 mm, 4.7040 mm): Pad 2 [HAPTIC_LOW] of D3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(60.2000 mm, 6.8200 mm): Track [VBAT] on F.Cu, length 2.0700 mm
+    @(59.7600 mm, 7.3470 mm): Pad 4 [3V3] of J_UART on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(65.3300 mm, 5.3700 mm): Track [CHG_PROG] on F.Cu, length 1.1700 mm
+    @(64.9630 mm, 6.8240 mm): Pad 3 [GND] of SW3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(34.7200 mm, 8.4000 mm): Track [XTAL_N] on F.Cu, length 2.6800 mm
+    @(34.7230 mm, 7.0220 mm): Pad 4 [GND] of Y1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(65.3300 mm, 6.5400 mm): Track [CHG_PROG] on F.Cu, length 0.8000 mm
+    @(64.9630 mm, 6.8240 mm): Pad 3 [GND] of SW3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(66.1300 mm, 7.7000 mm): Track [USB_VBUS] on F.Cu, length 2.6000 mm
+    @(66.1330 mm, 6.5390 mm): Pad 1 [CHG_PROG] of R9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(70.2500 mm, 7.7000 mm): Track [USB_CC1] on F.Cu, length 1.5500 mm
+    @(70.0140 mm, 6.5630 mm): Pad 4 [GND] of J_PWR on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(73.5600 mm, 2.4600 mm): Track [USB_CC2] on F.Cu, length 1.9400 mm
+    @(74.1000 mm, 4.6000 mm): Pad 13 [GND] of J_USB on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(43.1300 mm, 6.5000 mm): Via [UART_TX] on F.Cu - B.Cu
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.1300 mm, 5.8000 mm): Via [3V3_RF] on F.Cu - B.Cu
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(70.8500 mm, 5.7900 mm): Track [USB_DP_CORE] on F.Cu, length 0.5500 mm
+    @(71.7970 mm, 5.7870 mm): Pad 5 [USB_VBUS] of U_ESD on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(43.6300 mm, 6.8500 mm): Via [UART_RX] on F.Cu - B.Cu
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(71.4000 mm, 5.7900 mm): Track [USB_DP_CORE] on F.Cu, length 1.7600 mm
+    @(71.2030 mm, 7.7000 mm): Pad 2 [GND] of R5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(71.4000 mm, 5.7900 mm): Track [USB_DP_CORE] on F.Cu, length 1.7600 mm
+    @(71.7970 mm, 5.7870 mm): Pad 5 [USB_VBUS] of U_ESD on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(72.9600 mm, 1.5000 mm): Track [USB_VBUS] on F.Cu, length 3.6000 mm
+    @(72.7470 mm, 3.1870 mm): Pad 3 [GND] of U_ESD on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(48.7700 mm, 0.7000 mm): Via [STRAP2] on F.Cu - B.Cu
+    @(48.5040 mm, 1.5000 mm): Pad 2 [GND] of SW2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(71.8000 mm, 3.1900 mm): Track [USB_DM_PORT] on F.Cu, length 1.6900 mm
+    @(71.7420 mm, 2.0490 mm): Pad 2 [GND] of C14 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(72.0200 mm, 6.8500 mm): Track [USB_DM_PORT] on F.Cu, length 1.3500 mm
+    @(72.0060 mm, 7.7000 mm): Pad 1 [USB_DP_PORT] of R8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(58.1500 mm, 1.9500 mm): Via [SD_SCK] on F.Cu - B.Cu
+    @(57.9140 mm, 1.5000 mm): Pad 1 [3V3] of R18 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(45.7000 mm, 0.9000 mm): Track [BOOT9] on F.Cu, length 6.5300 mm
+    @(48.5040 mm, 1.5000 mm): Pad 2 [GND] of SW2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(59.6500 mm, 1.6000 mm): Via [SD_CS] on F.Cu - B.Cu
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(67.2300 mm, 4.7500 mm): Via [VBAT] on F.Cu - B.Cu
+    @(67.2290 mm, 5.3730 mm): Pad 4 [USB_VBUS] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.1300 mm, 7.2400 mm): Track [3V3_RF] on F.Cu, length 1.4400 mm
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(70.2500 mm, 6.1500 mm): Via [USB_CC1] on F.Cu - B.Cu
+    @(70.0140 mm, 6.5630 mm): Pad 4 [GND] of J_PWR on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(70.8500 mm, 2.2000 mm): Via [USB_DP_PORT] on F.Cu - B.Cu
+    @(70.2420 mm, 2.0490 mm): Pad 1 [3V3] of C14 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(43.1300 mm, 7.2400 mm): Track [UART_TX] on F.Cu, length 0.7400 mm
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(52.4800 mm, 5.3000 mm): Track [RF_OUT] on F.Cu, length 1.2900 mm
+    @(53.4000 mm, 5.1500 mm): Pad 2 [GND] of J_RF on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(53.7700 mm, 5.3000 mm): Track [RF_OUT] on F.Cu, length 1.7500 mm
+    @(53.4000 mm, 5.1500 mm): Pad 2 [GND] of J_RF on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(53.7700 mm, 5.1500 mm): Track [RF_OUT] on F.Cu, length 1.0800 mm
+    @(53.4000 mm, 5.1500 mm): Pad 2 [GND] of J_RF on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(71.4000 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(71.2030 mm, 7.7000 mm): Pad 2 [GND] of R5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(71.8000 mm, 1.5000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+    @(71.7420 mm, 2.0490 mm): Pad 2 [GND] of C14 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(48.7700 mm, 2.8000 mm): Track [STRAP2] on F.Cu, length 2.1000 mm
+    @(48.5040 mm, 1.5000 mm): Pad 2 [GND] of SW2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(72.0200 mm, 8.2000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+    @(72.0060 mm, 7.7000 mm): Pad 1 [USB_DP_PORT] of R8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(72.9600 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+    @(72.7470 mm, 5.7870 mm): Pad 4 [USB_DM_CORE] of U_ESD on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(72.9700 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+    @(72.9560 mm, 7.7000 mm): Pad 2 [USB_DP_CORE] of R8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(73.5600 mm, 4.4000 mm): Via [USB_CC2] on F.Cu - B.Cu
+    @(74.1000 mm, 4.6000 mm): Pad 13 [GND] of J_USB on F.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(65.3300 mm, 3.7000 mm): Via [CHG_STAT] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(14.9700 mm, 8.4000 mm): Track [BTN_ERASE] on B.Cu, length 2.9500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(22.2500 mm, 7.3000 mm): Track [CHG_STAT] on B.Cu, length 3.6000 mm
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on B.Cu, priority 0
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.2248 mm)
+    Rule: board setup constraints; warning
+    @(22.7500 mm, 8.2000 mm): Via [HAPTIC_GATE_DRIVE] on F.Cu - B.Cu
+    @(23.0200 mm, 8.6500 mm): Via [3V3] on F.Cu - B.Cu
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.2385 mm)
+    Rule: board setup constraints; warning
+    @(23.7500 mm, 8.2000 mm): Via [LED_GREEN_SINK] on F.Cu - B.Cu
+    @(24.2500 mm, 8.4000 mm): Via [BTN_MODE] on F.Cu - B.Cu
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.1610 mm)
+    Rule: board setup constraints; warning
+    @(39.2000 mm, 3.0000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(39.5000 mm, 3.3500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.2099 mm)
+    Rule: board setup constraints; warning
+    @(42.6300 mm, 8.4000 mm): Via [XTAL_N] on F.Cu - B.Cu
+    @(42.1300 mm, 8.5000 mm): Via [XTAL_P_CORE] on F.Cu - B.Cu
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.0500 mm)
+    Rule: board setup constraints; warning
+    @(67.2300 mm, 5.1000 mm): Via [USB_VBUS] on F.Cu - B.Cu
+    @(67.2300 mm, 4.7500 mm): Via [VBAT] on F.Cu - B.Cu
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(72.0200 mm, 8.2000 mm): Via [USB_DM_PORT] on F.Cu - B.Cu
+    @(72.0100 mm, 8.2000 mm): Via [USB_DP_PORT] on F.Cu - B.Cu
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.0501 mm)
+    Rule: board setup constraints; warning
+    @(72.9600 mm, 7.5500 mm): Via [USB_DP_CORE] on F.Cu - B.Cu
+    @(72.9700 mm, 7.2000 mm): Via [USB_DM_CORE] on F.Cu - B.Cu
+
+** Found 7 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.9700 mm, 8.4000 mm): Track [BTN_ERASE] on B.Cu, length 2.9500 mm
+    @(25.1500 mm, 5.6500 mm): Track [BTN_ERASE] on F.Cu, length 0.7000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(65.3300 mm, 3.7000 mm): Via [CHG_STAT] on F.Cu - B.Cu
+    @(22.2500 mm, 7.3000 mm): Track [CHG_STAT] on B.Cu, length 3.6000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.3500 mm, 0.3500 mm): Zone [GND] on F.Cu, priority 0
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+
+** Found 199 Footprint errors **
+[net_conflict]: Pad net (MCU_EN) doesn't match net given by schematic (/MCU_EN)
+    Local override; warning
+    @(39.7220 mm, 1.5200 mm): Pad 1 [MCU_EN] of C1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(40.6720 mm, 1.5200 mm): Pad 2 [GND] of C1 on F.Cu
+[net_conflict]: Pad net (3V3_RF) doesn't match net given by schematic (/3V3_RF)
+    Local override; warning
+    @(48.0940 mm, 6.6030 mm): Pad 1 [3V3_RF] of C2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(49.5940 mm, 6.6030 mm): Pad 2 [GND] of C2 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(50.2530 mm, 7.7000 mm): Pad 1 [3V3] of C3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(51.2030 mm, 7.7000 mm): Pad 2 [GND] of C3 on F.Cu
+[net_conflict]: Pad net (3V3_RTC) doesn't match net given by schematic (/3V3_RTC)
+    Local override; warning
+    @(36.2010 mm, 1.6360 mm): Pad 1 [3V3_RTC] of C4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(37.1510 mm, 1.6360 mm): Pad 2 [GND] of C4 on F.Cu
+[net_conflict]: Pad net (VDD_SPI) doesn't match net given by schematic (/VDD_SPI)
+    Local override; warning
+    @(49.5250 mm, 1.5510 mm): Pad 1 [VDD_SPI] of C5 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(50.4750 mm, 1.5510 mm): Pad 2 [GND] of C5 on F.Cu
+[net_conflict]: Pad net (XTAL_N) doesn't match net given by schematic (/XTAL_N)
+    Local override; warning
+    @(32.8260 mm, 7.7000 mm): Pad 1 [XTAL_N] of C6 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(33.7760 mm, 7.7000 mm): Pad 2 [GND] of C6 on F.Cu
+[net_conflict]: Pad net (XTAL_P_MATCH) doesn't match net given by schematic (/XTAL_P_MATCH)
+    Local override; warning
+    @(37.3580 mm, 7.7000 mm): Pad 1 [XTAL_P_MATCH] of C7 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(38.3080 mm, 7.7000 mm): Pad 2 [GND] of C7 on F.Cu
+[net_conflict]: Pad net (RF_LNA) doesn't match net given by schematic (/RF_LNA)
+    Local override; warning
+    @(52.2200 mm, 3.6000 mm): Pad 1 [RF_LNA] of C8 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(52.7800 mm, 3.6000 mm): Pad 2 [GND] of C8 on F.Cu
+[net_conflict]: Pad net (RF_OUT) doesn't match net given by schematic (/RF_OUT)
+    Local override; warning
+    @(53.7700 mm, 3.5500 mm): Pad 1 [RF_OUT] of C9 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(54.3300 mm, 3.5500 mm): Pad 2 [GND] of C9 on F.Cu
+[net_conflict]: Pad net (USB_VBUS) doesn't match net given by schematic (/USB_VBUS)
+    Local override; warning
+    @(72.9630 mm, 1.5000 mm): Pad 1 [USB_VBUS] of C10 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(74.4630 mm, 1.5000 mm): Pad 2 [GND] of C10 on F.Cu
+[net_conflict]: Pad net (USB_VBUS) doesn't match net given by schematic (/USB_VBUS)
+    Local override; warning
+    @(66.1350 mm, 7.7000 mm): Pad 1 [USB_VBUS] of C11 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(67.6350 mm, 7.7000 mm): Pad 2 [GND] of C11 on F.Cu
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(67.5670 mm, 1.5000 mm): Pad 1 [VBAT] of C12 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(69.0670 mm, 1.5000 mm): Pad 2 [GND] of C12 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(23.0250 mm, 8.0000 mm): Pad 1 [3V3] of C13 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(23.9750 mm, 8.0000 mm): Pad 2 [GND] of C13 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(70.2420 mm, 2.0490 mm): Pad 1 [3V3] of C14 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(71.7420 mm, 2.0490 mm): Pad 2 [GND] of C14 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(5.7250 mm, 2.0000 mm): Pad 1 [3V3] of C15 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(6.6750 mm, 2.0000 mm): Pad 2 [GND] of C15 on F.Cu
+[net_conflict]: Pad net (LED_GREEN_A) doesn't match net given by schematic (/LED_GREEN_A)
+    Local override; warning
+    @(16.0000 mm, 2.2000 mm): Pad 1 [LED_GREEN_A] of D1 on F.Cu
+[net_conflict]: Pad net (LED_GREEN_SINK) doesn't match net given by schematic (/LED_GREEN_SINK)
+    Local override; warning
+    @(17.0000 mm, 2.2000 mm): Pad 2 [LED_GREEN_SINK] of D1 on F.Cu
+[net_conflict]: Pad net (LED_RED_A) doesn't match net given by schematic (/LED_RED_A)
+    Local override; warning
+    @(16.0000 mm, 4.4000 mm): Pad 1 [LED_RED_A] of D2 on F.Cu
+[net_conflict]: Pad net (LED_RED_SINK) doesn't match net given by schematic (/LED_RED_SINK)
+    Local override; warning
+    @(17.0000 mm, 4.4000 mm): Pad 2 [LED_RED_SINK] of D2 on F.Cu
+[net_conflict]: Pad net (VBAT_SW) doesn't match net given by schematic (/VBAT_SW)
+    Local override; warning
+    @(28.0860 mm, 4.7040 mm): Pad 1 [VBAT_SW] of D3 on F.Cu
+[net_conflict]: Pad net (HAPTIC_LOW) doesn't match net given by schematic (/HAPTIC_LOW)
+    Local override; warning
+    @(31.2860 mm, 4.7040 mm): Pad 2 [HAPTIC_LOW] of D3 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(45.4840 mm, 7.7000 mm): Pad 1 [3V3] of FB1 on F.Cu
+[net_conflict]: Pad net (3V3_RF) doesn't match net given by schematic (/3V3_RF)
+    Local override; warning
+    @(46.9840 mm, 7.7000 mm): Pad 2 [3V3_RF] of FB1 on F.Cu
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(61.5990 mm, 1.7220 mm): Pad 1 [VBAT] of J_BAT on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(62.5990 mm, 1.7220 mm): Pad 2 [GND] of J_BAT on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(59.9990 mm, 1.7220 mm): Pad 3 [GND] of J_BAT on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(64.1990 mm, 1.7220 mm): Pad 4 [GND] of J_BAT on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(1.7000 mm, 4.6000 mm): Pad 1 [3V3] of J_IMU on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(2.7000 mm, 4.6000 mm): Pad 2 [GND] of J_IMU on F.Cu
+[net_conflict]: Pad net (I2C_SDA) doesn't match net given by schematic (/I2C_SDA)
+    Local override; warning
+    @(3.7000 mm, 4.6000 mm): Pad 3 [I2C_SDA] of J_IMU on F.Cu
+[net_conflict]: Pad net (I2C_SCL) doesn't match net given by schematic (/I2C_SCL)
+    Local override; warning
+    @(4.7000 mm, 4.6000 mm): Pad 4 [I2C_SCL] of J_IMU on F.Cu
+[net_conflict]: Pad net (VBAT_SW) doesn't match net given by schematic (/VBAT_SW)
+    Local override; warning
+    @(30.7530 mm, 6.2850 mm): Pad 1 [VBAT_SW] of J_MOT on F.Cu
+[net_conflict]: Pad net (HAPTIC_LOW) doesn't match net given by schematic (/HAPTIC_LOW)
+    Local override; warning
+    @(31.7530 mm, 6.2850 mm): Pad 2 [HAPTIC_LOW] of J_MOT on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(29.1530 mm, 6.2850 mm): Pad 3 [GND] of J_MOT on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(33.3530 mm, 6.2850 mm): Pad 4 [GND] of J_MOT on F.Cu
+[net_conflict]: Pad net (VBAT_SW) doesn't match net given by schematic (/VBAT_SW)
+    Local override; warning
+    @(68.1140 mm, 3.9630 mm): Pad 1 [VBAT_SW] of J_PWR on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(69.0640 mm, 3.9630 mm): Pad 2 [GND] of J_PWR on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(70.0140 mm, 3.9630 mm): Pad 3 [3V3] of J_PWR on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(70.0140 mm, 6.5630 mm): Pad 4 [GND] of J_PWR on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(68.1140 mm, 6.5630 mm): Pad 5 [GND] of J_PWR on F.Cu
+[net_conflict]: Pad net (RF_OUT) doesn't match net given by schematic (/RF_OUT)
+    Local override; warning
+    @(54.8500 mm, 5.1500 mm): Pad 1 [RF_OUT] of J_RF on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(53.4000 mm, 5.1500 mm): Pad 2 [GND] of J_RF on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(56.3000 mm, 5.1500 mm): Pad 3 [GND] of J_RF on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(57.1500 mm, 4.2000 mm): Pad 1 [3V3] of J_SD on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(57.6500 mm, 4.2000 mm): Pad 2 [GND] of J_SD on F.Cu
+[net_conflict]: Pad net (SD_SCK) doesn't match net given by schematic (/SD_SCK)
+    Local override; warning
+    @(58.1500 mm, 4.2000 mm): Pad 3 [SD_SCK] of J_SD on F.Cu
+[net_conflict]: Pad net (SD_MOSI) doesn't match net given by schematic (/SD_MOSI)
+    Local override; warning
+    @(58.6500 mm, 4.2000 mm): Pad 4 [SD_MOSI] of J_SD on F.Cu
+[net_conflict]: Pad net (SD_MISO) doesn't match net given by schematic (/SD_MISO)
+    Local override; warning
+    @(59.1500 mm, 4.2000 mm): Pad 5 [SD_MISO] of J_SD on F.Cu
+[net_conflict]: Pad net (SD_CS) doesn't match net given by schematic (/SD_CS)
+    Local override; warning
+    @(59.6500 mm, 4.2000 mm): Pad 6 [SD_CS] of J_SD on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(8.0000 mm, 2.4000 mm): Pad 1 [3V3] of J_TOUCH on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(9.0000 mm, 2.4000 mm): Pad 2 [GND] of J_TOUCH on F.Cu
+[net_conflict]: Pad net (TOUCH_OUT) doesn't match net given by schematic (/TOUCH_OUT)
+    Local override; warning
+    @(10.0000 mm, 2.4000 mm): Pad 3 [TOUCH_OUT] of J_TOUCH on F.Cu
+[net_conflict]: Pad net (UART_TX) doesn't match net given by schematic (/UART_TX)
+    Local override; warning
+    @(55.9500 mm, 7.3470 mm): Pad 1 [UART_TX] of J_UART on F.Cu
+[net_conflict]: Pad net (UART_RX) doesn't match net given by schematic (/UART_RX)
+    Local override; warning
+    @(57.2200 mm, 7.3470 mm): Pad 2 [UART_RX] of J_UART on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(58.4900 mm, 7.3470 mm): Pad 3 [GND] of J_UART on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(59.7600 mm, 7.3470 mm): Pad 4 [3V3] of J_UART on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/USB_VBUS)
+    Local override; warning
+    @(75.2000 mm, 3.1000 mm): Pad 1 [GND] of J_USB on F.Cu
+[net_conflict]: Pad net (USB_VBUS) doesn't match net given by schematic (/USB_VBUS)
+    Local override; warning
+    @(76.0000 mm, 3.1000 mm): Pad 2 [USB_VBUS] of J_USB on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(76.8000 mm, 3.1000 mm): Pad 3 [GND] of J_USB on F.Cu
+[net_conflict]: Pad net (USB_CC1) doesn't match net given by schematic (/USB_CC1)
+    Local override; warning
+    @(77.6000 mm, 3.1000 mm): Pad 5 [USB_CC1] of J_USB on F.Cu
+[net_conflict]: Pad net (USB_DP_PORT) doesn't match net given by schematic (/USB_DP_PORT)
+    Local override; warning
+    @(78.1500 mm, 3.1000 mm): Pad 7 [USB_DP_PORT] of J_USB on F.Cu
+[net_conflict]: Pad net (USB_DM_PORT) doesn't match net given by schematic (/USB_DM_PORT)
+    Local override; warning
+    @(78.6500 mm, 3.1000 mm): Pad 9 [USB_DM_PORT] of J_USB on F.Cu
+[net_conflict]: Pad net (USB_CC2) doesn't match net given by schematic (/USB_CC2)
+    Local override; warning
+    @(79.2000 mm, 3.1000 mm): Pad 6 [USB_CC2] of J_USB on F.Cu
+[net_conflict]: Pad net (USB_VBUS) doesn't match net given by schematic (/USB_DM_PORT)
+    Local override; warning
+    @(80.8000 mm, 3.1000 mm): Pad 10 [USB_VBUS] of J_USB on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(81.6000 mm, 3.1000 mm): Pad 12 [GND] of J_USB on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(74.1000 mm, 4.6000 mm): Pad 13 [GND] of J_USB on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(82.7000 mm, 4.6000 mm): Pad 14 [GND] of J_USB on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(74.1000 mm, 7.1000 mm): Pad 15 [GND] of J_USB on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(82.7000 mm, 7.1000 mm): Pad 16 [GND] of J_USB on F.Cu
+[net_conflict]: No pad found for pin 11 (/GND) in schematic
+    Local override; warning
+    @(78.4000 mm, 4.6000 mm): Footprint J_USB
+[net_conflict]: No pad found for pin 4 (/GND) in schematic
+    Local override; warning
+    @(78.4000 mm, 4.6000 mm): Footprint J_USB
+[net_conflict]: No pad found for pin 8 (/USB_DP_PORT) in schematic
+    Local override; warning
+    @(78.4000 mm, 4.6000 mm): Footprint J_USB
+[net_conflict]: Pad net (XTAL_P_CORE) doesn't match net given by schematic (/XTAL_P_CORE)
+    Local override; warning
+    @(39.1230 mm, 7.7000 mm): Pad 1 [XTAL_P_CORE] of L1 on F.Cu
+[net_conflict]: Pad net (XTAL_P_MATCH) doesn't match net given by schematic (/XTAL_P_MATCH)
+    Local override; warning
+    @(40.0730 mm, 7.7000 mm): Pad 2 [XTAL_P_MATCH] of L1 on F.Cu
+[net_conflict]: Pad net (RF_LNA) doesn't match net given by schematic (/RF_LNA)
+    Local override; warning
+    @(51.9200 mm, 5.3000 mm): Pad 1 [RF_LNA] of L2 on F.Cu
+[net_conflict]: Pad net (RF_OUT) doesn't match net given by schematic (/RF_OUT)
+    Local override; warning
+    @(52.4800 mm, 5.3000 mm): Pad 2 [RF_OUT] of L2 on F.Cu
+[net_conflict]: Pad net (HAPTIC_GATE) doesn't match net given by schematic (/HAPTIC_GATE)
+    Local override; warning
+    @(27.8500 mm, 1.1000 mm): Pad 1 [HAPTIC_GATE] of Q1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(29.7500 mm, 1.1000 mm): Pad 2 [GND] of Q1 on F.Cu
+[net_conflict]: Pad net (HAPTIC_LOW) doesn't match net given by schematic (/HAPTIC_LOW)
+    Local override; warning
+    @(28.8000 mm, 3.3000 mm): Pad 3 [HAPTIC_LOW] of Q1 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(37.9750 mm, 2.3600 mm): Pad 1 [3V3] of R1 on F.Cu
+[net_conflict]: Pad net (MCU_EN) doesn't match net given by schematic (/MCU_EN)
+    Local override; warning
+    @(38.9250 mm, 2.3600 mm): Pad 2 [MCU_EN] of R1 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(51.2750 mm, 2.2500 mm): Pad 1 [3V3] of R2 on F.Cu
+[net_conflict]: Pad net (BOOT9) doesn't match net given by schematic (/BOOT9)
+    Local override; warning
+    @(52.2250 mm, 2.2500 mm): Pad 2 [BOOT9] of R2 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(47.8250 mm, 2.8000 mm): Pad 1 [3V3] of R3 on F.Cu
+[net_conflict]: Pad net (STRAP2) doesn't match net given by schematic (/STRAP2)
+    Local override; warning
+    @(48.7750 mm, 2.8000 mm): Pad 2 [STRAP2] of R3 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(35.4070 mm, 2.6010 mm): Pad 1 [3V3] of R4 on F.Cu
+[net_conflict]: Pad net (3V3_RTC) doesn't match net given by schematic (/3V3_RTC)
+    Local override; warning
+    @(36.3570 mm, 2.6010 mm): Pad 2 [3V3_RTC] of R4 on F.Cu
+[net_conflict]: Pad net (USB_CC1) doesn't match net given by schematic (/USB_CC1)
+    Local override; warning
+    @(70.2530 mm, 7.7000 mm): Pad 1 [USB_CC1] of R5 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(71.2030 mm, 7.7000 mm): Pad 2 [GND] of R5 on F.Cu
+[net_conflict]: Pad net (USB_CC2) doesn't match net given by schematic (/USB_CC2)
+    Local override; warning
+    @(73.5640 mm, 2.4630 mm): Pad 1 [USB_CC2] of R6 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(74.5140 mm, 2.4630 mm): Pad 2 [GND] of R6 on F.Cu
+[net_conflict]: Pad net (USB_DM_PORT) doesn't match net given by schematic (/USB_DM_PORT)
+    Local override; warning
+    @(72.0240 mm, 6.8540 mm): Pad 1 [USB_DM_PORT] of R7 on F.Cu
+[net_conflict]: Pad net (USB_DM_CORE) doesn't match net given by schematic (/USB_DM_CORE)
+    Local override; warning
+    @(72.9740 mm, 6.8540 mm): Pad 2 [USB_DM_CORE] of R7 on F.Cu
+[net_conflict]: Pad net (USB_DP_PORT) doesn't match net given by schematic (/USB_DP_PORT)
+    Local override; warning
+    @(72.0060 mm, 7.7000 mm): Pad 1 [USB_DP_PORT] of R8 on F.Cu
+[net_conflict]: Pad net (USB_DP_CORE) doesn't match net given by schematic (/USB_DP_CORE)
+    Local override; warning
+    @(72.9560 mm, 7.7000 mm): Pad 2 [USB_DP_CORE] of R8 on F.Cu
+[net_conflict]: Pad net (CHG_PROG) doesn't match net given by schematic (/CHG_PROG)
+    Local override; warning
+    @(66.1330 mm, 6.5390 mm): Pad 1 [CHG_PROG] of R9 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(67.0830 mm, 6.5390 mm): Pad 2 [GND] of R9 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(5.7250 mm, 4.6000 mm): Pad 1 [3V3] of R10 on F.Cu
+[net_conflict]: Pad net (I2C_SDA) doesn't match net given by schematic (/I2C_SDA)
+    Local override; warning
+    @(6.6750 mm, 4.6000 mm): Pad 2 [I2C_SDA] of R10 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(5.7250 mm, 7.2000 mm): Pad 1 [3V3] of R11 on F.Cu
+[net_conflict]: Pad net (I2C_SCL) doesn't match net given by schematic (/I2C_SCL)
+    Local override; warning
+    @(6.6750 mm, 7.2000 mm): Pad 2 [I2C_SCL] of R11 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(14.0250 mm, 7.0000 mm): Pad 1 [3V3] of R12 on F.Cu
+[net_conflict]: Pad net (BTN_ERASE) doesn't match net given by schematic (/BTN_ERASE)
+    Local override; warning
+    @(14.9750 mm, 7.0000 mm): Pad 2 [BTN_ERASE] of R12 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(20.0250 mm, 7.0000 mm): Pad 1 [3V3] of R13 on F.Cu
+[net_conflict]: Pad net (BTN_MODE) doesn't match net given by schematic (/BTN_MODE)
+    Local override; warning
+    @(20.9750 mm, 7.0000 mm): Pad 2 [BTN_MODE] of R13 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(18.5250 mm, 2.2000 mm): Pad 1 [3V3] of R14 on F.Cu
+[net_conflict]: Pad net (LED_GREEN_A) doesn't match net given by schematic (/LED_GREEN_A)
+    Local override; warning
+    @(19.4750 mm, 2.2000 mm): Pad 2 [LED_GREEN_A] of R14 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(18.5250 mm, 4.4000 mm): Pad 1 [3V3] of R15 on F.Cu
+[net_conflict]: Pad net (LED_RED_A) doesn't match net given by schematic (/LED_RED_A)
+    Local override; warning
+    @(19.4750 mm, 4.4000 mm): Pad 2 [LED_RED_A] of R15 on F.Cu
+[net_conflict]: Pad net (HAPTIC_GATE_DRIVE) doesn't match net given by schematic (/HAPTIC_GATE_DRIVE)
+    Local override; warning
+    @(26.5250 mm, 2.2000 mm): Pad 1 [HAPTIC_GATE_DRIVE] of R16 on F.Cu
+[net_conflict]: Pad net (HAPTIC_GATE) doesn't match net given by schematic (/HAPTIC_GATE)
+    Local override; warning
+    @(27.4750 mm, 2.2000 mm): Pad 2 [HAPTIC_GATE] of R16 on F.Cu
+[net_conflict]: Pad net (HAPTIC_GATE) doesn't match net given by schematic (/HAPTIC_GATE)
+    Local override; warning
+    @(26.0300 mm, 3.9110 mm): Pad 1 [HAPTIC_GATE] of R17 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(26.9800 mm, 3.9110 mm): Pad 2 [GND] of R17 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(57.9140 mm, 1.5000 mm): Pad 1 [3V3] of R18 on F.Cu
+[net_conflict]: Pad net (SD_CS) doesn't match net given by schematic (/SD_CS)
+    Local override; warning
+    @(58.8640 mm, 1.5000 mm): Pad 2 [SD_CS] of R18 on F.Cu
+[net_conflict]: Pad net (TOUCH_OUT) doesn't match net given by schematic (/TOUCH_OUT)
+    Local override; warning
+    @(13.0250 mm, 2.4000 mm): Pad 1 [TOUCH_OUT] of R19 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(13.9750 mm, 2.4000 mm): Pad 2 [GND] of R19 on F.Cu
+[net_conflict]: Pad net (MCU_EN) doesn't match net given by schematic (/MCU_EN)
+    Local override; warning
+    @(31.5560 mm, 1.5000 mm): Pad 1 [MCU_EN] of SW1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(34.3560 mm, 1.5000 mm): Pad 2 [GND] of SW1 on F.Cu
+[net_conflict]: Pad net (BOOT9) doesn't match net given by schematic (/BOOT9)
+    Local override; warning
+    @(45.7040 mm, 1.5000 mm): Pad 1 [BOOT9] of SW2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(48.5040 mm, 1.5000 mm): Pad 2 [GND] of SW2 on F.Cu
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(60.9630 mm, 6.8240 mm): Pad 1 [VBAT] of SW3 on F.Cu
+[net_conflict]: Pad net (VBAT_SW) doesn't match net given by schematic (/VBAT_SW)
+    Local override; warning
+    @(62.9630 mm, 6.8240 mm): Pad 2 [VBAT_SW] of SW3 on F.Cu
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(64.9630 mm, 6.8240 mm): Pad 3 [GND] of SW3 on F.Cu
+[net_conflict]: Pad net (BTN_ERASE) doesn't match net given by schematic (/BTN_ERASE)
+    Local override; warning
+    @(10.1000 mm, 7.0000 mm): Pad 1 [BTN_ERASE] of SW4 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(12.9000 mm, 7.0000 mm): Pad 2 [GND] of SW4 on F.Cu
+[net_conflict]: Pad net (BTN_MODE) doesn't match net given by schematic (/BTN_MODE)
+    Local override; warning
+    @(16.1000 mm, 7.0000 mm): Pad 1 [BTN_MODE] of SW5 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(18.9000 mm, 7.0000 mm): Pad 2 [GND] of SW5 on F.Cu
+[net_conflict]: Pad net (RF_LNA) doesn't match net given by schematic (/RF_LNA)
+    Local override; warning
+    @(40.4800 mm, 6.5850 mm): Pad 1 [RF_LNA] of U1 on F.Cu
+[net_conflict]: Pad net (3V3_RF) doesn't match net given by schematic (/3V3_RF)
+    Local override; warning
+    @(40.4800 mm, 6.0850 mm): Pad 2 [3V3_RF] of U1 on F.Cu
+[net_conflict]: Pad net (3V3_RF) doesn't match net given by schematic (/3V3_RF)
+    Local override; warning
+    @(40.4800 mm, 5.5850 mm): Pad 3 [3V3_RF] of U1 on F.Cu
+[net_conflict]: Pad net (I2C_SDA) doesn't match net given by schematic (/I2C_SDA)
+    Local override; warning
+    @(40.4800 mm, 5.0850 mm): Pad 4 [I2C_SDA] of U1 on F.Cu
+[net_conflict]: Pad net (I2C_SCL) doesn't match net given by schematic (/I2C_SCL)
+    Local override; warning
+    @(40.4800 mm, 4.5850 mm): Pad 5 [I2C_SCL] of U1 on F.Cu
+[net_conflict]: Pad net (STRAP2) doesn't match net given by schematic (/STRAP2)
+    Local override; warning
+    @(40.4800 mm, 4.0850 mm): Pad 6 [STRAP2] of U1 on F.Cu
+[net_conflict]: Pad net (MCU_EN) doesn't match net given by schematic (/MCU_EN)
+    Local override; warning
+    @(40.4800 mm, 3.5850 mm): Pad 7 [MCU_EN] of U1 on F.Cu
+[net_conflict]: Pad net (TOUCH_OUT) doesn't match net given by schematic (/TOUCH_OUT)
+    Local override; warning
+    @(40.4800 mm, 3.0850 mm): Pad 8 [TOUCH_OUT] of U1 on F.Cu
+[net_conflict]: Pad net (SD_MOSI) doesn't match net given by schematic (/SD_MOSI)
+    Local override; warning
+    @(41.1300 mm, 2.4350 mm): Pad 9 [SD_MOSI] of U1 on F.Cu
+[net_conflict]: Pad net (SD_MISO) doesn't match net given by schematic (/SD_MISO)
+    Local override; warning
+    @(41.6300 mm, 2.4350 mm): Pad 10 [SD_MISO] of U1 on F.Cu
+[net_conflict]: Pad net (3V3_RTC) doesn't match net given by schematic (/3V3_RTC)
+    Local override; warning
+    @(42.1300 mm, 2.4350 mm): Pad 11 [3V3_RTC] of U1 on F.Cu
+[net_conflict]: Pad net (SD_SCK) doesn't match net given by schematic (/SD_SCK)
+    Local override; warning
+    @(42.6300 mm, 2.4350 mm): Pad 12 [SD_SCK] of U1 on F.Cu
+[net_conflict]: Pad net (SD_CS) doesn't match net given by schematic (/SD_CS)
+    Local override; warning
+    @(43.1300 mm, 2.4350 mm): Pad 13 [SD_CS] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(43.6300 mm, 2.4350 mm): Pad 14 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (BOOT9) doesn't match net given by schematic (/BOOT9)
+    Local override; warning
+    @(44.1300 mm, 2.4350 mm): Pad 15 [BOOT9] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(44.6300 mm, 2.4350 mm): Pad 16 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(45.2800 mm, 3.0850 mm): Pad 17 [3V3] of U1 on F.Cu
+[net_conflict]: Pad net (VDD_SPI) doesn't match net given by schematic (/VDD_SPI)
+    Local override; warning
+    @(45.2800 mm, 3.5850 mm): Pad 18 [VDD_SPI] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(45.2800 mm, 4.0850 mm): Pad 19 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(45.2800 mm, 4.5850 mm): Pad 20 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(45.2800 mm, 5.0850 mm): Pad 21 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(45.2800 mm, 5.5850 mm): Pad 22 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(45.2800 mm, 6.0850 mm): Pad 23 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(45.2800 mm, 6.5850 mm): Pad 24 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (USB_DM_CORE) doesn't match net given by schematic (/USB_DM_CORE)
+    Local override; warning
+    @(44.6300 mm, 7.2350 mm): Pad 25 [USB_DM_CORE] of U1 on F.Cu
+[net_conflict]: Pad net (USB_DP_CORE) doesn't match net given by schematic (/USB_DP_CORE)
+    Local override; warning
+    @(44.1300 mm, 7.2350 mm): Pad 26 [USB_DP_CORE] of U1 on F.Cu
+[net_conflict]: Pad net (UART_RX) doesn't match net given by schematic (/UART_RX)
+    Local override; warning
+    @(43.6300 mm, 7.2350 mm): Pad 27 [UART_RX] of U1 on F.Cu
+[net_conflict]: Pad net (UART_TX) doesn't match net given by schematic (/UART_TX)
+    Local override; warning
+    @(43.1300 mm, 7.2350 mm): Pad 28 [UART_TX] of U1 on F.Cu
+[net_conflict]: Pad net (XTAL_N) doesn't match net given by schematic (/XTAL_N)
+    Local override; warning
+    @(42.6300 mm, 7.2350 mm): Pad 29 [XTAL_N] of U1 on F.Cu
+[net_conflict]: Pad net (XTAL_P_CORE) doesn't match net given by schematic (/XTAL_P_CORE)
+    Local override; warning
+    @(42.1300 mm, 7.2350 mm): Pad 30 [XTAL_P_CORE] of U1 on F.Cu
+[net_conflict]: Pad net (3V3_RF) doesn't match net given by schematic (/3V3_RF)
+    Local override; warning
+    @(41.6300 mm, 7.2350 mm): Pad 31 [3V3_RF] of U1 on F.Cu
+[net_conflict]: Pad net (3V3_RF) doesn't match net given by schematic (/3V3_RF)
+    Local override; warning
+    @(41.1300 mm, 7.2350 mm): Pad 32 [3V3_RF] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(42.8800 mm, 4.8350 mm): Pad 33 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (CHG_STAT) doesn't match net given by schematic (/CHG_STAT)
+    Local override; warning
+    @(65.3290 mm, 2.7730 mm): Pad 1 [CHG_STAT] of U2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(66.2790 mm, 2.7730 mm): Pad 2 [GND] of U2 on F.Cu
+[net_conflict]: Pad net (VBAT) doesn't match net given by schematic (/VBAT)
+    Local override; warning
+    @(67.2290 mm, 2.7730 mm): Pad 3 [VBAT] of U2 on F.Cu
+[net_conflict]: Pad net (USB_VBUS) doesn't match net given by schematic (/USB_VBUS)
+    Local override; warning
+    @(67.2290 mm, 5.3730 mm): Pad 4 [USB_VBUS] of U2 on F.Cu
+[net_conflict]: Pad net (CHG_PROG) doesn't match net given by schematic (/CHG_PROG)
+    Local override; warning
+    @(65.3290 mm, 5.3730 mm): Pad 5 [CHG_PROG] of U2 on F.Cu
+[net_conflict]: Pad net (I2C_SCL) doesn't match net given by schematic (/I2C_SCL)
+    Local override; warning
+    @(22.2500 mm, 2.7500 mm): Pad 1 [I2C_SCL] of U3 on F.Cu
+[net_conflict]: Pad net (I2C_SDA) doesn't match net given by schematic (/I2C_SDA)
+    Local override; warning
+    @(22.7500 mm, 2.7500 mm): Pad 2 [I2C_SDA] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(23.2500 mm, 2.7500 mm): Pad 3 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(23.7500 mm, 2.7500 mm): Pad 4 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(24.2500 mm, 2.7500 mm): Pad 5 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(25.1500 mm, 3.6500 mm): Pad 6 [3V3] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(25.1500 mm, 4.1500 mm): Pad 7 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(25.1500 mm, 4.6500 mm): Pad 8 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(25.1500 mm, 5.1500 mm): Pad 9 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (BTN_ERASE) doesn't match net given by schematic (/BTN_ERASE)
+    Local override; warning
+    @(25.1500 mm, 5.6500 mm): Pad 10 [BTN_ERASE] of U3 on F.Cu
+[net_conflict]: Pad net (BTN_MODE) doesn't match net given by schematic (/BTN_MODE)
+    Local override; warning
+    @(24.2500 mm, 6.5500 mm): Pad 11 [BTN_MODE] of U3 on F.Cu
+[net_conflict]: Pad net (LED_GREEN_SINK) doesn't match net given by schematic (/LED_GREEN_SINK)
+    Local override; warning
+    @(23.7500 mm, 6.5500 mm): Pad 12 [LED_GREEN_SINK] of U3 on F.Cu
+[net_conflict]: Pad net (LED_RED_SINK) doesn't match net given by schematic (/LED_RED_SINK)
+    Local override; warning
+    @(23.2500 mm, 6.5500 mm): Pad 13 [LED_RED_SINK] of U3 on F.Cu
+[net_conflict]: Pad net (HAPTIC_GATE_DRIVE) doesn't match net given by schematic (/HAPTIC_GATE_DRIVE)
+    Local override; warning
+    @(22.7500 mm, 6.5500 mm): Pad 14 [HAPTIC_GATE_DRIVE] of U3 on F.Cu
+[net_conflict]: Pad net (CHG_STAT) doesn't match net given by schematic (/CHG_STAT)
+    Local override; warning
+    @(22.2500 mm, 6.5500 mm): Pad 15 [CHG_STAT] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(21.3500 mm, 5.6500 mm): Pad 16 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(21.3500 mm, 5.1500 mm): Pad 17 [GND] of U3 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(21.3500 mm, 4.6500 mm): Pad 18 [3V3] of U3 on F.Cu
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

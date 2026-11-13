@@ -1,0 +1,5 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+U1,TTP223-BA6,SOT-23-6,3.00,6.50,0,Top
+C1,0.1uF,C0402,1.00,7.80,90,Top
+C2,10pF,C0402,5.00,7.80,90,Top
+J1,SM03B-SRSS-TB,JST_SH_3P,3.00,2.20,0,Top

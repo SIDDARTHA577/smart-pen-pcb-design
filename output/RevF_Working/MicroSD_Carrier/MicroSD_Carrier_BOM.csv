@@ -1,0 +1,6 @@
+Item,Reference,Value / Device,Package,Manufacturer,Part Number,Description,Quantity
+1,C1,0.1uF 16V X7R,0402,Samsung Electro-Mechanics,CL05B104KO5NNNC,Decoupling Capacitor,1
+2,C2,10uF 6.3V X5R,0603,Samsung Electro-Mechanics,CL10A106KP8NNNC,Bulk Buffer Capacitor,1
+3,J1,FH12-6S-0.5SH,CONN-SMD-6P-P0.5MM,Hirose Electric,FH12-6S-0.5SH(55),6-Pin 0.5mm FPC Header,1
+4,J2,TF-01A,MicroSD-SMD-9P,Korean Hroparts,TF-01A,MicroSD Push-Push Socket,1
+5,"R1, R2",10k 1% 1/16W,0402,Yageo,RC0402FR-0710KL,Pull-up Resistors,2

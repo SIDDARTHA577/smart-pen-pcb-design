@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SmartPen")(type "KiCad")(uri "${KIPRJMOD}/SmartPen.pretty")(options "")(descr "Smart Pen Footprints"))
+)

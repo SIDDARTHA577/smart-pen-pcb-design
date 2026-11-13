@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "filename": "SmartPen.kicad_pro",
+    "version": 1
+  },
+  "project": {
+    "title": "Smart Pen Hardware System",
+    "company": "RadixView Technologies",
+    "rev": "Rev F"
+  },
+  "schematic": {
+    "drawing": {
+      "default_line_thickness": 0.1524,
+      "default_text_size": 1.27
+    }
+  },
+  "pcbnew": {
+    "last_paths": {
+      "outputdirectory": "gerber/"
+    }
+  }
+}

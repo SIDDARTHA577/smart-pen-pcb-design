@@ -1,0 +1,66 @@
+Automatic footprint metadata for 39 components. Still require exact-parts engineering review: 21.
+The 39 assigned reference puuids were found in public EasyEDA schematic examples.
+NOT validated in EasyEDA Footprint Manager; imported JSON may still require library re-sync.
+Even with all footprint icons green, the circuit is not safe for manufacture until power, RF, battery safety, peripherals, routing, 3D fit and mechanical clearances have been verified.
+Auto-linked parts:
+  R1: R0402
+  C1: C0402
+  R2: R0402
+  R3: R0402
+  FB1: L0603
+  C2: C0603
+  C3: C0402
+  C4: C0402
+  R4: R0402
+  C5: C0402
+  L1: L0402
+  C6: C0402
+  C7: C0402
+  L2: L0201
+  C8: C0201
+  C9: C0201
+  R5: R0402
+  R6: R0402
+  R7: R0402
+  R8: R0402
+  C10: C0603
+  R9: R0402
+  C11: C0603
+  C12: C0603
+  R10: R0402
+  R11: R0402
+  R12: R0402
+  R13: R0402
+  R14: R0402
+  D1: LED0402
+  R15: R0402
+  D2: LED0402
+  R16: R0402
+  R17: R0402
+  C13: C0402
+  R18: R0402
+  C14: C0603
+  R19: R0402
+  C15: C0402
+Manufacturer-dependent unresolved:
+  U1 QFN32_5x5_P0.5_EP3.7
+  SW1 TACT_2PAD_TBD
+  SW2 TACT_2PAD_TBD
+  Y1 CRYSTAL_4PAD_TBD
+  J_RF UFL_CONNECTOR_TBD
+  J_USB USB_C_16PIN_TBD
+  U_ESD USB_ESD_PART_TBD
+  U2 SOT23-5
+  J_BAT BAT_2PIN_CONNECTOR_TBD
+  J_PWR REGULATOR_CARD_TBD
+  SW3 SLIDE_SWITCH_TBD
+  J_IMU CONN_4P_TBD
+  U3 QFN20_4x4_P0.5_TBD
+  SW4 TACT_2PAD_TBD
+  SW5 TACT_2PAD_TBD
+  Q1 SOT23_GSD_TBD
+  J_MOT MOTOR_2PIN_TBD
+  D3 DIODE_SMD_TBD
+  J_SD CONN_6P_TBD
+  J_TOUCH TOUCH_3PIN_TBD
+  J_UART TESTPAD_4P_TBD

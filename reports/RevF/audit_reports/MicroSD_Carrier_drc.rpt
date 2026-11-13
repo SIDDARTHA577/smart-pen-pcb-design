@@ -1,0 +1,773 @@
+** Drc report for MicroSD_Carrier.kicad_pcb **
+** Created on 2026-11-02T20:20:56 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 213 DRC violations **
+[shorting_items]: Items shorting two nets (nets SD_MOSI and 3V3)
+    Local override; error
+    @(4.9000 mm, 4.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+    @(5.0500 mm, 4.2500 mm): Track [3V3] on F.Cu, length 0.0500 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and SD_MOSI)
+    Local override; error
+    @(4.9500 mm, 4.1000 mm): Track [3V3] on F.Cu, length 0.0500 mm
+    @(4.9000 mm, 4.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(1.0500 mm, 6.2000 mm): Pad 1 [3V3] of C2 on F.Cu
+    @(1.6500 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[shorting_items]: Items shorting two nets (nets GND and <no net>)
+    Local override; error
+    @(2.3000 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.2500 mm
+    @(2.2000 mm, 6.5000 mm): Pad 1 [<no net>] of J2 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and <no net>)
+    Local override; error
+    @(2.3000 mm, 3.8000 mm): Track [GND] on F.Cu, length 2.4000 mm
+    @(2.2000 mm, 6.5000 mm): Pad 1 [<no net>] of J2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0750 mm)
+    Local override; error
+    @(7.8500 mm, 5.9500 mm): Via [GND] on F.Cu - B.Cu
+    @(6.4500 mm, 5.5500 mm): Track [SD_MISO] on F.Cu, length 1.8000 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and GND)
+    Local override; error
+    @(4.4500 mm, 3.2500 mm): Pad 1 [3V3] of J1 on F.Cu
+    @(4.9500 mm, 3.2500 mm): Track [GND] on F.Cu, length 0.3000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(5.5000 mm, 6.5000 mm): Pad 4 [3V3] of J2 on F.Cu
+    @(3.3000 mm, 7.4500 mm): Track [SD_CS] on F.Cu, length 6.0500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(1.0500 mm, 6.2000 mm): Pad 1 [3V3] of C2 on F.Cu
+    @(1.6500 mm, 6.8500 mm): Track [GND] on F.Cu, length 1.2500 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and GND)
+    Local override; error
+    @(4.4500 mm, 3.2500 mm): Pad 1 [3V3] of J1 on F.Cu
+    @(4.6500 mm, 3.2500 mm): Track [GND] on F.Cu, length 0.7000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0750 mm)
+    Local override; error
+    @(5.6500 mm, 5.9500 mm): Via [3V3] on F.Cu - B.Cu
+    @(5.4500 mm, 5.5500 mm): Track [SD_SCK] on F.Cu, length 0.6000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(7.0000 mm, 5.0000 mm): Track [3V3] on F.Cu, length 1.0500 mm
+    @(6.9500 mm, 3.2500 mm): Pad 6 [SD_CS] of J1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0562 mm)
+    Local override; error
+    @(4.4500 mm, 3.2500 mm): Track [3V3] on F.Cu, length 0.8500 mm
+    @(4.4000 mm, 4.3000 mm): Track [SD_MOSI] on F.Cu, length 2.2000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(4.6500 mm, 2.5500 mm): Track [GND] on F.Cu, length 1.1500 mm
+    @(4.4500 mm, 3.2500 mm): Pad 1 [3V3] of J1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0562 mm)
+    Local override; error
+    @(4.4500 mm, 4.1000 mm): Track [3V3] on F.Cu, length 0.5000 mm
+    @(4.4000 mm, 4.3000 mm): Track [SD_MOSI] on F.Cu, length 2.2000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0081 mm)
+    Local override; error
+    @(3.8000 mm, 3.1000 mm): Track [3V3] on F.Cu, length 0.0500 mm
+    @(3.7500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.4500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0081 mm)
+    Local override; error
+    @(3.9000 mm, 3.1000 mm): Track [3V3] on F.Cu, length 0.1000 mm
+    @(3.7500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.4500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(3.8000 mm, 3.0500 mm): Track [3V3] on F.Cu, length 2.5000 mm
+    @(3.7500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.4500 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.1000 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 2.2000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(3.9500 mm, 3.2500 mm): Track [3V3] on F.Cu, length 0.0500 mm
+    @(3.7500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.4500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0081 mm)
+    Local override; error
+    @(3.9000 mm, 3.2000 mm): Track [3V3] on F.Cu, length 0.1000 mm
+    @(3.7500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.4500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0081 mm)
+    Local override; error
+    @(3.9500 mm, 3.2000 mm): Track [3V3] on F.Cu, length 0.0500 mm
+    @(3.7500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.4500 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.1500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.2500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_MISO and SD_CS)
+    Local override; error
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+    @(10.2500 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[shorting_items]: Items shorting two nets (nets SD_MISO and SD_CS)
+    Local override; error
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+    @(10.3000 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.1500 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.2500 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.1500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.2500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_MISO and SD_CS)
+    Local override; error
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+    @(10.1500 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and SD_MISO)
+    Local override; error
+    @(10.3000 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_CS and <no net>)
+    Local override; error
+    @(9.5500 mm, 6.7500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1050 mm)
+    Local override; error
+    @(9.6000 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.5500 mm
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_CS and <no net>)
+    Local override; error
+    @(9.5500 mm, 6.8500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1050 mm)
+    Local override; error
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+    @(9.6000 mm, 6.7500 mm): Track [SD_CS] on F.Cu, length 0.3500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0081 mm)
+    Local override; error
+    @(9.4500 mm, 6.9000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(8.8000 mm, 6.7000 mm): Track [SD_MISO] on F.Cu, length 0.6000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(9.3500 mm, 6.9000 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(8.8000 mm, 6.5000 mm): Pad 7 [SD_MISO] of J2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(3.3000 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 3.2500 mm
+    @(3.8000 mm, 3.0500 mm): Track [3V3] on F.Cu, length 2.5000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(9.3500 mm, 7.4500 mm): Track [SD_CS] on F.Cu, length 0.5500 mm
+    @(8.8000 mm, 6.5000 mm): Pad 7 [SD_MISO] of J2 on F.Cu
+[shorting_items]: Items shorting two nets (nets 3V3 and SD_MISO)
+    Local override; error
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+    @(9.4000 mm, 6.2000 mm): Track [SD_MISO] on F.Cu, length 0.7000 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and SD_MISO)
+    Local override; error
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+    @(9.4000 mm, 6.7000 mm): Track [SD_MISO] on F.Cu, length 0.5000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(8.8000 mm, 6.7000 mm): Track [SD_MISO] on F.Cu, length 0.6000 mm
+    @(9.3500 mm, 7.4500 mm): Track [SD_CS] on F.Cu, length 0.5500 mm
+[shorting_items]: Items shorting two nets (nets SD_MISO and 3V3)
+    Local override; error
+    @(8.8000 mm, 6.5000 mm): Track [SD_MISO] on F.Cu, length 0.2000 mm
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(7.7000 mm, 6.5000 mm): Pad 6 [GND] of J2 on F.Cu
+    @(8.2500 mm, 6.5000 mm): Track [SD_MISO] on F.Cu, length 0.5500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(1.0500 mm, 6.2000 mm): Pad 1 [3V3] of C2 on F.Cu
+    @(2.5500 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(7.0000 mm, 3.9500 mm): Track [3V3] on F.Cu, length 0.3000 mm
+    @(6.9500 mm, 3.2500 mm): Pad 6 [SD_CS] of J1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(6.4500 mm, 3.2500 mm): Track [SD_MISO] on F.Cu, length 2.3000 mm
+    @(6.0000 mm, 4.3000 mm): Via [SD_MOSI] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(6.4500 mm, 5.5500 mm): Track [SD_MISO] on F.Cu, length 1.8000 mm
+    @(6.6000 mm, 6.5000 mm): Pad 5 [SD_SCK] of J2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0081 mm)
+    Local override; error
+    @(4.9000 mm, 4.3000 mm): Track [SD_MOSI] on F.Cu, length 0.5000 mm
+    @(5.0500 mm, 4.2500 mm): Track [3V3] on F.Cu, length 0.0500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(5.5000 mm, 6.5000 mm): Pad 4 [3V3] of J2 on F.Cu
+    @(6.0500 mm, 6.5000 mm): Track [SD_SCK] on F.Cu, length 0.5500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(5.5000 mm, 6.5000 mm): Pad 4 [3V3] of J2 on F.Cu
+    @(6.0500 mm, 5.5500 mm): Track [SD_SCK] on F.Cu, length 0.9500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0750 mm)
+    Local override; error
+    @(7.7000 mm, 7.0500 mm): Via [GND] on F.Cu - B.Cu
+    @(3.3000 mm, 7.4500 mm): Track [SD_CS] on F.Cu, length 6.0500 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(5.5000 mm, 6.5000 mm): Pad 4 [3V3] of J2 on F.Cu
+    @(5.4500 mm, 5.5500 mm): Track [SD_SCK] on F.Cu, length 0.6000 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and 3V3)
+    Local override; error
+    @(3.7500 mm, 3.2500 mm): Via [SD_CS] on F.Cu - B.Cu
+    @(4.4500 mm, 3.2500 mm): Track [3V3] on F.Cu, length 0.5000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0500 mm)
+    Local override; error
+    @(4.4500 mm, 3.2500 mm): Track [3V3] on F.Cu, length 0.5000 mm
+    @(4.9500 mm, 3.2500 mm): Track [GND] on F.Cu, length 0.3000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(5.5000 mm, 6.5000 mm): Pad 4 [3V3] of J2 on F.Cu
+    @(5.4500 mm, 3.2500 mm): Track [SD_SCK] on F.Cu, length 2.3000 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and <no net>)
+    Local override; error
+    @(9.4500 mm, 6.8500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1250 mm)
+    Local override; error
+    @(7.7000 mm, 6.5000 mm): Pad 6 [GND] of J2 on F.Cu
+    @(8.2500 mm, 5.5500 mm): Track [SD_MISO] on F.Cu, length 0.9500 mm
+[shorting_items]: Items shorting two nets (nets SD_CS and GND)
+    Local override; error
+    @(3.3000 mm, 6.5000 mm): Pad 2 [SD_CS] of J2 on F.Cu
+    @(2.5500 mm, 6.2000 mm): Pad 2 [GND] of C2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.5500 mm, 6.2000 mm): Pad 2 [GND] of C2 on F.Cu
+    @(2.2000 mm, 6.5000 mm): Pad 1 [<no net>] of J2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_MISO and 3V3)
+    Local override; error
+    @(8.8000 mm, 6.5000 mm): Pad 7 [SD_MISO] of J2 on F.Cu
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3250 mm)
+    Rule: board setup constraints edge; error
+    @(11.4000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(7.7000 mm, 15.0000 mm): Track [GND] on F.Cu, length 3.3000 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3250 mm)
+    Rule: board setup constraints edge; error
+    @(0.0000 mm, 16.0000 mm): Segment on Edge.Cuts
+    @(1.6500 mm, 6.8500 mm): Track [GND] on F.Cu, length 1.2500 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3250 mm)
+    Rule: board setup constraints edge; error
+    @(0.0000 mm, 16.0000 mm): Segment on Edge.Cuts
+    @(0.4000 mm, 6.8500 mm): Track [GND] on F.Cu, length 8.1500 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1000 mm)
+    Rule: board setup constraints edge; error
+    @(11.4000 mm, 16.0000 mm): Segment on Edge.Cuts
+    @(0.4000 mm, 15.0000 mm): Pad 9 [GND] of J2 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(11.4000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(11.0000 mm, 15.0000 mm): Pad 10 [GND] of J2 on F.Cu
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.4500 mm, 3.2500 mm): Track [SD_SCK] on F.Cu, length 2.3000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.4500 mm, 5.5500 mm): Track [SD_SCK] on F.Cu, length 0.6000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(6.0500 mm, 5.5500 mm): Track [SD_SCK] on F.Cu, length 0.9500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(6.0500 mm, 6.5000 mm): Track [SD_SCK] on F.Cu, length 0.5500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.9500 mm, 3.2500 mm): Track [SD_MOSI] on F.Cu, length 1.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.9500 mm, 4.3000 mm): Track [SD_MOSI] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(6.0000 mm, 4.3000 mm): Track [SD_MOSI] on B.Cu, length 1.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.9000 mm, 4.3000 mm): Track [SD_MOSI] on F.Cu, length 0.5000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.4000 mm, 4.3000 mm): Track [SD_MOSI] on F.Cu, length 2.2000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(6.4500 mm, 3.2500 mm): Track [SD_MISO] on F.Cu, length 2.3000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(6.4500 mm, 5.5500 mm): Track [SD_MISO] on F.Cu, length 1.8000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(8.2500 mm, 5.5500 mm): Track [SD_MISO] on F.Cu, length 0.9500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(8.2500 mm, 6.5000 mm): Track [SD_MISO] on F.Cu, length 0.5500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(8.8000 mm, 6.5000 mm): Track [SD_MISO] on F.Cu, length 0.2000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(8.8000 mm, 6.7000 mm): Track [SD_MISO] on F.Cu, length 0.6000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.4000 mm, 6.7000 mm): Track [SD_MISO] on F.Cu, length 0.5000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.4000 mm, 6.2000 mm): Track [SD_MISO] on F.Cu, length 0.7000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(6.9500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.0000 mm, 3.2500 mm): Track [SD_CS] on B.Cu, length 3.2500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.7500 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 0.4500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.3000 mm, 3.2500 mm): Track [SD_CS] on F.Cu, length 3.2500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.3000 mm, 6.5000 mm): Track [SD_CS] on F.Cu, length 0.9500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.3000 mm, 7.4500 mm): Track [SD_CS] on F.Cu, length 6.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.3500 mm, 7.4500 mm): Track [SD_CS] on F.Cu, length 0.5500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.3500 mm, 6.9000 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.4500 mm, 6.9000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.4500 mm, 6.8500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.5500 mm, 6.8500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.5500 mm, 6.7500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.6000 mm, 6.7500 mm): Track [SD_CS] on F.Cu, length 0.3500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.6000 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.5500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.1500 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.1500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.2500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.2500 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.3000 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.3000 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.2500 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.2500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.1500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.1500 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(10.1000 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 2.2000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.4500 mm, 3.2500 mm): Track [3V3] on F.Cu, length 0.5000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.9500 mm, 3.2500 mm): Track [3V3] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.9500 mm, 3.2000 mm): Track [3V3] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.9000 mm, 3.2000 mm): Track [3V3] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.9000 mm, 3.1000 mm): Track [3V3] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.8000 mm, 3.1000 mm): Track [3V3] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.8000 mm, 3.0500 mm): Track [3V3] on F.Cu, length 2.5000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(1.3000 mm, 3.0500 mm): Track [3V3] on F.Cu, length 0.7500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(1.3000 mm, 3.8000 mm): Track [3V3] on F.Cu, length 0.2500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(1.0500 mm, 3.8000 mm): Track [3V3] on F.Cu, length 2.4000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.4500 mm, 3.2500 mm): Track [3V3] on F.Cu, length 0.8500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.4500 mm, 4.1000 mm): Track [3V3] on F.Cu, length 0.5000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.9500 mm, 4.1000 mm): Track [3V3] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.9500 mm, 4.1500 mm): Track [3V3] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.0500 mm, 4.1500 mm): Track [3V3] on F.Cu, length 0.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.0500 mm, 4.2500 mm): Track [3V3] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.1000 mm, 4.2500 mm): Track [3V3] on F.Cu, length 2.2500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.1000 mm, 6.5000 mm): Track [3V3] on F.Cu, length 0.4000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.5000 mm, 6.5000 mm): Track [3V3] on F.Cu, length 0.5500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.5000 mm, 5.9500 mm): Track [3V3] on F.Cu, length 0.1500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.6500 mm, 5.9500 mm): Track [3V3] on B.Cu, length 0.9500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(5.6500 mm, 5.0000 mm): Track [3V3] on B.Cu, length 1.3500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.0000 mm, 5.0000 mm): Track [3V3] on F.Cu, length 1.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.0000 mm, 3.9500 mm): Track [3V3] on F.Cu, length 0.3000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.3000 mm, 3.9500 mm): Track [3V3] on F.Cu, length 0.1500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.3000 mm, 3.8000 mm): Track [3V3] on F.Cu, length 1.8000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.1000 mm, 3.8000 mm): Track [3V3] on F.Cu, length 1.4000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(9.1000 mm, 5.2000 mm): Track [3V3] on B.Cu, length 1.0000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.9500 mm, 3.2500 mm): Track [GND] on F.Cu, length 0.3000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.6500 mm, 3.2500 mm): Track [GND] on F.Cu, length 0.7000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.6500 mm, 2.5500 mm): Track [GND] on F.Cu, length 1.1500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.5000 mm, 2.5500 mm): Track [GND] on F.Cu, length 0.7500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(3.5000 mm, 1.8000 mm): Track [GND] on F.Cu, length 0.7500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(2.7500 mm, 1.8000 mm): Track [GND] on F.Cu, length 0.7000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(2.7500 mm, 2.5000 mm): Track [GND] on B.Cu, length 1.1000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(2.7500 mm, 3.6000 mm): Track [GND] on F.Cu, length 0.4500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(2.3000 mm, 3.6000 mm): Track [GND] on F.Cu, length 0.2000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(2.3000 mm, 3.8000 mm): Track [GND] on F.Cu, length 2.4000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(2.3000 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.2500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.9500 mm, 3.2500 mm): Track [GND] on F.Cu, length 1.4500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(4.9500 mm, 1.8000 mm): Track [GND] on F.Cu, length 2.9500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.9000 mm, 1.8000 mm): Track [GND] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.8500 mm, 1.8000 mm): Track [GND] on F.Cu, length 1.4500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.8500 mm, 3.2500 mm): Track [GND] on B.Cu, length 2.7000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.8500 mm, 5.9500 mm): Track [GND] on F.Cu, length 0.1500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.7000 mm, 5.9500 mm): Track [GND] on F.Cu, length 0.5500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.7000 mm, 6.5000 mm): Track [GND] on F.Cu, length 0.5500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.7000 mm, 7.0500 mm): Track [GND] on B.Cu, length 0.9500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.7000 mm, 8.0000 mm): Track [GND] on F.Cu, length 7.0000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(7.7000 mm, 15.0000 mm): Track [GND] on F.Cu, length 3.3000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(2.5500 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(1.6500 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(1.6500 mm, 6.8500 mm): Track [GND] on F.Cu, length 1.2500 mm
+[track_width]: Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(0.4000 mm, 6.8500 mm): Track [GND] on F.Cu, length 8.1500 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.4500 mm, 6.8500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.5500 mm, 6.8500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.5500 mm, 6.7500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.2500 mm, 6.5000 mm): Track [SD_MISO] on F.Cu, length 0.5500 mm
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.6000 mm, 6.7500 mm): Track [SD_CS] on F.Cu, length 0.3500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(2.3000 mm, 3.8000 mm): Track [GND] on F.Cu, length 2.4000 mm
+    @(2.2000 mm, 6.5000 mm): Pad 1 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.8000 mm, 6.5000 mm): Track [SD_MISO] on F.Cu, length 0.2000 mm
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(2.5500 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(2.2000 mm, 6.5000 mm): Pad 1 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(2.3000 mm, 6.2000 mm): Track [GND] on F.Cu, length 0.2500 mm
+    @(2.2000 mm, 6.5000 mm): Pad 1 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.4000 mm, 6.7000 mm): Track [SD_MISO] on F.Cu, length 0.5000 mm
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(4.9500 mm, 3.2500 mm): Track [GND] on F.Cu, length 0.3000 mm
+    @(4.4500 mm, 3.2500 mm): Pad 1 [3V3] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(4.6500 mm, 3.2500 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(4.4500 mm, 3.2500 mm): Pad 1 [3V3] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.4000 mm, 6.2000 mm): Track [SD_MISO] on F.Cu, length 0.7000 mm
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.6000 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.5500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(2.5500 mm, 6.2000 mm): Pad 2 [GND] of C2 on F.Cu
+    @(2.2000 mm, 6.5000 mm): Pad 1 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.6000 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.5500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.4000 mm, 6.2000 mm): Track [SD_MISO] on F.Cu, length 0.7000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(2.5500 mm, 6.2000 mm): Pad 2 [GND] of C2 on F.Cu
+    @(3.3000 mm, 6.5000 mm): Pad 2 [SD_CS] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+    @(8.8000 mm, 6.5000 mm): Pad 7 [SD_MISO] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.3000 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.3000 mm, 6.2500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.4000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.3000 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.3000 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.3500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.1500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.2500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.1000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.0500 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1500 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 0.0500 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1000 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 2.2000 mm
+    @(10.0800 mm, 6.2000 mm): Pad 2 [SD_MISO] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(10.1000 mm, 6.0000 mm): Track [SD_CS] on F.Cu, length 2.2000 mm
+    @(9.9000 mm, 6.5000 mm): Pad 8 [<no net>] of J2 on F.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(9.1000 mm, 5.2000 mm): Track [3V3] on B.Cu, length 1.0000 mm
+[lib_footprint_mismatch]: Footprint 'FPC_6P_0.5mm' does not match copy in library 'MicroSD'
+    Local override; warning
+    @(5.7000 mm, 2.0000 mm): Footprint J1
+[lib_footprint_mismatch]: Footprint 'MicroSD_Socket_TF01A' does not match copy in library 'MicroSD'
+    Local override; warning
+    @(5.7000 mm, 10.5000 mm): Footprint J2
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(5.7000 mm, 0.5000 mm): Reference field of J1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(5.7000 mm, 4.0000 mm): Reference field of J2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.7000 mm, 4.0000 mm): Reference field of J2
+    @(5.4500 mm, 3.2500 mm): Pad 3 [SD_SCK] of J1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.7000 mm, 4.0000 mm): Reference field of J2
+    @(5.9500 mm, 3.2500 mm): Pad 4 [SD_MOSI] of J1 on F.Cu
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(9.1200 mm, 6.2000 mm): Pad 1 [3V3] of R2 on F.Cu
+    @(9.1000 mm, 5.2000 mm): Track [3V3] on B.Cu, length 1.0000 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

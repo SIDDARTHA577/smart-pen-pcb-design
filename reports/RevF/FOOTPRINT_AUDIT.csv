@@ -1,0 +1,61 @@
+Reference,Component,Manufacturer,Part Number,Footprint,Pin Count,Pad Count,Validation Status,Issue,Resolution
+U1,ESP32-C3FH4X,Espressif Systems,ESP32-C3FH4X,QFN-32_5x5mm_P0.5mm_EP3.7mm,33,33,PASS,Previous placeholder QFN32_5x5_P0.5_EP3.7 had unverified pin-to-pad mapping; internal flash pin 18 (VDD_SPI) required verification.,"Mapped to official Espressif QFN-32 (5x5mm, 0.5mm pitch, 3.7x3.7mm EP). Pin 18 (VDD_SPI) verified internal LDO 3.3V out with 1uF bypass to GND."
+R1,10k EN pullup,Yageo,RC0402FR-0710KL,R0402,2,2,PASS,Standard 0402 passive pullup resistor.,Assigned verified Yageo 0402 10k 1% 1/16W SMD resistor.
+C1,1uF EN delay,Samsung Electro-Mechanics,CL05A105KA5NQNC,C0402,2,2,PASS,"Reset timing capacitor, provides ~10ms RC delay with R1.",Assigned verified Samsung 0402 1uF 25V X5R 10% ceramic capacitor.
+SW1,RESET switch NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,2,2,PASS,Was unplaced with placeholder TACT_2PAD_TBD.,Selected Panasonic EVQ-P2B02B ultra-thin (0.5mm height) 2-pad tactile switch.
+R2,10k GPIO9 pullup,Yageo,RC0402FR-0710KL,R0402,2,2,PASS,Boot strapping pullup resistor for normal SPI flash boot.,Assigned verified Yageo 0402 10k 1% SMD resistor.
+SW2,BOOT switch NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,2,2,PASS,Was unplaced with placeholder TACT_2PAD_TBD.,Selected Panasonic EVQ-P2B02B ultra-thin 2-pad tactile switch for boot strapping control.
+R3,10k GPIO2 pullup,Yageo,RC0402FR-0710KL,R0402,2,2,PASS,Strapping pin 2 pullup required by ESP32-C3.,Assigned verified Yageo 0402 10k 1% SMD resistor.
+FB1,RF ferrite bead,Murata,BLM18PG121SN1D,L0603,2,2,PASS,Isolates 3V3_RF analog rail from noisy digital 3V3 rail.,Assigned Murata 0603 120R @ 100MHz 2A high-current ferrite bead.
+C2,10uF RF bulk,Murata,GRM188R61A106KE69D,C0603,2,2,PASS,"Bulk decoupling for RF power rails (pins 2, 3, 31, 32).",Assigned Murata 0603 10uF 10V X5R ceramic capacitor.
+C3,0.1uF CPU bypass,Samsung,CL05B104KO5NNNC,C0402,2,2,PASS,High-frequency decoupling for VDD3P3_CPU (pin 17).,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor close to pin 17.
+C4,0.1uF RTC bypass,Samsung,CL05B104KO5NNNC,C0402,2,2,PASS,High-frequency decoupling for VDD3P3_RTC (pin 11).,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor close to pin 11.
+R4,0R RTC tie,Yageo,RC0402JR-070RL,R0402,2,2,PASS,Zero-ohm tie between main 3V3 rail and 3V3_RTC.,Assigned Yageo 0402 0R jumper link.
+C5,1uF VDD_SPI bypass,Samsung,CL05A105KA5NQNC,C0402,2,2,PASS,Dedicated decoupling capacitor for internal flash LDO output (pin 18).,Assigned Samsung 0402 1uF 25V X5R capacitor strictly isolated from 3V3.
+Y1,40MHz +/-10ppm Crystal,Epson,FA-20H 40.0000MF10Z-K3,CRYSTAL-SMD_2.5x2.0mm_4P,4,4,PASS,Was unplaced with placeholder CRYSTAL_4PAD_TBD.,"Assigned Epson FA-20H 40MHz 10ppm 10pF 2.5x2.0mm miniature 4-SMD crystal. Pin 1=XTAL_N, 2=GND, 3=XTAL_P, 4=GND."
+L1,24nH clock harmonic filter,Murata,LQG15HN24NJ02D,L0402,2,2,PASS,Oscillator harmonic dampening inductor in series with XTAL_P.,Assigned Murata 0402 24nH +/-5% high-frequency chip inductor.
+C6,15pF XTAL_N load cap,Murata,GRM1555C1H150JA01D,C0402,2,2,PASS,Was unverified XTAL cap TBD.,Calculated CL=10pF requirement: C = 2*(CL - Cstray) = 2*(10 - 2.5) = 15pF. Assigned Murata 0402 15pF C0G 50V.
+C7,15pF XTAL_P load cap,Murata,GRM1555C1H150JA01D,C0402,2,2,PASS,Was unverified XTAL cap TBD.,Assigned Murata 0402 15pF C0G 50V precision crystal load capacitor.
+L2,2.4nH RF matching inductor,Murata,LQP03TN2N4B02D,L0201,2,2,PASS,RF pi-matching network component.,Assigned Murata 0201 2.4nH high-Q RF chip inductor.
+C8,1.5pF RF shunt cap,Murata,GRM0335C1H1R5BA01D,C0201,2,2,PASS,RF pi-matching network shunt capacitor on chip side.,Assigned Murata 0201 1.5pF +/-0.1pF 50V C0G RF capacitor.
+C9,1.5pF RF shunt cap,Murata,GRM0335C1H1R5BA01D,C0201,2,2,PASS,RF pi-matching network shunt capacitor on antenna side.,Assigned Murata 0201 1.5pF +/-0.1pF 50V C0G RF capacitor.
+J_RF,U.FL RF receptacle,Hirose,U.FL-R-SMT-1(10),CONN-SMD_U.FL-R-SMT,3,3,PASS,Was unplaced with placeholder UFL_CONNECTOR_TBD.,"Assigned Hirose U.FL-R-SMT-1(10) micro coaxial 50-ohm connector. Center pin=Signal, outer tabs=GND."
+J_USB,USB Type-C receptacle 16-pin,Korean HRO / JLCPCB,TYPE-C-31-M-12,USB-C-SMD_16PIN_TYPE-C-31-M-12,16,20,PASS,Was unplaced with placeholder USB_C_16PIN_TBD.,Assigned industry-standard TYPE-C-31-M-12 surface-mount 16-pin USB 2.0 receptacle with 4 shield tabs. Verified CC1/CC2 and D+/D- pinout.
+R5,5.1k CC1 pulldown,Yageo,RC0402FR-075K1L,R0402,2,2,PASS,Required USB-C UFP / device pull-down resistor.,Assigned Yageo 0402 5.1k 1% resistor from CC1 to GND.
+R6,5.1k CC2 pulldown,Yageo,RC0402FR-075K1L,R0402,2,2,PASS,Required USB-C UFP / device pull-down resistor.,Assigned Yageo 0402 5.1k 1% resistor from CC2 to GND.
+R7,22R USB D- series damping,Yageo,RC0402FR-0722RL,R0402,2,2,PASS,USB 2.0 Full-Speed impedance matching.,Assigned Yageo 0402 22 ohm 1% series damping resistor on D- line.
+R8,22R USB D+ series damping,Yageo,RC0402FR-0722RL,R0402,2,2,PASS,USB 2.0 Full-Speed impedance matching.,Assigned Yageo 0402 22 ohm 1% series damping resistor on D+ line.
+C10,10uF USB VBUS bulk,Murata,GRM188R61E106MA73D,C0603,2,2,PASS,USB input bulk decoupling capacitor.,Assigned Murata 0603 10uF 25V X5R ceramic capacitor on VBUS.
+U_ESD,USB ESD Protection Array,STMicroelectronics,USBLC6-2SC6,SOT-23-6,6,6,PASS,Was unplaced with placeholder USB_ESD_PART_TBD.,"Assigned ST USBLC6-2SC6 low-capacitance (0.6pF) dual-line TVS diode in SOT-23-6. Pins: 1=I/O1(D+), 2=GND, 3=I/O2(D-), 4=I/O2, 5=VBUS, 6=I/O1."
+U2,LiPo Linear Charger,Microchip,MCP73831T-2ACI/OT,SOT-23-5,5,5,PASS,Was placed as standalone charger without power-path distinction; STAT pin was floating.,Assigned Microchip MCP73831T 4.20V SOT-23-5 charger. Added charge-current resistor programming.
+R9,"3.3k PROG resistor (303mA charge, safe <=1.0C)",Yageo,RC0402FR-073K3L,R0402,2,2,PASS,"Was 500mA (1.67C), unsafe for 300mAh LiPo pouch.",Re-valued to 3.3k (303mA / 1.01C rate) to prevent pouch thermal runaway inside 15.5mm enclosure.
+C11,4.7uF charger input cap,Murata,GRM188R61C475KAAJD,C0603,2,2,PASS,Charger VDD decoupling.,Assigned Murata 0603 4.7uF 16V X5R ceramic capacitor.
+C12,4.7uF charger output cap,Murata,GRM188R61C475KAAJD,C0603,2,2,PASS,Charger VBAT stability capacitor.,Assigned Murata 0603 4.7uF 16V X5R ceramic capacitor.
+J_BAT,2-Pin Keyed LiPo Battery Header,JST,SM02B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-BM02B-SRSS,2,4,PASS,Was unplaced with placeholder BAT_2PIN_CONNECTOR_TBD.,"Assigned JST SH 1.0mm pitch horizontal 2-pin keyed connector with latching and solder tabs. Pin 1=VBAT, Pin 2=GND."
+J_PWR,High-Current Low-Dropout 3.3V Regulator,Diodes Inc. / Micrel,AP2112K-3.3TRG1,SOT-23-5,5,5,PASS,Was unplaced dummy card REGULATOR_CARD_TBD with unknown electrical topology.,"Resolved to onboard 600mA low-dropout linear regulator AP2112K-3.3TRG1 in SOT-23-5. Pin 1=VIN, Pin 2=GND, Pin 3=EN, Pin 4=NC, Pin 5=VOUT."
+SW3,SPDT Slide Power Switch,C&K / Korean HRO,MK-12C02-G025,SW-SLIDE-SMD_MK12C02,3,5,PASS,Was unplaced with placeholder SLIDE_SWITCH_TBD.,Assigned MK-12C02 miniature horizontal SMD slide switch (8.5x3.5x1.5mm) with side knob. Connects VBAT to VBAT_SW.
+J_IMU,4-Pin Keyed Front IMU Connector,JST,SM04B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-4P-SM04B-SRSS,4,6,PASS,Was unplaced with placeholder CONN_4P_TBD.,"Assigned JST SH 1.0mm pitch 4-pin horizontal SMD connector with keyed shroud. Pin 1=3V3, 2=GND, 3=SDA, 4=SCL."
+R10,4.7k I2C SDA pullup,Yageo,RC0402FR-074K7L,R0402,2,2,PASS,Bus pullup for I2C data line.,Assigned Yageo 0402 4.7k 1% SMD resistor.
+R11,4.7k I2C SCL pullup,Yageo,RC0402FR-074K7L,R0402,2,2,PASS,Bus pullup for I2C clock line.,Assigned Yageo 0402 4.7k 1% SMD resistor.
+U3,8-Bit I2C GPIO Expander,Microchip,MCP23008T-E/ML,QFN-20_4x4mm_P0.5mm_EP2.7mm,20,21,PASS,Previous symbol had 18 pins on a 20-pad footprint causing pin-to-pad mismatch.,"Updated symbol and footprint to exact Microchip QFN-20 (4x4mm, 0.5mm pitch, 2.7x2.7mm EP pad 21 to GND)."
+SW4,ERASE Tactile Button NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,2,2,PASS,Was unplaced with placeholder TACT_2PAD_TBD.,Assigned Panasonic EVQ-P2B02B ultra-thin SMD tactile button.
+R12,10k ERASE button pullup,Yageo,RC0402FR-0710KL,R0402,2,2,PASS,Debounce pullup resistor for ERASE button input.,Assigned Yageo 0402 10k 1% resistor.
+SW5,MODE Tactile Button NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,2,2,PASS,Was unplaced with placeholder TACT_2PAD_TBD.,Assigned Panasonic EVQ-P2B02B ultra-thin SMD tactile button.
+R13,10k MODE button pullup,Yageo,RC0402FR-0710KL,R0402,2,2,PASS,Debounce pullup resistor for MODE button input.,Assigned Yageo 0402 10k 1% resistor.
+R14,1k Green LED current limit,Yageo,RC0402FR-071KL,R0402,2,2,PASS,Current limit resistor for mode LED (1.2mA @ 3.3V).,Assigned Yageo 0402 1.0k 1% resistor.
+D1,Green SMD Mode LED,Kingbright,KP-1005SGC,LED0402,2,2,PASS,Was unplaced in Rev D staging board.,"Assigned Kingbright 0402 compact high-efficiency green SMD LED. Anode=Pin 1, Cathode=Pin 2."
+R15,1k Red LED current limit,Yageo,RC0402FR-071KL,R0402,2,2,PASS,Current limit resistor for mode LED (1.4mA @ 3.3V).,Assigned Yageo 0402 1.0k 1% resistor.
+D2,Red SMD Mode LED,Kingbright,KP-1005SURC,LED0402,2,2,PASS,Was unplaced in Rev D staging board.,"Assigned Kingbright 0402 compact high-efficiency red SMD LED. Anode=Pin 1, Cathode=Pin 2."
+R16,100R Haptic gate resistor,Yageo,RC0402FR-07100RL,R0402,2,2,PASS,Limits switching inrush into MOSFET gate capacitance.,Assigned Yageo 0402 100 ohm 1% resistor.
+R17,100k Haptic gate pulldown,Yageo,RC0402FR-07100KL,R0402,2,2,PASS,Prevents spurious motor vibration during MCU reset/float.,Assigned Yageo 0402 100k 1% resistor.
+Q1,N-Channel Logic MOSFET,Alpha & Omega,AO3400A,SOT-23-3,3,3,PASS,Was unplaced with placeholder SOT23_GSD_TBD.,"Assigned AO3400A N-channel MOSFET (30V, 5.7A, Rds(on)<28mOhm @ 2.5V Vgs) in SOT-23. Pin 1=Gate, 2=Source, 3=Drain."
+J_MOT,2-Pin Vibration Motor Connector / Pads,JST,SM02B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-BM02B-SRSS,2,4,PASS,Was unplaced with placeholder MOTOR_2PIN_TBD.,"Assigned JST SH 1.0mm pitch 2-pin connector. Pin 1=VBAT_SW, Pin 2=HAPTIC_LOW."
+D3,Schottky Flyback Diode,Diodes Inc.,1N5819HW-7-F,SOD-123,2,2,PASS,Was unplaced with placeholder DIODE_SMD_TBD.,"Assigned Diodes Inc. 1N5819HW-7-F 40V 1A fast Schottky diode in SOD-123. Cathode=Pin 1, Anode=Pin 2."
+C13,0.1uF Expander bypass cap,Samsung,CL05B104KO5NNNC,C0402,2,2,PASS,Decoupling for MCP23008 VDD (pin 18).,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor.
+J_SD,MicroSD SPI 6-Pin FPC Connector,Hirose / Molex,FH12-6S-0.5SH(55),CONN-FPC_6P_P0.5mm_SMD,6,8,PASS,Was unplaced with placeholder CONN_6P_TBD.,Assigned Hirose FH12 0.5mm pitch 6-pin FPC connector. Resolves the 14mm socket width physical collision with the 13.6mm inner barrel by carrying SPI to the rear MicroSD holder.
+R18,10k MicroSD CS pullup,Yageo,RC0402FR-0710KL,R0402,2,2,PASS,SPI Chip Select pullup to prevent false card selection during MCU boot.,Assigned Yageo 0402 10k 1% resistor.
+J_TOUCH,External Touch Controller / Electrode Header,JST / TonTek,SM03B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-3P-SM03B-SRSS,3,5,PASS,Was unplaced with placeholder TOUCH_3PIN_TBD.,"Assigned JST SH 1.0mm pitch 3-pin keyed connector for external WRITE capacitive touch sensor (3V3, GND, TOUCH_OUT)."
+J_UART,4-Pin UART & Programming Test Pads,RadixView / Custom SMD,TP-SMD-4P-1.27MM,TESTPAD_4P_1x4_P1.27mm,4,4,PASS,Was unplaced with placeholder TESTPAD_4P_TBD.,"Assigned 4 inline 1.27mm pitch surface-mount gold test pads (TX, RX, GND, 3V3) for non-intrusive pogo-pin test fixtures."
+C14,10uF System 3.3V bulk cap,Murata,GRM188R61A106KE69D,C0603,2,2,PASS,Main 3.3V rail bulk energy reservoir for ESP32-C3 RF transmission peaks.,Assigned Murata 0603 10uF 10V X5R ceramic capacitor.
+R19,100k Touch pulldown option,Yageo,RC0402FR-07100KL,R0402,2,2,PASS,Default pull-down on TOUCH_OUT line to guarantee LOW state when pen is untouched.,Assigned Yageo 0402 100k 1% resistor.
+C15,0.1uF Front IMU cable filter cap,Samsung,CL05B104KO5NNNC,C0402,2,2,PASS,High-frequency noise filter on 3V3 power line entering J_IMU.,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor placed directly at J_IMU pin 1.

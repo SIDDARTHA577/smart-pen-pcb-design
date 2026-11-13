@@ -1,0 +1,5 @@
+Engineered shorten-wire revision from previous RevB: 32 unit external connection stub -> 8 unit.
+Cross-net copper/wire geometrical intersections found (straight-wire tests only): 0
+Pairs:
+
+This does not replace EasyEDA Design Manager and electrical review.

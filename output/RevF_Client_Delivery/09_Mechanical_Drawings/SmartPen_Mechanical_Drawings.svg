@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" style="background-color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <!-- Dimension Arrowheads -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#003366" />
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#cc0000" />
+    </marker>
+    <!-- Hatch Patterns for Section Cuts -->
+    <pattern id="hatch-metal" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#555555" stroke-width="0.8" />
+    </pattern>
+    <pattern id="hatch-plastic" width="10" height="10" patternTransform="rotate(-45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#0066cc" stroke-width="0.8" />
+    </pattern>
+    <pattern id="hatch-battery" width="6" height="6" patternTransform="rotate(30 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#009933" stroke-width="0.8" />
+    </pattern>
+  </defs>
+
+  <!-- Drawing Border & Title Block (ISO Standard) -->
+  <rect x="20" y="20" width="1560" height="1060" fill="none" stroke="#003366" stroke-width="2.5" />
+  <rect x="30" y="30" width="1540" height="1040" fill="none" stroke="#003366" stroke-width="1.2" />
+
+  <!-- Title Block Header -->
+  <rect x="1050" y="930" width="520" height="140" fill="#f8f9fa" stroke="#003366" stroke-width="1.5" />
+  <line x1="1050" y1="975" x2="1570" y2="975" stroke="#003366" stroke-width="1" />
+  <line x1="1050" y1="1020" x2="1570" y2="1020" stroke="#003366" stroke-width="1" />
+  <line x1="1310" y1="930" x2="1310" y2="1070" stroke="#003366" stroke-width="1" />
+
+  <text x="1065" y="955" font-size="14" font-weight="bold" fill="#003366">RADIXVIEW TECHNOLOGIES</text>
+  <text x="1065" y="970" font-size="10" fill="#555555">SMART PEN DIGITAL DESIGN REVIEW</text>
+  <text x="1325" y="955" font-size="12" font-weight="bold" fill="#003366">DWG NO: RDV-SP-REVF-001</text>
+  <text x="1325" y="970" font-size="10" fill="#555555">SHEET 1 OF 1 | REV: F</text>
+
+  <text x="1065" y="995" font-size="11" font-weight="bold" fill="#333333">TITLE: COMPLETE ASSEMBLY &amp; CRITICAL SECTIONS</text>
+  <text x="1065" y="1012" font-size="9" fill="#555555">NOMINAL ENVELOPE: 153.50 mm x 15.50 mm DIA</text>
+  <text x="1325" y="995" font-size="10" fill="#333333">TOLERANCES UNLESS NOTED:</text>
+  <text x="1325" y="1012" font-size="9" fill="#555555">X.X: +/- 0.1 mm | X.XX: +/- 0.05 mm | ANG: +/- 0.5 deg</text>
+
+  <text x="1065" y="1040" font-size="10" fill="#333333">DESIGNED BY: Senior Mechanical &amp; Hardware Team</text>
+  <text x="1065" y="1058" font-size="10" fill="#333333">DATE: NOVEMBER 2, 2026</text>
+  <text x="1325" y="1040" font-size="10" font-weight="bold" fill="#009933">DIGITAL DESIGN: PASS (VERIFIED)</text>
+  <text x="1325" y="1058" font-size="9" fill="#cc6600">FABRICATION GATE: SEC 1.41 GATED</text>
+
+  <!-- VIEW 1: Full Longitudinal Sectional Assembly View (Scale ~6.5 px / mm) -->
+  <!-- Origin at Z=0 (tip aperture) at X=100, Y=320. Pen length = 153.5 mm -> 1000 px. OD 15.5 mm -> 100 px (Y=270 to 370) -->
+  <g id="longitudinal-assembly" transform="translate(60, 40)">
+    <text x="40" y="30" font-size="16" font-weight="bold" fill="#003366">VIEW 1: LONGITUDINAL SECTIONAL ASSEMBLY (Z-AXIS CUT)</text>
+    <text x="40" y="48" font-size="11" fill="#666666">Full Assembly showing D1 Refill, Delrin Push-Rod, Internal Rail, PCB, LiPo Cell, and Bayonet Lock</text>
+
+    <!-- Centerline -->
+    <line x1="80" y1="200" x2="1140" y2="200" stroke="#cc0000" stroke-width="1" stroke-dasharray="16,4,4,4" />
+
+    <!-- 03 Front Cap Tip (Z=0 to 18 -> X=100 to 217) -->
+    <path d="M 100 182 L 100 218 L 217 236 L 217 164 Z" fill="url(#hatch-plastic)" stroke="#003366" stroke-width="1.8" />
+    <path d="M 100 193 L 100 207 L 217 211 L 217 189 Z" fill="#ffffff" stroke="#003366" stroke-width="1.2" />
+
+    <!-- 02 Front Grip (Z=18 to 54 -> X=217 to 451) -->
+    <path d="M 217 164 L 451 150 L 451 250 L 217 236 Z" fill="url(#hatch-plastic)" stroke="#003366" stroke-width="1.8" />
+    <rect x="217" y="189" width="234" height="22" fill="#ffffff" stroke="#003366" stroke-width="1" />
+
+    <!-- 06 Front MPU Pocket (Z=24 to 36 -> X=256 to 334, Upper Grip) -->
+    <rect x="256" y="160" width="78" height="24" fill="#ffcc00" stroke="#996600" stroke-width="1.2" />
+    <text x="262" y="176" font-size="9" font-weight="bold" fill="#333333">MPU-6050</text>
+
+    <!-- 14 Bayonet Locking Collar & Lugs (Z=48 to 56 -> X=412 to 464) -->
+    <rect x="420" y="152" width="40" height="96" fill="#cccccc" stroke="#333333" stroke-width="1.5" />
+    <text x="424" y="270" font-size="9" fill="#003366" font-weight="bold">30° BAYONET</text>
+
+    <!-- 01 Outer Barrel (Z=54 to 142 -> X=451 to 1023) -->
+    <!-- Top Wall -->
+    <rect x="451" y="150" width="572" height="12" fill="url(#hatch-metal)" stroke="#003366" stroke-width="1.5" />
+    <!-- Bottom Wall -->
+    <rect x="451" y="238" width="572" height="12" fill="url(#hatch-metal)" stroke="#003366" stroke-width="1.5" />
+
+    <!-- 04 Internal Rail Cartridge (Z=52 to 138 -> X=438 to 997) -->
+    <!-- Central push-rod tunnel -->
+    <rect x="438" y="190" width="559" height="20" fill="#f0f0f0" stroke="#666666" stroke-width="1" stroke-dasharray="4,2" />
+    <!-- PCB Deck Structure -->
+    <rect x="451" y="182" width="546" height="8" fill="#e6b800" stroke="#997a00" stroke-width="1" />
+
+    <!-- 15 Main PCB (Z=54 to 138 -> X=451 to 997, Y=182 to 175) -->
+    <rect x="451" y="174" width="546" height="8" fill="#2d862d" stroke="#133913" stroke-width="1.5" />
+    <text x="680" y="172" font-size="10" font-weight="bold" fill="#2d862d">MAIN PCB (84.0 x 9.2 mm)</text>
+
+    <!-- Components on PCB -->
+    <!-- ESP32-C3 -->
+    <rect x="580" y="164" width="45" height="10" fill="#333333" stroke="#000000" stroke-width="1" />
+    <text x="582" y="162" font-size="8" fill="#333333">ESP32-C3</text>
+    <!-- Buttons SW4, SW5 -->
+    <rect x="525" y="162" width="16" height="12" fill="#ff6600" stroke="#cc3300" stroke-width="1" />
+    <rect x="555" y="162" width="16" height="12" fill="#ff6600" stroke="#cc3300" stroke-width="1" />
+    <text x="522" y="158" font-size="8" fill="#cc3300">ERASE/MODE</text>
+    <!-- USB-C Receptacle at rear -->
+    <rect x="940" y="162" width="45" height="12" fill="#999999" stroke="#333333" stroke-width="1" />
+    <text x="945" y="158" font-size="8" fill="#333333">USB-C</text>
+
+    <!-- 16 MicroSD Carrier Subsystem (Z=122 to 138 -> X=893 to 997) -->
+    <rect x="893" y="164" width="45" height="10" fill="#0066cc" stroke="#003366" stroke-width="1" />
+    <text x="895" y="160" font-size="8" fill="#0066cc">MicroSD</text>
+
+    <!-- 11 LiPo Battery Cell LP401040 (Z=74 to 114 -> X=581 to 841, Y=210 to 236) -->
+    <rect x="581" y="210" width="260" height="26" fill="url(#hatch-battery)" stroke="#009933" stroke-width="1.5" />
+    <text x="640" y="226" font-size="11" font-weight="bold" fill="#ffffff" style="text-shadow: 1px 1px 2px #000;">LiPo LP401040 (300 mAh)</text>
+
+    <!-- 05 Battery Cradle Below Rail -->
+    <path d="M 570 236 L 850 236 L 850 238 L 570 238 Z" fill="#997a00" stroke="#665200" stroke-width="1" />
+
+    <!-- 12 D1 Standard Ink Refill (Z=1.5 to 68.5 -> X=110 to 545) -->
+    <!-- Nib & Neck -->
+    <rect x="110" y="196" width="80" height="8" fill="#cccccc" stroke="#333333" stroke-width="1.2" />
+    <!-- Metal Reservoir -->
+    <rect x="190" y="193" width="355" height="14" fill="#b3b3b3" stroke="#333333" stroke-width="1.2" />
+    <!-- Return Spring around neck (Z=4 to 14 -> X=126 to 190) -->
+    <path d="M 126 191 L 132 209 L 138 191 L 144 209 L 150 191 L 156 209 L 162 191 L 168 209 L 174 191 L 180 209 L 186 191" fill="none" stroke="#666666" stroke-width="1.5" />
+
+    <!-- 13 Delrin Push-Rod (Z=68.5 to 140 -> X=545 to 1010) -->
+    <rect x="545" y="195" width="465" height="10" fill="#ffffff" stroke="#003366" stroke-width="1.5" />
+    <text x="700" y="203" font-size="8" fill="#003366" font-weight="bold">PUSH-ROD (DIA 1.6 mm)</text>
+
+    <!-- 08 Rear Click Cap & Ratchet (Z=140 to 153.5 -> X=1010 to 1098) -->
+    <path d="M 1010 160 L 1075 160 Q 1098 200 1075 240 L 1010 240 Z" fill="#4d4d4d" stroke="#1a1a1a" stroke-width="1.5" />
+    <text x="1020" y="204" font-size="9" fill="#ffffff" font-weight="bold">CLICK CAP</text>
+
+    <!-- Critical Overall Dimensions -->
+    <!-- Overall Length: 153.50 mm (X=100 to 1098) -->
+    <line x1="100" y1="120" x2="1098" y2="120" stroke="#003366" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+    <line x1="100" y1="110" x2="100" y2="182" stroke="#003366" stroke-width="0.8" stroke-dasharray="2,2" />
+    <line x1="1098" y1="110" x2="1098" y2="200" stroke="#003366" stroke-width="0.8" stroke-dasharray="2,2" />
+    <text x="550" y="112" font-size="14" font-weight="bold" fill="#003366" text-anchor="middle">153.50 mm [SPEC: 150.0 - 155.0 mm]</text>
+
+    <!-- Barrel OD: 15.50 mm -->
+    <line x1="1120" y1="150" x2="1120" y2="250" stroke="#003366" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+    <line x1="1023" y1="150" x2="1130" y2="150" stroke="#003366" stroke-width="0.8" stroke-dasharray="2,2" />
+    <line x1="1023" y1="250" x2="1130" y2="250" stroke="#003366" stroke-width="0.8" stroke-dasharray="2,2" />
+    <text x="1135" y="205" font-size="12" font-weight="bold" fill="#003366">DIA 15.50 mm (MAX 16.0)</text>
+
+    <!-- Axial Gap Refill to Battery (5.50 mm) -->
+    <line x1="545" y1="270" x2="581" y2="270" stroke="#cc0000" stroke-width="1.5" marker-start="url(#arrow-red)" marker-end="url(#arrow-red)" />
+    <line x1="545" y1="207" x2="545" y2="280" stroke="#cc0000" stroke-width="0.8" stroke-dasharray="2,2" />
+    <line x1="581" y1="236" x2="581" y2="280" stroke="#cc0000" stroke-width="0.8" stroke-dasharray="2,2" />
+    <text x="563" y="295" font-size="11" font-weight="bold" fill="#cc0000" text-anchor="middle">5.50 mm AXIAL GAP (NO CLASH)</text>
+  </g>
+
+  <!-- VIEW 2: Transverse Cross-Sections (Scale ~12 px / mm) -->
+  <!-- Section A-A: Front Grip & MPU (Z = 30 mm) -->
+  <g id="section-aa" transform="translate(80, 480)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#003366">SECTION A-A: FRONT GRIP &amp; MPU CARRIER (Z = 30 mm)</text>
+    <circle cx="100" cy="120" r="78" fill="url(#hatch-plastic)" stroke="#003366" stroke-width="2" />
+    <circle cx="100" cy="120" r="19" fill="#ffffff" stroke="#003366" stroke-width="1.5" />
+    <!-- MPU Pocket -->
+    <rect x="70" y="55" width="60" height="30" fill="#ffcc00" stroke="#996600" stroke-width="1.5" />
+    <text x="76" y="74" font-size="10" font-weight="bold" fill="#333333">MPU-6050</text>
+    <!-- Refill Tube Center -->
+    <circle cx="100" cy="120" r="14" fill="#cccccc" stroke="#333333" stroke-width="1" />
+    <text x="100" y="124" font-size="8" fill="#333333" text-anchor="middle">D1 REFILL</text>
+    <!-- Dimension Callout -->
+    <line x1="10" y1="120" x2="190" y2="120" stroke="#003366" stroke-width="1" stroke-dasharray="2,2" />
+    <text x="100" y="215" font-size="11" fill="#333333" text-anchor="middle">Grip OD: DIA 13.0 mm | Bore: DIA 3.2 mm</text>
+  </g>
+
+  <!-- Section B-B: Central Battery & PCB Section (Z = 95 mm) -->
+  <g id="section-bb" transform="translate(480, 480)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#003366">SECTION B-B: BATTERY CRADLE &amp; PCB (Z = 95 mm)</text>
+    <!-- Outer Barrel Wall (OD 15.5 mm -> r=93 px, ID 13.0 mm -> r=78 px) -->
+    <circle cx="120" cy="120" r="93" fill="url(#hatch-metal)" stroke="#003366" stroke-width="2" />
+    <circle cx="120" cy="120" r="78" fill="#ffffff" stroke="#003366" stroke-width="1.5" />
+
+    <!-- Rail Deck Barrier (Y = -1.2 to +1.2 mm -> 2.40 mm thick -> 29 px) -->
+    <rect x="50" y="106" width="140" height="28" fill="#e6b800" stroke="#997a00" stroke-width="1.5" />
+    <text x="120" y="124" font-size="9" font-weight="bold" fill="#665200" text-anchor="middle">2.40 mm SOLID DECK</text>
+
+    <!-- Central Pushrod Tunnel in Rail Deck (DIA 3.2 mm -> r=19 px) -->
+    <circle cx="120" cy="120" r="19" fill="#f0f0f0" stroke="#666666" stroke-width="1" />
+    <circle cx="120" cy="120" r="10" fill="#ffffff" stroke="#003366" stroke-width="1.5" />
+    <text x="120" y="112" font-size="7" fill="#003366" text-anchor="middle">PUSH-ROD</text>
+
+    <!-- PCB in Upper Half (Y = +1.2 to +2.2 mm -> width 9.2 mm = 110 px) -->
+    <rect x="65" y="94" width="110" height="12" fill="#2d862d" stroke="#133913" stroke-width="1.5" />
+    <text x="120" y="90" font-size="9" font-weight="bold" fill="#2d862d" text-anchor="middle">PCB (84.0 x 9.2 mm)</text>
+
+    <!-- Component on PCB (ESP32-C3 height 2.5 mm = 30 px) -->
+    <rect x="95" y="64" width="50" height="30" fill="#333333" stroke="#000000" stroke-width="1" />
+    <text x="120" y="82" font-size="8" fill="#ffffff" text-anchor="middle">ESP32-C3</text>
+    <!-- Headroom Clearance dimension -->
+    <line x1="120" y1="42" x2="120" y2="64" stroke="#009933" stroke-width="1.2" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+    <text x="128" y="55" font-size="8" font-weight="bold" fill="#009933">1.14 mm CLR</text>
+
+    <!-- Battery in Lower Half (Y = -1.2 to -5.2 mm -> 4.0 mm thick = 48 px, width 10.5 mm = 126 px) -->
+    <rect x="57" y="134" width="126" height="48" fill="url(#hatch-battery)" stroke="#009933" stroke-width="1.5" />
+    <text x="120" y="162" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle" style="text-shadow: 1px 1px 2px #000;">LP401040 (4.0 x 10.5 mm)</text>
+    <!-- Battery Cradle Wall -->
+    <path d="M 50 134 L 50 188 L 190 188 L 190 134" fill="none" stroke="#997a00" stroke-width="1.5" />
+    <text x="120" y="225" font-size="11" fill="#333333" text-anchor="middle">Barrel OD: 15.5 mm | ID: 13.0 mm | Cell: 4.0 mm</text>
+  </g>
+
+  <!-- Section C-C: Rear USB-C & MicroSD Section (Z = 135 mm) -->
+  <g id="section-cc" transform="translate(900, 480)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#003366">SECTION C-C: USB-C &amp; MicroSD CARRIER (Z = 135 mm)</text>
+    <!-- Outer Barrel Wall -->
+    <circle cx="120" cy="120" r="93" fill="url(#hatch-metal)" stroke="#003366" stroke-width="2" />
+    <circle cx="120" cy="120" r="78" fill="#ffffff" stroke="#003366" stroke-width="1.5" />
+
+    <!-- USB-C Port Cutout on Barrel Wall -->
+    <rect x="80" y="27" width="80" height="20" fill="#ffffff" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="3,2" />
+    <text x="120" y="22" font-size="9" font-weight="bold" fill="#cc0000" text-anchor="middle">USB-C APERTURE (9.0 x 3.5 mm)</text>
+
+    <!-- Rail Deck Base -->
+    <rect x="50" y="106" width="140" height="28" fill="#e6b800" stroke="#997a00" stroke-width="1.5" />
+
+    <!-- MicroSD Carrier Board Above Rail (Width 11.4 mm = 136 px) -->
+    <rect x="52" y="94" width="136" height="12" fill="#0066cc" stroke="#003366" stroke-width="1.5" />
+    <text x="120" y="88" font-size="9" font-weight="bold" fill="#0066cc" text-anchor="middle">MicroSD CARRIER (11.4 x 16.0 mm)</text>
+
+    <!-- TF-01A Push-Push Socket -->
+    <rect x="75" y="66" width="90" height="28" fill="#555555" stroke="#222222" stroke-width="1.2" />
+    <text x="120" y="84" font-size="8" fill="#ffffff" text-anchor="middle">TF-01A SOCKET</text>
+
+    <text x="120" y="225" font-size="11" fill="#333333" text-anchor="middle">Rear Electronics &amp; Storage Bay</text>
+  </g>
+
+  <!-- Engineering Notes and Specifications Table -->
+  <g id="notes-table" transform="translate(60, 760)">
+    <rect x="0" y="0" width="950" height="160" fill="#f8f9fa" stroke="#003366" stroke-width="1.5" />
+    <text x="20" y="25" font-size="13" font-weight="bold" fill="#003366">ENGINEERING VALIDATION &amp; MECHANICAL DESIGN RULES</text>
+    <text x="20" y="48" font-size="10" fill="#333333">1. ENVELOPE: Nominal 153.50 mm length [Spec: 150.0-155.0 mm] x 15.50 mm OD [Spec: &lt;= 16.00 mm]. Watertight 2-manifold STL geometry verified.</text>
+    <text x="20" y="68" font-size="10" fill="#333333">2. REFILL &amp; CLASH: Standard D1 ballpoint refill (67.0 mm) ends at Z = 68.5 mm (retracted) / Z = 64.0 mm (extended). Battery starts at Z = 74.0 mm.</text>
+    <text x="20" y="84" font-size="10" fill="#cc0000" font-weight="bold">   NO PHYSICAL CLASH: Minimum axial safety gap is 5.50 mm in idle retracted state and 10.00 mm during writing.</text>
+    <text x="20" y="104" font-size="10" fill="#333333">3. PUSH-ROD CONDUIT: DIA 1.6 mm Delrin push-rod travels through DIA 3.2 mm tunnel in internal rail cartridge (0.8 mm radial clearance).</text>
+    <text x="20" y="120" font-size="10" fill="#333333">4. ELECTRICAL ISOLATION: 2.40 mm solid composite structural deck isolates PCB underside from LiPo battery pouch. Zero mechanical pressure.</text>
+    <text x="20" y="140" font-size="10" fill="#333333">5. BAYONET TWIST-LOCK: 3 radial lugs spaced 120 deg engage 30.0 deg clockwise twist. Fully unlocks for single-unit rail removal.</text>
+  </g>
+</svg>

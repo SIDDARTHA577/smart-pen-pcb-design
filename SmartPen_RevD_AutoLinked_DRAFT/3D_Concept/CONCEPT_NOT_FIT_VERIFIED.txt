@@ -1,0 +1,1 @@
+These STEP/STL files are earlier concept geometry only, not mechanically verified. Do not claim print-fit tolerance, complete bayonet, click, battery envelope, or electronic placement.

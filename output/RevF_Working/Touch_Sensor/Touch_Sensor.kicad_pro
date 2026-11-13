@@ -1,0 +1,24 @@
+{
+  "board": {
+    "design_settings": {
+      "defaults": {
+        "board_thickness": 0.8,
+        "copper_line_width": 0.2,
+        "min_clearance": 0.127,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.2,
+        "min_via_diameter": 0.5
+      }
+    }
+  },
+  "meta": {
+    "filename": "Touch_Sensor.kicad_pro",
+    "version": 1
+  },
+  "sheets": [
+    [
+      "",
+      ""
+    ]
+  ]
+}

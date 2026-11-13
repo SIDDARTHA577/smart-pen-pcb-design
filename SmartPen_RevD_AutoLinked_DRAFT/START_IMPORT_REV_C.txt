@@ -1,0 +1,11 @@
+SMART PEN REV C — EASYEDA IMPORT REPLACEMENT
+
+WHY: Prior Rev B schematic included overlapping wires which shorted unrelated net labels (RF with touch/power and LEDs with motor drive). Do not continue routing Rev B.
+
+1. Keep Rev B as backup. Create a NEW project SmartPen_RevC_Review.
+2. EasyEDA Standard > File > Open > EasyEDA > EasyEDA/SmartPen_RevC_Connected_Schematic_DRAFT_EasyEDA.json (same filename within NEW Rev C ZIP).
+3. Save as NEW project SmartPen_RevC_Review, not on top of Rev B.
+4. Open Design Manager > Nets > refresh. Confirm that combined-net warnings such as RF_LNA/TOUCH_OUT and LED_RED_SINK/HAPTIC_GATE_DRIVE are no longer present. If they remain, STOP and report.
+5. Inspect valid single-pin warnings separately: CHG_STAT (charger status unused), ESP32 unassigned GPIOs; such pins need explicit NC flags only if intentionally unused and datasheets allow it.
+6. PCB staging file included only for visual dimension study; it is not routed or verified and MUST NOT be ordered.
+7. No regulator or power-path design, no qualified RF, no tested USB, no confirmed chip footprints; incomplete hardware specification.

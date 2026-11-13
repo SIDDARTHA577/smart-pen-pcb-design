@@ -1,0 +1,591 @@
+SMART PEN
+PCB / Firmware / Mechanical Engineering Handoff
+Revision 0.2 — PCB Team Reference
+From Chattychop (G. Badrinath)
+Vijayawada, Andhra Pradesh, India
+September 2026
+Quick Context
+The Smart Pen is a pen-sized device that captures handwriting motion via an IMU, stores it locally, and reconstructs it in a browser app. This document is the complete PCB, firmware, and mechanical engineering handoff — everything your team needs to spec, verify, and build against.
+Two things worth knowing up front that shape the electronics requirements:
+IMU drift is treated as the core technical risk, not an afterthought — position is always an estimate, never exact. The plan is to preserve raw sensor data and tune reconstruction later, so nothing in the electronics should assume perfect accuracy is achievable from the sensor alone.
+USB-C must support both charging and data transfer (not charging-only) — it's used for local wired data transfer to a laptop and for tethering to a phone's internet connection. This resolves the open question in Section 1.25 (USB-C) below in favor of a data-capable USB-C implementation.
+Full origin story and product-level reasoning live in a separate companion document, available on request — this file is scoped to what's needed for PCB/firmware/mechanical work.
+Engineering Handoff
+Master Engineering / PCB / Firmware / Mechanical Handoff — Revision 0.2
+1.1 Project Vision
+The goal is to build a pen-sized electronic device that can capture handwriting-related motion, store the motion data, and later reconstruct the writing digitally.
+The user should be able to:
+Hold the pen naturally like a normal pen.
+Use the external capacitive touch pad as WRITE/RECORD.
+Write while holding the touch pad.
+Track pen motion continuously using an IMU.
+Store the raw motion data locally on MicroSD.
+Connect to a computer and stream data live.
+Reconstruct the writing inside an HTML/browser application.
+View saved sessions and replay strokes.
+Use an ERASE button to send an erase/undo event.
+Switch between Free-hand Drawing Mode and Paragraph Mode.
+Eventually use an AI layer to analyze the reconstructed writing and generate a summary.
+The first prototype is primarily a measurement and validation prototype. Exact handwriting reconstruction accuracy must be determined from real sensor data rather than assumed.
+IMU drift is a major limitation because an MPU6050 measures acceleration and rotation rather than absolute pen position.
+1.2 Important Engineering Rule
+DO NOT MANUFACTURE THE FINAL PCB FROM ASSUMED DIMENSIONS OR UNVERIFIED MODULES.
+Before PCB fabrication, the team must verify:
+Exact ESP32-C3 board/module.
+Exact MPU/IMU part or module.
+Exact external touch controller.
+Exact MicroSD implementation.
+Exact battery.
+Exact charging/protection circuit.
+Exact buttons.
+Exact motor.
+Exact connectors.
+Exact refill/click mechanism.
+Exact pen enclosure dimensions.
+Exact PCB dimensions.
+Exact GPIO mapping.
+Exact component heights.
+Exact mechanical clearances.
+1.3 Final Physical Controls
+1.3.1 Write / Record
+The WRITE control is an external capacitive touch pad.
+Touch held → writing/recording active.
+Touch released → writing stroke ends.
+Motion can still be tracked while the pen is travelling, but it should not be rendered as ink.
+The touch system must use an external capacitive-touch controller because the ESP32-C3 itself should not be assumed to provide the classic ESP32 capacitive-touch peripheral. The exact touch-controller IC and electrode design are still TBD.
+1.3.2 Erase Button
+A separate physical button. Sends an erase command/event. Must be deliberately pressable and must not accidentally trigger during normal writing.
+The HTML application can initially interpret this as ERASE → undo/remove the most recent stroke, but the final behavior can be refined during software testing.
+1.3.3 Mode / Paragraph Button
+A separate physical push button toggling between:
+Free-hand Drawing Mode — drawing, sketching, free-form strokes. Green LED.
+Paragraph Mode — handwriting, notes, sentences, paragraph-style writing. Red LED.
+The exact default mode after power-on must be defined in firmware before finalization.
+1.3.4 Power
+A physical power button/switch is required, providing a clear ON/OFF state, accessible without interfering with the grip. Exact switch type and location selected during CAD development.
+1.3.5 Rear Click Mechanism
+A normal pen-style rear click mechanism is retained:
+Click to extend refill, click again to retract.
+Mechanical operation independent of electronics.
+Refill must not collide with electronics rail, battery, wiring, or front MPU assembly.
+Must remain reliable after repeated operation.
+1.3.6 Pocket Clip
+Strong enough for normal carrying.
+Integrated into or securely attached to the enclosure.
+Should not obstruct buttons.
+Battery/center-of-mass placement should consider clip and carrying orientation.
+1.4 Internal Removable Electronics Rail
+Electronics mount on a single removable internal rail/cartridge, serviceable as one unit. The rail can contain:
+Main PCB.
+Battery interface.
+Front MPU connection.
+Touch-controller connection.
+Haptic motor connection.
+Other electronics required by the design.
+1.5 Twist-Lock / Bayonet Mechanism
+The front cap is mechanically coupled to the internal rail — twisting the front cap twists the internal rail. It is not an independently rotating decorative cap.
+Unlock sequence
+Pen is locked.
+Rotate front cap/rail approximately 30° counter-clockwise.
+Bayonet lugs disengage from their slots.
+Pull the internal rail/cartridge out.
+Lock sequence
+Align the rail using its mechanical key/guides.
+Push the rail fully into the pen.
+Rotate approximately 30° clockwise.
+Bayonet lugs engage.
+Rail is locked.
+The approximately 30° rotation is a provisional mechanical target, not a final manufacturing dimension.
+1.6 Bayonet / Anti-Rotation Requirements
+A possible concept: three lugs, three corresponding slots, approximately 120° spacing — a design direction only, until tested in CAD. The final design must include:
+Positive locking.
+Clear locked position.
+Clear unlocked position.
+Mechanical end stops.
+Anti-rotation/keying.
+No unwanted rail rotation while writing.
+Adequate tolerance for 3D printing.
+No accidental unlocking during normal pen use.
+The rail must return to the same rotational orientation every time it is installed.
+1.7 Front / Tip Section
+The front of the pen must be holdable, comfortable to grip, suitable for natural writing, mechanically stable, and compatible with both the refill and the separate MPU module. There should be a grippable front section rather than making the front purely an electronics housing.
+1.8 Separate Front MPU Module
+The MPU/IMU should be a separate front/tip module, not simply placed on the main PCB. It should:
+Sit at the front/tip position.
+Come out with the removable internal rail.
+Be electrically connected to the main PCB.
+Be mechanically supported by its own carrier/pocket.
+Have repeatable orientation.
+Not rely on the electrical connector to hold its mechanical weight.
+Not interfere with the refill.
+1.9 MPU Connector
+Connects to the main PCB through a small detachable/keyed connector. The previously referenced white-style connector is a visual/reference direction only — it does not lock the exact part number.
+Final connector selection depends on:
+Pitch.
+Current requirements.
+Number of signals.
+Physical size.
+Locking/keying.
+Availability.
+Mating-cycle requirements.
+Mechanical strength.
+Wire/cable flexibility.
+Space inside the pen.
+Requirements:
+Keyed or otherwise protected against reversed insertion.
+Clear insertion direction.
+Must not carry the mechanical load of the MPU assembly.
+Strain relief.
+Enough wire length for rail removal.
+Safe bend radius.
+No pinching when the rail is inserted.
+Same orientation after reassembly.
+1.10 MPU Mechanical Position
+The MPU must rest at the front/tip position that comes out when the rail is twisted/unlocked. The CAD model must include the MPU carrier, sensor pocket, mechanical stops, connector location, cable route, strain relief, orientation/keying, and clearances from refill, grip, and shell. The MPU's X/Y/Z orientation must be documented, and the PCB/firmware team must use the same coordinate convention.
+1.11 3D Model Requirement
+A proper 3D CAD model must be created before final PCB fabrication. The first physical prototype should be 3D printed, to verify overall size, grip, internal component fit, rail insertion/removal, bayonet locking, MPU positioning, connector clearance, battery fit, button positions, touch-pad location, USB-C access, refill movement, rear click operation, pocket clip, and internal wiring.
+1.12 Complete CAD Assembly
+The 3D model must include real or accurately measured representations of all major components — shell, grip, cap, rail, bayonet lugs/slots, anti-rotation guides, main PCB, ESP32-C3, front MPU module and carrier, connector and cable, battery and retention, touch pad and controller, MicroSD, charging circuit, power switch, ERASE and MODE buttons, LEDs, vibration motor and mount, USB-C opening, rear click mechanism, refill, springs, and pocket clip.
+1.13 Fitting / Clearance Check
+Before PCB fabrication, the CAD assembly must be checked for collisions and interference across PCB, shell, battery, connectors, cabling, buttons, LEDs, USB-C, MicroSD, MPU, refill, click mechanism, grip, rail insertion path, bayonet rotation path, and assembly/disassembly access. The 3D enclosure and PCB must be checked together — no component should be placed simply because it fits a 2D PCB drawing.
+1.14 Provisional Mechanical Targets
+Initial CAD targets only — not final manufacturing dimensions:
+Overall length: approximately 150–155 mm.
+Outer diameter: approximately 15–16 mm.
+Bayonet rotation: approximately 30°.
+Three-lug concept: approximately 120° apart.
+Battery located under/within the internal rail around the central region for balance.
+Final dimensions must come from actual components, actual refill, actual battery, required grip size, PCB thickness, connector dimensions, 3D-print tolerances, and mechanical testing.
+1.15 Battery Position
+Located under/within the internal rail, approximately around the central/clip-side region where practical, for center of mass, comfortable writing, no PCB interference, secure retention, safe cable routing, serviceability, and no pressure on the LiPo cell from the enclosure. Exact battery must be selected and measured before enclosure/PCB are frozen.
+1.16 Main PCB
+Should contain electronics for the ESP32-C3, power regulation, storage interface, external touch controller interface, ERASE/MODE buttons, LED control, haptic motor driver, front MPU connector, and charging/power interface. Shaped to fit the pen's actual internal envelope — a narrow/long PCB or carrier is preferred where practical, with tall components kept away from the natural finger-grip region.
+1.17 Electrical Architecture
+Main MCU: ESP32-C3. Functions: IMU data collection, sensor processing, button/control handling, MicroSD recording, BLE communication, Wi-Fi communication if enabled, haptic control, and session management. The architecture uses the ESP32-C3 as the central controller with MPU on I2C and MicroSD on SPI.
+1.18 IMU
+Initial target: MPU6050-class IMU over I2C. Requirements: rigid mechanical mounting, known X/Y/Z orientation, consistent orientation relative to the pen body, clean I2C routing, local decoupling, and mechanical isolation from the vibration motor as much as practical.
+1.19 Important IMU Limitation
+The MPU does not directly measure absolute pen position — the system has a fundamental drift problem.
+Acceleration can be integrated to estimate velocity and position, but small sensor errors accumulate. The first prototype must collect real raw sensor data and use it to develop and tune the reconstruction algorithm. Do not claim guaranteed pixel-perfect handwriting reconstruction from the IMU alone. If testing shows unacceptable drift, the architecture should remain modular enough to add another position reference in a future revision, such as an optical/displacement sensing method.
+1.20 MicroSD Storage
+Offline storage system, using SPI where appropriate. Records: timestamp, accelerometer data, gyroscope data, pen state, mode, stroke/session information, erase events, and firmware version/session metadata. Prefer efficient binary recording for normal operation; CSV/JSON for debugging and export. Raw timestamped sensor logging is retained so future decoding improvements can be made without recollecting data.
+1.21 Data Model
+Logical sample fields: t (timestamp), ax/ay/az (accelerometer), gx/gy/gz (gyroscope), state (recording state), mode (Free-hand or Paragraph).
+Possible states:
+IDLE — no active recording.
+INK — WRITE touch active; motion contributes to visible writing.
+TRAVEL — WRITE touch released; motion still tracked if required, but not rendered as ink.
+ERASE — physical ERASE button event; exact behavior finalized in firmware/HTML.
+1.22 Sampling
+Initial target: 100–200 Hz, as a starting point only. The actual rate should be tuned using real recorded data, depending on IMU capability, CPU load, SD performance, BLE bandwidth, battery consumption, and reconstruction quality.
+1.23 Haptic Feedback
+A small vibration motor provides feedback for events such as boot ready, BLE connected, session saved, error, and other important states.
+The motor must NOT be connected directly to an ESP32 GPIO. Use: ESP32 GPIO → transistor/MOSFET driver → vibration motor.
+Suitable suppression/decoupling must be provided for the selected motor, kept mechanically and electrically separated from the IMU as much as the enclosure allows.
+1.24 Power System
+Prototype power architecture: USB-C → Charging/Protection → LiPo Battery → Power Regulation → 3.3 V Logic Rail → ESP32-C3 / IMU / Touch / Other Logic.
+Requirements:
+Protected 3.7 V LiPo.
+Appropriate charging/protection.
+Appropriate 3.3 V regulation.
+Adequate peak current capability.
+Local decoupling.
+Clear VBAT test point.
+Clear 3V3 test point.
+GND test point.
+Secure battery connector.
+Correct polarity.
+Motor current isolated from sensitive logic as much as practical.
+1.25 USB-C
+Currently intended primarily for charging. The team must explicitly decide before PCB freeze whether USB-C will also provide USB data, firmware programming, or serial debugging. If charging-only is retained, it must not accidentally be designed as a USB data interface. Must remain physically accessible through the enclosure.
+1.26 External Touch Controller
+Because the ESP32-C3 is the main MCU, an external capacitive-touch controller is required for the WRITE pad. Must determine: controller IC, electrode geometry, pad size, PCB/enclosure placement, required sensitivity, interface to ESP32-C3, power requirements, noise behavior, and false-trigger protection. The touch pad should be positioned where the user can naturally hold it while writing.
+1.27 GPIO Plan (Provisional)
+The following is provisional and must not be treated as final:
+Signal
+Provisional GPIO
+Function
+I2C SDA
+GPIO8*
+Front MPU SDA
+I2C SCL
+GPIO9*
+Front MPU SCL
+SPI SCK
+GPIO4*
+MicroSD clock
+SPI MISO
+GPIO5*
+MicroSD → MCU
+SPI MOSI
+GPIO6*
+MCU → MicroSD
+SD CS
+GPIO7*
+MicroSD chip select
+ERASE
+GPIO3*
+Physical erase button
+MODE
+TBD
+Mode button
+HAPTIC
+GPIO10*
+Motor driver
+TOUCH
+TBD
+External touch controller
+* = provisional.
+Before schematic freeze, verify: ESP32-C3 board revision, boot/strapping pins, available GPIOs, touch-controller interface, SD interface, LED pins, button pins, programming pins, and any board-specific restrictions.
+1.28 BLE / Live Computer Connection
+Preferred local live connection: ESP32-C3 → BLE → HTML application.
+BLE should provide live motion notifications, stored-session transfer, device/session commands, and optional battery/device status.
+Original architecture: ESP32 → BLE → HTML App → Decoder → Canvas.
+A custom BLE service, live notification path, and stored-session transfer path are specified.
+1.29 Wi-Fi
+ESP32-C3 Wi-Fi can be used for network/internet functionality if required, but the core data system should not depend entirely on internet connectivity. Recommended architecture:
+Offline: Pen → MicroSD → Later Sync → HTML App.
+Live Local: Pen → BLE → HTML App.
+Network/Internet: Pen → Wi-Fi → Network/Backend → HTML App.
+The data format should remain independent of the transport method.
+1.30 HTML Application
+The browser application should eventually include:
+Connect button.
+Pen connection status.
+Battery/device status if available.
+Live canvas.
+Mode indicator.
+Live stroke rendering.
+Saved sessions.
+Session timestamps.
+Stroke-by-stroke replay.
+Undo/erase.
+Raw sensor/debug page.
+Raw-data export.
+Decoded-data export.
+AI summary panel.
+The application must keep the raw sensor data separate from the rendered result, so the decoder can be improved later without losing the original recording.
+1.31 AI Layer
+A later software layer. Recommended pipeline:
+Raw IMU Data → Motion Decoder → Reconstructed Strokes → Clean Writing / Recognized Text → AI → Summary / Interpretation.
+The AI should not be expected to fix fundamentally incorrect sensor tracking. First make the motion capture and reconstruction reliable, then add AI.
+1.32 Firmware Behavior
+Boot
+Initialize power state.
+Initialize IMU.
+Initialize MicroSD.
+Initialize touch controller.
+Initialize buttons.
+Initialize LEDs.
+Initialize BLE.
+Initialize Wi-Fi if enabled.
+Initialize haptic driver.
+Determine current mode.
+Indicate ready state.
+Write / Touch Active
+Start/continue recording.
+Sample IMU.
+Timestamp samples.
+Store samples.
+Stream live if connected.
+Mark samples as INK.
+Send data to decoder/HTML.
+Touch Released
+End current ink stroke.
+Enter travel/idle behavior.
+Do not continue rendering the released motion as ink.
+Erase
+Debounce the button.
+Record an erase event.
+Send erase event to HTML if connected.
+Save event to session data.
+Mode
+Toggle Free-hand ↔ Paragraph.
+Update LED.
+Save the current mode state.
+Ensure mode changes do not corrupt an active recording.
+1.33 Button / Input Testing
+Firmware must include a dedicated button/input test covering WRITE/touch, ERASE, MODE, POWER behavior, LED response, debouncing, long hold, quick press, multiple presses, and accidental-activation resistance.
+1.34 Test / Debug Modes
+RAW IMU TEST — accelerometer, gyroscope, timestamp, orientation.
+TOUCH TEST — touch detected, touch released, no false triggering.
+BUTTON TEST — ERASE, MODE, other physical inputs.
+LED TEST — green, red, any other status indicators.
+SD TEST — mount, write, read, file creation, session close.
+BLE TEST — pair/connect, live notifications, session transfer.
+HAPTIC TEST — motor driver, motor response, timing, current behavior.
+FULL RECORDING TEST — Touch → IMU → Timestamp → SD → BLE → HTML → Decoder → Canvas.
+1.35 PCB Test Points
+Provide accessible test pads for: VBAT, 3V3, GND, I2C SDA, I2C SCL, SPI SCK, SPI MISO, SPI MOSI, SPI CS, UART TX/RX if available, and programming/reset signals as required.
+1.36 PCB Layout Requirements
+Must consider: pen-shaped form factor, component height, grip clearance, battery location, MPU connector location, front-module cable route, touch controller, MicroSD, USB-C, buttons, LEDs, motor, power routing, grounding, decoupling, I2C routing, SPI routing, RF clearance for ESP32-C3, mechanical mounting, and rail attachment. Do not finalize PCB placement without checking the complete 3D assembly.
+1.37 Mechanical / Electronics Interface
+The following must be frozen together by the mechanical and PCB teams: PCB outline, mounting/retention method, rail dimensions, component height, front MPU position, connector position, battery envelope, button actuator locations, touch pad location, USB-C opening, MicroSD access, motor position, refill position, and click mechanism.
+1.38 3D Print Prototype Milestone
+Prototype A
+3D-print the enclosure and rail, using placeholder/component models if necessary. Check: grip, overall dimensions, refill, click, pocket clip, rail insertion/removal, bayonet, front cap, MPU carrier, connector, battery space, buttons.
+Prototype B
+Use actual measured component dimensions. Check: real component fit, wiring, connector strain relief, PCB position, battery retention, USB-C access, touch pad, motor, sensor orientation.
+Prototype C
+Finalize mechanical dimensions and freeze the PCB envelope.
+1.39 PCB Team Deliverables
+☐
+KiCad schematic source
+☐
+KiCad PCB source
+☐
+PDF schematic
+☐
+PCB assembly drawing
+☐
+Gerber files
+☐
+NC drill files
+☐
+BOM
+☐
+Manufacturer part numbers
+☐
+Pick-and-place/CPL if assembly is required
+☐
+3D STEP model
+☐
+Board outline
+☐
+Mechanical dimensions
+☐
+Component height/placement drawing
+☐
+Revision-controlled fabrication notes
+☐
+Bring-up/test procedure
+☐
+Final GPIO map
+☐
+Power-tree documentation
+☐
+Connector pinout
+☐
+Front MPU interface documentation
+1.40 3D / Mechanical Team Deliverables
+☐
+Complete parametric CAD assembly
+☐
+Outer enclosure
+☐
+Front grip
+☐
+Front cap
+☐
+Internal removable rail
+☐
+Bayonet mechanism
+☐
+Anti-rotation mechanism
+☐
+Front MPU carrier
+☐
+MPU connector housing/retention
+☐
+Cable routing
+☐
+Connector strain relief
+☐
+Battery holder/retention
+☐
+Main PCB mounting/retention
+☐
+Touch-pad area
+☐
+ERASE button actuator
+☐
+MODE button actuator
+☐
+LED windows
+☐
+USB-C opening
+☐
+MicroSD access if required
+☐
+Motor mount
+☐
+Rear click/refill system
+☐
+Spring/mechanical elements
+☐
+Pocket clip
+☐
+STEP export
+☐
+3D-printable prototype files
+☐
+Mechanical drawings with dimensions/tolerances
+☐
+Assembly/disassembly instructions
+1.41 Fabrication Gate
+NO FINAL PCB MANUFACTURING UNTIL ALL OF THE FOLLOWING ARE VERIFIED.
+Electronics
+☐
+Exact ESP32-C3 selected
+☐
+Exact ESP32-C3 footprint measured
+☐
+Exact MPU selected
+☐
+MPU module dimensions measured
+☐
+External touch controller selected
+☐
+Touch pad geometry tested
+☐
+MicroSD implementation verified
+☐
+Charging/protection circuit verified
+☐
+Battery selected
+☐
+Battery dimensions measured
+☐
+Battery protection verified
+☐
+Motor voltage/current verified
+☐
+Buttons selected
+☐
+Connector selected
+☐
+GPIO map verified
+☐
+Boot/strapping conflicts checked
+☐
+3.3 V regulator checked for peak current
+☐
+Power tree reviewed
+☐
+Decoupling reviewed
+Mechanical
+☐
+Final pen envelope measured
+☐
+Refill selected
+☐
+Click mechanism fitted
+☐
+Grip tested
+☐
+Rail fitted
+☐
+Bayonet tested
+☐
+Anti-rotation tested
+☐
+Front MPU carrier fitted
+☐
+MPU connector fitted
+☐
+Cable routing tested
+☐
+Battery retention tested
+☐
+Buttons aligned
+☐
+Touch pad tested
+☐
+USB-C aligned
+☐
+Motor clearance checked
+☐
+Pocket clip tested
+☐
+Complete CAD collision check completed
+☐
+3D-printed prototype tested
+Firmware / Software
+☐
+RAW IMU working
+☐
+Touch working
+☐
+ERASE working
+☐
+MODE working
+☐
+LEDs working
+☐
+SD recording working
+☐
+BLE live stream working
+☐
+Session transfer working
+☐
+HTML canvas working
+☐
+Offline import working
+☐
+Decoder tested on real samples
+☐
+AI layer tested only after reconstruction pipeline works
+1.42 Development Milestones
+#
+Milestone
+1
+ESP32-C3 + separate MPU module raw data stable.
+2
+Touch WRITE control stable.
+3
+ERASE and MODE controls stable.
+4
+LED mode indication stable.
+5
+MicroSD recording stable.
+6
+BLE live stream stable.
+7
+HTML canvas receives live data.
+8
+Offline session import/replay works.
+9
+Mechanical 3D prototype fits all components.
+10
+Rail and bayonet mechanism works reliably.
+11
+Front MPU module and connector work reliably.
+12
+Real handwriting data is collected.
+13
+Motion-to-stroke decoder is tuned using real samples.
+14
+PCB/mechanical revision based on test results.
+15
+AI interpretation/summary is added.
+Raw sensor stability, storage, BLE, HTML visualization, offline replay, and real-data decoder tuning are prioritized before the later AI layer.
+1.43 Fundamental Project Risk
+The biggest technical risk is accurate position reconstruction from an IMU alone. The project should therefore be treated as:
+Hardware → Raw Data → Testing → Algorithm Development → Reconstruction
+rather than:
+Hardware → Guaranteed Perfect Handwriting
+The prototype must preserve raw data so that better algorithms can be developed later. The architecture should also remain modular enough to add a future position-reference sensor if required.
+1.44 Final Team Instruction
+Build the Smart Pen as a real, holdable pen, not just electronics squeezed into a cylinder. The mechanical design, PCB, and firmware must be developed together.
+The most important physical requirements are:
+Normal pen-like grip.
+Grippable front section.
+External capacitive WRITE pad.
+Separate ERASE button.
+Separate MODE/PARAGRAPH button.
+Green/red mode indication.
+Physical power control.
+Normal rear click/refill.
+Pocket clip.
+Removable internal electronics rail.
+Front-cap-controlled twist lock.
+Bayonet locking.
+Anti-rotation.
+Battery under/within the rail.
+Separate front/tip MPU module.
+Small keyed detachable MPU connector.
+MPU mechanically supported at the tip.
+3D-printed prototype before final PCB fabrication.
+Complete CAD assembly and interference checking.
+Do not assume dimensions. Measure the actual parts. Do not freeze the PCB until the mechanical model is proven. Do not assume the IMU can provide perfect absolute handwriting position. Collect real sensor data first and use it to develop the reconstruction algorithm.
+The purpose of this revision is to give the PCB, firmware, and mechanical teams one consolidated engineering direction while keeping all unverified dimensions, parts, and pin assignments explicitly provisional.

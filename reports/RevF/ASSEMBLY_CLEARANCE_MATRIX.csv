@@ -1,0 +1,18 @@
+Subsystem Interface,Component A,Component B,Condition / State,Design Dimension,Nominal Spec / Limit,Calculated Clearance,Status,Engineering Rule & Proof
+Envelope Length,Pen Nose Tip to Click Button,Outer Boundary,Assembly Nominal,153.50 mm,150.00 - 155.00 mm,1.50 mm to max,PASS,Meets Section 1.14 specification
+Envelope Diameter,Main Outer Barrel,Outer Boundary,Maximum OD,15.50 mm,<= 16.00 mm,0.50 mm margin,PASS,Meets Section 1.11 / 1.14 specification
+Refill / Battery Axial Clash,D1 Refill Tail Cup,LiPo Battery Pouch Front,Retracted (Idle),Z = 68.50 mm,Z = 74.00 mm,5.50 mm axial gap,PASS,Refill never reaches battery axial zone
+Refill / Battery Axial Clash,D1 Refill Tail Cup,LiPo Battery Pouch Front,Extended (Writing),Z = 64.00 mm,Z = 74.00 mm,10.00 mm axial gap,PASS,Gap widens to 10.0 mm during writing
+Click Mechanism Stroke,Rear Plunger Travel,Return Spring Envelope,Extended Stroke,4.50 mm stroke,4.00 - 5.00 mm standard,Full positive latch,PASS,Smooth write latching without binding
+Spring Solid Height Margin,Refill Helical Return Spring,Solid Coil Height,Over-Travel (Click),6.20 mm compressed,5.50 mm solid limit,0.70 mm spring margin,PASS,Zero coil bind during full click push
+Push-Rod Tunnel Fit,Delrin Actuator Push-Rod,Internal Rail Conduit,Full Stroke Dynamic,OD 1.60 mm,ID 3.20 mm,0.80 mm radial clr,PASS,Concentric guide channel prevents buckling
+Push-Rod / PCB Barrier,Push-Rod Surface,PCB Underside (Bottom Cu),Full Stroke Dynamic,Y = +0.80 mm,Y = +1.20 mm,0.40 mm solid polymer,PASS,Complete galvanic and mechanical isolation
+Push-Rod / Battery Barrier,Push-Rod Surface,Battery Top Surface,Full Stroke Dynamic,Y = -0.80 mm,Y = -1.20 mm,0.40 mm solid polymer,PASS,Zero mechanical pressure on LiPo pouch
+PCB / Battery Deck Isolation,PCB Bottom Layer,Battery Enclosure,Static Clamped,Y = +1.20 mm,Y = -1.20 mm,2.40 mm composite deck,PASS,Meets Section 1.15 rigid barrier requirement
+Bayonet Twist-Lock,Barrel 3-Slot Collar,Grip 3-Radial Lugs,30.0 deg Rotation,30.0 deg clockwise,approx 30 deg,0.20 mm engagement,PASS,Meets Section 1.5 - 1.6 twist-lock rule
+Rail Slide Insertion,Rail Cartridge Guide Ribs,Outer Barrel Inner Bore,Insertion / Service,OD 12.40 mm,ID 13.00 mm bore,0.30 mm / side slide fit,PASS,Smooth insertion without lateral rattle
+PCB Headroom Clearance,Tallest Component (USB-C),Barrel Inner Wall,Static Assembled,Crest Y = +5.36 mm,Wall Y = +6.50 mm,1.14 mm headroom,PASS,No component collision under vibration
+Battery Cradle Depth,LiPo Cell LP401040,Rail Cradle Cavity,Static Retained,Thickness 4.00 mm,Pocket 4.60 mm,0.60 mm swelling margin,PASS,Accommodates chemical swelling safely
+Front MPU Clearance,MPU-6050 Module,Front Grip Nose Pocket,Static Seated,Z = 24.0 to 36.0 mm,Grip Cavity,0.25 mm wire relief,PASS,Rigidly seated for accurate inertial data
+MicroSD Carrier Fit,MicroSD Carrier PCB & Socket,Outer Barrel Rear Bore,Static Seated,"Width 11.40 mm, Stack 2.85 mm",Bore ID 13.00 mm (Sagitta 9.62 mm),6.77 mm radial margin,PASS,Meets Section 1.36 MicroSD envelope rule
+Touch Daughterboard Fit,TTP223 Touch PCB & Electrode,Front Grip Recess,Static Seated,6.0 x 18.0 x 0.8 mm,Grip Outer Cavity,Snug grip flush seating,PASS,Ergonomic index finger momentary touch zone

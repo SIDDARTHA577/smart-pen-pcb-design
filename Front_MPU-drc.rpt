@@ -1,0 +1,520 @@
+** Drc report for Front_MPU.kicad_pcb **
+** Created on 2026-11-02T19:56:32 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 126 DRC violations **
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(2.8500 mm, 1.4000 mm): Track [I2C_SCL] on B.Cu, length 2.2500 mm
+    @(2.3500 mm, 2.5000 mm): Track [I2C_SDA] on B.Cu, length 3.8300 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and I2C_SCL)
+    Local override; error
+    @(2.1000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+    @(2.8500 mm, 1.4000 mm): Track [I2C_SCL] on B.Cu, length 0.8700 mm
+[shorting_items]: Items shorting two nets (nets I2C_SCL and 3V3)
+    Local override; error
+    @(1.9800 mm, 1.4000 mm): Track [I2C_SCL] on B.Cu, length 7.3000 mm
+    @(2.1000 mm, 1.4000 mm): Track [3V3] on B.Cu, length 4.1000 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and GND)
+    Local override; error
+    @(1.0000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 3.5800 mm
+    @(1.0000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.1000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[shorting_items]: Items shorting two nets (nets 3V3 and GND)
+    Local override; error
+    @(6.2000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+    @(6.4000 mm, 1.4000 mm): Track [GND] on F.Cu, length 0.8000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1100 mm)
+    Local override; error
+    @(4.8500 mm, 7.5500 mm): Pad 12 [<no net>] of U1 on F.Cu
+    @(4.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.8500 mm, 1.4000 mm): Track [I2C_SCL] on B.Cu, length 0.8700 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(6.2000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0770 mm)
+    Local override; error
+    @(6.2000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+    @(5.5500 mm, 6.3500 mm): Pad 14 [<no net>] of U1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(6.2000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1100 mm)
+    Local override; error
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(2.3500 mm, 7.5500 mm): Pad 7 [<no net>] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and I2C_SDA)
+    Local override; error
+    @(6.2000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+    @(6.1800 mm, 2.5000 mm): Track [I2C_SDA] on B.Cu, length 6.2000 mm
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1100 mm)
+    Local override; error
+    @(1.6500 mm, 4.8500 mm): Pad 2 [<no net>] of U1 on F.Cu
+    @(1.6500 mm, 4.3500 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1100 mm)
+    Local override; error
+    @(5.5500 mm, 4.8500 mm): Pad 17 [<no net>] of U1 on F.Cu
+    @(5.5500 mm, 4.3500 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.0000 mm, 7.5500 mm): Track [3V3] on B.Cu, length 1.8500 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0750 mm)
+    Local override; error
+    @(3.1000 mm, 1.4000 mm): Track [GND] on F.Cu, length 0.8000 mm
+    @(4.1000 mm, 2.5000 mm): Track [I2C_SDA] on F.Cu, length 1.7500 mm
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.8500 mm, 1.4000 mm): Track [I2C_SCL] on B.Cu, length 2.2500 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1100 mm)
+    Local override; error
+    @(3.3500 mm, 3.6500 mm): Pad 22 [<no net>] of U1 on F.Cu
+    @(2.8500 mm, 3.6500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(5.1000 mm, 1.4000 mm): Track [I2C_SCL] on B.Cu, length 2.2500 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0632 mm)
+    Local override; error
+    @(1.6500 mm, 5.8500 mm): Pad 4 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.8500 mm, 3.6500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[shorting_items]: Items shorting two nets (nets I2C_SDA and 3V3)
+    Local override; error
+    @(6.1800 mm, 8.7000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(6.2000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 3.5800 mm
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.9800 mm, 8.7000 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(2.8500 mm, 3.6500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(6.1800 mm, 8.7000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.3500 mm, 2.5000 mm): Track [I2C_SDA] on B.Cu, length 3.8300 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(5.1000 mm, 1.4000 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(1.9800 mm, 8.7000 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(2.1000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(5.1000 mm, 1.4000 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[shorting_items]: Items shorting two nets (nets I2C_SDA and 3V3)
+    Local override; error
+    @(6.1800 mm, 8.7000 mm): Pad 2 [I2C_SDA] of R2 on F.Cu
+    @(6.2000 mm, 8.7000 mm): Track [3V3] on F.Cu, length 0.9800 mm
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+    @(6.2000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 3.5800 mm
+[shorting_items]: Items shorting two nets (nets GND and I2C_SDA)
+    Local override; error
+    @(3.1000 mm, 2.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(4.1000 mm, 2.5000 mm): Track [I2C_SDA] on F.Cu, length 1.7500 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and I2C_SCL)
+    Local override; error
+    @(2.1000 mm, 1.4000 mm): Track [3V3] on B.Cu, length 4.1000 mm
+    @(5.1000 mm, 1.4000 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+    @(6.2000 mm, 1.4000 mm): Track [3V3] on F.Cu, length 3.7200 mm
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.3500 mm, 2.5000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(2.1000 mm, 1.4000 mm): Track [3V3] on B.Cu, length 4.1000 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[shorting_items]: Items shorting two nets (nets GND and I2C_SDA)
+    Local override; error
+    @(3.1000 mm, 2.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(2.3500 mm, 2.5000 mm): Track [I2C_SDA] on B.Cu, length 3.8300 mm
+[shorting_items]: Items shorting two nets (nets 3V3 and <no net>)
+    Local override; error
+    @(5.5500 mm, 5.1200 mm): Track [3V3] on F.Cu, length 1.7300 mm
+    @(5.5500 mm, 6.3500 mm): Pad 14 [<no net>] of U1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(2.3500 mm, 2.5000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(6.1800 mm, 8.7000 mm): Via [I2C_SDA] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(6.1800 mm, 2.5000 mm): Track [I2C_SDA] on B.Cu, length 6.2000 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.1131 mm)
+    Local override; error
+    @(4.3500 mm, 3.6500 mm): Track [CPOUT] on F.Cu, length 0.4810 mm
+    @(4.8500 mm, 3.6500 mm): Pad 19 [<no net>] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets 3V3 and <no net>)
+    Local override; error
+    @(6.2000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 0.6500 mm
+    @(5.5500 mm, 5.3500 mm): Pad 16 [<no net>] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets 3V3 and GND)
+    Local override; error
+    @(1.0000 mm, 2.5000 mm): Track [3V3] on F.Cu, length 2.6200 mm
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.9800 mm, 1.4000 mm): Track [I2C_SCL] on B.Cu, length 7.3000 mm
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation (zone clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.0000 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(3.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(3.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(1.0000 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(6.2000 mm, 6.0800 mm): Pad 1 [3V3] of C1 on F.Cu
+    @(6.2000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(6.2000 mm, 6.0800 mm): Pad 1 [3V3] of C1 on F.Cu
+    @(5.5500 mm, 6.3500 mm): Pad 14 [<no net>] of U1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(1.0000 mm, 6.0800 mm): Pad 1 [3V3] of C2 on F.Cu
+    @(1.0000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+    @(5.5500 mm, 5.3500 mm): Pad 16 [<no net>] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+    @(5.5500 mm, 4.8500 mm): Pad 17 [<no net>] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.0000 mm, 6.0800 mm): Pad 1 [3V3] of C2 on F.Cu
+    @(1.6500 mm, 6.3500 mm): Pad 5 [<no net>] of U1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(1.6500 mm, 4.8500 mm): Pad 2 [<no net>] of U1 on F.Cu
+    @(1.6500 mm, 4.3500 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.6500 mm, 4.8500 mm): Pad 2 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(6.4000 mm, 1.4000 mm): Pad 5 [GND] of J1 on F.Cu
+    @(6.2000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.6500 mm, 5.3500 mm): Pad 3 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1632 mm)
+    Rule: board setup constraints hole; error
+    @(1.6500 mm, 5.8500 mm): Pad 4 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(1.6500 mm, 5.8500 mm): Pad 4 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 6.0800 mm): Pad 1 [3V3] of C2 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1770 mm)
+    Rule: board setup constraints hole; error
+    @(1.6500 mm, 6.3500 mm): Pad 5 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(2.3500 mm, 7.5500 mm): Pad 7 [<no net>] of U1 on F.Cu
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(2.8500 mm, 7.5500 mm): Pad 8 [3V3] of U1 on F.Cu
+    @(3.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(3.3500 mm, 7.5500 mm): Pad 9 [GND] of U1 on F.Cu
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(3.8500 mm, 7.5500 mm): Pad 10 [REGOUT] of U1 on F.Cu
+    @(3.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(3.8500 mm, 7.5500 mm): Pad 10 [REGOUT] of U1 on F.Cu
+    @(4.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(4.8500 mm, 7.5500 mm): Pad 12 [<no net>] of U1 on F.Cu
+    @(4.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1770 mm)
+    Rule: board setup constraints hole; error
+    @(5.5500 mm, 6.3500 mm): Pad 14 [<no net>] of U1 on F.Cu
+    @(6.2000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1632 mm)
+    Rule: board setup constraints hole; error
+    @(5.5500 mm, 5.8500 mm): Pad 15 [<no net>] of U1 on F.Cu
+    @(6.2000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(5.5500 mm, 5.8500 mm): Pad 15 [<no net>] of U1 on F.Cu
+    @(6.2000 mm, 6.0800 mm): Pad 1 [3V3] of C1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(5.5500 mm, 4.8500 mm): Pad 17 [<no net>] of U1 on F.Cu
+    @(5.5500 mm, 4.3500 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1270 mm; actual 0.0000 mm)
+    Local override; error
+    @(4.8500 mm, 3.6500 mm): Pad 19 [<no net>] of U1 on F.Cu
+    @(4.5200 mm, 3.2000 mm): Pad 1 [CPOUT] of C3 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(3.3500 mm, 3.6500 mm): Pad 22 [<no net>] of U1 on F.Cu
+    @(2.8500 mm, 3.6500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)
+    Rule: board setup constraints hole; error
+    @(2.3500 mm, 3.6500 mm): Pad 24 [I2C_SDA] of U1 on F.Cu
+    @(2.8500 mm, 3.6500 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3500 mm)
+    Rule: board setup constraints edge; error
+    @(0.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(0.8000 mm, 0.6000 mm): Via [GND] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4750 mm)
+    Rule: board setup constraints edge; error
+    @(0.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(0.8000 mm, 1.4000 mm): Track [GND] on F.Cu, length 0.8000 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3500 mm)
+    Rule: board setup constraints edge; error
+    @(0.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(6.4000 mm, 0.6000 mm): Via [GND] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4750 mm)
+    Rule: board setup constraints edge; error
+    @(0.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(6.4000 mm, 1.4000 mm): Track [GND] on F.Cu, length 0.8000 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(0.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu, priority 0
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.0000 mm, 2.5000 mm): Track [3V3] on F.Cu, length 2.6200 mm
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.6500 mm, 4.8500 mm): Pad 2 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.5500 mm, 5.3500 mm): Pad 16 [<no net>] of U1 on F.Cu
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.6500 mm, 5.3500 mm): Pad 3 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.0000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 3.5800 mm
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.5500 mm, 4.8500 mm): Pad 17 [<no net>] of U1 on F.Cu
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.6500 mm, 5.8500 mm): Pad 4 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 6.0800 mm): Pad 1 [3V3] of C2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 6.0800 mm): Pad 1 [3V3] of C1 on F.Cu
+    @(5.5500 mm, 5.8500 mm): Pad 15 [<no net>] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 1.4000 mm): Via [3V3] on F.Cu - B.Cu
+    @(6.4000 mm, 1.4000 mm): Pad 5 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.5500 mm, 6.3500 mm): Pad 14 [<no net>] of U1 on F.Cu
+    @(6.2000 mm, 6.0800 mm): Pad 1 [3V3] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.6500 mm, 6.3500 mm): Pad 5 [<no net>] of U1 on F.Cu
+    @(1.0000 mm, 6.0800 mm): Pad 1 [3V3] of C2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(4.8500 mm, 3.6500 mm): Pad 19 [<no net>] of U1 on F.Cu
+    @(4.5200 mm, 3.2000 mm): Pad 1 [CPOUT] of C3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+    @(6.2000 mm, 6.0800 mm): Pad 1 [3V3] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 1.4000 mm): Track [3V3] on F.Cu, length 3.7200 mm
+    @(6.4000 mm, 1.4000 mm): Pad 5 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 1.4000 mm): Track [3V3] on F.Cu, length 3.7200 mm
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(1.0000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+    @(1.0000 mm, 6.0800 mm): Pad 1 [3V3] of C2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 0.6500 mm
+    @(5.5500 mm, 5.3500 mm): Pad 16 [<no net>] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 0.6500 mm
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.5500 mm, 5.1200 mm): Track [3V3] on F.Cu, length 1.7300 mm
+    @(5.5500 mm, 6.3500 mm): Pad 14 [<no net>] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.5500 mm, 5.1200 mm): Track [3V3] on F.Cu, length 1.7300 mm
+    @(5.5500 mm, 5.8500 mm): Pad 15 [<no net>] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(5.5500 mm, 5.1200 mm): Track [3V3] on F.Cu, length 1.7300 mm
+    @(5.5500 mm, 5.3500 mm): Pad 16 [<no net>] of U1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 3.5800 mm
+    @(6.1800 mm, 8.7000 mm): Pad 2 [I2C_SDA] of R2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 5.1200 mm): Track [3V3] on F.Cu, length 3.5800 mm
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(6.2000 mm, 8.7000 mm): Track [3V3] on F.Cu, length 0.9800 mm
+    @(6.1800 mm, 8.7000 mm): Pad 2 [I2C_SDA] of R2 on F.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(0.0000 mm, 10.0000 mm): Segment on Edge.Cuts
+    @(0.2000 mm, 5.6000 mm): Reference field of C2
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints; warning
+    @(3.3500 mm, 7.5500 mm): Via [GND] on F.Cu - B.Cu
+    @(2.8500 mm, 7.5500 mm): Via [3V3] on F.Cu - B.Cu
+[lib_footprint_mismatch]: Footprint 'JST_SH_4P' does not match copy in library 'Front_MPU'
+    Local override; warning
+    @(3.6000 mm, 1.4000 mm): Footprint J1
+[lib_footprint_mismatch]: Footprint 'QFN-24_4x4mm' does not match copy in library 'Front_MPU'
+    Local override; warning
+    @(3.6000 mm, 5.6000 mm): Footprint U1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(3.6000 mm, 0.5000 mm): Reference field of J1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(3.6000 mm, 3.0000 mm): Reference field of U1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(5.4000 mm, 5.6000 mm): Reference field of C1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(0.2000 mm, 5.6000 mm): Reference field of C2
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(5.0000 mm, 2.4000 mm): Reference field of C3
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(3.8500 mm, 9.5000 mm): Reference field of C4
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(1.5000 mm, 9.5000 mm): Reference field of R1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(5.7000 mm, 9.5000 mm): Reference field of R2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(3.6000 mm, 0.5000 mm): Reference field of J1
+    @(3.1000 mm, 1.4000 mm): Pad 2 [GND] of J1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(3.6000 mm, 0.5000 mm): Reference field of J1
+    @(4.1000 mm, 1.4000 mm): Pad 3 [I2C_SDA] of J1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.4000 mm, 5.6000 mm): Reference field of C1
+    @(5.5500 mm, 5.8500 mm): Pad 15 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.4000 mm, 5.6000 mm): Reference field of C1
+    @(5.5500 mm, 5.3500 mm): Pad 16 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(3.6000 mm, 3.0000 mm): Reference field of U1
+    @(3.3500 mm, 3.6500 mm): Pad 22 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(3.6000 mm, 3.0000 mm): Reference field of U1
+    @(3.8500 mm, 3.6500 mm): Pad 21 [<no net>] of U1 on F.Cu
+
+** Found 2 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(1.0000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+    @(1.0000 mm, 5.1200 mm): Pad 2 [GND] of C2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(6.2000 mm, 6.0800 mm): Via [GND] on F.Cu - B.Cu
+    @(6.2000 mm, 5.1200 mm): Pad 2 [GND] of C1 on F.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

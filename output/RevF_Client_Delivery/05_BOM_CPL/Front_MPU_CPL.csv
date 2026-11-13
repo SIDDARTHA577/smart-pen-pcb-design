@@ -1,0 +1,9 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+U1,MPU-6050,QFN-24_4x4mm,3.60,5.60,0,Top
+J1,SM04B-SRSS-TB,JST_SH_4P,3.60,1.40,0,Top
+C1,0.1uF,C0402,5.20,8.80,0,Top
+C2,0.1uF,C0402,3.20,8.80,0,Top
+C3,2.2nF,C0402,6.20,8.80,0,Top
+C4,0.1uF,C0402,4.20,8.80,0,Top
+R1,4.7k,R0402,2.20,8.80,0,Top
+R2,4.7k,R0402,1.20,8.80,0,Top

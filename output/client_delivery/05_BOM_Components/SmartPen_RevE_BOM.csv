@@ -1,0 +1,61 @@
+Reference,Quantity,Component,Manufacturer,Part Number,Footprint,Supplier / LCSC,Description
+U1,1,ESP32-C3FH4X,Espressif Systems,ESP32-C3FH4X,QFN-32_5x5mm_P0.5mm_EP3.7mm,JLCPCB / LCSC,"Mapped to official Espressif QFN-32 (5x5mm, 0.5mm pitch, 3.7x3.7mm EP). Pin 18 (VDD_SPI) verified internal LDO 3.3V out with 1uF bypass to GND."
+R1,1,10k EN pullup,Yageo,RC0402FR-0710KL,R0402,JLCPCB / LCSC,Assigned verified Yageo 0402 10k 1% 1/16W SMD resistor.
+C1,1,1uF EN delay,Samsung Electro-Mechanics,CL05A105KA5NQNC,C0402,JLCPCB / LCSC,Assigned verified Samsung 0402 1uF 25V X5R 10% ceramic capacitor.
+SW1,1,RESET switch NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,JLCPCB / LCSC,Selected Panasonic EVQ-P2B02B ultra-thin (0.5mm height) 2-pad tactile switch.
+R2,1,10k GPIO9 pullup,Yageo,RC0402FR-0710KL,R0402,JLCPCB / LCSC,Assigned verified Yageo 0402 10k 1% SMD resistor.
+SW2,1,BOOT switch NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,JLCPCB / LCSC,Selected Panasonic EVQ-P2B02B ultra-thin 2-pad tactile switch for boot strapping control.
+R3,1,10k GPIO2 pullup,Yageo,RC0402FR-0710KL,R0402,JLCPCB / LCSC,Assigned verified Yageo 0402 10k 1% SMD resistor.
+FB1,1,RF ferrite bead,Murata,BLM18PG121SN1D,L0603,JLCPCB / LCSC,Assigned Murata 0603 120R @ 100MHz 2A high-current ferrite bead.
+C2,1,10uF RF bulk,Murata,GRM188R61A106KE69D,C0603,JLCPCB / LCSC,Assigned Murata 0603 10uF 10V X5R ceramic capacitor.
+C3,1,0.1uF CPU bypass,Samsung,CL05B104KO5NNNC,C0402,JLCPCB / LCSC,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor close to pin 17.
+C4,1,0.1uF RTC bypass,Samsung,CL05B104KO5NNNC,C0402,JLCPCB / LCSC,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor close to pin 11.
+R4,1,0R RTC tie,Yageo,RC0402JR-070RL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 0R jumper link.
+C5,1,1uF VDD_SPI bypass,Samsung,CL05A105KA5NQNC,C0402,JLCPCB / LCSC,Assigned Samsung 0402 1uF 25V X5R capacitor strictly isolated from 3V3.
+Y1,1,40MHz +/-10ppm Crystal,Epson,FA-20H 40.0000MF10Z-K3,CRYSTAL-SMD_2.5x2.0mm_4P,JLCPCB / LCSC,"Assigned Epson FA-20H 40MHz 10ppm 10pF 2.5x2.0mm miniature 4-SMD crystal. Pin 1=XTAL_N, 2=GND, 3=XTAL_P, 4=GND."
+L1,1,24nH clock harmonic filter,Murata,LQG15HN24NJ02D,L0402,JLCPCB / LCSC,Assigned Murata 0402 24nH +/-5% high-frequency chip inductor.
+C6,1,15pF XTAL_N load cap,Murata,GRM1555C1H150JA01D,C0402,JLCPCB / LCSC,Calculated CL=10pF requirement: C = 2*(CL - Cstray) = 2*(10 - 2.5) = 15pF. Assigned Murata 0402 15pF C0G 50V.
+C7,1,15pF XTAL_P load cap,Murata,GRM1555C1H150JA01D,C0402,JLCPCB / LCSC,Assigned Murata 0402 15pF C0G 50V precision crystal load capacitor.
+L2,1,2.4nH RF matching inductor,Murata,LQP03TN2N4B02D,L0201,JLCPCB / LCSC,Assigned Murata 0201 2.4nH high-Q RF chip inductor.
+C8,1,1.5pF RF shunt cap,Murata,GRM0335C1H1R5BA01D,C0201,JLCPCB / LCSC,Assigned Murata 0201 1.5pF +/-0.1pF 50V C0G RF capacitor.
+C9,1,1.5pF RF shunt cap,Murata,GRM0335C1H1R5BA01D,C0201,JLCPCB / LCSC,Assigned Murata 0201 1.5pF +/-0.1pF 50V C0G RF capacitor.
+J_RF,1,U.FL RF receptacle,Hirose,U.FL-R-SMT-1(10),CONN-SMD_U.FL-R-SMT,JLCPCB / LCSC,"Assigned Hirose U.FL-R-SMT-1(10) micro coaxial 50-ohm connector. Center pin=Signal, outer tabs=GND."
+J_USB,1,USB Type-C receptacle 16-pin,Korean HRO / JLCPCB,TYPE-C-31-M-12,USB-C-SMD_16PIN_TYPE-C-31-M-12,JLCPCB / LCSC,Assigned industry-standard TYPE-C-31-M-12 surface-mount 16-pin USB 2.0 receptacle with 4 shield tabs. Verified CC1/CC2 and D+/D- pinout.
+R5,1,5.1k CC1 pulldown,Yageo,RC0402FR-075K1L,R0402,JLCPCB / LCSC,Assigned Yageo 0402 5.1k 1% resistor from CC1 to GND.
+R6,1,5.1k CC2 pulldown,Yageo,RC0402FR-075K1L,R0402,JLCPCB / LCSC,Assigned Yageo 0402 5.1k 1% resistor from CC2 to GND.
+R7,1,22R USB D- series damping,Yageo,RC0402FR-0722RL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 22 ohm 1% series damping resistor on D- line.
+R8,1,22R USB D+ series damping,Yageo,RC0402FR-0722RL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 22 ohm 1% series damping resistor on D+ line.
+C10,1,10uF USB VBUS bulk,Murata,GRM188R61E106MA73D,C0603,JLCPCB / LCSC,Assigned Murata 0603 10uF 25V X5R ceramic capacitor on VBUS.
+U_ESD,1,USB ESD Protection Array,STMicroelectronics,USBLC6-2SC6,SOT-23-6,JLCPCB / LCSC,"Assigned ST USBLC6-2SC6 low-capacitance (0.6pF) dual-line TVS diode in SOT-23-6. Pins: 1=I/O1(D+), 2=GND, 3=I/O2(D-), 4=I/O2, 5=VBUS, 6=I/O1."
+U2,1,LiPo Linear Charger,Microchip,MCP73831T-2ACI/OT,SOT-23-5,JLCPCB / LCSC,Assigned Microchip MCP73831T 4.20V SOT-23-5 charger. Added charge-current resistor programming.
+R9,1,2.0k PROG resistor (500mA charge),Yageo,RC0402FR-072KL,R0402,JLCPCB / LCSC,Calculated Ireg = 1000V / Rprog -> R = 2.0k for 500mA charge current (or 5.0k for 200mA pen cell safety). Set to 2.0k 0402 1%.
+C11,1,4.7uF charger input cap,Murata,GRM188R61C475KAAJD,C0603,JLCPCB / LCSC,Assigned Murata 0603 4.7uF 16V X5R ceramic capacitor.
+C12,1,4.7uF charger output cap,Murata,GRM188R61C475KAAJD,C0603,JLCPCB / LCSC,Assigned Murata 0603 4.7uF 16V X5R ceramic capacitor.
+J_BAT,1,2-Pin Keyed LiPo Battery Header,JST,SM02B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-BM02B-SRSS,JLCPCB / LCSC,"Assigned JST SH 1.0mm pitch horizontal 2-pin keyed connector with latching and solder tabs. Pin 1=VBAT, Pin 2=GND."
+J_PWR,1,High-Current Low-Dropout 3.3V Regulator,Diodes Inc. / Micrel,AP2112K-3.3TRG1,SOT-23-5,JLCPCB / LCSC,"Resolved to onboard 600mA low-dropout linear regulator AP2112K-3.3TRG1 in SOT-23-5. Pin 1=VIN, Pin 2=GND, Pin 3=EN, Pin 4=NC, Pin 5=VOUT."
+SW3,1,SPDT Slide Power Switch,C&K / Korean HRO,MK-12C02-G025,SW-SLIDE-SMD_MK12C02,JLCPCB / LCSC,Assigned MK-12C02 miniature horizontal SMD slide switch (8.5x3.5x1.5mm) with side knob. Connects VBAT to VBAT_SW.
+J_IMU,1,4-Pin Keyed Front IMU Connector,JST,SM04B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-4P-SM04B-SRSS,JLCPCB / LCSC,"Assigned JST SH 1.0mm pitch 4-pin horizontal SMD connector with keyed shroud. Pin 1=3V3, 2=GND, 3=SDA, 4=SCL."
+R10,1,4.7k I2C SDA pullup,Yageo,RC0402FR-074K7L,R0402,JLCPCB / LCSC,Assigned Yageo 0402 4.7k 1% SMD resistor.
+R11,1,4.7k I2C SCL pullup,Yageo,RC0402FR-074K7L,R0402,JLCPCB / LCSC,Assigned Yageo 0402 4.7k 1% SMD resistor.
+U3,1,8-Bit I2C GPIO Expander,Microchip,MCP23008T-E/ML,QFN-20_4x4mm_P0.5mm_EP2.7mm,JLCPCB / LCSC,"Updated symbol and footprint to exact Microchip QFN-20 (4x4mm, 0.5mm pitch, 2.7x2.7mm EP pad 21 to GND)."
+SW4,1,ERASE Tactile Button NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,JLCPCB / LCSC,Assigned Panasonic EVQ-P2B02B ultra-thin SMD tactile button.
+R12,1,10k ERASE button pullup,Yageo,RC0402FR-0710KL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 10k 1% resistor.
+SW5,1,MODE Tactile Button NO,Panasonic / C&K,EVQ-P2B02B,SW-SMD_3.0x2.5mm,JLCPCB / LCSC,Assigned Panasonic EVQ-P2B02B ultra-thin SMD tactile button.
+R13,1,10k MODE button pullup,Yageo,RC0402FR-0710KL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 10k 1% resistor.
+R14,1,1k Green LED current limit,Yageo,RC0402FR-071KL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 1.0k 1% resistor.
+D1,1,Green SMD Mode LED,Kingbright,KP-1005SGC,LED0402,JLCPCB / LCSC,"Assigned Kingbright 0402 compact high-efficiency green SMD LED. Anode=Pin 1, Cathode=Pin 2."
+R15,1,1k Red LED current limit,Yageo,RC0402FR-071KL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 1.0k 1% resistor.
+D2,1,Red SMD Mode LED,Kingbright,KP-1005SURC,LED0402,JLCPCB / LCSC,"Assigned Kingbright 0402 compact high-efficiency red SMD LED. Anode=Pin 1, Cathode=Pin 2."
+R16,1,100R Haptic gate resistor,Yageo,RC0402FR-07100RL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 100 ohm 1% resistor.
+R17,1,100k Haptic gate pulldown,Yageo,RC0402FR-07100KL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 100k 1% resistor.
+Q1,1,N-Channel Logic MOSFET,Alpha & Omega,AO3400A,SOT-23-3,JLCPCB / LCSC,"Assigned AO3400A N-channel MOSFET (30V, 5.7A, Rds(on)<28mOhm @ 2.5V Vgs) in SOT-23. Pin 1=Gate, 2=Source, 3=Drain."
+J_MOT,1,2-Pin Vibration Motor Connector / Pads,JST,SM02B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-BM02B-SRSS,JLCPCB / LCSC,"Assigned JST SH 1.0mm pitch 2-pin connector. Pin 1=VBAT_SW, Pin 2=HAPTIC_LOW."
+D3,1,Schottky Flyback Diode,Diodes Inc.,1N5819HW-7-F,SOD-123,JLCPCB / LCSC,"Assigned Diodes Inc. 1N5819HW-7-F 40V 1A fast Schottky diode in SOD-123. Cathode=Pin 1, Anode=Pin 2."
+C13,1,0.1uF Expander bypass cap,Samsung,CL05B104KO5NNNC,C0402,JLCPCB / LCSC,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor.
+J_SD,1,MicroSD SPI 6-Pin FPC Connector,Hirose / Molex,FH12-6S-0.5SH(55),CONN-FPC_6P_P0.5mm_SMD,JLCPCB / LCSC,Assigned Hirose FH12 0.5mm pitch 6-pin FPC connector. Resolves the 14mm socket width physical collision with the 13.6mm inner barrel by carrying SPI to the rear MicroSD holder.
+R18,1,10k MicroSD CS pullup,Yageo,RC0402FR-0710KL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 10k 1% resistor.
+J_TOUCH,1,External Touch Controller / Electrode Header,JST / TonTek,SM03B-SRSS-TB(LF)(SN),CONN-SMD_JST-SH-3P-SM03B-SRSS,JLCPCB / LCSC,"Assigned JST SH 1.0mm pitch 3-pin keyed connector for external WRITE capacitive touch sensor (3V3, GND, TOUCH_OUT)."
+J_UART,1,4-Pin UART & Programming Test Pads,RadixView / Custom SMD,TP-SMD-4P-1.27MM,TESTPAD_4P_1x4_P1.27mm,JLCPCB / LCSC,"Assigned 4 inline 1.27mm pitch surface-mount gold test pads (TX, RX, GND, 3V3) for non-intrusive pogo-pin test fixtures."
+C14,1,10uF System 3.3V bulk cap,Murata,GRM188R61A106KE69D,C0603,JLCPCB / LCSC,Assigned Murata 0603 10uF 10V X5R ceramic capacitor.
+R19,1,100k Touch pulldown option,Yageo,RC0402FR-07100KL,R0402,JLCPCB / LCSC,Assigned Yageo 0402 100k 1% resistor.
+C15,1,0.1uF Front IMU cable filter cap,Samsung,CL05B104KO5NNNC,C0402,JLCPCB / LCSC,Assigned Samsung 0402 0.1uF 16V X7R ceramic capacitor placed directly at J_IMU pin 1.
