@@ -1,0 +1,32 @@
+{
+  "Main_SmartPen": {
+    "erc_json_code": 0,
+    "erc_rpt_code": 0,
+    "netlist_code": 0,
+    "netlist_size": 111730
+  },
+  "Front_MPU": {
+    "erc_json_code": 0,
+    "erc_rpt_code": 0,
+    "netlist_code": 0,
+    "netlist_size": 14111,
+    "drc_json_code": 0,
+    "drc_rpt_code": 0
+  },
+  "MicroSD_Carrier": {
+    "erc_json_code": 0,
+    "erc_rpt_code": 0,
+    "netlist_code": 0,
+    "netlist_size": 12639,
+    "drc_json_code": 0,
+    "drc_rpt_code": 0
+  },
+  "Touch_Sensor": {
+    "erc_json_code": 0,
+    "erc_rpt_code": 0,
+    "netlist_code": 0,
+    "netlist_size": 9275,
+    "drc_json_code": 0,
+    "drc_rpt_code": 0
+  }
+}

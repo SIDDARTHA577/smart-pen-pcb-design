@@ -1,0 +1,63 @@
+** Drc report for MicroSD_Carrier.kicad_pcb **
+** Created on 2026-11-13T22:26:58 **
+** Report includes: Errors, Warnings **
+
+** Found 7 DRC violations **
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(4.9500 mm, 1.8000 mm): Via [/GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(3.5000 mm, 2.5000 mm): Via [/GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(8.7000 mm, 1.8000 mm): Via [/GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(0.8500 mm, 4.3000 mm): Via [/GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(7.7000 mm, 7.6000 mm): Via [/GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(1.0000 mm, 13.5000 mm): Via [/GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(10.4000 mm, 13.5000 mm): Via [/GND] on F.Cu - B.Cu
+
+** Found 6 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.8500 mm, 3.4000 mm): Track [/GND] on F.Cu, length 1.8000 mm
+    @(1.0000 mm, 14.7000 mm): Track [/GND] on F.Cu, length 1.2000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(3.5000 mm, 1.8000 mm): Track [/GND] on F.Cu, length 0.7000 mm
+    @(1.1200 mm, 3.4000 mm): Track [/GND] on F.Cu, length 0.2700 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(4.9500 mm, 3.2500 mm): Track [/GND] on F.Cu, length 1.4500 mm
+    @(3.5000 mm, 1.8000 mm): Track [/GND] on F.Cu, length 0.7000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(7.7000 mm, 6.7000 mm): Track [/GND] on F.Cu, length 0.9000 mm
+    @(4.9500 mm, 3.2500 mm): Track [/GND] on F.Cu, length 1.4500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(7.9000 mm, 1.8000 mm): Track [/GND] on F.Cu, length 0.8000 mm
+    @(4.9500 mm, 3.2500 mm): Track [/GND] on F.Cu, length 1.4500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(10.4000 mm, 14.7000 mm): Track [/GND] on F.Cu, length 1.2000 mm
+    @(7.7000 mm, 6.7000 mm): Track [/GND] on F.Cu, length 0.9000 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

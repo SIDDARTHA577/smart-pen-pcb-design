@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "Front_MPU_Lib")(type "KiCad")(uri "${KIPRJMOD}/Front_MPU_Lib.kicad_sym")(options "")(descr ""))
+)

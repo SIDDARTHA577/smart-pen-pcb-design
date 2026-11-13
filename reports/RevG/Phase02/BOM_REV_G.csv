@@ -1,0 +1,40 @@
+Item,Reference,Value / Description,Footprint,Qty,Manufacturer,Manufacturer Part Number (MPN),Supplier,Supplier Part Number,Detailed Component Description,Subsystem / Circuit Block
+1,"C1, C5",1uF 10V X5R 0402,SmartPen:C1,2,Samsung Electro-Mechanics,CL05A105KA5NQNC,LCSC,C52923,Capacitor Ceramic 1uF 10V 10% X5R 0402,MCU EN & Bypass
+2,"C2, C14",10uF 10V X5R 0603,SmartPen:C2,2,Murata,GRM188R61A106KE69D,LCSC,C19702,Capacitor Ceramic 10uF 10V 10% X5R 0603,LDO Output Bulk Filter
+3,"C3, C4, C13, C15",0.1uF 50V X7R 0402,SmartPen:C3,4,Samsung Electro-Mechanics,CL05B104KO5NNNC,LCSC,C1525,Capacitor Ceramic 0.1uF 50V 10% X7R 0402,Decoupling High-Freq
+4,"C6, C7",15pF 50V C0G 0402,SmartPen:C6,2,Murata,GRM1555C1H150JA01D,LCSC,C1554,Capacitor Ceramic 15pF 50V 5% C0G 0402,Crystal Load Tuning
+5,"C8, C9",1.5pF 50V C0G 0201,SmartPen:C8,2,Murata,GRM0335C1H1R5BA01D,LCSC,C72983,Capacitor Ceramic 1.5pF 50V 0.1pF C0G 0201,RF Pi-Match Network
+6,C10,10uF 25V X5R 0603,SmartPen:C10,1,Murata,GRM188R61E106MA73D,LCSC,C96446,Capacitor Ceramic 10uF 25V 20% X5R 0603,USB VBUS Inrush Filter
+7,"C11, C12",4.7uF 16V X5R 0603,SmartPen:C11,2,Murata,GRM188R61C475KAAJD,LCSC,C19666,Capacitor Ceramic 4.7uF 16V 10% X5R 0603,Battery Rail Bulk Filter
+8,D1,Green LED 0402,SmartPen:D1,1,Kingbright,KP-1005SGC,LCSC,C72041,LED Green 571nm Clear SMD 0402,Status Mode Indicator
+9,D2,Red LED 0402,SmartPen:D2,1,Kingbright,KP-1005SURC,LCSC,C72043,LED Red 630nm Clear SMD 0402,Charge / Error Indicator
+10,"D3, D4",1N5819HW-7-F Schottky 40V 1A SOD-123,SmartPen:D3,2,Diodes Incorporated,1N5819HW-7-F,LCSC,C8598,Schottky Barrier Diode 40V 1A SOD-123,Haptic Flyback & Power-Path
+11,FB1,BLM18PG121SN1D Ferrite 120R 0603,SmartPen:FB1,1,Murata,BLM18PG121SN1D,LCSC,C1015,Ferrite Bead 120 Ohm @ 100MHz 2A 0603,Analog/RF Power Isolation
+12,J_BAT,SM02B-SRSS-TB 1.0mm 2-Pin R/A SMD,SmartPen:J_BAT,1,JST Sales America,SM02B-SRSS-TB(LF)(SN),DigiKey,455-1804-1-ND,Connector Header R/A 2Pos 1.0mm Shrouded Keyed,Battery Connection (R3)
+13,J_IMU,SM04B-SRSS-TB 1.0mm 4-Pin R/A SMD,SmartPen:J_IMU,1,JST Sales America,SM04B-SRSS-TB(LF)(SN),DigiKey,455-1806-1-ND,Connector Header R/A 4Pos 1.0mm Shrouded Keyed,Front MPU Interface (R2)
+14,J_MOT,SM02B-SRSS-TB 1.0mm 2-Pin R/A SMD,SmartPen:J_MOT,1,JST Sales America,SM02B-SRSS-TB(LF)(SN),DigiKey,455-1804-1-ND,Connector Header R/A 2Pos 1.0mm Shrouded Keyed,Haptic Motor Header
+15,J_RF,U.FL Coaxial Receptacle SMD,SmartPen:J_RF,1,Hirose Electric,U.FL-R-SMT-1(10),DigiKey,H9161CT-ND,Connector Coaxial U.FL Receptacle 50 Ohm,BLE/Wi-Fi RF Output
+16,J_SD,FH12-6S-0.5SH(55) 0.5mm 6-Pin FPC,SmartPen:J_SD,1,Hirose Electric,FH12-6S-0.5SH(55),DigiKey,H11702CT-ND,Connector FPC Bottom Contact 6Pos 0.5mm R/A,MicroSD Carrier Interface
+17,J_TOUCH,SM03B-SRSS-TB 1.0mm 3-Pin R/A SMD,SmartPen:J_TOUCH,1,JST Sales America,SM03B-SRSS-TB(LF)(SN),DigiKey,455-1805-1-ND,Connector Header R/A 3Pos 1.0mm Shrouded Keyed,Capacitive Touch Interface
+18,J_UART,TP-SMD-4P-1.27MM Test Header,SmartPen:J_UART,1,Generic,TP-SMD-4P-1.27MM,LCSC,C-GEN-01,Test Points SMD 4-Pad 1.27mm Pitch,Factory Programming & Debug
+19,J_USB,TYPE-C-31-M-12 Mid-Mount 16-Pin,SmartPen:J_USB,1,Korean Hroparts Elec,TYPE-C-31-M-12,LCSC,C165948,USB-C Receptacle 16P Mid-Mount Hybrid SMT/TH,USB-C Port (Charge + Data)
+20,L1,24nH 300mA 0402 Inductor,SmartPen:L1,1,Murata,LQG15HN24NJ02D,LCSC,C1045,Inductor RF 24nH 5% 300mA 0402,RF Bias/Choke
+21,L2,2.4nH 300mA 0201 Inductor,SmartPen:L2,1,Murata,LQP03TN2N4B02D,LCSC,C73081,Inductor RF 2.4nH 0.1nH 300mA 0201,RF Pi-Match Inductor
+22,Q1,AO3400A N-Channel MOSFET 30V 5.7A SOT-23,SmartPen:Q1,1,Alpha & Omega Semi,AO3400A,LCSC,C20917,MOSFET N-CH 30V 5.7A SOT-23,Haptic Motor Low-Side Driver
+23,Q2,DMG2305UX P-Channel MOSFET -20V -4.2A SOT-23,SmartPen:Q1,1,Diodes Incorporated,DMG2305UX-7,LCSC,C29883,MOSFET P-CH -20V -4.2A SOT-23,Power-Path Auto-Switch (ISSUE-06)
+24,"R1, R2, R3, R9, R12, R13, R18",10k Ohm 1% 0402 Resistor,SmartPen:R1,7,Yageo,RC0402FR-0710KL,LCSC,C25744,Resistor Thick Film 10k Ohm 1% 1/16W 0402,Pull-ups & Charge Prog (100mA)
+25,R4,0 Ohm Jumper 0402,SmartPen:R4,1,Yageo,RC0402JR-070RL,LCSC,C17168,Resistor Thick Film 0 Ohm Jumper 0402,Configuration Jumper
+26,"R5, R6",5.1k Ohm 1% 0402 Resistor,SmartPen:R5,2,Yageo,RC0402FR-075K1L,LCSC,C25905,Resistor Thick Film 5.1k Ohm 1% 1/16W 0402,USB Type-C CC1/CC2 Pull-Down
+27,"R7, R8",22 Ohm 1% 0402 Resistor,SmartPen:R7,2,Yageo,RC0402FR-0722RL,LCSC,C25087,Resistor Thick Film 22 Ohm 1% 1/16W 0402,USB D+/D- Series Termination
+28,"R10, R11",4.7k Ohm 1% 0402 Resistor,SmartPen:R10,2,Yageo,RC0402FR-074K7L,LCSC,C25900,Resistor Thick Film 4.7k Ohm 1% 1/16W 0402,I2C SDA/SCL Pull-Ups
+29,"R14, R15",1k Ohm 1% 0402 Resistor,SmartPen:R14,2,Yageo,RC0402FR-071KL,LCSC,C11702,Resistor Thick Film 1k Ohm 1% 1/16W 0402,LED Current Limiting
+30,R16,100 Ohm 1% 0402 Resistor,SmartPen:R16,1,Yageo,RC0402FR-07100RL,LCSC,C25076,Resistor Thick Film 100 Ohm 1% 1/16W 0402,Haptic Gate Damping
+31,"R17, R19, R26",100k Ohm 1% 0402 Resistor,SmartPen:R17,3,Yageo,RC0402FR-07100KL,LCSC,C25741,Resistor Thick Film 100k Ohm 1% 1/16W 0402,Gate Pull-Down & High-Z Bias
+32,"SW1, SW2, SW4, SW5",EVQ-P2B02B Pushbutton SMD,SmartPen:SW1,4,Panasonic,EVQ-P2B02B,DigiKey,P12224SCT-ND,Tactile Switch SPST-NO Side Push SMD,"RST, BOOT, ERASE, MODE"
+33,SW3,MK-12C02-G025 Slide Switch SPDT SMD,SmartPen:SW3,1,Generic / Korean Hroparts,MK-12C02-G025,LCSC,C435887,Slide Switch SPDT 0.3A 50VDC SMD R/A,System Power Switch ON/OFF
+34,U1,ESP32-C3FH4X RISC-V Wi-Fi/BLE MCU QFN-32,SmartPen:U1,1,Espressif Systems,ESP32-C3FH4X,LCSC,C2858544,MCU 32-Bit RISC-V 160MHz 4MB Flash QFN-32,Primary System Microcontroller
+35,U2,MCP73831T-2ACI/OT LiPo Charger SOT-23-5,SmartPen:U2,1,Microchip Technology,MCP73831T-2ACI/OT,LCSC,C14663,Linear Li-Ion/LiPo Charger 4.20V SOT-23-5,Battery Management System (BMS)
+36,U3,MCP23008T-E/ML I2C 8-Bit Expander QFN-20,SmartPen:U3,1,Microchip Technology,MCP23008T-E/ML,LCSC,C136894,I/O Expander 8-Bit I2C 1.7MHz QFN-20,GPIO Expander for Buttons & LEDs
+37,U4,AP2112K-3.3TRG1 LDO 3.3V 600mA SOT-23-5,SmartPen:J_PWR,1,Diodes Incorporated,AP2112K-3.3TRG1,LCSC,C138850,LDO Regulator Pos 3.3V 600mA SOT-23-5,Primary 3.3V System Voltage Regulator (ISSUE-01)
+38,U_ESD,USBLC6-2SC6 ESD Protection SOT-23-6,SmartPen:U_ESD,1,STMicroelectronics,USBLC6-2SC6,LCSC,C7519,TVS Diode Array 2-Line ESD Low-Cap SOT-23-6,USB D+/D- High-Speed ESD Protection
+39,Y1,FA-20H 40.0000MF10Z-K3 40MHz Crystal SMD,SmartPen:Y1,1,Epson,FA-20H 40.0000MF10Z-K3,DigiKey,SER4034CT-ND,Crystal 40.0000MHz 10pF SMD 2.5x2.0mm,ESP32-C3 System Clock Oscillator
