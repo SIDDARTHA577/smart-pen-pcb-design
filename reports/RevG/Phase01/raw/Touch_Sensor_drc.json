@@ -1,0 +1,278 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-13T20:57:30",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "Pad net (3V3) doesn't match net given by schematic (/3V3)",
+            "items": [
+                {
+                    "description": "Pad 1 [3V3] of C1 on F.Cu",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 8.28
+                    },
+                    "uuid": "0aeef303-bf82-46ee-a8dc-10b6d94499d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 7.32
+                    },
+                    "uuid": "857caf55-8586-46d8-ba87-ffafdd86a07c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (TOUCH_IN) doesn't match net given by schematic (/TOUCH_IN)",
+            "items": [
+                {
+                    "description": "Pad 1 [TOUCH_IN] of C2 on F.Cu",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 8.28
+                    },
+                    "uuid": "476d82f4-23a5-4b52-bf05-d8710d5ecdf0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C2 on F.Cu",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 7.32
+                    },
+                    "uuid": "084fb983-c27c-4a80-a6cb-c6cd4f020ae6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (TOUCH_IN) doesn't match net given by schematic (/TOUCH_IN)",
+            "items": [
+                {
+                    "description": "Pad 1 [TOUCH_IN] of E1 on F.Cu",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 13.5
+                    },
+                    "uuid": "2f49ebe4-4911-4e69-9288-7bd47f9e4dfc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (3V3) doesn't match net given by schematic (/3V3)",
+            "items": [
+                {
+                    "description": "Pad 1 [3V3] of J1 on F.Cu",
+                    "pos": {
+                        "x": 2.0,
+                        "y": 2.2
+                    },
+                    "uuid": "c024404f-df5a-4d77-aee9-186470d1434c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 2.2
+                    },
+                    "uuid": "a24d8f4f-efba-4f23-9643-5f547e7fc199"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (TOUCH_OUT) doesn't match net given by schematic (/TOUCH_OUT)",
+            "items": [
+                {
+                    "description": "Pad 3 [TOUCH_OUT] of J1 on F.Cu",
+                    "pos": {
+                        "x": 4.0,
+                        "y": 2.2
+                    },
+                    "uuid": "bcce2f39-08c1-4c77-a6f6-ae26d42d9af0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 4 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 0.8,
+                        "y": 2.2
+                    },
+                    "uuid": "309f2432-768f-42cb-9930-bdb4eea74eed"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 4 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 5.2,
+                        "y": 2.2
+                    },
+                    "uuid": "6bbcf68a-4fff-46ab-b9d8-aa539a4db1ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (TOUCH_OUT) doesn't match net given by schematic (/TOUCH_OUT)",
+            "items": [
+                {
+                    "description": "Pad 1 [TOUCH_OUT] of U1 on F.Cu",
+                    "pos": {
+                        "x": 2.05,
+                        "y": 5.25
+                    },
+                    "uuid": "edb7eeef-4f0d-462d-b09a-bc4d48fa491b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 5.25
+                    },
+                    "uuid": "7d819966-452d-417f-a10d-a5b66982a19c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (TOUCH_IN) doesn't match net given by schematic (/TOUCH_IN)",
+            "items": [
+                {
+                    "description": "Pad 3 [TOUCH_IN] of U1 on F.Cu",
+                    "pos": {
+                        "x": 3.95,
+                        "y": 5.25
+                    },
+                    "uuid": "72bf87cb-d600-49cb-a1bc-2f3f1b878cbb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 4 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 3.95,
+                        "y": 7.75
+                    },
+                    "uuid": "0cf58dc2-0451-4a63-82c1-f1da0b45e0cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (3V3) doesn't match net given by schematic (/3V3)",
+            "items": [
+                {
+                    "description": "Pad 5 [3V3] of U1 on F.Cu",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 7.75
+                    },
+                    "uuid": "5dd34cfc-eaf3-4fe1-8e40-a04a44277a1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GND) doesn't match net given by schematic (/GND)",
+            "items": [
+                {
+                    "description": "Pad 6 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 2.05,
+                        "y": 7.75
+                    },
+                    "uuid": "8cc9d63d-d979-4738-b293-949917a8d9e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        }
+    ],
+    "source": "Touch_Sensor.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+}

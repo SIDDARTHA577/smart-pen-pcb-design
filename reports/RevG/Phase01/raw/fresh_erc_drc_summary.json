@@ -1,0 +1,87 @@
+{
+  "erc": [
+    {
+      "board": "Main_SmartPen",
+      "input_sch": "output\\RevF_Working\\SmartPen.kicad_sch",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Main_SmartPen_erc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Main_SmartPen_erc.json",
+      "exit_code": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/Main_SmartPen_erc.rpt\n",
+      "stderr": "20:55:47: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:55:47: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    },
+    {
+      "board": "Front_MPU",
+      "input_sch": "output\\RevF_Working\\Front_MPU\\Front_MPU.kicad_sch",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Front_MPU_erc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Front_MPU_erc.json",
+      "exit_code": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/Front_MPU_erc.rpt\n",
+      "stderr": "20:56:00: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:56:00: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    },
+    {
+      "board": "MicroSD_Carrier",
+      "input_sch": "output\\RevF_Working\\MicroSD_Carrier\\MicroSD_Carrier.kicad_sch",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\MicroSD_Carrier_erc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\MicroSD_Carrier_erc.json",
+      "exit_code": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/MicroSD_Carrier_erc.rpt\n",
+      "stderr": "20:56:10: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:56:10: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    },
+    {
+      "board": "Touch_Sensor",
+      "input_sch": "output\\RevF_Working\\Touch_Sensor\\Touch_Sensor.kicad_sch",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Touch_Sensor_erc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Touch_Sensor_erc.json",
+      "exit_code": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/Touch_Sensor_erc.rpt\n",
+      "stderr": "20:56:19: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:56:19: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    }
+  ],
+  "drc": [
+    {
+      "board": "Main_SmartPen_Working",
+      "input_pcb": "output\\RevF_Working\\SmartPen.kicad_pcb",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Main_SmartPen_Working_drc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Main_SmartPen_Working_drc.json",
+      "exit_code": 5,
+      "stdout": "Found 185 violations\nFound 29 unconnected items\nFound 22 schematic parity issues\nSaved DRC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/Main_SmartPen_Working_drc.rpt\n",
+      "stderr": "20:56:28: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:56:28: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    },
+    {
+      "board": "Main_SmartPen_ClientDelivery",
+      "input_pcb": "output\\RevF_Client_Delivery\\02_KiCad_Source\\SmartPen.kicad_pcb",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Main_SmartPen_ClientDelivery_drc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Main_SmartPen_ClientDelivery_drc.json",
+      "exit_code": 5,
+      "stdout": "Found 1338 violations\nFound 0 unconnected items\nFound 199 schematic parity issues\nSaved DRC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/Main_SmartPen_ClientDelivery_drc.rpt\n",
+      "stderr": "20:56:44: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:56:44: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    },
+    {
+      "board": "Front_MPU",
+      "input_pcb": "output\\RevF_Working\\Front_MPU\\Front_MPU.kicad_pcb",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Front_MPU_drc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Front_MPU_drc.json",
+      "exit_code": 0,
+      "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/Front_MPU_drc.rpt\n",
+      "stderr": "20:56:55: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:56:55: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    },
+    {
+      "board": "MicroSD_Carrier",
+      "input_pcb": "output\\RevF_Working\\MicroSD_Carrier\\MicroSD_Carrier.kicad_pcb",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\MicroSD_Carrier_drc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\MicroSD_Carrier_drc.json",
+      "exit_code": 0,
+      "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/MicroSD_Carrier_drc.rpt\n",
+      "stderr": "20:57:07: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:57:07: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    },
+    {
+      "board": "Touch_Sensor",
+      "input_pcb": "output\\RevF_Working\\Touch_Sensor\\Touch_Sensor.kicad_pcb",
+      "rpt_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Touch_Sensor_drc.rpt",
+      "json_file": "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\reports\\RevG\\Phase01\\raw\\Touch_Sensor_drc.json",
+      "exit_code": 5,
+      "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 16 schematic parity issues\nSaved DRC Report to C:/Users/goran/Downloads/SmartPen_RevD_AutoLinked_Footprints_Review_ONLY/reports/RevG/Phase01/raw/Touch_Sensor_drc.rpt\n",
+      "stderr": "20:57:19: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n20:57:19: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+    }
+  ]
+}

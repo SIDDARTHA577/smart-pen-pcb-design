@@ -1,0 +1,871 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\output\\RevF_Working\\Front_MPU\\Front_MPU.kicad_sch")
+		(date "2026-11-13T20:59:36")
+		(tool "Eeschema 10.0.7")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "Smart Pen Front IMU Module")
+				(company "RadixView Technologies")
+				(rev "Rev F.1")
+				(date "2026-11-02")
+				(source "Front_MPU.kicad_sch")
+				(comment
+					(number "1")
+					(value "InvenSense MPU-6050 6-Axis MotionTracking Daughterboard")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "0.1uF")
+			(footprint "Front_MPU:C_0402")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "C_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cf608921-3c3f-4ccc-963a-77c02996a3f6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "0.1uF")
+			(footprint "Front_MPU:C_0402")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "C_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "feb90fb7-b06d-4b77-b885-7176c8909dd0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "2.2nF")
+			(footprint "Front_MPU:C_0402")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "C_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7177fa96-3ff5-47f3-a3a3-5da23862aad6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "0.1uF")
+			(footprint "Front_MPU:C_0402")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "C_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "df296aaf-c57a-4be4-bf58-e6928876e190")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "SM04B-SRSS-TB")
+			(footprint "Front_MPU:JST_SH_4P")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:JST_SH_4P")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "CONN_4P")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "174b26f9-0fee-4b97-8b08-5f4d5d913f7e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "4.7k")
+			(footprint "Front_MPU:R_0402")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:R_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "R_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b282b3f5-d655-4809-9447-931d95989cdb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "4.7k")
+			(footprint "Front_MPU:R_0402")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:R_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "R_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "265e2550-8c56-4538-bd91-d701cfaed221")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "MPU-6050")
+			(footprint "Front_MPU:QFN-24_4x4mm")
+			(fields
+				(field
+					(name "Footprint") "Front_MPU:QFN-24_4x4mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Front_MPU_Lib")
+				(part "MPU-6050")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Front_MPU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Front_MPU.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d1657914-ab55-4178-877c-81ad2ea62d2f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "25")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "20")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Front_MPU_Lib")
+			(part "CONN_4P")
+			(fields
+				(field
+					(name "Reference") "J1")
+				(field
+					(name "Value") "SM04B-SRSS-TB")
+				(field
+					(name "Footprint") "Front_MPU:JST_SH_4P")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "3V3")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "SCL")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "SHIELD")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Front_MPU_Lib")
+			(part "C_SMALL")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Small")
+				(field
+					(name "Footprint") "Front_MPU:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Front_MPU_Lib")
+			(part "MPU-6050")
+			(fields
+				(field
+					(name "Reference") "U1")
+				(field
+					(name "Value") "MPU-6050")
+				(field
+					(name "Footprint") "Front_MPU:QFN-24_4x4mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "CLKIN")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "VLOGIC")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "AD0")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "REGOUT")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "FSYNC")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "INT")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "VDD")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "20")
+					(name "CPOUT")
+					(type "passive")
+				)
+				(pin
+					(num "23")
+					(name "SCL")
+					(type "passive")
+				)
+				(pin
+					(num "24")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "25")
+					(name "EP")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Front_MPU_Lib")
+			(part "R_SMALL")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R_Small")
+				(field
+					(name "Footprint") "Front_MPU:R_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Front_MPU_Lib")
+			(uri "${KIPRJMOD}/Front_MPU_Lib.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/3V3")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "3V3_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "VDD_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "VLOGIC_8")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "/CPOUT")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "CPOUT_20")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/GND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "5")
+				(pinfunction "SHIELD_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "CLKIN_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "FSYNC_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "GND_18")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "25")
+				(pinfunction "EP_25")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "AD0_9")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/I2C_SCL")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "4")
+				(pinfunction "SCL_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "23")
+				(pinfunction "SCL_23")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/I2C_SDA")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "SDA_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "SDA_24")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/REGOUT")
+			(class "Default")
+			(node
+				(ref "C4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "REGOUT_10")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "unconnected-(U1-INT-Pad12)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "INT_12")
+				(pintype "passive+no_connect")
+			)
+		)
+	)
+)

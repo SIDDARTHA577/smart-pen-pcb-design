@@ -1,0 +1,66 @@
+** Drc report for Touch_Sensor.kicad_pcb **
+** Created on 2026-11-13T20:57:25 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 16 Footprint errors **
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(1.0000 mm, 8.2800 mm): Pad 1 [3V3] of C1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(1.0000 mm, 7.3200 mm): Pad 2 [GND] of C1 on F.Cu
+[net_conflict]: Pad net (TOUCH_IN) doesn't match net given by schematic (/TOUCH_IN)
+    Local override; warning
+    @(5.0000 mm, 8.2800 mm): Pad 1 [TOUCH_IN] of C2 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(5.0000 mm, 7.3200 mm): Pad 2 [GND] of C2 on F.Cu
+[net_conflict]: Pad net (TOUCH_IN) doesn't match net given by schematic (/TOUCH_IN)
+    Local override; warning
+    @(3.0000 mm, 13.5000 mm): Pad 1 [TOUCH_IN] of E1 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(2.0000 mm, 2.2000 mm): Pad 1 [3V3] of J1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(3.0000 mm, 2.2000 mm): Pad 2 [GND] of J1 on F.Cu
+[net_conflict]: Pad net (TOUCH_OUT) doesn't match net given by schematic (/TOUCH_OUT)
+    Local override; warning
+    @(4.0000 mm, 2.2000 mm): Pad 3 [TOUCH_OUT] of J1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(0.8000 mm, 2.2000 mm): Pad 4 [GND] of J1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(5.2000 mm, 2.2000 mm): Pad 4 [GND] of J1 on F.Cu
+[net_conflict]: Pad net (TOUCH_OUT) doesn't match net given by schematic (/TOUCH_OUT)
+    Local override; warning
+    @(2.0500 mm, 5.2500 mm): Pad 1 [TOUCH_OUT] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(3.0000 mm, 5.2500 mm): Pad 2 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (TOUCH_IN) doesn't match net given by schematic (/TOUCH_IN)
+    Local override; warning
+    @(3.9500 mm, 5.2500 mm): Pad 3 [TOUCH_IN] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(3.9500 mm, 7.7500 mm): Pad 4 [GND] of U1 on F.Cu
+[net_conflict]: Pad net (3V3) doesn't match net given by schematic (/3V3)
+    Local override; warning
+    @(3.0000 mm, 7.7500 mm): Pad 5 [3V3] of U1 on F.Cu
+[net_conflict]: Pad net (GND) doesn't match net given by schematic (/GND)
+    Local override; warning
+    @(2.0500 mm, 7.7500 mm): Pad 6 [GND] of U1 on F.Cu
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
