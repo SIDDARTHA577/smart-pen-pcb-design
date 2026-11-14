@@ -1,0 +1,11 @@
+r9_content = """(footprint "R9" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "R9" (at 0 -1.5) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.15))))
+  (fp_text value "RC0402FR-0710KL" (at 0 1.5) (layer "F.Fab") (effects (font (size 0.8 0.8) (thickness 0.15))))
+  (pad "1" smd rect (at 0.000 -0.475) (size 0.650 0.620) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "2" smd rect (at 0.000 0.475) (size 0.650 0.620) (layers "F.Cu" "F.Paste" "F.Mask"))
+)
+"""
+with open("output/RevG/SmartPen.pretty/R9.kicad_mod", "w") as f:
+    f.write(r9_content)
+
