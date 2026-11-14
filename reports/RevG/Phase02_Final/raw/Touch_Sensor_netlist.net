@@ -1,0 +1,570 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\goran\\Downloads\\SmartPen_RevD_AutoLinked_Footprints_Review_ONLY\\output\\RevG\\Touch_Sensor\\Touch_Sensor.kicad_sch")
+		(date "2026-11-14T12:42:47")
+		(tool "Eeschema 10.0.7")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "Smart Pen External Capacitive Touch Controller")
+				(company "RadixView Technologies")
+				(rev "Rev F.1")
+				(date "2026-11-02")
+				(source "Touch_Sensor.kicad_sch")
+				(comment
+					(number "1")
+					(value "Tontek TTP223-BA6 Capacitive Touch Daughterboard")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "0.1uF")
+			(footprint "Touch:C_0402")
+			(fields
+				(field
+					(name "Footprint") "Touch:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Touch_Lib")
+				(part "C_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Touch_Sensor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Touch_Sensor.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1988e8f6-9e4d-412a-a5eb-8b72875e34db")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "10pF")
+			(footprint "Touch:C_0402")
+			(fields
+				(field
+					(name "Footprint") "Touch:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Touch_Lib")
+				(part "C_SMALL")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Touch_Sensor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Touch_Sensor.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0e5d5c4-3d5e-4e4e-9058-bab51d4be98f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "E1")
+			(value "TOUCH_PAD")
+			(footprint "Touch:Touch_Pad_5x10mm")
+			(fields
+				(field
+					(name "Footprint") "Touch:Touch_Pad_5x10mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Touch_Lib")
+				(part "ELECTRODE")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Touch_Sensor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Touch_Sensor.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e471ece9-918c-4a85-9bd1-d18bb49a7575")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "SM03B-SRSS-TB")
+			(footprint "Touch:JST_SH_3P")
+			(fields
+				(field
+					(name "Footprint") "Touch:JST_SH_3P")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Touch_Lib")
+				(part "CONN_3P")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Touch_Sensor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Touch_Sensor.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9af3e329-959d-4f04-8da7-f7482ccdbba4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "TTP223-BA6")
+			(footprint "Touch:SOT-23-6")
+			(fields
+				(field
+					(name "Footprint") "Touch:SOT-23-6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Touch_Lib")
+				(part "TTP223")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Touch_Sensor")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Touch_Sensor.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2c58ab9e-cb77-4701-b1b2-4641e89247e0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Touch_Lib")
+			(part "CONN_3P")
+			(fields
+				(field
+					(name "Reference") "J1")
+				(field
+					(name "Value") "SM03B-SRSS-TB")
+				(field
+					(name "Footprint") "Touch:JST_SH_3P")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "3V3")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "TOUCH_OUT")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "SHIELD")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Touch_Lib")
+			(part "C_SMALL")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Small")
+				(field
+					(name "Footprint") "Touch:C_0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Touch_Lib")
+			(part "ELECTRODE")
+			(fields
+				(field
+					(name "Reference") "E1")
+				(field
+					(name "Value") "TOUCH_PAD")
+				(field
+					(name "Footprint") "Touch:Touch_Pad_5x10mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Touch_Lib")
+			(part "TTP223")
+			(fields
+				(field
+					(name "Reference") "U1")
+				(field
+					(name "Value") "TTP223-BA6")
+				(field
+					(name "Footprint") "Touch:SOT-23-6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Q")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "VSS")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "IN")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "AHLB")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "VDD")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "TOG")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Touch_Lib")
+			(uri "${KIPRJMOD}/Touch_Lib.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/3V3")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "3V3_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "VDD_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "/GND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "4")
+				(pinfunction "SHIELD_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "VSS_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "AHLB_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "TOG_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/TOUCH_IN")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "E1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "IN_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/TOUCH_OUT")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "TOUCH_OUT_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "Q_1")
+				(pintype "passive")
+			)
+		)
+	)
+)
