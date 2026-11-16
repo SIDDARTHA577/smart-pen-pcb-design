@@ -8,11 +8,11 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Smart Pen Hardware System - Revision F")
-		(date "2026-11-03")
-		(rev "Rev F")
+		(title "Smart Pen Hardware System - Revision G (4-Layer)")
+		(date "2026-11-16")
+		(rev "Rev G")
 		(company "RadixView Technologies")
-		(comment 1 "Full KiCad ERC & DRC Clean Native Deliverable")
+		(comment 1 "Phase 3C Four-Layer Routing & Independent Quality Gate")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -1994,7 +1994,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "SmartPen:D3"
+	(footprint "SmartPen:D4"
 		(layer "F.Cu")
 		(uuid "59e75909-3181-44ef-b7b2-00324517000b")
 		(at 59 4.05 -90)

@@ -695,7 +695,7 @@
   (symbol "D4" (in_bom yes) (on_board yes)
     (property "Reference" "D4" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
     (property "Value" "1N5819HW-7-F" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "SmartPen:D3" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Footprint" "SmartPen:D4" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) hide))
     (symbol "D4_1_1"
       (rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type solid)) (fill (type background)))
       (pin passive line (at -7.62 0.00 0) (length 2.54) (name "K" (effects (font (size 1.0 1.0)))) (number "1" (effects (font (size 1.0 1.0)))))

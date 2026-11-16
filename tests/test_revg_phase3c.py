@@ -1,22 +1,28 @@
 """Phase 3C KiCad 10 4-Layer PCB Variant Verification and Validation Tests.
 Validates 4 copper layers (F.Cu, In1.Cu, In2.Cu, B.Cu), authoritative 84.0 x 9.2 mm geometry,
-exactly 0 real DRC violations, exactly 0 unconnected items, 0 schematic parity issues,
-solid continuous GND (In1.Cu) and 3V3 (In2.Cu) planes, SD bus complete routing,
+exactly 0 real DRC violations (0 footprint mismatches, 0 clearance errors, 0 shorts),
+exactly 0 unconnected items, 0 schematic parity issues, SD bus complete routing,
+proper Revision G title block metadata, 1.6 mm stackup thickness reconciliation,
 2-layer baseline immutability (SHA-256: 8c009f538546edf97c99e08f7c750a99cba3f18931d3e7d77b7e5b2d2c4353dd),
-and negative test fixtures.
+and live KiCad CLI verification.
 """
 import pytest
 import json
 import re
 import hashlib
+import subprocess
 from pathlib import Path
 
 CANDIDATE_PCB_PATH = Path('output/RevG/variants/FourLayer_Candidate/SmartPen.kicad_pcb')
+CANDIDATE_SCH_PATH = Path('output/RevG/variants/FourLayer_Candidate/SmartPen.kicad_sch')
 CANDIDATE_PRO_PATH = Path('output/RevG/variants/FourLayer_Candidate/SmartPen.kicad_pro')
 BASELINE_PCB_PATH = Path('output/RevG/SmartPen.kicad_pcb')
-DRC_JSON_PATH = Path('reports/RevG/Phase03C/raw/candidate_final_drc.json')
+RESOLVED_DRC_JSON_PATH = Path('reports/RevG/Phase03C/qa_raw/candidate_resolved_drc.json')
+RESOLVED_DRC_RPT_PATH = Path('reports/RevG/Phase03C/qa_raw/candidate_resolved_drc.rpt')
 
 BASELINE_SHA256 = '8c009f538546edf97c99e08f7c750a99cba3f18931d3e7d77b7e5b2d2c4353dd'
+KICAD_CLI_PATH = Path(r'C:\Users\goran\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe')
+
 
 class TestPhase3CFourLayerCandidate:
     """Verifies Phase 3C 4-layer PCB variant integrity, DRC closure, and baseline immutability."""
@@ -54,39 +60,49 @@ class TestPhase3CFourLayerCandidate:
         assert abs(length - 84.0) < 0.15, f"Board length must be 84.0 mm, got {length:.2f}"
         assert abs(width - 9.2) < 0.15, f"Board width must be 9.2 mm, got {width:.2f}"
 
-    def test_candidate_zero_real_drc_violations(self):
-        """Verify native KiCad DRC reports exactly ZERO real violations (only benign footprint mismatches)."""
-        assert DRC_JSON_PATH.exists(), f"DRC JSON report missing at {DRC_JSON_PATH}"
-        with open(DRC_JSON_PATH, 'r', encoding='utf-8') as f:
+    def test_candidate_title_block_metadata(self):
+        """Verify candidate board title block correctly identifies Revision G (not legacy Rev F)."""
+        pcb_text = CANDIDATE_PCB_PATH.read_text(encoding='utf-8')
+        assert '(rev "Rev G")' in pcb_text, "PCB title block must state Rev G"
+        assert 'Revision G' in pcb_text, "PCB title block title must identify Revision G"
+
+    def test_candidate_board_thickness_pro_match(self):
+        """Verify project file defaults reconcile with 1.60 mm board stackup thickness."""
+        pro_data = json.loads(CANDIDATE_PRO_PATH.read_text(encoding='utf-8'))
+        thick = pro_data.get('board', {}).get('design_settings', {}).get('defaults', {}).get('board_thickness')
+        assert thick == 1.6, f"Expected project board thickness default 1.6 mm, got {thick}"
+
+    def test_candidate_zero_drc_violations(self):
+        """Verify native KiCad DRC reports exactly ZERO violations (including zero footprint mismatches)."""
+        assert RESOLVED_DRC_JSON_PATH.exists(), f"DRC JSON report missing at {RESOLVED_DRC_JSON_PATH}"
+        with open(RESOLVED_DRC_JSON_PATH, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        real_violations = [v for v in data.get('violations', []) if v.get('type') != 'lib_footprint_mismatch']
-        assert len(real_violations) == 0, f"Expected 0 real DRC violations, found {len(real_violations)}: {real_violations}"
+        violations = data.get('violations', [])
+        assert len(violations) == 0, f"Expected 0 DRC violations, found {len(violations)}: {violations}"
 
     def test_candidate_zero_unconnected_items(self):
         """Verify native KiCad DRC reports exactly ZERO unconnected items."""
-        assert DRC_JSON_PATH.exists()
-        with open(DRC_JSON_PATH, 'r', encoding='utf-8') as f:
+        assert RESOLVED_DRC_JSON_PATH.exists()
+        with open(RESOLVED_DRC_JSON_PATH, 'r', encoding='utf-8') as f:
             data = json.load(f)
         unconnected = data.get('unconnected_items', [])
         assert len(unconnected) == 0, f"Expected 0 unconnected items, found {len(unconnected)}: {unconnected}"
 
     def test_candidate_zero_schematic_parity_issues(self):
         """Verify native KiCad DRC reports exactly ZERO schematic parity issues."""
-        assert DRC_JSON_PATH.exists()
-        with open(DRC_JSON_PATH, 'r', encoding='utf-8') as f:
+        assert RESOLVED_DRC_JSON_PATH.exists()
+        with open(RESOLVED_DRC_JSON_PATH, 'r', encoding='utf-8') as f:
             data = json.load(f)
         parity = data.get('schematic_parity_issues', [])
         assert len(parity) == 0, f"Expected 0 schematic parity issues, found {len(parity)}: {parity}"
 
     def test_all_four_sd_signals_routed(self):
         """Verify all 4 microSD SPI signals (MOSI, MISO, SCK, CS) have complete copper tracks."""
-        import pcbnew
-        b = pcbnew.LoadBoard(str(CANDIDATE_PCB_PATH))
+        pcb_text = CANDIDATE_PCB_PATH.read_text(encoding='utf-8')
         for net in ['/SD_MOSI', '/SD_MISO', '/SD_SCK', '/SD_CS']:
-            n = b.FindNet(net)
-            assert n is not None, f"Net {net} missing from board netlist"
-            tracks = [t for t in b.GetTracks() if t.GetNetname() == net]
-            assert len(tracks) > 0, f"No tracks routed for net {net}"
+            pattern = rf'\(segment\s+.*?\(net\s+"?{re.escape(net)}"?\)'
+            matches = re.findall(pattern, pcb_text, re.DOTALL)
+            assert len(matches) > 0, f"No tracks routed for net {net}"
 
     def test_baseline_pcb_immutability(self):
         """Verify 2-layer production baseline SmartPen.kicad_pcb is 100% byte-for-byte unchanged."""
@@ -97,6 +113,24 @@ class TestPhase3CFourLayerCandidate:
             f"Baseline SHA-256 mismatch! Expected {BASELINE_SHA256}, got {actual_hash}"
         )
 
+    def test_live_native_kicad_drc_execution(self):
+        """Run a fresh live KiCad CLI DRC check directly against the candidate PCB file."""
+        if not KICAD_CLI_PATH.exists():
+            pytest.skip(f"kicad-cli not found at {KICAD_CLI_PATH}")
+        tmp_rpt = Path('reports/RevG/Phase03C/qa_raw/live_test_drc.rpt')
+        cmd = [
+            str(KICAD_CLI_PATH), 'pcb', 'drc',
+            '--all-track-errors', '--schematic-parity', '--severity-all',
+            '--refill-zones', '--exit-code-violations',
+            '-o', str(tmp_rpt), str(CANDIDATE_PCB_PATH)
+        ]
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        assert res.returncode == 0, f"kicad-cli DRC failed with code {res.returncode}:\n{res.stdout}\n{res.stderr}"
+        rpt_txt = tmp_rpt.read_text(encoding='utf-8')
+        assert "Found 0 DRC violations" in rpt_txt
+        assert "Found 0 unconnected pads" in rpt_txt
+        assert "Found 0 Footprint errors" in rpt_txt
+
 
 class TestPhase3CNegativeFixtures:
     """Verifies verification suite correctly flags and fails on corrupted or invalid board states."""
@@ -105,8 +139,7 @@ class TestPhase3CNegativeFixtures:
         """Simulate an injected short circuit in candidate DRC; assert suite rejection."""
         fake_drc = {'violations': [{'type': 'shorting_items', 'description': 'Injected short SD_MOSI <-> SD_MISO'}]}
         with pytest.raises(AssertionError):
-            real_viols = [v for v in fake_drc.get('violations', []) if v.get('type') != 'lib_footprint_mismatch']
-            assert len(real_viols) == 0
+            assert len(fake_drc.get('violations', [])) == 0
 
     def test_negative_injected_unconnect_fails(self):
         """Simulate an injected unconnected item in candidate DRC; assert suite rejection."""

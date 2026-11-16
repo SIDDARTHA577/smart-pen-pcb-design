@@ -42,3 +42,9 @@ desktop.ini
 _autosave-*
 *.tmp
 
+
+# Temporary test execution and scratch artifacts (preserves raw QA evidence in qa_raw/)
+scratch/
+reports/**/live_test_drc.rpt
+reports/**/test_*.rpt
+reports/**/test_*.json

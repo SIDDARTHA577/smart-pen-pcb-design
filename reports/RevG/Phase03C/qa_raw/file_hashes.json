@@ -1,0 +1,82 @@
+{
+  "output/RevG/SmartPen.kicad_pcb": {
+    "sha256": "8c009f538546edf97c99e08f7c750a99cba3f18931d3e7d77b7e5b2d2c4353dd",
+    "size_bytes": 318872
+  },
+  "output/RevG/variants/FourLayer_Candidate/SmartPen.kicad_pcb": {
+    "sha256": "6329d55062810222b0667beae6add3c09b0b0c8a4631fefcec84d652b1f865af",
+    "size_bytes": 687116
+  },
+  "output/RevG/variants/FourLayer_Candidate/SmartPen.kicad_sch": {
+    "sha256": "b8d922a86c5b259e0505e627ffddde803bc34bc83196576e68da5c95d61044cc",
+    "size_bytes": 161404
+  },
+  "output/RevG/variants/FourLayer_Candidate/SmartPen.kicad_pro": {
+    "sha256": "9c1a09b0196d860530735facefa12c38e8e12cb960b57831ae867daa5738bc45",
+    "size_bytes": 10514
+  },
+  "output/RevG/variants/FourLayer_Candidate/SmartPen.pretty/D3.kicad_mod": {
+    "sha256": "fcfa57fb959c3ddefcce19f7dce2d589dacc179346dc9dfa245021af8d8300be",
+    "size_bytes": 478
+  },
+  "output/RevG/variants/FourLayer_Candidate/SmartPen.pretty/D4.kicad_mod": {
+    "sha256": "40ad5b63ec41d90f1ff4323f47aecad76c2d15a2f8f73a33ad07d35de1175fbb",
+    "size_bytes": 1235
+  },
+  "output/RevG/variants/FourLayer_Candidate/SmartPen_Lib.kicad_sym": {
+    "sha256": "c1d4ed83097e90458e6c59ab129b89eac34b131aa89972d3c10f5acf4c8b1488",
+    "size_bytes": 61373
+  },
+  "reports/RevG/Phase03C/qa_raw/candidate_resolved_drc.rpt": {
+    "sha256": "9f522c21dc820f87f397f0de923d54f9d6b23be6ee5b43d4775eeed230cc99a3",
+    "size_bytes": 521
+  },
+  "reports/RevG/Phase03C/qa_raw/candidate_resolved_drc.json": {
+    "sha256": "0b11940d61ed5dd43a6117146b780cb75cbe1e5ef4c1dd13974bdebc9645bab7",
+    "size_bytes": 1123
+  },
+  "reports/RevG/Phase03C/qa_raw/candidate_resolved_erc.rpt": {
+    "sha256": "bf73311156b17dca642f9237ba03861d04d459bbe31d2b0f5f358ea5c8c88aca",
+    "size_bytes": 369
+  },
+  "reports/RevG/Phase03C/qa_raw/initial_baseline_drc.rpt": {
+    "sha256": "eaab224cc85b522a65733ec6152623b9de0f9e0511a3356d3b1a1667b6fbe6d9",
+    "size_bytes": 678
+  },
+  "reports/RevG/Phase03C/qa_raw/initial_baseline_drc.json": {
+    "sha256": "6d3acf0cf7f8a15796986bc47454685985a5665881f4dcea72353f0487e61a1d",
+    "size_bytes": 1644
+  },
+  "reports/RevG/Phase03C/QA_PENDING_557_FILES_AUDIT.md": {
+    "sha256": "613f62068ca03692e5f07b57d5638206d37ba50adf517d997171f20e6997cdd8",
+    "size_bytes": 6997
+  },
+  "reports/RevG/Phase03C/QA_FINAL_DRC_AND_FOOTPRINT_AUDIT.md": {
+    "sha256": "b97d72e66471b04a2575f6b9ca0f436cdc47a0c09ec4ed6e5532c6f71d0c4757",
+    "size_bytes": 9823
+  },
+  "reports/RevG/Phase03C/QA_GROUND_AND_POWER_PLANE_REVIEW.md": {
+    "sha256": "a0e59efa0de8ae47895fa3298b1606380b15796c23030a7280240c95975e1907",
+    "size_bytes": 9061
+  },
+  "reports/RevG/Phase03C/QA_COMPONENT_IDENTITY_AND_INTERFACES.md": {
+    "sha256": "4bf8148b4ec9c93ea320b432eddfdefeff09c7d64b76eae405a889f0de39d9aa",
+    "size_bytes": 7957
+  },
+  "reports/RevG/Phase03C/QA_BATTERY_RF_USB_BLOCKERS.md": {
+    "sha256": "9dd226e0d8547a00f86a6b9c622ca0b131daf545a3870ceff976592e1e8bb2fa",
+    "size_bytes": 8727
+  },
+  "reports/RevG/Phase03C/QA_FINAL_MECHANICAL_PREFLIGHT.md": {
+    "sha256": "3596d3032f35bdadd0ce2931695778c598ba3bd9803cf542a6e8c55532f91c5a",
+    "size_bytes": 8874
+  },
+  "reports/RevG/Phase03C/QA_PHASE4_ENTRY_DECISION.md": {
+    "sha256": "bdd12f09a29632208bb5ade4c610d3a7f14ae0644f4ced0fd1e1c2817a95cedd",
+    "size_bytes": 12235
+  },
+  "backups/Phase03C_uncommitted_scripts_backup.zip": {
+    "sha256": "98bc7d053e1a7d814892d6c394b286dfad1dbcb2a71babc84abd5b35aec8d3fb",
+    "size_bytes": 388299
+  }
+}

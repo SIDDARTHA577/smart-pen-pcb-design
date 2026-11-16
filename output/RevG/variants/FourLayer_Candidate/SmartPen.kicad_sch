@@ -2,11 +2,11 @@
   (uuid "262c8b9f-abbb-4d23-925d-a8f2d02b9c60")
   (paper "A1")
   (title_block
-    (title "Smart Pen Hardware System - Revision F")
-    (date "2026-11-02")
-    (rev "Rev F")
+    (title "Smart Pen Hardware System - Revision G (4-Layer)")
+    (date "2026-11-16")
+    (rev "Rev G")
     (company "RadixView Technologies")
-    (comment 1 "Full Engineering Validation - 60 Components")
+    (comment 1 "Phase 3C Schematic Parity Validated - 64 Components")
   )
   (lib_symbols
     (symbol "SmartPen_Lib:C1" (in_bom yes) (on_board yes)
@@ -706,7 +706,7 @@
     (symbol "SmartPen_Lib:D4" (in_bom yes) (on_board yes)
       (property "Reference" "D4" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
       (property "Value" "1N5819HW-7-F" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
-      (property "Footprint" "SmartPen:D3" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Footprint" "SmartPen:D4" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) hide))
       (symbol "D4_1_1"
         (rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type solid)) (fill (type background)))
         (pin passive line (at -7.62 0.00 0) (length 2.54) (name "K" (effects (font (size 1.0 1.0)))) (number "1" (effects (font (size 1.0 1.0)))))
@@ -1771,7 +1771,7 @@
     (uuid "bbccddee-ff00-4112-2233-445566778899")
     (property "Reference" "D4" (at 457.20 71.12 0) (effects (font (size 1.27 1.27))))
     (property "Value" "1N5819HW-7-F" (at 457.20 73.66 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "SmartPen:D3" (at 457.20 78.74 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Footprint" "SmartPen:D4" (at 457.20 78.74 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "ccddeeff-0011-4223-3344-5566778899aa"))
     (pin "2" (uuid "ddeeff00-1122-4334-4455-66778899aabb"))
   )
