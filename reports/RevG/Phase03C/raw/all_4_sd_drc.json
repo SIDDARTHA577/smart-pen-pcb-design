@@ -1,0 +1,2085 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-15T18:53:42",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "scratch_all_4_sd_routed.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 40.275,
+                        "y": 1.52
+                    },
+                    "uuid": "c130c0cc-5867-4158-884e-2a7e5ce1337c"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.2,
+                        "y": 3.8
+                    },
+                    "uuid": "b29b921b-a0e5-43cc-952c-82006ecedb5b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/3V3] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 44.475,
+                        "y": 0.8
+                    },
+                    "uuid": "f9773583-82e7-4caa-8059-31e50ce4ace4"
+                },
+                {
+                    "description": "Via [/3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 45.666,
+                        "y": 2.625
+                    },
+                    "uuid": "fa370af2-d8c4-468b-91e6-684a32cb6665"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets /VSYS_RAW and /SD_MISO)",
+            "items": [
+                {
+                    "description": "Track [/VSYS_RAW] on In2.Cu, length 4.1000 mm",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 6.5
+                    },
+                    "uuid": "18662fe4-d93f-4c4b-bcf8-e5e12747c955"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 1.0966 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.7
+                    },
+                    "uuid": "b5524bcf-3b4a-43aa-8b9d-26019044e72a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0723 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 22.0500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.8
+                    },
+                    "uuid": "9971fead-c345-4944-8e65-1b0005b1f264"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0531 mm)",
+            "items": [
+                {
+                    "description": "Track [/VSYS_RAW] on In2.Cu, length 2.0000 mm",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 3.45
+                    },
+                    "uuid": "34212a8a-f827-478a-a5b8-1399f057ed9e"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.3700 mm",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "d84e21ba-709e-48e5-a6a3-43e25d2cebc0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1723 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 22.0500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.8
+                    },
+                    "uuid": "9971fead-c345-4944-8e65-1b0005b1f264"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1531 mm)",
+            "items": [
+                {
+                    "description": "Track [/VSYS_RAW] on In2.Cu, length 2.0000 mm",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 3.45
+                    },
+                    "uuid": "34212a8a-f827-478a-a5b8-1399f057ed9e"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1012 mm)",
+            "items": [
+                {
+                    "description": "Track [/GPIO8_STRAP] on F.Cu, length 0.1485 mm",
+                    "pos": {
+                        "x": 43.63,
+                        "y": 2.435
+                    },
+                    "uuid": "3cb067b0-0a42-459b-8034-edd31a3ef3f7"
+                },
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 0.8724 mm",
+                    "pos": {
+                        "x": 43.13,
+                        "y": 2.435
+                    },
+                    "uuid": "7f8029d9-0085-4225-94b2-f3e7eef6df5a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /CHG_STAT and /SD_CS)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 22.0500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.8
+                    },
+                    "uuid": "9971fead-c345-4944-8e65-1b0005b1f264"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.975,
+                        "y": 2.049999
+                    },
+                    "uuid": "ee9de7e7-4ded-43ec-b52e-669c37bdbe79"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0100 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 22.0500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.8
+                    },
+                    "uuid": "9971fead-c345-4944-8e65-1b0005b1f264"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.975,
+                        "y": 2.049999
+                    },
+                    "uuid": "ee9de7e7-4ded-43ec-b52e-669c37bdbe79"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0289 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.0
+                    },
+                    "uuid": "630a08d7-f9d4-4feb-917e-2bad3f4e3a39"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 1.0966 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.7
+                    },
+                    "uuid": "b5524bcf-3b4a-43aa-8b9d-26019044e72a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1100 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.0
+                    },
+                    "uuid": "630a08d7-f9d4-4feb-917e-2bad3f4e3a39"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.3700 mm",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "d84e21ba-709e-48e5-a6a3-43e25d2cebc0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0600 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.0
+                    },
+                    "uuid": "630a08d7-f9d4-4feb-917e-2bad3f4e3a39"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1600 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.0
+                    },
+                    "uuid": "630a08d7-f9d4-4feb-917e-2bad3f4e3a39"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on In2.Cu, length 0.3500 mm",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "075cad07-f296-49f7-a137-7a1a01403e6d"
+                },
+                {
+                    "description": "Track [/SD_SCK] on In2.Cu, length 15.5200 mm",
+                    "pos": {
+                        "x": 42.63,
+                        "y": 1.45
+                    },
+                    "uuid": "a57b29c2-7a8f-49a2-9640-3d97a5aaa028"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_CS and /GPIO8_STRAP)",
+            "items": [
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                },
+                {
+                    "description": "Track [/GPIO8_STRAP] on F.Cu, length 1.5300 mm",
+                    "pos": {
+                        "x": 43.525,
+                        "y": 2.33
+                    },
+                    "uuid": "f37c13c1-c49c-4dfd-b1fe-1b8a666135fa"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GPIO8_STRAP] on F.Cu, length 1.5300 mm",
+                    "pos": {
+                        "x": 43.525,
+                        "y": 2.33
+                    },
+                    "uuid": "f37c13c1-c49c-4dfd-b1fe-1b8a666135fa"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0750 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 3.8000 mm",
+                    "pos": {
+                        "x": 59.8,
+                        "y": 0.4
+                    },
+                    "uuid": "6d8737f1-7337-416b-a532-27a9de9fe1a1"
+                },
+                {
+                    "description": "Track [/VSYS_RAW] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 2.4
+                    },
+                    "uuid": "e313a22c-3477-4a52-8f4c-ea764c8f21c7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_CS and /VSYS_RAW)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 3.8000 mm",
+                    "pos": {
+                        "x": 59.8,
+                        "y": 0.4
+                    },
+                    "uuid": "6d8737f1-7337-416b-a532-27a9de9fe1a1"
+                },
+                {
+                    "description": "Via [/VSYS_RAW] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 2.4
+                    },
+                    "uuid": "7dab7741-8768-486a-a1f9-a08c56aa3909"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1100 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                },
+                {
+                    "description": "Pad 14 [/GPIO8_STRAP] of U1 on F.Cu",
+                    "pos": {
+                        "x": 43.63,
+                        "y": 2.435
+                    },
+                    "uuid": "f31d0022-321a-499c-a76a-883047a77dfa"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 3.8000 mm",
+                    "pos": {
+                        "x": 59.8,
+                        "y": 0.4
+                    },
+                    "uuid": "6d8737f1-7337-416b-a532-27a9de9fe1a1"
+                },
+                {
+                    "description": "Via [/VSYS_RAW] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 2.4
+                    },
+                    "uuid": "7dab7741-8768-486a-a1f9-a08c56aa3909"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)",
+            "items": [
+                {
+                    "description": "Pad 14 [/GPIO8_STRAP] of U1 on F.Cu",
+                    "pos": {
+                        "x": 43.63,
+                        "y": 2.435
+                    },
+                    "uuid": "f31d0022-321a-499c-a76a-883047a77dfa"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 2.8250 mm",
+                    "pos": {
+                        "x": 56.975,
+                        "y": 0.4
+                    },
+                    "uuid": "6b8c5e38-a244-4fd9-b78c-95da2af9ca3e"
+                },
+                {
+                    "description": "Track [/SD_SCK] on F.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 58.15,
+                        "y": 0.7
+                    },
+                    "uuid": "9e7c98eb-6b73-47a7-9679-10533b2f16ed"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_CS and /SD_SCK)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 2.8250 mm",
+                    "pos": {
+                        "x": 56.975,
+                        "y": 0.4
+                    },
+                    "uuid": "6b8c5e38-a244-4fd9-b78c-95da2af9ca3e"
+                },
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.15,
+                        "y": 0.7
+                    },
+                    "uuid": "d4820e54-c103-47a7-824f-6ef9fc3069e4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 2.8250 mm",
+                    "pos": {
+                        "x": 56.975,
+                        "y": 0.4
+                    },
+                    "uuid": "6b8c5e38-a244-4fd9-b78c-95da2af9ca3e"
+                },
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.15,
+                        "y": 0.7
+                    },
+                    "uuid": "d4820e54-c103-47a7-824f-6ef9fc3069e4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 1.0966 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.7
+                    },
+                    "uuid": "b5524bcf-3b4a-43aa-8b9d-26019044e72a"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.4
+                    },
+                    "uuid": "bd5f99d9-cd1b-4e0c-9b47-17beefe2787b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 14.3500 mm",
+                    "pos": {
+                        "x": 44.8,
+                        "y": 1.45
+                    },
+                    "uuid": "8b8405d8-b52d-4be7-8545-583224a6e839"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.4
+                    },
+                    "uuid": "bd5f99d9-cd1b-4e0c-9b47-17beefe2787b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 14.3500 mm",
+                    "pos": {
+                        "x": 44.8,
+                        "y": 1.45
+                    },
+                    "uuid": "8b8405d8-b52d-4be7-8545-583224a6e839"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 13.6500 mm",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 1.15
+                    },
+                    "uuid": "a8edec9f-adcd-4833-8bcc-b653e6548d4e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.2000 mm",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 1.45
+                    },
+                    "uuid": "49dcde8c-bcd1-406f-b47e-00a7dfe6da1c"
+                },
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 22.0500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.8
+                    },
+                    "uuid": "9971fead-c345-4944-8e65-1b0005b1f264"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_MISO and /VSYS_RAW)",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.2000 mm",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 1.45
+                    },
+                    "uuid": "49dcde8c-bcd1-406f-b47e-00a7dfe6da1c"
+                },
+                {
+                    "description": "Via [/VSYS_RAW] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 2.4
+                    },
+                    "uuid": "7dab7741-8768-486a-a1f9-a08c56aa3909"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.2000 mm",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 1.45
+                    },
+                    "uuid": "49dcde8c-bcd1-406f-b47e-00a7dfe6da1c"
+                },
+                {
+                    "description": "Via [/VSYS_RAW] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 2.4
+                    },
+                    "uuid": "7dab7741-8768-486a-a1f9-a08c56aa3909"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0750 mm)",
+            "items": [
+                {
+                    "description": "Track [/VSYS_RAW] on In2.Cu, length 4.1000 mm",
+                    "pos": {
+                        "x": 59.5,
+                        "y": 6.5
+                    },
+                    "uuid": "18662fe4-d93f-4c4b-bcf8-e5e12747c955"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [/SD_CS] of J_SD on F.Cu",
+                    "pos": {
+                        "x": 59.65,
+                        "y": 4.2
+                    },
+                    "uuid": "93413aad-6021-4a1c-8bd4-6dcb24fdcc75"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [/SD_CS] of J_SD on F.Cu",
+                    "pos": {
+                        "x": 59.65,
+                        "y": 4.2
+                    },
+                    "uuid": "93413aad-6021-4a1c-8bd4-6dcb24fdcc75"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [/SD_MOSI] of J_SD on F.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 4.2
+                    },
+                    "uuid": "5f82cb4f-4d16-42db-952d-eba563d84bdc"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_MISO and /CHG_STAT)",
+            "items": [
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "2012b59e-8e05-414c-ab34-bd979da97e26"
+                },
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 19.7500 mm",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.0
+                    },
+                    "uuid": "4621cf3f-891d-4b22-ab19-4e52f931c923"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [/SD_MOSI] of J_SD on F.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 4.2
+                    },
+                    "uuid": "5f82cb4f-4d16-42db-952d-eba563d84bdc"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0600 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 19.7500 mm",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.0
+                    },
+                    "uuid": "4621cf3f-891d-4b22-ab19-4e52f931c923"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "2012b59e-8e05-414c-ab34-bd979da97e26"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_MISO and /SD_MOSI)",
+            "items": [
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "2012b59e-8e05-414c-ab34-bd979da97e26"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "2012b59e-8e05-414c-ab34-bd979da97e26"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.4
+                    },
+                    "uuid": "bd5f99d9-cd1b-4e0c-9b47-17beefe2787b"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.3700 mm",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "d84e21ba-709e-48e5-a6a3-43e25d2cebc0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0600 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "2012b59e-8e05-414c-ab34-bd979da97e26"
+                },
+                {
+                    "description": "Track [/3V3_RTC] on In2.Cu, length 6.1300 mm",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 1.1
+                    },
+                    "uuid": "b0ad61da-391f-440d-89f3-a31921d6598f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1600 mm)",
+            "items": [
+                {
+                    "description": "Track [/3V3_RTC] on In2.Cu, length 6.1300 mm",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 1.1
+                    },
+                    "uuid": "b0ad61da-391f-440d-89f3-a31921d6598f"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "2012b59e-8e05-414c-ab34-bd979da97e26"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 2.2500 mm",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 1.15
+                    },
+                    "uuid": "0fc2d8fe-bfc1-49d7-ac07-514d378a9970"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 14.3500 mm",
+                    "pos": {
+                        "x": 44.8,
+                        "y": 1.45
+                    },
+                    "uuid": "8b8405d8-b52d-4be7-8545-583224a6e839"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 2.2500 mm",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 1.15
+                    },
+                    "uuid": "0fc2d8fe-bfc1-49d7-ac07-514d378a9970"
+                },
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 22.0500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 1.8
+                    },
+                    "uuid": "9971fead-c345-4944-8e65-1b0005b1f264"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 13.6500 mm",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 1.15
+                    },
+                    "uuid": "a8edec9f-adcd-4833-8bcc-b653e6548d4e"
+                },
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.15,
+                        "y": 0.7
+                    },
+                    "uuid": "d4820e54-c103-47a7-824f-6ef9fc3069e4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 13.6500 mm",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 1.15
+                    },
+                    "uuid": "a8edec9f-adcd-4833-8bcc-b653e6548d4e"
+                },
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.15,
+                        "y": 0.7
+                    },
+                    "uuid": "d4820e54-c103-47a7-824f-6ef9fc3069e4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_MOSI and /GND)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                },
+                {
+                    "description": "Pad 2 [/GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 40.275,
+                        "y": 1.52
+                    },
+                    "uuid": "c130c0cc-5867-4158-884e-2a7e5ce1337c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /GND and /SD_MOSI)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 40.275,
+                        "y": 1.52
+                    },
+                    "uuid": "c130c0cc-5867-4158-884e-2a7e5ce1337c"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on F.Cu, length 1.4311 mm",
+                    "pos": {
+                        "x": 41.13,
+                        "y": 2.435
+                    },
+                    "uuid": "e0779094-ef79-4070-95d3-f9befd4226ae"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /CHG_STAT and /SD_MOSI)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 19.7500 mm",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.0
+                    },
+                    "uuid": "4621cf3f-891d-4b22-ab19-4e52f931c923"
+                },
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 40.275,
+                        "y": 1.52
+                    },
+                    "uuid": "c130c0cc-5867-4158-884e-2a7e5ce1337c"
+                },
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 19.7500 mm",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.0
+                    },
+                    "uuid": "4621cf3f-891d-4b22-ab19-4e52f931c923"
+                },
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_SCK and /SD_CS)",
+            "items": [
+                {
+                    "description": "Track [/SD_SCK] on In2.Cu, length 15.5200 mm",
+                    "pos": {
+                        "x": 42.63,
+                        "y": 1.45
+                    },
+                    "uuid": "a57b29c2-7a8f-49a2-9640-3d97a5aaa028"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0289 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 19.7500 mm",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.0
+                    },
+                    "uuid": "4621cf3f-891d-4b22-ab19-4e52f931c923"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 1.0966 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.7
+                    },
+                    "uuid": "b5524bcf-3b4a-43aa-8b9d-26019044e72a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_SCK] on In2.Cu, length 15.5200 mm",
+                    "pos": {
+                        "x": 42.63,
+                        "y": 1.45
+                    },
+                    "uuid": "a57b29c2-7a8f-49a2-9640-3d97a5aaa028"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 19.7500 mm",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.0
+                    },
+                    "uuid": "4621cf3f-891d-4b22-ab19-4e52f931c923"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 0.7500 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "97eb07a0-efdc-452b-a262-867bb95f6a88"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1100 mm)",
+            "items": [
+                {
+                    "description": "Track [/CHG_STAT] on B.Cu, length 19.7500 mm",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.0
+                    },
+                    "uuid": "4621cf3f-891d-4b22-ab19-4e52f931c923"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.3700 mm",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "d84e21ba-709e-48e5-a6a3-43e25d2cebc0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_MOSI and /3V3_RTC)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                },
+                {
+                    "description": "Track [/3V3_RTC] on In2.Cu, length 6.1300 mm",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 1.1
+                    },
+                    "uuid": "b0ad61da-391f-440d-89f3-a31921d6598f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [/3V3_RTC] on In2.Cu, length 6.1300 mm",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 1.1
+                    },
+                    "uuid": "b0ad61da-391f-440d-89f3-a31921d6598f"
+                },
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1590 mm)",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 3.4
+                    },
+                    "uuid": "d29dee32-417c-4f71-a649-111873ee4829"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_SCK and /SD_MOSI)",
+            "items": [
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.63,
+                        "y": 0.5
+                    },
+                    "uuid": "28b23613-5e2c-4a2f-8139-d00792745329"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                },
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.63,
+                        "y": 0.5
+                    },
+                    "uuid": "28b23613-5e2c-4a2f-8139-d00792745329"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SD_SCK and /SD_MISO)",
+            "items": [
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.63,
+                        "y": 0.5
+                    },
+                    "uuid": "28b23613-5e2c-4a2f-8139-d00792745329"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.3700 mm",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "d84e21ba-709e-48e5-a6a3-43e25d2cebc0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 2.3700 mm",
+                    "pos": {
+                        "x": 41.63,
+                        "y": 0.7
+                    },
+                    "uuid": "d84e21ba-709e-48e5-a6a3-43e25d2cebc0"
+                },
+                {
+                    "description": "Via [/SD_SCK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.63,
+                        "y": 0.5
+                    },
+                    "uuid": "28b23613-5e2c-4a2f-8139-d00792745329"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /3V3 and /SD_MOSI)",
+            "items": [
+                {
+                    "description": "Via [/3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.475,
+                        "y": 0.5
+                    },
+                    "uuid": "2752b23b-a791-4a8a-8f18-eef2b0349a7b"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.4
+                    },
+                    "uuid": "bd5f99d9-cd1b-4e0c-9b47-17beefe2787b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.4
+                    },
+                    "uuid": "bd5f99d9-cd1b-4e0c-9b47-17beefe2787b"
+                },
+                {
+                    "description": "Via [/3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.475,
+                        "y": 0.5
+                    },
+                    "uuid": "2752b23b-a791-4a8a-8f18-eef2b0349a7b"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1208 mm)",
+            "items": [
+                {
+                    "description": "Via [/3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.475,
+                        "y": 0.5
+                    },
+                    "uuid": "2752b23b-a791-4a8a-8f18-eef2b0349a7b"
+                },
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 1.0966 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.7
+                    },
+                    "uuid": "b5524bcf-3b4a-43aa-8b9d-26019044e72a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2208 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MISO] on B.Cu, length 1.0966 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 0.7
+                    },
+                    "uuid": "b5524bcf-3b4a-43aa-8b9d-26019044e72a"
+                },
+                {
+                    "description": "Via [/3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.475,
+                        "y": 0.5
+                    },
+                    "uuid": "2752b23b-a791-4a8a-8f18-eef2b0349a7b"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1354 mm)",
+            "items": [
+                {
+                    "description": "Via [/3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.475,
+                        "y": 0.5
+                    },
+                    "uuid": "2752b23b-a791-4a8a-8f18-eef2b0349a7b"
+                },
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2354 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on B.Cu, length 3.5000 mm",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 0.4
+                    },
+                    "uuid": "89785b97-c9d0-44e7-89be-250b86b03314"
+                },
+                {
+                    "description": "Via [/3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.475,
+                        "y": 0.5
+                    },
+                    "uuid": "2752b23b-a791-4a8a-8f18-eef2b0349a7b"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 0.8724 mm",
+                    "pos": {
+                        "x": 43.13,
+                        "y": 2.435
+                    },
+                    "uuid": "7f8029d9-0085-4225-94b2-f3e7eef6df5a"
+                },
+                {
+                    "description": "Track [/GPIO8_STRAP] on F.Cu, length 1.5300 mm",
+                    "pos": {
+                        "x": 43.525,
+                        "y": 2.33
+                    },
+                    "uuid": "f37c13c1-c49c-4dfd-b1fe-1b8a666135fa"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0377 mm)",
+            "items": [
+                {
+                    "description": "Track [/SD_CS] on F.Cu, length 0.8724 mm",
+                    "pos": {
+                        "x": 43.13,
+                        "y": 2.435
+                    },
+                    "uuid": "7f8029d9-0085-4225-94b2-f3e7eef6df5a"
+                },
+                {
+                    "description": "Pad 14 [/GPIO8_STRAP] of U1 on F.Cu",
+                    "pos": {
+                        "x": 43.63,
+                        "y": 2.435
+                    },
+                    "uuid": "f31d0022-321a-499c-a76a-883047a77dfa"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 40.275,
+                        "y": 1.52
+                    },
+                    "uuid": "c130c0cc-5867-4158-884e-2a7e5ce1337c"
+                },
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [/SD_MOSI] of J_SD on F.Cu",
+                    "pos": {
+                        "x": 58.65,
+                        "y": 4.2
+                    },
+                    "uuid": "5f82cb4f-4d16-42db-952d-eba563d84bdc"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [/SD_CS] of J_SD on F.Cu",
+                    "pos": {
+                        "x": 59.65,
+                        "y": 4.2
+                    },
+                    "uuid": "93413aad-6021-4a1c-8bd4-6dcb24fdcc75"
+                },
+                {
+                    "description": "Via [/SD_MISO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.15,
+                        "y": 3.65
+                    },
+                    "uuid": "de09f463-1a7a-4187-bc7f-2c8880cff4c5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2100 mm)",
+            "items": [
+                {
+                    "description": "Pad 14 [/GPIO8_STRAP] of U1 on F.Cu",
+                    "pos": {
+                        "x": 43.63,
+                        "y": 2.435
+                    },
+                    "uuid": "f31d0022-321a-499c-a76a-883047a77dfa"
+                },
+                {
+                    "description": "Via [/SD_CS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.6,
+                        "y": 1.7
+                    },
+                    "uuid": "bd614cd6-63c7-494f-84e2-0f010fe7f716"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SD_MOSI] on F.Cu, length 1.4311 mm",
+                    "pos": {
+                        "x": 41.13,
+                        "y": 2.435
+                    },
+                    "uuid": "e0779094-ef79-4070-95d3-f9befd4226ae"
+                },
+                {
+                    "description": "Pad 2 [/GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 40.275,
+                        "y": 1.52
+                    },
+                    "uuid": "c130c0cc-5867-4158-884e-2a7e5ce1337c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [/SD_MOSI] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.5,
+                        "y": 1.15
+                    },
+                    "uuid": "51489d3c-eff4-497d-8954-0ce54b1ca099"
+                },
+                {
+                    "description": "Pad 2 [/GND] of C1 on F.Cu",
+                    "pos": {
+                        "x": 40.275,
+                        "y": 1.52
+                    },
+                    "uuid": "c130c0cc-5867-4158-884e-2a7e5ce1337c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'J_USB' does not match copy in library 'SmartPen'",
+            "items": [
+                {
+                    "description": "Footprint J_USB",
+                    "pos": {
+                        "x": 78.4,
+                        "y": 4.6
+                    },
+                    "uuid": "1c561f5e-97e6-4cd8-ae78-d368f1645505"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'U1' does not match copy in library 'SmartPen'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 42.88,
+                        "y": 4.835
+                    },
+                    "uuid": "2d8bfb11-4a68-4b3e-90b5-f4bc8a0ec4d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R27",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 2.3
+                    },
+                    "uuid": "5799fbfc-f953-47ae-8b46-6694a770582f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

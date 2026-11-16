@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Main_SmartPen_drc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\Main_SmartPen_drc.rpt output/RevG/SmartPen.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 144 violations\nFound 67 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/Main_SmartPen_drc.rpt\n",
+    "stderr": "19:57:15: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:15: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Main_SmartPen_drc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\Main_SmartPen_drc.json output/RevG/SmartPen.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 144 violations\nFound 67 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/Main_SmartPen_drc.json\n",
+    "stderr": "19:57:22: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:22: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Main_SmartPen_erc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\Main_SmartPen_erc.rpt output/RevG/SmartPen.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/Main_SmartPen_erc.rpt\n",
+    "stderr": "19:57:28: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:28: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Main_SmartPen_erc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\Main_SmartPen_erc.json output/RevG/SmartPen.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/Main_SmartPen_erc.json\n",
+    "stderr": "19:57:33: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:33: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Front_MPU_drc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\Front_MPU_drc.rpt output/RevG/Front_MPU/Front_MPU.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/Front_MPU_drc.rpt\n",
+    "stderr": "19:57:37: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:37: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Front_MPU_drc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\Front_MPU_drc.json output/RevG/Front_MPU/Front_MPU.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/Front_MPU_drc.json\n",
+    "stderr": "19:57:42: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:42: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Front_MPU_erc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\Front_MPU_erc.rpt output/RevG/Front_MPU/Front_MPU.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/Front_MPU_erc.rpt\n",
+    "stderr": "19:57:47: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:47: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Front_MPU_erc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\Front_MPU_erc.json output/RevG/Front_MPU/Front_MPU.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/Front_MPU_erc.json\n",
+    "stderr": "19:57:51: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:51: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "MicroSD_Carrier_drc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\MicroSD_Carrier_drc.rpt output/RevG/MicroSD_Carrier/MicroSD_Carrier.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/MicroSD_Carrier_drc.rpt\n",
+    "stderr": "19:57:55: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:57:55: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "MicroSD_Carrier_drc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\MicroSD_Carrier_drc.json output/RevG/MicroSD_Carrier/MicroSD_Carrier.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/MicroSD_Carrier_drc.json\n",
+    "stderr": "19:58:00: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:58:00: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "MicroSD_Carrier_erc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\MicroSD_Carrier_erc.rpt output/RevG/MicroSD_Carrier/MicroSD_Carrier.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/MicroSD_Carrier_erc.rpt\n",
+    "stderr": "19:58:05: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:58:05: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "MicroSD_Carrier_erc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\MicroSD_Carrier_erc.json output/RevG/MicroSD_Carrier/MicroSD_Carrier.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/MicroSD_Carrier_erc.json\n",
+    "stderr": "19:58:11: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:58:11: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Touch_Sensor_drc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\Touch_Sensor_drc.rpt output/RevG/Touch_Sensor/Touch_Sensor.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/Touch_Sensor_drc.rpt\n",
+    "stderr": "19:58:16: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:58:16: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Touch_Sensor_drc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe pcb drc --severity-all --schematic-parity --all-track-errors --refill-zones --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\Touch_Sensor_drc.json output/RevG/Touch_Sensor/Touch_Sensor.kicad_pcb",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/RevG/Phase03C/raw/baseline/Touch_Sensor_drc.json\n",
+    "stderr": "19:58:22: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:58:22: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Touch_Sensor_erc_rpt",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format report -o reports\\RevG\\Phase03C\\raw\\baseline\\Touch_Sensor_erc.rpt output/RevG/Touch_Sensor/Touch_Sensor.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/Touch_Sensor_erc.rpt\n",
+    "stderr": "19:58:27: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:58:27: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  },
+  {
+    "name": "Touch_Sensor_erc_json",
+    "command": "C:\\Users\\goran\\AppData\\Local\\Programs\\KiCad\\10.0\\bin\\kicad-cli.exe sch erc --severity-all --format json -o reports\\RevG\\Phase03C\\raw\\baseline\\Touch_Sensor_erc.json output/RevG/Touch_Sensor/Touch_Sensor.kicad_sch",
+    "exit_code": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to reports/RevG/Phase03C/raw/baseline/Touch_Sensor_erc.json\n",
+    "stderr": "19:58:33: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n19:58:33: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n"
+  }
+]

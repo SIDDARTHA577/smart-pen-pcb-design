@@ -1,0 +1,16 @@
+{
+  "output/RevG/SmartPen.kicad_sch": "2148ff5efedee932d01114aec5a76e173838e81738b88dc6209a170294bfeefc",
+  "output/RevG/SmartPen.kicad_pcb": "8c009f538546edf97c99e08f7c750a99cba3f18931d3e7d77b7e5b2d2c4353dd",
+  "output/RevG/SmartPen.kicad_pro": "6144f5aedd39070f12c27cfb34fbb47bf3cbd7a1a4ba6f95b5793379c9115325",
+  "output/RevG/SmartPen.kicad_prl": "a6e2ff1520553a7fc8bc6c3d60a734cc58dec9c2e7900d0ae45f3e1f5ee17e3f",
+  "output/RevG/SmartPen.kicad_dru": "2e6de6126440f484cee6bb43846ae9f9c3228255fe69fab32112071f46156028",
+  "output/RevG/SmartPen_Lib.kicad_sym": "242174c34e935259207202b7df6e663f34409f89c02bc2bddda5795dbf14378c",
+  "output/RevG/fp-lib-table": "cfba54ec3731cab4337efbb4753dbbaff7eadedfdb0a8c2229986b4a9e44fa13",
+  "output/RevG/sym-lib-table": "9fe79f7620463873f28c58fd115aeeed77c0c311618981e2fe37de8a486f3594",
+  "output/RevG/Front_MPU/Front_MPU.kicad_sch": "a33fedfbbcd188579f0e2b3f1e1e031dccaf3cd19d2044326b22d41b14e7f561",
+  "output/RevG/Front_MPU/Front_MPU.kicad_pcb": "ec59f0dcbee3e9dd3231dc533178eb0d25fb1a9afd5e983fe39afc4b4a08ffcd",
+  "output/RevG/MicroSD_Carrier/MicroSD_Carrier.kicad_sch": "6fe97adc5cd62d62372e8757ad534230bac0f194692fdb998fb87071effa975e",
+  "output/RevG/MicroSD_Carrier/MicroSD_Carrier.kicad_pcb": "96eb291ed0d287f9330e7d8a10a91abe855cec65021ab33c689ba4fe58685768",
+  "output/RevG/Touch_Sensor/Touch_Sensor.kicad_sch": "867a01c8150585f3b9f7008e9c49d04d2fa6176a0202874109bc16857bd940c7",
+  "output/RevG/Touch_Sensor/Touch_Sensor.kicad_pcb": "4aaa69c937a5476380753dba0b68f1fe2ebb37bafbb97c2e6675055f04dc4f49"
+}

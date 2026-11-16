@@ -1,0 +1,21 @@
+** Drc report for SmartPen.kicad_pcb **
+** Created on 2026-11-16T17:23:26 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 1 DRC violations **
+[lib_footprint_mismatch]: Footprint 'D3' does not match copy in library 'SmartPen'
+    Local override; warning
+    @(59.0000 mm, 4.0500 mm): Footprint D4
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
