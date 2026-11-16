@@ -45,6 +45,6 @@ _autosave-*
 
 # Temporary test execution and scratch artifacts (preserves raw QA evidence in qa_raw/)
 scratch/
-reports/**/live_test_drc.rpt
+reports/**/live_test_*.rpt
 reports/**/test_*.rpt
 reports/**/test_*.json

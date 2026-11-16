@@ -131,6 +131,43 @@ class TestPhase3CFourLayerCandidate:
         assert "Found 0 unconnected pads" in rpt_txt
         assert "Found 0 Footprint errors" in rpt_txt
 
+    def test_live_native_kicad_erc_execution(self):
+        """Run a fresh live KiCad CLI ERC check directly against the candidate schematic file."""
+        if not KICAD_CLI_PATH.exists():
+            pytest.skip(f"kicad-cli not found at {KICAD_CLI_PATH}")
+        tmp_rpt = Path('reports/RevG/Phase03C/qa_raw/live_test_erc.rpt')
+        cmd = [
+            str(KICAD_CLI_PATH), 'sch', 'erc',
+            '--severity-all', '--exit-code-violations',
+            '-o', str(tmp_rpt), str(CANDIDATE_SCH_PATH)
+        ]
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        assert res.returncode == 0, f"kicad-cli ERC failed with code {res.returncode}:\n{res.stdout}\n{res.stderr}"
+
+    def test_rf_frontend_components_present(self):
+        """Verify RF frontend components (U1, L2, C8, C9, J_RF) are present in candidate PCB."""
+        pcb_text = CANDIDATE_PCB_PATH.read_text(encoding='utf-8')
+        for ref in ['"J_RF"', '"L2"', '"C8"', '"C9"']:
+            assert f'(property "Reference" {ref}' in pcb_text, f"RF component {ref} missing from candidate PCB"
+        assert 'U.FL-R-SMT-1(10)' in pcb_text, "J_RF footprint must be U.FL-R-SMT-1(10)"
+
+    def test_usb_data_path_and_polarity(self):
+        """Verify USB Type-C connector, ESD array, series damping resistors, and ESP32-C3 USB D+/D- nets."""
+        pcb_text = CANDIDATE_PCB_PATH.read_text(encoding='utf-8')
+        for ref in ['"J_USB"', '"U_ESD"', '"R7"', '"R8"']:
+            assert f'(property "Reference" {ref}' in pcb_text, f"USB component {ref} missing from candidate PCB"
+        assert '"/USB_DP_CORE"' in pcb_text, "Net /USB_DP_CORE missing from candidate PCB"
+        assert '"/USB_DM_CORE"' in pcb_text, "Net /USB_DM_CORE missing from candidate PCB"
+
+    def test_internal_planes_configuration(self):
+        """Verify In1.Cu has GND zone and In2.Cu has 3V3 zone."""
+        pcb_text = CANDIDATE_PCB_PATH.read_text(encoding='utf-8')
+        assert '(layer "In1.Cu")' in pcb_text, "In1.Cu layer missing"
+        assert '(layer "In2.Cu")' in pcb_text, "In2.Cu layer missing"
+        # Check zone definitions
+        assert '(net "/GND")' in pcb_text and '(layer "In1.Cu")' in pcb_text
+        assert '(net "/3V3")' in pcb_text and '(layer "In2.Cu")' in pcb_text
+
 
 class TestPhase3CNegativeFixtures:
     """Verifies verification suite correctly flags and fails on corrupted or invalid board states."""
