@@ -31,7 +31,7 @@
 
 ### Stage 2: Electronics Rail Integration
 1. Mount the vibration motor into `13_Vibration_Motor_Mount.stl` and route wires to `J_MOT` on the Main PCB.
-2. Place the battery pack (`LP300830-PCM`, 50 mAh, 33.0 × 8.2 × 3.3 mm) into `05_Battery_Cradle.stl`. Route the silicone leads through the rear wire conduit to `J_BAT`.
+2. Place the battery pack (`Grepow GRP380830-HP-PCM` or `EEMB LP380830`) into `05_Battery_Cradle.stl`. Route the silicone leads through the rear wire conduit to `J_BAT`.
 3. Slide `05_Battery_Cradle.stl` into the bottom retention rails of `04_Removable_Electronics_Rail.stl`.
 4. Affix the Molex 146153 antenna onto `14_Antenna_Mount.stl` and connect the U.FL micro-coaxial cable to connector `J_RF` on the Main PCB.
 5. Snap the Main PCB into the top deck of `04_Removable_Electronics_Rail.stl`. Connect all JST wire harnesses.

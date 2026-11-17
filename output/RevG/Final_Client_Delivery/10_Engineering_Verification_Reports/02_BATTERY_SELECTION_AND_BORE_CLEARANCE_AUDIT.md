@@ -4,10 +4,7 @@
 **Revision:** 1.0  
 **Date:** November 17, 2026  
 **Scope:** Sourcing Study, Contractual PRD Discrepancy Reconciliation & Barrel Bore Fit Proof (Task 2)  
-**Status:** **TECHNICAL AUDIT COMPLETE — RESOLVED IN PHASE 6A (LP300830-PCM APPROVED)**
-
-> **PHASE 6A ENGINEERING ADDENDUM (FINAL SELECTION):**  
-> Following the client's clarification that there is **NO fixed battery capacity requirement** (neither 130–150 mAh nor 70 mAh is binding), the battery selection was finalized with commercial standard model **`LP300830-PCM`** ($50\text{ mAh}$, finished envelope $33.00 \times 8.20 \times 3.30\text{ mm}$). This cell fits with positive clearance (+0.20 mm lateral and depth, +1.00 mm axial) inside the $34.00 \times 8.40 \times 3.50\text{ mm}$ battery cradle cavity and $\varnothing 13.50\text{ mm}$ barrel bore. The historical trade studies below document the evolution from Rev F (40 mm cell) through Phase 4 candidates.
+**Status:** **TECHNICAL AUDIT COMPLETE — CLIENT PRD ALIGNMENT REQUIRED**
 
 ---
 

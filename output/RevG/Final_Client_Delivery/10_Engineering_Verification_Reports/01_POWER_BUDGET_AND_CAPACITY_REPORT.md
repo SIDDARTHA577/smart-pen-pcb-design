@@ -77,21 +77,21 @@ When the pen rests on a desk, the TTP223 touch sensor detects no contact, and th
 
 ---
 
-## 4. BATTERY RUN-TIME PROJECTIONS FOR 50 mAh LP300830-PCM
+## 4. BATTERY RUN-TIME PROJECTIONS FOR 70 mAh CANDIDATE
 
-Assuming the commercial protected `LP300830-PCM` pack ($50\text{ mAh}$ nominal, $0.185\text{ Wh}$, with $85\%$ usable capacity to $3.3\text{V}$ cutoff):
-$$\text{Usable Energy} = 50\text{ mAh} \times 0.85 = \mathbf{42.5\text{ mAh}}$$
+Assuming the commercial protected `LP380830` pack ($70\text{ mAh}$ nominal, $0.26\text{ Wh}$, with $85\%$ usable capacity to $3.3\text{V}$ cutoff):
+$$\text{Usable Energy} = 70\text{ mAh} \times 0.85 = \mathbf{59.5\text{ mAh}}$$
 
 | Operational Scenario | Average Current | Calculated Operating Life | Real-World User Equivalency |
 | :--- | :---: | :---: | :--- |
-| **Continuous Active Handwriting (Mode 1)** | $22.48\text{ mA}$ | **$1.89\text{ hours}$ ($113\text{ minutes}$)** | $> 18\text{ pages of continuous writing}$ |
-| **Live BLE Mobile Streaming (Mode 2)** | $28.86\text{ mA}$ | **$1.47\text{ hours}$ ($88\text{ minutes}$)** | $1.5\text{ full classroom lectures}$ |
-| **Typical Daily Workday Profile\*** | $3.59\text{ mA}$ avg | **$11.8\text{ hours}$** | **1.48 working days on single charge** |
-| **Deep Sleep / Storage** | $15.0\ \mu\text{A}$ | **$> 2,800\text{ hours}$ ($> 3.8\text{ months}$)** | Shelf life without degradation |
+| **Continuous Active Handwriting (Mode 1)** | $22.48\text{ mA}$ | **$2.65\text{ hours}$ ($159\text{ minutes}$)** | $> 25\text{ pages of continuous writing}$ |
+| **Live BLE Mobile Streaming (Mode 2)** | $28.86\text{ mA}$ | **$2.06\text{ hours}$ ($124\text{ minutes}$)** | $2\text{ full classroom lectures}$ |
+| **Typical Daily Workday Profile\*** | $4.85\text{ mA}$ avg | **$12.3\text{ hours}$** | **Full working day on single charge** |
+| **Deep Sleep / Storage** | $15.0\ \mu\text{A}$ | **$> 3,900\text{ hours}$ ($> 5\text{ months}$)** | Shelf life without degradation |
 
-*\*Typical Workday Profile: $1.0\text{ hr}$ writing ($22.5\text{ mA}$) $+ 7.0\text{ hr}$ standby on desk ($0.85\text{ mA}$) $+ 16\text{ hr}$ deep sleep ($0.015\text{ mA}$).*
+*\*Typical Workday Profile: $1.5\text{ hr}$ writing ($22.5\text{ mA}$) $+ 6.5\text{ hr}$ standby on desk ($0.85\text{ mA}$) $+ 16\text{ hr}$ deep sleep ($0.015\text{ mA}$).*
 
-**Conclusion:** A $50\text{ mAh}$ pack delivers **$1.89\text{ hours}$ of continuous non-stop writing** and comfortably spans 1.48 work days of typical intermittent note-taking.
+**Conclusion:** A $70\text{ mAh}$ pack delivers over **$2.5\text{ hours}$ of continuous non-stop writing** and comfortably spans an entire work day of typical intermittent note-taking.
 
 ---
 

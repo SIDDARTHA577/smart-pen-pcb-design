@@ -192,7 +192,7 @@ def build_01_outer_barrel(p: SmartPenParameters):
     for deg in [0.0, 120.0, 240.0]:
         entry = make_box(6.35, 7.45, -1.25, 1.25, 137.80, 142.20).rotate([0, 0, deg])
         bayonet_grooves.append(entry)
-        for step_deg in range(0, 31, 2):
+        for step_deg in range(0, 31, 5):
             trk = make_box(6.35, 7.45, -1.25, 1.25, 137.80, 140.40).rotate([0, 0, deg + step_deg])
             bayonet_grooves.append(trk)
         detent = make_box(6.35, 7.55, -1.25, 1.25, 138.00, 140.20).rotate([0, 0, deg + 30.0])
@@ -202,8 +202,11 @@ def build_01_outer_barrel(p: SmartPenParameters):
     clip_boss = make_box(-2.50, 2.50, p.R_BARREL_OUT - 0.20, 9.20, 125.00, 142.00)
 
     barrel_solid = barrel + clip_boss
-    for g in [usb_cut, usb_rebate, btn1_cut, btn2_cut] + bayonet_grooves:
-        barrel_solid = barrel_solid - g
+    all_cuts = usb_cut + usb_rebate + btn1_cut + btn2_cut
+    for g in bayonet_grooves:
+        all_cuts = all_cuts + g
+
+    barrel_solid = barrel_solid - all_cuts
 
     return barrel_solid
 
@@ -554,10 +557,12 @@ def export_solid_step(filename, part_name, manifold_solid):
 
             p_line = get_id()
             v_dir = get_id()
+            v_vec = get_id()
             line = get_id()
             lines.append(f"#{p_line} = CARTESIAN_POINT('',({verts[i1][0]:.4f},{verts[i1][1]:.4f},{verts[i1][2]:.4f}));")
             lines.append(f"#{v_dir} = DIRECTION('',({norm_v[0]:.4f},{norm_v[1]:.4f},{norm_v[2]:.4f}));")
-            lines.append(f"#{line} = LINE('',#{p_line},#{v_dir});")
+            lines.append(f"#{v_vec} = VECTOR('',#{v_dir},1.0);")
+            lines.append(f"#{line} = LINE('',#{p_line},#{v_vec});")
 
             ec_id = get_id()
             lines.append(f"#{ec_id} = EDGE_CURVE('',#{v_ids[i1]},#{v_ids[i2]},#{line},.T.);")
@@ -708,10 +713,12 @@ def export_multi_solid_step(filename, assembly_name, parts_dict):
 
                 p_line = get_id()
                 v_dir = get_id()
+                v_vec = get_id()
                 line = get_id()
                 lines.append(f"#{p_line} = CARTESIAN_POINT('',({verts[i1][0]:.4f},{verts[i1][1]:.4f},{verts[i1][2]:.4f}));")
                 lines.append(f"#{v_dir} = DIRECTION('',({norm_v[0]:.4f},{norm_v[1]:.4f},{norm_v[2]:.4f}));")
-                lines.append(f"#{line} = LINE('',#{p_line},#{v_dir});")
+                lines.append(f"#{v_vec} = VECTOR('',#{v_dir},1.0);")
+                lines.append(f"#{line} = LINE('',#{p_line},#{v_vec});")
 
                 ec_id = get_id()
                 lines.append(f"#{ec_id} = EDGE_CURVE('',#{v_ids[i1]},#{v_ids[i2]},#{line},.T.);")
