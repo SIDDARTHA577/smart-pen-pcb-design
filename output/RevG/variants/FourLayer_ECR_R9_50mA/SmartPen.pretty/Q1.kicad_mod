@@ -1,0 +1,8 @@
+(footprint "Q1" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "Q1" (at 0 -1.5) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.15))))
+  (fp_text value "AO3400A" (at 0 1.5) (layer "F.Fab") (effects (font (size 0.8 0.8) (thickness 0.15))))
+  (pad "1" smd rect (at -0.950 -1.100) (size 0.800 1.000) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "2" smd rect (at 0.950 -1.100) (size 0.800 1.000) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "3" smd rect (at 0.000 1.100) (size 0.800 1.000) (layers "F.Cu" "F.Paste" "F.Mask"))
+)
