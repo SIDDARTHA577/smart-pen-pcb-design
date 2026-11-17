@@ -123,10 +123,12 @@ def write_step_brep(filename, part_name, vertices, faces):
 
             p_line = get_id()
             v_dir = get_id()
+            v_vec = get_id()
             line = get_id()
             lines.append(f"#{p_line} = CARTESIAN_POINT('',({vertices[i1][0]:.4f},{vertices[i1][1]:.4f},{vertices[i1][2]:.4f}));")
             lines.append(f"#{v_dir} = DIRECTION('',({norm_v[0]:.4f},{norm_v[1]:.4f},{norm_v[2]:.4f}));")
-            lines.append(f"#{line} = LINE('',#{p_line},#{v_dir});")
+            lines.append(f"#{v_vec} = VECTOR('',#{v_dir},1.0);")
+            lines.append(f"#{line} = LINE('',#{p_line},#{v_vec});")
 
             ec_id = get_id()
             lines.append(f"#{ec_id} = EDGE_CURVE('',#{v_ids[i1]},#{v_ids[i2]},#{line},.T.);")
@@ -477,10 +479,12 @@ def write_master_assembly_step(filename, assembly_name, parts_dict):
 
                 p_line = get_id()
                 v_dir = get_id()
+                v_vec = get_id()
                 line = get_id()
                 lines.append(f"#{p_line} = CARTESIAN_POINT('',({vertices[i1][0]:.4f},{vertices[i1][1]:.4f},{vertices[i1][2]:.4f}));")
                 lines.append(f"#{v_dir} = DIRECTION('',({norm_v[0]:.4f},{norm_v[1]:.4f},{norm_v[2]:.4f}));")
-                lines.append(f"#{line} = LINE('',#{p_line},#{v_dir});")
+                lines.append(f"#{v_vec} = VECTOR('',#{v_dir},1.0);")
+                lines.append(f"#{line} = LINE('',#{p_line},#{v_vec});")
 
                 ec_id = get_id()
                 lines.append(f"#{ec_id} = EDGE_CURVE('',#{v_ids[i1]},#{v_ids[i2]},#{line},.T.);")

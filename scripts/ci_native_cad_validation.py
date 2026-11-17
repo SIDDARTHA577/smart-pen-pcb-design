@@ -137,6 +137,7 @@ def validate_step_files():
                 
         vol_str = f"{volume:.2f}"
         print(f"{fname:<44} | {num_solids:<6} | {num_faces:<7} | {vol_str:<14} | {status:<10}")
+        sys.stdout.flush()
         results.append((fname, num_solids, num_faces, volume, status))
         
     print("-" * 105)
