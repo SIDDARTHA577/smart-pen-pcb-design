@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
 Continuous Integration Native CAD Kernel Ingestion & BRep Topology Validator.
-Executes on Linux CI runner (Ubuntu 22.04/24.04) using official FreeCAD / OpenCASCADE.
+Executes on Linux CI runner (Ubuntu 22.04/24.04) or local workstation with official FreeCAD / OpenCASCADE.
 Validates all 29 STEP files (27 components + 2 assemblies) in output/RevG/Mechanical_Phase04C/.
+
+STRICT REQUIREMENT: Must execute a genuine native CAD kernel (FreeCAD or OpenCASCADE).
+Silent fallback to text parsing is strictly forbidden; missing CAD tooling causes a test FAILURE/BLOCKED result.
 """
 
 import os
@@ -10,24 +13,40 @@ import sys
 import glob
 from pathlib import Path
 
+# Add potential FreeCAD library paths on Linux/macOS/Windows
+potential_fc_paths = [
+    "/usr/lib/freecad/lib",
+    "/usr/lib/freecad-python3/lib",
+    "/usr/lib/freecad-daily/lib",
+    "/usr/share/freecad/lib",
+    "C:/Program Files/FreeCAD 0.21/bin",
+    "C:/Program Files/FreeCAD 0.20/bin",
+    "C:/Program Files/FreeCAD/bin",
+]
+for p in potential_fc_paths:
+    if os.path.exists(p) and p not in sys.path:
+        sys.path.append(p)
+
 def validate_step_files():
-    step_dir = Path("output/RevG/Mechanical_Phase04C/STEP")
-    assembly_dir = Path("output/RevG/Mechanical_Phase04C/Assemblies")
+    base_dir = Path(__file__).resolve().parent.parent
+    step_dir = base_dir / "output" / "RevG" / "Mechanical_Phase04C" / "STEP"
+    assembly_dir = base_dir / "output" / "RevG" / "Mechanical_Phase04C" / "Assemblies"
     
     files = sorted(list(step_dir.glob("*.step")) + list(assembly_dir.glob("*.step")))
     if not files:
         print("ERROR: No STEP files found in target directories!")
+        print(f"Looked in: {step_dir} and {assembly_dir}")
         sys.exit(1)
         
     print(f"Found {len(files)} STEP files for native CAD kernel validation.")
     
-    # Try importing FreeCAD Part module first, then pythonocc
+    # Try importing FreeCAD Part module first, then OpenCASCADE (pythonocc)
     cad_engine = None
     try:
         import FreeCAD
         import Part
         cad_engine = "FreeCAD"
-        print("Using FreeCAD Native CAD Engine.")
+        print(f"Using FreeCAD Native CAD Engine (Version: {FreeCAD.Version()}).")
     except ImportError:
         try:
             from OCC.Core.STEPControl import STEPControl_Reader
@@ -35,21 +54,27 @@ def validate_step_files():
             from OCC.Core.BRepCheck import BRepCheck_Analyzer
             from OCC.Core.GProp import GProp_GProps
             from OCC.Core.BRepGProp import brepgprop
-            from OCC.Core.Bnd import Bnd_Box
-            from OCC.Core.BRepBndLib import brepbndlib
+            from OCC.Core.TopExp import TopExp_Explorer
+            from OCC.Core.TopAbs import TopAbs_FACE, TopAbs_SOLID
             cad_engine = "OpenCASCADE"
             print("Using OpenCASCADE (pythonocc) Native CAD Engine.")
-        except ImportError:
-            print("WARNING: Neither FreeCAD nor OpenCASCADE (pythonocc) is installed.")
-            print("Falling back to topological entity parser verification.")
-            cad_engine = "Parser"
+        except (ImportError, Exception) as e:
+            print("=" * 100)
+            print("CRITICAL FAILURE / TEST BLOCKED:")
+            print("Neither FreeCAD nor OpenCASCADE native CAD kernel is importable in this environment.")
+            print(f"Error details: {e}")
+            print("PER SPECIFICATION: Silent text-parsing fallback is STRICTLY DISALLOWED.")
+            print("A native CAD geometry kernel is required to validate ISO-10303-21 STEP BRep topology.")
+            print("Status: BLOCKED — MISSING NATIVE CAD KERNEL (FreeCAD / OpenCASCADE)")
+            print("=" * 100)
+            return False, "NO_NATIVE_KERNEL"
 
     results = []
     all_passed = True
     
-    print("-" * 100)
-    print(f"{'File Name':<42} | {'Solids':<6} | {'Faces':<7} | {'Volume (mm³)':<14} | {'Status':<10}")
-    print("-" * 100)
+    print("-" * 105)
+    print(f"{'File Name':<44} | {'Solids':<6} | {'Faces':<7} | {'Volume (mm³)':<14} | {'Status':<10}")
+    print("-" * 105)
     
     for f in files:
         fname = f.name
@@ -88,10 +113,6 @@ def validate_step_files():
                     brepgprop.VolumeProperties(shape, props)
                     volume = props.Mass()
                     
-                    # Count faces
-                    from OCC.Core.TopExp import TopExp_Explorer
-                    from OCC.Core.TopAbs import TopAbs_FACE, TopAbs_SOLID
-                    
                     face_exp = TopExp_Explorer(shape, TopAbs_FACE)
                     while face_exp.More():
                         num_faces += 1
@@ -114,27 +135,16 @@ def validate_step_files():
                 status = f"ERR: {str(e)[:15]}"
                 all_passed = False
                 
-        else: # Topological Parser
-            # Parse STEP entities for MANIFOLD_SOLID_BREP, ADVANCED_FACE, etc.
-            text = f.read_text(encoding='utf-8', errors='ignore')
-            num_solids = text.count("MANIFOLD_SOLID_BREP")
-            num_faces = text.count("ADVANCED_FACE")
-            # Parse computed volume if available or check bounding box
-            if num_solids > 0 and num_faces > 0 and "CLOSED_SHELL" in text:
-                status = "PASS (BRep)"
-                volume = -1.0 # placeholder
-            else:
-                status = "FAIL"
-                all_passed = False
-                
-        vol_str = f"{volume:.2f}" if volume >= 0 else "Verified BRep"
-        print(f"{fname:<42} | {num_solids:<6} | {num_faces:<7} | {vol_str:<14} | {status:<10}")
+        vol_str = f"{volume:.2f}"
+        print(f"{fname:<44} | {num_solids:<6} | {num_faces:<7} | {vol_str:<14} | {status:<10}")
         results.append((fname, num_solids, num_faces, volume, status))
         
-    print("-" * 100)
+    print("-" * 105)
     print(f"Total Evaluated: {len(results)} | Native Engine: {cad_engine} | All Passed: {all_passed}")
-    return all_passed
+    return all_passed, cad_engine
 
 if __name__ == "__main__":
-    success = validate_step_files()
-    sys.exit(0 if success else 1)
+    success, engine = validate_step_files()
+    if not success:
+        sys.exit(1)
+    sys.exit(0)

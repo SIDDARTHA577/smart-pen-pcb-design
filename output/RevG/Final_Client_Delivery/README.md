@@ -1,78 +1,47 @@
-# SMART PEN REV G — FINAL CLIENT DIGITAL DELIVERY PACKAGE
+# Smart Pen Rev G — Final Digital Delivery Package (Release v1.1)
 
-**Project Name:** Smart Pen Revision G Hardware Design  
-**Client Delivery Package Version:** 1.0  
-**Date:** November 17, 2026  
-**Contract Scope:** Complete Digital PCB Design + 3D Printable Mechanical Enclosure + Manufacturing Files + Digital Handoff  
-
----
-
-## 1. EXECUTIVE SUMMARY & CLIENT CLARIFICATIONS APPLIED
-
-The Smart Pen Revision G digital engineering milestone is 100% complete and fully validated.
-
-### Key Client Directives Implemented:
-1. **Unconstrained Battery Capacity Optimization:** In accordance with the client clarification (*"The client has no fixed battery capacity requirement... Select the highest-value practical battery solution that satisfies all design and safety constraints"*), the battery selection was mathematically optimized for the confirmed pen geometry without artificial PRD blockers.
-2. **Selected Battery Specification:** 
-   - Recommended Cell: **Grepow `GRP380830-HP-PCM`** (High-Drain LiPo, $65\text{ mAh}$ nominal, $5\text{C}$ continuous / $10\text{C}$ pulse discharge).
-   - Commercial Alternative: **EEMB `LP380830-PCM-LD`** ($70\text{ mAh}$ nominal, $1\text{C}$ continuous / $2\text{C}$ pulse).
-   - Continuous Handwriting Run-Time: **$2.5\text{--}2.7\text{ hours}$ continuous writing** ($> 25\text{ pages}$ of active writing); **$> 11.5\text{ hours}$ typical workday profile**.
-3. **Charger Circuit Optimization (ECR-ELEC-REVG-001):** Charger programming resistor confirmed at **$R_9 = 20.0\text{ k}\Omega$** ($50.0\text{ mA}$ charge current), ensuring maximum thermal safety within an enclosed plastic barrel (temperature rise $\le 21^\circ\text{C}$) and full compliance with cell charge limits.
-4. **100% Mechanical Zero-Clash CAD:** All 27 solid components in `output/RevG/Mechanical_Phase04C/` confirm **$0.0000\text{ mm}^3$ collision** across all 351 component pairs. Decoupled 3-piece click mechanism (`10A`, `10B`, `10C`), $1.40\text{ mm}$ FFC pushrod clearance, full Molex 146153 antenna ($34.9\text{ mm}$), and 16 watertight 2-manifold STLs.
-5. **Native KiCad 10.0 Electrical Certification:** **0 ERC violations, 0 DRC violations, 0 unconnected items** across the 4-layer Main PCB and all three daughterboards.
+**Product:** Smart Pen Rev G (Production-Optimized Architecture)  
+**Release Version:** v1.1  
+**Release Date:** November 17, 2026  
+**Repository Branch:** `engineering/revg-production`  
+**License / Proprietary Notice:** Confidential & Proprietary — Prepared for Client Delivery  
 
 ---
 
-## 2. DIRECTORY STRUCTURE & HOW TO OPEN DELIVERABLES
+## 1. Scope of Digital Delivery Package
 
-```
-Final_Client_Delivery/
-├── 01_KiCad_Design_Source/             Editable KiCad 10.0 schematics, PCBs, and symbol/footprint libraries
-│   ├── Main_Board/                     SmartPen 4-layer main board project
-│   ├── Front_MPU/                      Front MPU-6050 2-layer daughterboard
-│   ├── MicroSD_Carrier/                MicroSD card 2-layer carrier daughterboard
-│   └── Touch_Sensor/                   Capacitive touch 2-layer daughterboard
-├── 02_Fabrication_Gerber_Drill/        Production RS-274X Gerbers, Excellon drills, and vendor ZIPs
-│   ├── Gerbers/                        Top/bottom copper, internal planes, mask, silk, paste, edge cuts
-│   ├── Drill/                          Excellon PTH and NPTH drill files with drill charts
-│   └── SmartPen_RevG_Complete_PCBA_Gerber_Suite.zip
-├── 03_BOM_and_CPL/                     Bills of Materials and automated Pick-and-Place position files
-│   ├── BOM/                            Synchronized BOMs with exact manufacturer part numbers (MFR & MPN)
-│   └── PickAndPlace/                   Metric CPL files for automated SMT pick-and-place machines
-├── 04_Drawings_Schematics_Assembly/    Vector PDF assembly drawings, fabrication drawings, and schematics
-├── 05_Mechanical_CAD_Source/           Parametric Python CAD source code (SmartPen_Parametric_CAD_RevG_Phase4C.py)
-├── 06_Mechanical_STEP_Assemblies/      ISO-10303-21 AP214 BRep STEP assemblies and 27 component solids
-│   ├── SmartPen_RevG_Phase4C_Master_Assembly.step
-│   ├── SmartPen_RevG_Phase4C_Exploded_Assembly.step
-│   └── Parts/                          All 27 individual component STEP models
-├── 07_Mechanical_Printable_STL/        Watertight 2-manifold STL models ready for SLA/SLS 3D printing
-│   └── Parts/                          All 16 custom printable enclosure parts
-├── 08_Mechanical_Drawings_and_Visuals/ 2D engineering drawings (Click kinematics, longitudinal, sections)
-├── 09_Assembly_Instructions/           SMART_PEN_REVG_ASSEMBLY_MANUAL.md (Step-by-step assembly guide)
-├── 10_Engineering_Verification_Reports/ Power budget, battery fit, DRC/ERC, collision audit, DFM reports
-├── 11_Manufacturing_Notes/             IPC Class 2 fab notes, SAC305 assembly specs, 4-layer stackup spec
-├── 12_Prototype_Validation_and_Limitations/ Physical hardware bring-up and bench testing recommendations
-├── SHA256_FINAL_DELIVERY_MANIFEST.txt  Cryptographic checksums of all delivered assets
-└── README.md                           This handoff document
-```
+This release archive contains the complete digital engineering deliverables for the Smart Pen Rev G:
+- **01_KiCad_Design_Source:** Complete native KiCad design trees for all four boards (FourLayer_ECR_R9_50mA Main Board, Front_MPU, MicroSD_Carrier, and Touch_Sensor) with embedded footprint libraries. All machine-specific `*.kicad_prl` files have been excluded.
+- **02_Fabrication_Gerber_Drill:** Production Gerber files (RS-274X) and Excellon drill files for all four boards with unified coordinate origins and validated drill tables.
+- **03_BOM_and_CPL:** Standardized Bill of Materials with genuine manufacturer names, verified orderable MPNs, IPC package sizes, and automated Pick-and-Place (CPL) centroid files. Includes Consolidated System BOM.
+- **04_Drawings_Schematics_Assembly:** Vector schematic and PCBA assembly drawings in PDF and SVG formats.
+- **05_Mechanical_CAD_Source:** Complete parametric Python CAD construction scripts.
+- **06_Mechanical_STEP_Assemblies:** 27 individual AP214 BRep component models, Master Assembly STEP, and Exploded Assembly STEP.
+- **07_Mechanical_Printable_STL:** 16 watertight 2-manifold STL models ready for high-resolution stereolithography (SLA) printing.
+- **08_Mechanical_Drawings_and_Visuals:** Technical orthographic drawings, section views, click kinematics charts, and assembly visual references.
+- **09_Assembly_Instructions:** Comprehensive step-by-step mechanical and electrical integration manual.
+- **10_Engineering_Verification_Reports:** Electrical, RF, ground plane, thermal, and mechanical collision reports.
+- **11_Manufacturing_Notes:** PCBA fabrication tolerances, surface finish (ENIG), copper weight, stackup, and test point specs.
+- **12_Prototype_Validation_and_Limitations:** Engineering evaluation guidelines and prototype boundary notes.
 
 ---
 
-## 3. HOW TO USE DELIVERABLES
+## 2. Key Architecture & Physical Specifications
 
-### A. Ordering Printed Circuit Boards (PCBs)
-1. Navigate to `02_Fabrication_Gerber_Drill/Gerbers/`.
-2. For automated fab quoting (e.g., JLCPCB, PCBWay):
-   - Upload `SmartPen_MainBoard_Gerbers_and_Drill.zip` for the 4-layer Main PCB. Specify $1.60\text{ mm}$ thickness, ENIG surface finish, matte black solder mask, white silkscreen, and controlled 50-ohm impedance.
-   - Upload `Front_MPU_Gerbers_and_Drill.zip`, `MicroSD_Carrier_Gerbers_and_Drill.zip`, and `Touch_Sensor_Gerbers_and_Drill.zip` for the daughterboards. Specify $0.80\text{ mm}$ thickness, ENIG finish, matte black solder mask.
-3. For SMT Assembly (PCBA):
-   - Supply the corresponding BOM from `03_BOM_and_CPL/BOM/` and CPL from `03_BOM_and_CPL/PickAndPlace/`.
+- **Enclosure Envelope:** Overall Length: 153.5 mm (within mandatory 150–155 mm span); Barrel Outer Diameter: 15.5 mm (within mandatory 15–16 mm span).
+- **Main Board Form Factor:** 84.0 × 9.2 × 1.6 mm (4-Layer JLC04161H-7628 stackup, 1.0 oz copper, ENIG finish).
+- **Battery Architecture:** Removable below-rail conformal cradle with positive mechanical clearances.
+  - **Selected Commercial Cell:** Model `LP300830-PCM` (50 mAh nominal, 3.7 V LiPo).
+  - **Maximum Finished Pack Envelope:** 33.00 mm (L) × 8.20 mm (W) × 3.30 mm (T) with integrated PCM and silicone leads.
+  - **Cradle Cavity:** 34.00 mm (L) × 8.40 mm (W) × 3.50 mm (T) (+0.20 mm thickness, +0.20 mm width, +1.00 mm length clearance).
+  - **Bore Clearance:** +0.437 mm corner clearance to barrel inner bore; +0.25 mm clearance to moving pushrod tunnel.
+- **Charging & Headroom:**
+  - $R_9 = 20.0\text{ k}\Omega \implies 50.0\text{ mA}$ charge current (1.0C rating).
+  - MCP73831 thermal dissipation $P_D \le 82.5\text{ mW}$, $\Delta T \le 19.0^\circ\text{C}$.
+  - AP2112K-3.3 regulator provides positive voltage margin above ESP32-C3 brownout threshold.
 
-### B. 3D Printing Mechanical Parts
-1. Navigate to `07_Mechanical_Printable_STL/Parts/`.
-2. All 16 STLs are watertight 2-manifold solids.
-3. Recommended print process: High-resolution SLA / DLP resin (Formlabs Tough 2000 / Grey Pro) or SLS / MJF Nylon PA12 with $0.05\text{ mm}$ layer height.
+---
 
-### C. Opening CAD Files
-- **KiCad Projects:** Open `*.kicad_pro` files in KiCad 8.0, 9.0, or 10.0. All footprint and symbol libraries are embedded locally.
-- **STEP Models:** Import `SmartPen_RevG_Phase4C_Master_Assembly.step` into SolidWorks, Autodesk Fusion 360, FreeCAD, Rhino, or Onshape. Units are standard millimeters.
+## 3. Package Checksums & Integrity
+
+All files in this archive have been cryptographically hashed (SHA-256) directly from the uncompressed byte streams inside the archive. Refer to `SHA256_FINAL_DELIVERY_MANIFEST.txt` for the authoritative checksums.

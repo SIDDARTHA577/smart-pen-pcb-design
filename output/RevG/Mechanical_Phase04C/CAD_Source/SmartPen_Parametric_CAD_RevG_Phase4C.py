@@ -80,22 +80,22 @@ class SmartPenParameters:
     RAIL_DECK_THICK = 1.00     # Rail floor thickness (Y = 0.20 to 1.20 mm)
     RAIL_RIB_OD = 13.10        # Outer diameter of alignment ribs (radius 6.55 mm vs 6.75 bore)
 
-    # Protected Battery Parameters (Provisional Envelope)
-    Z_BATT_START = 74.00
-    Z_BATT_END = 106.00
-    BATT_LEN = 32.00
-    BATT_WIDTH = 7.60          # Half-width = 3.80 mm
-    BATT_THICK = 3.60          # Thickness = 3.60 mm
-    BATT_Y_TOP = -1.50         # Below rail deck and pushrod tunnel
-    BATT_Y_BOT = BATT_Y_TOP - BATT_THICK  # -5.10 mm
+    # Protected Battery Parameters (Verified Model LP300830-PCM Maximum Envelope)
+    Z_BATT_START = 74.50
+    Z_BATT_END = 107.50
+    BATT_LEN = 33.00           # Maximum finished length including PCM
+    BATT_WIDTH = 8.20          # Maximum finished width including tape/seam
+    BATT_THICK = 3.30          # Maximum finished thickness including wrap
+    BATT_Y_TOP = -1.50         # Below rail deck and pushrod tunnel (tunnel bottom @ Y=-1.20)
+    BATT_Y_BOT = BATT_Y_TOP - BATT_THICK  # -4.80 mm
 
-    # Battery Cradle Parameters
+    # Battery Cradle Parameters (Engineered for LP300830-PCM with Positive Clearances)
     CRADLE_Z_START = 73.50
     CRADLE_Z_END = 109.00
-    CRADLE_INSIDE_WIDTH = 8.00  # Clear cavity width
-    CRADLE_INSIDE_DEPTH = 3.80  # Clear cavity depth
-    CRADLE_INSIDE_LEN = 33.00   # Clear cavity length
-    CRADLE_OD = 13.20           # Conformal hull outer diameter (radius 6.60 mm)
+    CRADLE_INSIDE_WIDTH = 8.40  # Clear cavity width (+0.20 mm lateral clearance)
+    CRADLE_INSIDE_DEPTH = 3.50  # Clear cavity depth (+0.20 mm vertical clearance)
+    CRADLE_INSIDE_LEN = 34.00   # Clear cavity length (+1.00 mm axial clearance for wiring)
+    CRADLE_OD = 13.20           # Conformal hull outer diameter (radius 6.60 mm vs 6.75 mm bore)
 
     # Pushrod & Refill
     PUSHROD_OD = 1.60          # Moving pushrod diameter
@@ -231,14 +231,14 @@ def build_05_battery_cradle(p: SmartPenParameters):
 
     cavity = make_box(
         -p.CRADLE_INSIDE_WIDTH/2.0, p.CRADLE_INSIDE_WIDTH/2.0,
-        p.BATT_Y_BOT - 0.20, p.BATT_Y_TOP + 0.10,
-        p.Z_BATT_START - 0.20, p.Z_BATT_END + 0.80
+        -4.95, -1.45,
+        74.00, 108.00
     )
     cradle_solid = cradle_base - cavity
 
-    clip_front = make_box(-3.5, 3.5, -1.50, 0.20, 73.50, 75.00)
-    clip_rear = make_box(-3.5, 3.5, -1.50, 0.20, 107.50, 109.00)
-    wire_chase = make_box(-1.20, 1.20, -3.00, 0.50, 106.00, 109.50)
+    clip_front = make_box(-3.5, 3.5, -1.50, 0.20, 73.50, 74.00)
+    clip_rear = make_box(-3.5, 3.5, -1.50, 0.20, 108.00, 109.00)
+    wire_chase = make_box(-1.50, 1.50, -3.50, 0.50, 107.00, 109.50)
     pushrod_tunnel = make_cylinder_z(1.20, 73.00, 110.00, n_seg=24)
 
     return (cradle_solid + clip_front + clip_rear) - wire_chase - pushrod_tunnel
@@ -820,7 +820,7 @@ def generate_technical_drawings(output_dir: Path, p: SmartPenParameters):
     ax.add_patch(patches.Rectangle((82.5, 6.2), 5.0, 1.9, facecolor='#FFD700', edgecolor='black', alpha=0.9))
 
     # Battery & Cradle
-    ax.add_patch(patches.Rectangle((74, -5.1), 32, 3.6, facecolor='#DC143C', edgecolor='black', alpha=0.85, label='19 LiPo Battery (Provisional 32x7.6x3.6mm)'))
+    ax.add_patch(patches.Rectangle((74.5, -4.8), 33.0, 3.3, facecolor='#DC143C', edgecolor='black', alpha=0.85, label='19 LiPo Battery (LP300830-PCM 33.0x8.2x3.3mm)'))
     ax.add_patch(patches.Rectangle((73.5, -5.6), 35.5, 4.4, facecolor='none', edgecolor='#8B0000', linewidth=1.5, linestyle=':', label='05 Battery Cradle (Conformal R=6.60 mm)'))
 
     # Molex Antenna (34.9 mm length)
