@@ -37,8 +37,8 @@ Every critical mechanical subsystem was evaluated for dimensional conformance, p
 ```
 
 ### 2.1 Battery, Cradle, Barrel & Rail Clearances
-- **Battery Envelope:** Retained as $32.0\text{ mm}$ length $\times 7.60\text{ mm}$ width $\times 3.60\text{ mm}$ thickness (`19_LiPo_Battery_LP380830.step`), representing the exact mathematically optimized volume fitting in a $\varnothing 13.50\text{ mm}$ bore.
-- **Cradle Pocket:** Internal cavity is $33.0\text{ mm}$ length $\times 8.00\text{ mm}$ width $\times 3.80\text{ mm}$ depth (`05_Battery_Cradle.stl`), providing $0.20\text{ mm}$ lateral clearance.
+- **Battery Envelope:** Standard commercial pack $33.00\text{ mm}$ finished length $\times 8.20\text{ mm}$ width $\times 3.30\text{ mm}$ thickness (`19_LiPo_Battery_LP300830_PCM.step`), representing model `LP300830-PCM` ($50\text{ mAh}$) fitting with $+0.38\text{ mm}$ radial margin inside the $\varnothing 13.50\text{ mm}$ barrel bore.
+- **Cradle Pocket:** Internal cavity is $34.00\text{ mm}$ length $\times 8.40\text{ mm}$ width $\times 3.50\text{ mm}$ depth (`05_Battery_Cradle.stl`), providing $+0.20\text{ mm}$ lateral and depth clearance and $+1.00\text{ mm}$ axial wire fold clearance.
 - **Rail Sliding Clearance:** Removable electronics rail (`04_Removable_Electronics_Rail.stl`) has guide rib outer diameter $\varnothing 13.10\text{ mm}$ inside barrel bore $\varnothing 13.50\text{ mm}$, providing $\Delta r = 0.20\text{ mm}$ radial sliding clearance.
 - **Wire Routing Chase:** Integrated rear wire chase in cradle ($Z = 106.0\text{--}109.5\text{ mm}$, channel $2.4\text{ mm}$ wide $\times 2.5\text{ mm}$ deep) accommodates two 28 AWG silicone leads routing smoothly to connector `J_BAT` on the PCB deck.
 

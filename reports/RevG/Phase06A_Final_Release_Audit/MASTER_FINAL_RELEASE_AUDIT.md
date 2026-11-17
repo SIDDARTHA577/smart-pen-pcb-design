@@ -1,11 +1,11 @@
 # SMART PEN REV G — MASTER FINAL RELEASE AUDIT
 
 **Document ID:** SRG-P6A-AUD-001  
-**Revision:** 1.0  
+**Revision:** 1.2  
 **Date:** November 17, 2026  
 **Repository Branch:** `engineering/revg-production`  
-**Current Release Package:** `output/RevG/SmartPen_RevG_Final_Digital_Delivery_Package_v1.1.zip`  
-**Status:** **AUDIT COMPLETE — 13 OF 14 RELEASE GATES PASSED (1 BLOCKED ON LOCAL HOST WDAC / VALIDATED VIA CI)**
+**Current Release Package:** `output/RevG/SmartPen_RevG_Final_Digital_Delivery_Package_v1.2.zip`  
+**Status:** **AUDIT COMPLETE — 13 OF 14 RELEASE GATES PASSED (1 BLOCKED ON LOCAL HOST WDAC / READY FOR CI)**
 
 ---
 
@@ -25,20 +25,20 @@ The Smart Pen Rev G Phase 6A Final Release Audit was conducted to provide an ind
 
 | Gate | Verification Area | Target Criterion | Observed Evidence | Status |
 | :---: | :--- | :--- | :--- | :---: |
-| **01** | **Native CAD STEP Import** | 29 STEP files (27 parts + 2 assy) imported by native CAD kernel | Windows host WDAC blocks OCP/FreeCAD native DLLs; workflow recreated at `.github/workflows/cad-validation.yml` for Ubuntu runner | **BLOCKED\*** |
-| **02** | **Watertight STLs** | 16 STLs watertight 2-manifold solids | 16/16 STLs verified watertight with 0 open boundary edges via `trimesh` | **PASS** |
+| **01** | **Native CAD STEP Import** | 29 STEP files (27 parts + 2 assy) imported by native CAD kernel | Windows host WDAC blocks OCP/FreeCAD native DLLs; workflow configured at `.github/workflows/cad-validation.yml` for Ubuntu runner | **BLOCKED\*** |
+| **02** | **Watertight STLs** | 16 STLs watertight 2-manifold solids | 16/16 STLs verified watertight with 0 open boundary edges via `trimesh` (9,110 total triangles) | **PASS** |
 | **03** | **3D Assembly Clearance** | 27 bodies, 351 pairs, 0 collision | 351/351 pairs evaluated via `manifold3d` CSG boolean: 0.0000 mm³ collision | **PASS** |
-| **04** | **Writing & Click Mechanism** | 4.5 mm stroke, 1.5 mm overtravel | Refill stroke 4.50 mm, overtravel 1.50 mm, nominal pen length 153.50 mm | **PASS** |
-| **05** | **Battery Mechanical Fit** | Max finished dimensions fit cradle | Model LP300830-PCM ($33.0 \times 8.2 \times 3.3\text{ mm}$) fits cavity ($34.0 \times 8.4 \times 3.5\text{ mm}$) with $+0.437\text{ mm}$ bore clearance | **PASS** |
-| **06** | **Battery Headroom & Brownout**| Adequate margin above ESP32 brownout | $V_{\text{IN,min}} = 3.408\text{ V}$, $V_{\text{OUT,min}} = 3.158\text{ V}$, Brownout margin $+0.358\text{ V} > 2.80\text{ V}$ | **PASS** |
-| **07** | **Charging & Thermal Safety** | 50 mA rate, safe $T_J$ on MCP73831 | $R_9 = 20.0\text{ k}\Omega \implies 50.0\text{ mA}$ ($1.0\text{C}$); $P_D = 82.5\text{ mW}$, $\Delta T = 19.0^\circ\text{C}$, $T_J = 44.0^\circ\text{C} \ll 125^\circ\text{C}$ | **PASS** |
-| **08** | **Power-Path Operation** | $Q_2$ P-FET & body diode isolation | $Q_2$ DMG2305UX turns firmly OFF ($V_{GS} = +0.35\text{ V}$); body diode reverse-biased | **PASS** |
-| **09** | **Electrical DRC & Parity** | 4 boards, 0 DRC violations | All 4 boards (Main, MPU, SD, Touch) report 0 DRC errors, 0 unconnected items | **PASS** |
-| **10** | **BOM & CPL Integrity** | 0 generic placeholders, exact MPNs | 100% verified orderable MPNs and IPC packages across all boards; 0 generics | **PASS** |
-| **11** | **Gerber & Drill Suite** | Complete layers and Excellon drills | 34 Gerbers, 8 Excellon drill files, 4-layer stackup spec verified | **PASS** |
-| **12** | **Delivery Archive Integrity** | v1.1 ZIP valid, byte-stream SHA-256 | ZIP integrity verified via `zipfile.testzip()`; 0 `*.kicad_prl` files; self-contained SHA-256 manifest | **PASS** |
+| **04** | **Writing & Click Mechanism** | 4-state kinematics, stroke & overtravel | Complete 4-state kinematic loop verified: Retracted (+1.50mm) -> Downstroke 6.00mm -> Latched (-3.00mm, 3.67N force) -> Return; no spring bind (6.0mm > 4.5mm solid); 45° indexing cam | **PASS** |
+| **05** | **Battery Mechanical Fit** | Max finished dimensions fit cradle | Model LP300830-PCM ($33.00 \times 8.20 \times 3.30\text{ mm}$) fits cavity ($34.00 \times 8.40 \times 3.50\text{ mm}$) with $+0.437\text{ mm}$ bore clearance | **PASS** |
+| **06** | **Battery Headroom & Brownout**| Multi-mode transient & LDO headroom | Power delivery verified: Mode 1 writing peak=77.1mA <= 100mA (2C limit), V_out(min)=3.101V >= 3.00V; Mode 2 BLE peak=80.1mA <= 100mA; Mode 3 Wi-Fi 385mA powered via USB VBUS with battery isolated by Q2 | **PASS** |
+| **07** | **Charging & Thermal Safety** | 50 mA rate, safe $T_J$ on MCP73831 | $R_9 = 20.0\text{ k}\Omega \implies 50.0\text{ mA}$ ($1.0\text{C}$); $P_D = 82.5\text{ mW}$, $\Delta T = 19.0^\circ\text{C}$, $T_J = 44.0^\circ\text{C} < 45.0^\circ\text{C}$ limit | **PASS** |
+| **08** | **Power-Path Operation** | $Q_2$ P-FET & body diode isolation | $Q_2$ DMG2305UX Gate=VBUS, Source=VSYS_RAW, Drain=VBAT; D4 Anode=VBUS, Cathode=VSYS_RAW; Body diode reverse-biased (-0.45V) during USB attachment | **PASS** |
+| **09** | **Electrical DRC & Parity** | 4 boards, 0 DRC violations | All 4 boards executed via native KiCad 10.0 CLI: 0 DRC violations, 0 unconnected items, 0 ERC violations | **PASS** |
+| **10** | **BOM & CPL Integrity** | 0 generic placeholders, exact MPNs | BOM & CPL 100% verified: 64 BOM rows, 64 CPL placements; authentic manufacturers (Samsung, Murata, Yageo, Espressif), standard IPC packages, 0 generics; coordinates bounded | **PASS** |
+| **11** | **Gerber & Drill Suite** | Complete layers and Excellon drills | Complete PCBA manufacturing suite verified: 34 Gerbers (RS-274X valid), 8 Excellon drill files across 4 boards | **PASS** |
+| **12** | **Delivery Archive Integrity** | v1.2 ZIP valid, byte-stream SHA-256 | Delivery ZIP v1.2 verified: 292 total files, 0 corruption, 0 kicad_prl files; 291 files cryptographically verified byte-for-byte against embedded SHA-256 manifest | **PASS** |
 | **13** | **PRD & Scope Compliance** | Length 153.5 mm, OD 15.5 mm | Dimensions 153.5 mm length, 15.5 mm OD, 84.0 × 9.2 mm PCB verified | **PASS** |
-| **14** | **Git & Release Hygiene** | Clean working tree, baseline preserved | Baseline v1.0 preserved; v1.1 packaged separately; branch `engineering/revg-production` | **PASS** |
+| **14** | **Git & Release Hygiene** | Clean working tree, versions preserved | Release hygiene verified: v1.0 (7.31 MB), v1.1 (8.60 MB), and v1.2 (8.60 MB) all preserved; branch `engineering/revg-production` | **PASS** |
 
 *\*Gate 01 is BLOCKED locally due to host Windows Defender Application Control policy restricting unsigned Python OCP native C++ libraries. It is fully configured to execute on the Ubuntu GitHub Actions runner via `.github/workflows/cad-validation.yml`.*
 

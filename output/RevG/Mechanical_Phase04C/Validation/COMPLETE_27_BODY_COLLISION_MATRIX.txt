@@ -26,7 +26,7 @@ Part 1                             Part 2                             Overlap (m
 01_Outer_Barrel                    16_Front_MPU_Daughterboard         0.0000          CLEAR
 01_Outer_Barrel                    17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 01_Outer_Barrel                    18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-01_Outer_Barrel                    19_LiPo_Battery_LP380830           0.0000          CLEAR
+01_Outer_Barrel                    19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 01_Outer_Barrel                    20_D1_Ink_Refill                   0.0000          CLEAR
 01_Outer_Barrel                    21_Helical_Return_Spring           0.0000          CLEAR
 01_Outer_Barrel                    22_Click_Pushrod                   0.0000          CLEAR
@@ -51,7 +51,7 @@ Part 1                             Part 2                             Overlap (m
 02_Front_Grip                      16_Front_MPU_Daughterboard         0.0000          CLEAR
 02_Front_Grip                      17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 02_Front_Grip                      18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-02_Front_Grip                      19_LiPo_Battery_LP380830           0.0000          CLEAR
+02_Front_Grip                      19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 02_Front_Grip                      20_D1_Ink_Refill                   0.0000          CLEAR
 02_Front_Grip                      21_Helical_Return_Spring           0.0000          CLEAR
 02_Front_Grip                      22_Click_Pushrod                   0.0000          CLEAR
@@ -75,7 +75,7 @@ Part 1                             Part 2                             Overlap (m
 03_Front_Nose_Cone                 16_Front_MPU_Daughterboard         0.0000          CLEAR
 03_Front_Nose_Cone                 17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 03_Front_Nose_Cone                 18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-03_Front_Nose_Cone                 19_LiPo_Battery_LP380830           0.0000          CLEAR
+03_Front_Nose_Cone                 19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 03_Front_Nose_Cone                 20_D1_Ink_Refill                   0.0000          CLEAR
 03_Front_Nose_Cone                 21_Helical_Return_Spring           -0.0000         CLEAR
 03_Front_Nose_Cone                 22_Click_Pushrod                   0.0000          CLEAR
@@ -98,7 +98,7 @@ Part 1                             Part 2                             Overlap (m
 04_Removable_Electronics_Rail      16_Front_MPU_Daughterboard         0.0000          CLEAR
 04_Removable_Electronics_Rail      17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 04_Removable_Electronics_Rail      18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-04_Removable_Electronics_Rail      19_LiPo_Battery_LP380830           0.0000          CLEAR
+04_Removable_Electronics_Rail      19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 04_Removable_Electronics_Rail      20_D1_Ink_Refill                   0.0000          CLEAR
 04_Removable_Electronics_Rail      21_Helical_Return_Spring           0.0000          CLEAR
 04_Removable_Electronics_Rail      22_Click_Pushrod                   0.0000          CLEAR
@@ -120,7 +120,7 @@ Part 1                             Part 2                             Overlap (m
 05_Battery_Cradle                  16_Front_MPU_Daughterboard         0.0000          CLEAR
 05_Battery_Cradle                  17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 05_Battery_Cradle                  18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-05_Battery_Cradle                  19_LiPo_Battery_LP380830           0.0000          CLEAR
+05_Battery_Cradle                  19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 05_Battery_Cradle                  20_D1_Ink_Refill                   0.0000          CLEAR
 05_Battery_Cradle                  21_Helical_Return_Spring           0.0000          CLEAR
 05_Battery_Cradle                  22_Click_Pushrod                   0.0000          CLEAR
@@ -141,7 +141,7 @@ Part 1                             Part 2                             Overlap (m
 06_Front_MPU_Carrier               16_Front_MPU_Daughterboard         0.0000          CLEAR
 06_Front_MPU_Carrier               17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 06_Front_MPU_Carrier               18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-06_Front_MPU_Carrier               19_LiPo_Battery_LP380830           0.0000          CLEAR
+06_Front_MPU_Carrier               19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 06_Front_MPU_Carrier               20_D1_Ink_Refill                   0.0000          CLEAR
 06_Front_MPU_Carrier               21_Helical_Return_Spring           0.0000          CLEAR
 06_Front_MPU_Carrier               22_Click_Pushrod                   0.0000          CLEAR
@@ -161,7 +161,7 @@ Part 1                             Part 2                             Overlap (m
 07_MicroSD_Carrier_Mount           16_Front_MPU_Daughterboard         0.0000          CLEAR
 07_MicroSD_Carrier_Mount           17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 07_MicroSD_Carrier_Mount           18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-07_MicroSD_Carrier_Mount           19_LiPo_Battery_LP380830           0.0000          CLEAR
+07_MicroSD_Carrier_Mount           19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 07_MicroSD_Carrier_Mount           20_D1_Ink_Refill                   0.0000          CLEAR
 07_MicroSD_Carrier_Mount           21_Helical_Return_Spring           0.0000          CLEAR
 07_MicroSD_Carrier_Mount           22_Click_Pushrod                   0.0000          CLEAR
@@ -180,7 +180,7 @@ Part 1                             Part 2                             Overlap (m
 08_USB_C_Access_Feature            16_Front_MPU_Daughterboard         0.0000          CLEAR
 08_USB_C_Access_Feature            17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 08_USB_C_Access_Feature            18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-08_USB_C_Access_Feature            19_LiPo_Battery_LP380830           0.0000          CLEAR
+08_USB_C_Access_Feature            19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 08_USB_C_Access_Feature            20_D1_Ink_Refill                   0.0000          CLEAR
 08_USB_C_Access_Feature            21_Helical_Return_Spring           0.0000          CLEAR
 08_USB_C_Access_Feature            22_Click_Pushrod                   0.0000          CLEAR
@@ -198,7 +198,7 @@ Part 1                             Part 2                             Overlap (m
 09_Button_Actuators                16_Front_MPU_Daughterboard         0.0000          CLEAR
 09_Button_Actuators                17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 09_Button_Actuators                18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-09_Button_Actuators                19_LiPo_Battery_LP380830           0.0000          CLEAR
+09_Button_Actuators                19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 09_Button_Actuators                20_D1_Ink_Refill                   0.0000          CLEAR
 09_Button_Actuators                21_Helical_Return_Spring           0.0000          CLEAR
 09_Button_Actuators                22_Click_Pushrod                   0.0000          CLEAR
@@ -215,7 +215,7 @@ Part 1                             Part 2                             Overlap (m
 10A_Click_Plunger_Button           16_Front_MPU_Daughterboard         0.0000          CLEAR
 10A_Click_Plunger_Button           17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 10A_Click_Plunger_Button           18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-10A_Click_Plunger_Button           19_LiPo_Battery_LP380830           0.0000          CLEAR
+10A_Click_Plunger_Button           19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 10A_Click_Plunger_Button           20_D1_Ink_Refill                   0.0000          CLEAR
 10A_Click_Plunger_Button           21_Helical_Return_Spring           0.0000          CLEAR
 10A_Click_Plunger_Button           22_Click_Pushrod                   0.0000          CLEAR
@@ -231,7 +231,7 @@ Part 1                             Part 2                             Overlap (m
 10B_Click_Rotor_Cam                16_Front_MPU_Daughterboard         0.0000          CLEAR
 10B_Click_Rotor_Cam                17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 10B_Click_Rotor_Cam                18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-10B_Click_Rotor_Cam                19_LiPo_Battery_LP380830           0.0000          CLEAR
+10B_Click_Rotor_Cam                19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 10B_Click_Rotor_Cam                20_D1_Ink_Refill                   0.0000          CLEAR
 10B_Click_Rotor_Cam                21_Helical_Return_Spring           0.0000          CLEAR
 10B_Click_Rotor_Cam                22_Click_Pushrod                   0.0000          CLEAR
@@ -246,7 +246,7 @@ Part 1                             Part 2                             Overlap (m
 10C_Click_Guide_Stator             16_Front_MPU_Daughterboard         0.0000          CLEAR
 10C_Click_Guide_Stator             17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 10C_Click_Guide_Stator             18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-10C_Click_Guide_Stator             19_LiPo_Battery_LP380830           0.0000          CLEAR
+10C_Click_Guide_Stator             19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 10C_Click_Guide_Stator             20_D1_Ink_Refill                   0.0000          CLEAR
 10C_Click_Guide_Stator             21_Helical_Return_Spring           0.0000          CLEAR
 10C_Click_Guide_Stator             22_Click_Pushrod                   0.0000          CLEAR
@@ -260,7 +260,7 @@ Part 1                             Part 2                             Overlap (m
 11_Rear_Bayonet_Collar             16_Front_MPU_Daughterboard         0.0000          CLEAR
 11_Rear_Bayonet_Collar             17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 11_Rear_Bayonet_Collar             18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-11_Rear_Bayonet_Collar             19_LiPo_Battery_LP380830           0.0000          CLEAR
+11_Rear_Bayonet_Collar             19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 11_Rear_Bayonet_Collar             20_D1_Ink_Refill                   0.0000          CLEAR
 11_Rear_Bayonet_Collar             21_Helical_Return_Spring           0.0000          CLEAR
 11_Rear_Bayonet_Collar             22_Click_Pushrod                   0.0000          CLEAR
@@ -273,7 +273,7 @@ Part 1                             Part 2                             Overlap (m
 12_Pocket_Clip                     16_Front_MPU_Daughterboard         0.0000          CLEAR
 12_Pocket_Clip                     17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 12_Pocket_Clip                     18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-12_Pocket_Clip                     19_LiPo_Battery_LP380830           0.0000          CLEAR
+12_Pocket_Clip                     19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 12_Pocket_Clip                     20_D1_Ink_Refill                   0.0000          CLEAR
 12_Pocket_Clip                     21_Helical_Return_Spring           0.0000          CLEAR
 12_Pocket_Clip                     22_Click_Pushrod                   0.0000          CLEAR
@@ -285,7 +285,7 @@ Part 1                             Part 2                             Overlap (m
 13_Vibration_Motor_Mount           16_Front_MPU_Daughterboard         0.0000          CLEAR
 13_Vibration_Motor_Mount           17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 13_Vibration_Motor_Mount           18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-13_Vibration_Motor_Mount           19_LiPo_Battery_LP380830           0.0000          CLEAR
+13_Vibration_Motor_Mount           19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 13_Vibration_Motor_Mount           20_D1_Ink_Refill                   0.0000          CLEAR
 13_Vibration_Motor_Mount           21_Helical_Return_Spring           0.0000          CLEAR
 13_Vibration_Motor_Mount           22_Click_Pushrod                   0.0000          CLEAR
@@ -296,7 +296,7 @@ Part 1                             Part 2                             Overlap (m
 14_Antenna_Mount                   16_Front_MPU_Daughterboard         0.0000          CLEAR
 14_Antenna_Mount                   17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 14_Antenna_Mount                   18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-14_Antenna_Mount                   19_LiPo_Battery_LP380830           0.0000          CLEAR
+14_Antenna_Mount                   19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 14_Antenna_Mount                   20_D1_Ink_Refill                   0.0000          CLEAR
 14_Antenna_Mount                   21_Helical_Return_Spring           0.0000          CLEAR
 14_Antenna_Mount                   22_Click_Pushrod                   0.0000          CLEAR
@@ -306,7 +306,7 @@ Part 1                             Part 2                             Overlap (m
 15_Main_SmartPen_PCB               16_Front_MPU_Daughterboard         0.0000          CLEAR
 15_Main_SmartPen_PCB               17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 15_Main_SmartPen_PCB               18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-15_Main_SmartPen_PCB               19_LiPo_Battery_LP380830           0.0000          CLEAR
+15_Main_SmartPen_PCB               19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 15_Main_SmartPen_PCB               20_D1_Ink_Refill                   0.0000          CLEAR
 15_Main_SmartPen_PCB               21_Helical_Return_Spring           0.0000          CLEAR
 15_Main_SmartPen_PCB               22_Click_Pushrod                   0.0000          CLEAR
@@ -315,7 +315,7 @@ Part 1                             Part 2                             Overlap (m
 15_Main_SmartPen_PCB               25_FFC_Ribbon_Cable                0.0000          CLEAR
 16_Front_MPU_Daughterboard         17_MicroSD_Carrier_Daughterboard   0.0000          CLEAR
 16_Front_MPU_Daughterboard         18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-16_Front_MPU_Daughterboard         19_LiPo_Battery_LP380830           0.0000          CLEAR
+16_Front_MPU_Daughterboard         19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 16_Front_MPU_Daughterboard         20_D1_Ink_Refill                   0.0000          CLEAR
 16_Front_MPU_Daughterboard         21_Helical_Return_Spring           0.0000          CLEAR
 16_Front_MPU_Daughterboard         22_Click_Pushrod                   0.0000          CLEAR
@@ -323,26 +323,26 @@ Part 1                             Part 2                             Overlap (m
 16_Front_MPU_Daughterboard         24_Micro_Coax_Cable_and_UFL        0.0000          CLEAR
 16_Front_MPU_Daughterboard         25_FFC_Ribbon_Cable                0.0000          CLEAR
 17_MicroSD_Carrier_Daughterboard   18_Touch_Sensor_Daughterboard      0.0000          CLEAR
-17_MicroSD_Carrier_Daughterboard   19_LiPo_Battery_LP380830           0.0000          CLEAR
+17_MicroSD_Carrier_Daughterboard   19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 17_MicroSD_Carrier_Daughterboard   20_D1_Ink_Refill                   0.0000          CLEAR
 17_MicroSD_Carrier_Daughterboard   21_Helical_Return_Spring           0.0000          CLEAR
 17_MicroSD_Carrier_Daughterboard   22_Click_Pushrod                   0.0000          CLEAR
 17_MicroSD_Carrier_Daughterboard   23_Molex_146153_Antenna            0.0000          CLEAR
 17_MicroSD_Carrier_Daughterboard   24_Micro_Coax_Cable_and_UFL        0.0000          CLEAR
 17_MicroSD_Carrier_Daughterboard   25_FFC_Ribbon_Cable                0.0000          CLEAR
-18_Touch_Sensor_Daughterboard      19_LiPo_Battery_LP380830           0.0000          CLEAR
+18_Touch_Sensor_Daughterboard      19_LiPo_Battery_LP300830_PCM       0.0000          CLEAR
 18_Touch_Sensor_Daughterboard      20_D1_Ink_Refill                   0.0000          CLEAR
 18_Touch_Sensor_Daughterboard      21_Helical_Return_Spring           0.0000          CLEAR
 18_Touch_Sensor_Daughterboard      22_Click_Pushrod                   0.0000          CLEAR
 18_Touch_Sensor_Daughterboard      23_Molex_146153_Antenna            0.0000          CLEAR
 18_Touch_Sensor_Daughterboard      24_Micro_Coax_Cable_and_UFL        0.0000          CLEAR
 18_Touch_Sensor_Daughterboard      25_FFC_Ribbon_Cable                0.0000          CLEAR
-19_LiPo_Battery_LP380830           20_D1_Ink_Refill                   0.0000          CLEAR
-19_LiPo_Battery_LP380830           21_Helical_Return_Spring           0.0000          CLEAR
-19_LiPo_Battery_LP380830           22_Click_Pushrod                   0.0000          CLEAR
-19_LiPo_Battery_LP380830           23_Molex_146153_Antenna            0.0000          CLEAR
-19_LiPo_Battery_LP380830           24_Micro_Coax_Cable_and_UFL        0.0000          CLEAR
-19_LiPo_Battery_LP380830           25_FFC_Ribbon_Cable                0.0000          CLEAR
+19_LiPo_Battery_LP300830_PCM       20_D1_Ink_Refill                   0.0000          CLEAR
+19_LiPo_Battery_LP300830_PCM       21_Helical_Return_Spring           0.0000          CLEAR
+19_LiPo_Battery_LP300830_PCM       22_Click_Pushrod                   0.0000          CLEAR
+19_LiPo_Battery_LP300830_PCM       23_Molex_146153_Antenna            0.0000          CLEAR
+19_LiPo_Battery_LP300830_PCM       24_Micro_Coax_Cable_and_UFL        0.0000          CLEAR
+19_LiPo_Battery_LP300830_PCM       25_FFC_Ribbon_Cable                0.0000          CLEAR
 20_D1_Ink_Refill                   21_Helical_Return_Spring           0.0000          CLEAR
 20_D1_Ink_Refill                   22_Click_Pushrod                   0.0000          CLEAR
 20_D1_Ink_Refill                   23_Molex_146153_Antenna            0.0000          CLEAR

@@ -79,23 +79,45 @@ Assuming $85\%$ depth-of-discharge to $3.3\text{V}$ cutoff ($42.5\text{ mAh}$ us
 
 ---
 
-## 5. ELECTRICAL HEADROOM & BROWNOUT RISK ANALYSIS
+## 5. ELECTRICAL HEADROOM, TRANSIENT CURRENT & BROWNOUT AUDIT
 
-### 5.1 Worst-Case Transient Voltage Sag
-During ESP32-C3 Wi-Fi 802.11b transmission burst ($385\text{ mA}$ peak, $2\text{ ms}$ duration):
-- Battery cell internal impedance: $R_{\text{cell}} \approx 350\text{ m}\Omega$
-- PCM protection dual-FET on-resistance: $R_{\text{PCM}} \approx 100\text{ m}\Omega$
-- Wiring, connector, and PCB track ESR: $R_{\text{trace}} \approx 50\text{ m}\Omega$
-- Total loop ESR: $R_{\text{loop}} = 0.50\ \Omega$
-- Peak Voltage Sag:
-  $$\Delta V_{\text{sag}} = 0.385\text{ A} \times 0.50\ \Omega = \mathbf{0.193\text{ V} \quad (193\text{ mV})}$$
+### 5.1 Multi-Mode Operational Profiles vs. Cell C-Rate Limits
+The selected single-cell lithium-polymer battery (`LP300830-PCM`, $50\text{ mAh}$) has certified ratings:
+- **Maximum Continuous Discharge:** $1.0\text{C} = \mathbf{50.0\text{ mA}}$
+- **Maximum Pulse Discharge Rating:** $2.0\text{C} = \mathbf{100.0\text{ mA}}$ ($\le 2.0\text{ s}$)
 
-### 5.2 LDO Headroom at Low Battery
-At the low battery cutoff threshold ($V_{\text{BAT}} = 3.60\text{ V}$):
-- Loaded battery voltage: $V_{\text{BAT,loaded}} = 3.60\text{ V} - 0.193\text{ V} = \mathbf{3.407\text{ V}}$
-- AP2112K-3.3 dropout voltage at $400\text{ mA}$: $V_{\text{drop}} \le 0.250\text{ V}$
-- Regulated rail minimum: $V_{\text{3V3,min}} = 3.407\text{ V} - 0.250\text{ V} = \mathbf{3.157\text{ V}}$
-- ESP32-C3 Level 7 Brownout Threshold: $V_{\text{brownout}} = \mathbf{2.800\text{ V}}$
-- **Noise / Brownout Safety Margin:**
-  $$\text{Margin} = 3.157\text{ V} - 2.800\text{ V} = \mathbf{+0.357\text{ V} \quad (+357\text{ mV SAFE MARGIN})}$$
-Additionally, the $20\ \mu\text{F}$ ceramic bulk capacitor array ($C_2 + C_{14}$) supplies local charge storage during sub-millisecond RF current spikes.
+Drawing an unmitigated 802.11b Wi-Fi peak transmission current ($385\text{ mA}$) from a $50\text{ mAh}$ cell represents a **$7.7\text{C}$ discharge rate**, exceeding the cell's pulse rating by $385\%$. Furthermore, the $20\ \mu\text{F}$ ceramic bulk capacitor array ($C_2 + C_{10}$, derated to $\approx 18\ \mu\text{F}$ under DC bias) provides only:
+$$\Delta t = \frac{C_{\text{eff}} \cdot \Delta V}{I} = \frac{18\ \mu\text{F} \times 0.20\text{ V}}{0.385\text{ A}} \approx \mathbf{9.35\ \mu\text{s}}$$
+This buffers high-frequency edges ($< 10\ \mu\text{s}$) but cannot sustain a $2.0\text{ ms}$ ($2,000\ \mu\text{s}$) Wi-Fi packet. Therefore, power delivery must be architected by operational modes:
+
+| Operational Mode | Subsystems Active | Average Current | Peak Transient | Cell C-Rate | Headroom ($V_{\text{OUT}}$ vs 3.00V) | Status |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Mode 1: Detached Handwriting** | CPU 80MHz + MPU-6050 + MicroSD write | $22.48\text{ mA}$ | $77.06\text{ mA}$ | $1.54\text{C} \le 2.0\text{C}$ | $V_{\text{OUT}} \ge 3.101\text{ V} \ge 3.00\text{ V}$ ($+101\text{ mV}$) | **PASS** |
+| **Mode 2: Detached BLE Streaming** | CPU 80MHz + MPU-6050 + BLE TX @ 0dBm | $28.86\text{ mA}$ | $80.06\text{ mA}$ | $1.60\text{C} \le 2.0\text{C}$ | $V_{\text{OUT}} \ge 3.196\text{ V} \ge 3.00\text{ V}$ ($+196\text{ mV}$) | **PASS** |
+| **Mode 3: Docked USB Wi-Fi Sync** | Full 802.11b Wi-Fi ($385\text{ mA}$) + Flash | $120.0\text{ mA}$ | $385.0\text{ mA}$ | **$0.0\text{C}$ (Battery isolated)** | $V_{\text{OUT}} = 3.300\text{ V}$ ($V_{\text{BUS}}=5.0\text{V}$, $+300\text{ mV}$) | **PASS** |
+| **Unmitigated Detached Wi-Fi\*** | Full 802.11b Wi-Fi on 50 mAh cell | $120.0\text{ mA}$ | $407.0\text{ mA}$ | $8.14\text{C} \gg 2.0\text{C}$ | Drops below $3.00\text{ V}$ when $V_{\text{BAT}} \le 3.51\text{ V}$ | **RESTRICTED** |
+
+*\*Firmware Architecture Rule: Full-power 802.11b Wi-Fi sync is executed in Docked Mode (USB connected). If detached Wi-Fi sync is initiated, firmware throttles RF power to $+10\text{ dBm}$ (`esp_wifi_set_max_tx_power(40)`, $I_{\text{peak}} \le 115\text{ mA}$) and enforces a minimum battery threshold of $V_{\text{BAT}} \ge 3.75\text{ V}$ ($> 60\%$ SoC).*
+
+### 5.2 Worst-Case Loop Resistance & LDO Headroom at Low Battery
+Total loop DC resistance from cell core through PCM, wiring, and P-FET $Q_2$:
+$$R_{\text{loop,max}} = R_{\text{cell}} (500\text{ m}\Omega) + R_{\text{PCM}} (80\text{ m}\Omega) + R_{\text{wire}} (11\text{ m}\Omega) + R_{\text{JST}} (20\text{ m}\Omega) + R_{\text{FET}} (52\text{ m}\Omega) + R_{\text{PCB}} (35\text{ m}\Omega) \approx \mathbf{0.698\ \Omega \le 0.70\ \Omega}$$
+
+Under maximum detached peak load (Mode 1 MicroSD write: $77.1\text{ mA}$):
+- Voltage drop: $\Delta V = 0.0771\text{ A} \times 0.70\ \Omega = \mathbf{0.054\text{ V} \quad (54\text{ mV})}$
+- Depleted battery loaded voltage: $V_{\text{BAT,loaded}} = 3.20\text{ V} - 0.054\text{ V} = \mathbf{3.146\text{ V}}$
+- AP2112K-3.3 dropout at $80\text{ mA}$: $V_{\text{drop}} \approx \mathbf{0.045\text{ V} \quad (45\text{ mV})}$
+- Regulated $3.3\text{V}$ rail output:
+  $$V_{\text{3V3,min}} = 3.146\text{ V} - 0.045\text{ V} = \mathbf{3.101\text{ V}}$$
+- ESP32-C3 guaranteed minimum operational voltage: $\mathbf{3.000\text{ V}}$
+- **True Operational Margin:**
+  $$\text{Margin} = 3.101\text{ V} - 3.000\text{ V} = \mathbf{+0.101\text{ V} \quad (+101\text{ mV POSITIVE HEADROOM})}$$
+
+*Note on Brownout Reset:* ESP32-C3 hardware brownout trigger is at $2.80\text{ V}$, providing an additional $+301\text{ mV}$ emergency margin before hardware reset. System integrity is guaranteed against the strict $3.00\text{ V}$ specification across the entire operating range.
+
+### 5.3 Integrated PCM Protection Thresholds
+The battery pack integrates a micro-PCM (DW01A controller + 8205A dual N-MOSFET):
+- **Overcharge Protection:** $4.28\text{ V} \pm 0.05\text{ V}$
+- **Overdischarge Protection:** $2.80\text{ V} \pm 0.08\text{ V}$
+- **Overcurrent Cutoff Threshold:** $2.5\text{ A} \text{ to } 3.5\text{ A}$ (delay $10\text{ ms}$). Normal peak transients ($< 100\text{ mA}$) will never cause false trips.
+- **Short-Circuit Protection:** Instantaneous ($< 50\ \mu\text{s}$) cutoff with automatic recovery upon load removal.

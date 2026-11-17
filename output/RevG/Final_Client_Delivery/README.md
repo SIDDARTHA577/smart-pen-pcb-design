@@ -1,7 +1,7 @@
-# Smart Pen Rev G — Final Digital Delivery Package (Release v1.1)
+# Smart Pen Rev G — Final Digital Delivery Package (Release v1.2)
 
 **Product:** Smart Pen Rev G (Production-Optimized Architecture)  
-**Release Version:** v1.1  
+**Release Version:** v1.2  
 **Release Date:** November 17, 2026  
 **Repository Branch:** `engineering/revg-production`  
 **License / Proprietary Notice:** Confidential & Proprietary — Prepared for Client Delivery  
@@ -15,12 +15,12 @@ This release archive contains the complete digital engineering deliverables for 
 - **02_Fabrication_Gerber_Drill:** Production Gerber files (RS-274X) and Excellon drill files for all four boards with unified coordinate origins and validated drill tables.
 - **03_BOM_and_CPL:** Standardized Bill of Materials with genuine manufacturer names, verified orderable MPNs, IPC package sizes, and automated Pick-and-Place (CPL) centroid files. Includes Consolidated System BOM.
 - **04_Drawings_Schematics_Assembly:** Vector schematic and PCBA assembly drawings in PDF and SVG formats.
-- **05_Mechanical_CAD_Source:** Complete parametric Python CAD construction scripts.
-- **06_Mechanical_STEP_Assemblies:** 27 individual AP214 BRep component models, Master Assembly STEP, and Exploded Assembly STEP.
+- **05_Mechanical_CAD_Source:** Complete parametric Python CAD construction scripts (`SmartPen_Parametric_CAD_RevG_Phase4C.py`).
+- **06_Mechanical_STEP_Assemblies:** 27 individual AP214 BRep component models (including `19_LiPo_Battery_LP300830_PCM.step`), Master Assembly STEP, and Exploded Assembly STEP.
 - **07_Mechanical_Printable_STL:** 16 watertight 2-manifold STL models ready for high-resolution stereolithography (SLA) printing.
 - **08_Mechanical_Drawings_and_Visuals:** Technical orthographic drawings, section views, click kinematics charts, and assembly visual references.
 - **09_Assembly_Instructions:** Comprehensive step-by-step mechanical and electrical integration manual.
-- **10_Engineering_Verification_Reports:** Electrical, RF, ground plane, thermal, and mechanical collision reports.
+- **10_Engineering_Verification_Reports:** Electrical, RF power profiling, ground plane, thermal, and mechanical collision reports.
 - **11_Manufacturing_Notes:** PCBA fabrication tolerances, surface finish (ENIG), copper weight, stackup, and test point specs.
 - **12_Prototype_Validation_and_Limitations:** Engineering evaluation guidelines and prototype boundary notes.
 
@@ -39,6 +39,7 @@ This release archive contains the complete digital engineering deliverables for 
   - $R_9 = 20.0\text{ k}\Omega \implies 50.0\text{ mA}$ charge current (1.0C rating).
   - MCP73831 thermal dissipation $P_D \le 82.5\text{ mW}$, $\Delta T \le 19.0^\circ\text{C}$.
   - AP2112K-3.3 regulator provides positive voltage margin above ESP32-C3 brownout threshold.
+  - Power path P-FET $Q_2$ turns firmly OFF when USB is attached, isolating battery.
 
 ---
 

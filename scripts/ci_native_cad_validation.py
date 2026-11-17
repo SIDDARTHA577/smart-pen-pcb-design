@@ -146,5 +146,7 @@ def validate_step_files():
 if __name__ == "__main__":
     success, engine = validate_step_files()
     if not success:
-        sys.exit(1)
-    sys.exit(0)
+        sys.stdout.flush()
+        os._exit(1)
+    sys.stdout.flush()
+    os._exit(0)

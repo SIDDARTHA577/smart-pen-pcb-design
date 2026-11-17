@@ -32,9 +32,9 @@ $$I_{\text{REG}} = \frac{1000\text{ V}}{R_{\text{PROG}}}$$
 ```
 
 ### 2.1 Manufacturer Charging Constraints
-Datasheets for candidate cells (EEMB LP380830, EEMB LP401030, Renata ICP401130) specify:
-- **Standard Recommended Charge Current:** $0.5\text{C}$ ($35.0\text{ mA}$ for $70\text{ mAh}$ cell; $47.5\text{ mA}$ for $95\text{ mAh}$ cell).
-- **Maximum Fast Charge Current:** $1.0\text{C}$ ($70.0\text{ mA}$ for $70\text{ mAh}$ cell; $95.0\text{ mA}$ for $95\text{ mAh}$ cell).
+Datasheets for candidate cells (EEMB / Shenzhen PDBattery LP300830-PCM, EEMB LP401030, Renata ICP401130) specify:
+- **Standard Recommended Charge Current:** $0.5\text{C}$ ($25.0\text{ mA}$ for $50\text{ mAh}$ cell; $47.5\text{ mA}$ for $95\text{ mAh}$ cell).
+- **Maximum Fast Charge Current:** $1.0\text{C}$ ($50.0\text{ mA}$ for $50\text{ mAh}$ cell; $95.0\text{ mA}$ for $95\text{ mAh}$ cell).
 - **Thermal Limitation in Sealed Cavity:** Under **IEC 62133-2**, lithium polymer pouch cells must not be charged when cell temperature exceeds $+45.0^\circ\text{C}$.
 
 ### 2.2 Thermal Dissipation in Sealed Barrel

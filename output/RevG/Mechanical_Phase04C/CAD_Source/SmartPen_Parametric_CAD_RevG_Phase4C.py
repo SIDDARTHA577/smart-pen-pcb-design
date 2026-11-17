@@ -453,7 +453,7 @@ def build_reference_parts(p: SmartPenParameters):
     refs['16_Front_MPU_Daughterboard'] = make_box(-3.20, 3.20, 2.00, 2.80, p.Z_MPU_START, p.Z_MPU_END)
     refs['17_MicroSD_Carrier_Daughterboard'] = make_box(-5.70, 5.70, 1.40, 2.20, 122.50, 135.00)
     refs['18_Touch_Sensor_Daughterboard'] = make_box(-3.00, 3.00, 4.90, 5.70, p.Z_TOUCH_START, p.Z_TOUCH_END)
-    refs['19_LiPo_Battery_LP380830'] = make_box(-p.BATT_WIDTH/2.0, p.BATT_WIDTH/2.0, p.BATT_Y_BOT, p.BATT_Y_TOP, p.Z_BATT_START, p.Z_BATT_END)
+    refs['19_LiPo_Battery_LP300830_PCM'] = make_box(-p.BATT_WIDTH/2.0, p.BATT_WIDTH/2.0, p.BATT_Y_BOT, p.BATT_Y_TOP, p.Z_BATT_START, p.Z_BATT_END)
     refs['20_D1_Ink_Refill'] = make_cylinder_z(p.REFILL_OD / 2.0, p.Z_TIP_RETRACTED, p.Z_TIP_RETRACTED + p.REFILL_LEN, n_seg=24)
     refs['21_Helical_Return_Spring'] = make_annular_cylinder_z(1.90, 1.50, 6.00, 18.00, n_seg=24)
     refs['22_Click_Pushrod'] = make_cylinder_z(p.PUSHROD_OD / 2.0, 68.50, 140.00, n_seg=20)
@@ -1036,7 +1036,7 @@ def generate_all_phase4c_deliverables():
         '04_Removable_Electronics_Rail': 0.0,
         '15_Main_SmartPen_PCB': 0.0,
         '05_Battery_Cradle': 0.0,
-        '19_LiPo_Battery_LP380830': 0.0,
+        '19_LiPo_Battery_LP300830_PCM': 0.0,
         '08_USB_C_Access_Feature': 0.0,
         '09_Button_Actuators': 0.0,
         '14_Antenna_Mount': 0.0,
