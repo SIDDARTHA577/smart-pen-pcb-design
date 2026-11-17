@@ -9,7 +9,7 @@ on:
 
 jobs:
   validate-step-cad:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -17,7 +17,7 @@ jobs:
       - name: Install FreeCAD and Native CAD Kernel Dependencies
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y freecad python3-freecad xvfb || sudo apt-get install -y freecad xvfb
+          sudo apt-get install -y freecad xvfb
 
       - name: Execute Native CAD BRep Kernel Validation
         run: |
