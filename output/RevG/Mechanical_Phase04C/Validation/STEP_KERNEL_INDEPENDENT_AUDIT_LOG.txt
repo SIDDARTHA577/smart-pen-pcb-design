@@ -1,0 +1,328 @@
+SMART PEN REV G — PHASE 4C INDEPENDENT STEP AUDIT LOG
+================================================================================
+
+File Name                              Size (B)   Ents    Dups   Unres  Solids  Faces   Status
+----------------------------------------------------------------------------------------------
+01_Outer_Barrel.step                   2,724,169  58,941  0      0      1       3274    PASS
+02_Front_Grip.step                     552,875    12,405  0      0      1       688     PASS
+03_Front_Nose_Cone.step                355,610    8,085   0      0      1       448     PASS
+04_Removable_Electronics_Rail.step     618,636    13,805  0      0      1       766     PASS
+05_Battery_Cradle.step                 203,770    4,625   0      0      1       256     PASS
+06_Front_MPU_Carrier.step              276,733    6,285   0      0      1       348     PASS
+07_MicroSD_Carrier_Mount.step          349,413    7,901   0      0      1       438     PASS
+08_USB_C_Access_Feature.step           50,400     1,173   0      0      1       64      PASS
+09_Button_Actuators.step               59,978     1,393   0      0      1       76      PASS
+10A_Click_Plunger_Button.step          399,676    9,025   0      0      1       500     PASS
+10B_Click_Rotor_Cam.step               454,296    10,245  0      0      1       568     PASS
+10C_Click_Guide_Stator.step            605,012    13,485  0      0      1       748     PASS
+11_Rear_Bayonet_Collar.step            531,427    11,901  0      0      1       660     PASS
+12_Pocket_Clip.step                    22,993     529     0      0      1       28      PASS
+13_Vibration_Motor_Mount.step          117,296    2,689   0      0      1       148     PASS
+14_Antenna_Mount.step                  91,816     2,113   0      0      1       116     PASS
+15_Main_SmartPen_PCB.step              10,872     241     0      0      1       12      PASS
+16_Front_MPU_Daughterboard.step        10,889     241     0      0      1       12      PASS
+17_MicroSD_Carrier_Daughterboard.step  10,969     241     0      0      1       12      PASS
+18_Touch_Sensor_Daughterboard.step     10,910     241     0      0      1       12      PASS
+19_LiPo_Battery_LP380830.step          10,938     241     0      0      1       12      PASS
+20_D1_Ink_Refill.step                  72,693     1,681   0      0      1       92      PASS
+21_Helical_Return_Spring.step          152,077    3,477   0      0      1       192     PASS
+22_Click_Pushrod.step                  60,199     1,393   0      0      1       76      PASS
+23_Molex_146153_Antenna.step           85,489     1,969   0      0      1       108     PASS
+24_Micro_Coax_Cable_and_UFL.step       57,168     1,325   0      0      1       72      PASS
+25_FFC_Ribbon_Cable.step               197,647    4,493   0      0      1       248     PASS
+SmartPen_RevG_Phase4C_Exploded_Assembly.step 8,540,725  179,649 0      0      27      9974    PASS
+SmartPen_RevG_Phase4C_Master_Assembly.step 8,538,833  179,649 0      0      27      9974    PASS
+
+================================================================================
+INDIVIDUAL FILE TOPOLOGICAL EXTENTS & VOLUMES:
+================================================================================
+
+File: 01_Outer_Barrel.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 58,941
+  Solids: 1, Shells: 1, Faces: 3274
+  Euler Characteristic (V-E+F): -6
+  Bounding Box: ((-7.75, 7.75), (-7.75, 9.2), (0.0, 142.0))
+  Computed Volume: 4738.8335 mm^3
+
+File: 02_Front_Grip.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 12,405
+  Solids: 1, Shells: 1, Faces: 688
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((-7.75, 7.75), (-7.75, 7.0446), (0.0, 38.0))
+  Computed Volume: 948.0362 mm^3
+
+File: 03_Front_Nose_Cone.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 8,085
+  Solids: 1, Shells: 1, Faces: 448
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((-5.75, 5.75), (-5.75, 5.75), (0.0, 18.0))
+  Computed Volume: 615.1326 mm^3
+
+File: 04_Removable_Electronics_Rail.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 13,805
+  Solids: 1, Shells: 1, Faces: 766
+  Euler Characteristic (V-E+F): -2
+  Bounding Box: ((-6.55, 6.55), (-6.55, 4.4278), (0.0, 122.0))
+  Computed Volume: 2794.1425 mm^3
+
+File: 05_Battery_Cradle.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 4,625
+  Solids: 1, Shells: 1, Faces: 256
+  Euler Characteristic (V-E+F): -2
+  Bounding Box: ((-6.4364, 6.4364), (-6.6, 0.2), (0.0, 109.0))
+  Computed Volume: 758.7038 mm^3
+
+File: 06_Front_MPU_Carrier.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 6,285
+  Solids: 1, Shells: 1, Faces: 348
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((-5.8, 5.8), (-5.8, 4.8129), (0.0, 36.0))
+  Computed Volume: 853.2780 mm^3
+
+File: 07_MicroSD_Carrier_Mount.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 7,901
+  Solids: 1, Shells: 1, Faces: 438
+  Euler Characteristic (V-E+F): -2
+  Bounding Box: ((-6.55, 6.55), (-6.55, 6.55), (0.0, 135.0))
+  Computed Volume: 416.8111 mm^3
+
+File: 08_USB_C_Access_Feature.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 1,173
+  Solids: 1, Shells: 1, Faces: 64
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((0.0, 8.0), (0.0, 7.05), (0.0, 122.0))
+  Computed Volume: 28.6500 mm^3
+
+File: 09_Button_Actuators.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 1,393
+  Solids: 1, Shells: 1, Faces: 76
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-1.6, 1.6), (0.0, 8.1), (0.0, 87.4))
+  Computed Volume: 70.1120 mm^3
+
+File: 10A_Click_Plunger_Button.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 9,025
+  Solids: 1, Shells: 1, Faces: 500
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-2.8, 2.8), (-2.8, 2.8), (0.0, 153.5))
+  Computed Volume: 210.1724 mm^3
+
+File: 10B_Click_Rotor_Cam.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 10,245
+  Solids: 1, Shells: 1, Faces: 568
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((-3.05, 3.05), (-3.05, 3.05), (0.0, 142.3))
+  Computed Volume: 41.0777 mm^3
+
+File: 10C_Click_Guide_Stator.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 13,485
+  Solids: 1, Shells: 1, Faces: 748
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((-5.15, 5.15), (-5.15, 5.15), (0.0, 143.0))
+  Computed Volume: 441.0214 mm^3
+
+File: 11_Rear_Bayonet_Collar.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 11,901
+  Solids: 1, Shells: 1, Faces: 660
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((-7.75, 7.75), (-7.75, 7.75), (0.0, 144.0))
+  Computed Volume: 536.4592 mm^3
+
+File: 12_Pocket_Clip.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 529
+  Solids: 1, Shells: 1, Faces: 28
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-1.8, 1.8), (0.0, 11.25), (0.0, 142.0))
+  Computed Volume: 327.3600 mm^3
+
+File: 13_Vibration_Motor_Mount.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 2,689
+  Solids: 1, Shells: 1, Faces: 148
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-4.3212, 4.3212), (0.0, 6.4), (0.0, 48.0))
+  Computed Volume: 35.1881 mm^3
+
+File: 14_Antenna_Mount.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 2,113
+  Solids: 1, Shells: 1, Faces: 116
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((0.0, 6.6), (-4.7, 4.9), (0.0, 73.4))
+  Computed Volume: 75.3653 mm^3
+
+File: 15_Main_SmartPen_PCB.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 241
+  Solids: 1, Shells: 1, Faces: 12
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-4.6, 4.6), (0.0, 2.8), (0.0, 122.0))
+  Computed Volume: 1236.4800 mm^3
+
+File: 16_Front_MPU_Daughterboard.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 241
+  Solids: 1, Shells: 1, Faces: 12
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-3.2, 3.2), (0.0, 2.8), (0.0, 32.0))
+  Computed Volume: 51.2000 mm^3
+
+File: 17_MicroSD_Carrier_Daughterboard.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 241
+  Solids: 1, Shells: 1, Faces: 12
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-5.7, 5.7), (0.0, 2.2), (0.0, 135.0))
+  Computed Volume: 114.0000 mm^3
+
+File: 18_Touch_Sensor_Daughterboard.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 241
+  Solids: 1, Shells: 1, Faces: 12
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-3.0, 3.0), (0.0, 5.7), (0.0, 38.0))
+  Computed Volume: 86.4000 mm^3
+
+File: 19_LiPo_Battery_LP380830.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 241
+  Solids: 1, Shells: 1, Faces: 12
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-3.8, 3.8), (-5.1, 0.0), (0.0, 106.0))
+  Computed Volume: 875.5200 mm^3
+
+File: 20_D1_Ink_Refill.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 1,681
+  Solids: 1, Shells: 1, Faces: 92
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-1.175, 1.175), (-1.175, 1.175), (0.0, 68.5))
+  Computed Volume: 287.3088 mm^3
+
+File: 21_Helical_Return_Spring.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 3,477
+  Solids: 1, Shells: 1, Faces: 192
+  Euler Characteristic (V-E+F): 0
+  Bounding Box: ((-1.9, 1.9), (-1.9, 1.9), (0.0, 18.0))
+  Computed Volume: 50.6875 mm^3
+
+File: 22_Click_Pushrod.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 1,393
+  Solids: 1, Shells: 1, Faces: 76
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((-0.8, 0.8), (-0.8, 0.8), (0.0, 140.0))
+  Computed Volume: 141.3956 mm^3
+
+File: 23_Molex_146153_Antenna.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 1,969
+  Solids: 1, Shells: 1, Faces: 108
+  Euler Characteristic (V-E+F): 2
+  Bounding Box: ((0.0, 6.7), (-4.5, 4.8), (0.0, 73.4))
+  Computed Volume: 35.9395 mm^3
+
+File: 24_Micro_Coax_Cable_and_UFL.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 1,325
+  Solids: 1, Shells: 1, Faces: 72
+  Euler Characteristic (V-E+F): 4
+  Bounding Box: ((-4.2, 1.5), (0.0, 4.2), (0.0, 93.85))
+  Computed Volume: 15.1238 mm^3
+
+File: 25_FFC_Ribbon_Cable.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 4,493
+  Solids: 1, Shells: 1, Faces: 248
+  Euler Characteristic (V-E+F): 4
+  Bounding Box: ((-1.75, 1.75), (0.0, 4.7), (0.0, 124.65))
+  Computed Volume: 7.3290 mm^3
+
+File: SmartPen_RevG_Phase4C_Exploded_Assembly.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 179,649
+  Solids: 27, Shells: 27, Faces: 9974
+  Euler Characteristic (V-E+F): 22
+  Bounding Box: ((-7.75, 8.0), (-7.75, 11.25), (-30.0, 195.5))
+  Computed Volume: 15791.7280 mm^3
+
+File: SmartPen_RevG_Phase4C_Master_Assembly.step
+  Valid: True
+  Schema: AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }
+  Units: MILLIMETRE
+  Total Entities: 179,649
+  Solids: 27, Shells: 27, Faces: 9974
+  Euler Characteristic (V-E+F): 22
+  Bounding Box: ((-7.75, 8.0), (-7.75, 11.25), (0.0, 153.5))
+  Computed Volume: 15791.7280 mm^3
