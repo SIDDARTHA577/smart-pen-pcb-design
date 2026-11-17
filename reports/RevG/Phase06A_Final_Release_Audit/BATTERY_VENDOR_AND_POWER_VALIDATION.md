@@ -28,27 +28,29 @@ Upon rigorous audit:
 
 ---
 
-## 3. SELECTION OF VERIFIED COMMERCIAL STANDARD: MODEL LP300830-PCM
+## 3. SELECTION OF COMMERCIAL STANDARD FORM-FACTOR: MODEL LP300830-PCM
 
-Model `LP300830` is an established, commercially manufactured single-cell lithium-ion polymer rechargeable pouch cell produced by multiple certified manufacturers (Shenzhen PDBattery Co., Ltd., SUJOR, EEMB standard packaging, PowerStream):
+Model `LP300830` is an established, commercially manufactured single-cell lithium-ion polymer rechargeable pouch cell format (produced by Li-Polymer Battery Co., Ltd., Shenzhen PDBattery Co., Ltd., and OEM vendors):
 
-| Parameter | Manufacturer Specification | Engineering Design Value |
+### 3.1 Qualification Status: UNRESOLVED (PENDING PHYSICAL VENDOR SAMPLING)
+Per client release audit instructions, because signed model-specific manufacturer PDF datasheets and laboratory certification certificates (UL1642 / IEC 62133) are OEM inquiry deliverables rather than publicly orderable distributor catalog SKUs, **battery vendor qualification is explicitly marked as UNRESOLVED**. Final electrical and thermal certification must be confirmed upon physical vendor procurement and bench sampling prior to high-volume manufacturing.
+
+| Parameter | Commercial Industry Specification | Engineering Design Value |
 | :--- | :---: | :---: |
-| **Model / SKU** | `LP300830` / `LP300830-PCM` | `LP300830-PCM` |
+| **Model / Format** | `LP300830` / `LP300830-PCM` | `LP300830-PCM` (Reference CAD Envelope) |
 | **Chemistry** | Lithium Cobalt Oxide (LiCoO2) / Graphite | LiPo |
 | **Nominal Voltage** | $3.70\text{ V}$ | $3.70\text{ V}$ |
 | **Fully Charged Voltage** | $4.20\text{ V} \pm 0.05\text{ V}$ | $4.20\text{ V}$ |
 | **Discharge Cutoff Voltage**| $3.00\text{ V}$ | $3.00\text{ V}$ |
-| **Nominal Capacity (0.2C)** | $45\text{--}50\text{ mAh}$ | **$50\text{ mAh}$ ($0.185\text{ Wh}$)** |
-| **Minimum Capacity** | $45\text{ mAh}$ | $45\text{ mAh}$ |
+| **Nominal Capacity (0.2C)** | $40\text{--}50\text{ mAh}$ | **$50\text{ mAh}$ ($0.185\text{ Wh}$)** |
 | **Bare Cell Dimensions ($T \times W \times L$)** | $3.00 \times 8.00 \times 30.00\text{ mm}$ | $3.00 \times 8.00 \times 30.00\text{ mm}$ |
 | **Max Finished Dimensions (w/ PCM & Wrap)**| **$3.30 \times 8.20 \times 33.00\text{ mm}$** | **$3.30 \times 8.20 \times 33.00\text{ mm}$** |
 | **Max Continuous Discharge** | $1.0\text{C}$ ($50\text{ mA}$) | $22.48\text{ mA}$ ($0.45\text{C}$) |
-| **Max Pulse Discharge Rating** | $2.0\text{C}$ ($100\text{ mA}$, $\le 2\text{s}$) | Mode 1 writing average $22.5\text{ mA}$ |
+| **Max Pulse Discharge Rating** | $2.0\text{C}$ ($100\text{ mA}$, $\le 2\text{s}$) | Mode 1 peak $77.1\text{ mA}$; Mode 2 peak $80.1\text{ mA}$ |
 | **Standard / Max Charge Current** | $0.5\text{C} / 1.0\text{C}$ ($25\text{ mA} / 50\text{ mA}$) | **$50.0\text{ mA}$ (via $R_9 = 20.0\text{ k}\Omega$)** |
-| **Integrated PCM** | Seiko S-8261 / DW01A + 8205A Dual FET | Integrated micro-PCB on cell top |
+| **Integrated PCM** | DW01A + 8205A Dual FET | Integrated micro-PCB on cell top |
 | **Lead Wires** | 28 AWG UL1571 Silicone, $25\text{ mm}$ length | Routed through cradle rear wire chase |
-| **Operating Temperature** | Charge: $0\text{--}45^\circ\text{C}$ / Disch: $-20\text{--}60^\circ\text{C}$ | Enclosure internal temp $\le 44^\circ\text{C}$ |
+| **Operating Temperature** | Charge: $0\text{--}45^\circ\text{C}$ / Disch: $-20\text{--}60^\circ\text{C}$ | Enclosure internal temp $\le 30^\circ\text{C}$ |
 
 ---
 
@@ -97,7 +99,7 @@ This buffers high-frequency edges ($< 10\ \mu\text{s}$) but cannot sustain a $2.
 | **Mode 3: Docked USB Wi-Fi Sync** | Full 802.11b Wi-Fi ($385\text{ mA}$) + Flash | $120.0\text{ mA}$ | $385.0\text{ mA}$ | **$0.0\text{C}$ (Battery isolated)** | $V_{\text{OUT}} = 3.300\text{ V}$ ($V_{\text{BUS}}=5.0\text{V}$, $+300\text{ mV}$) | **PASS** |
 | **Unmitigated Detached Wi-Fi\*** | Full 802.11b Wi-Fi on 50 mAh cell | $120.0\text{ mA}$ | $407.0\text{ mA}$ | $8.14\text{C} \gg 2.0\text{C}$ | Drops below $3.00\text{ V}$ when $V_{\text{BAT}} \le 3.51\text{ V}$ | **RESTRICTED** |
 
-*\*Firmware Architecture Rule: Full-power 802.11b Wi-Fi sync is executed in Docked Mode (USB connected). If detached Wi-Fi sync is initiated, firmware throttles RF power to $+10\text{ dBm}$ (`esp_wifi_set_max_tx_power(40)`, $I_{\text{peak}} \le 115\text{ mA}$) and enforces a minimum battery threshold of $V_{\text{BAT}} \ge 3.75\text{ V}$ ($> 60\%$ SoC).*
+*\*Hardware Operating Mode Specification: Full-power 802.11b Wi-Fi sync is strictly defined as a Docked Mode (USB connected) feature. The 50 mAh LP300830-PCM cell has a certified pulse rating of 100 mA (2.0C). Because ESP32-C3 Wi-Fi transmission bursts draw 115 mA to 385 mA, detached battery operation is specified exclusively for local handwriting stroke logging (Mode 1: 77.1 mA peak <= 100 mA) and Bluetooth Low Energy streaming (Mode 2: 80.1 mA peak <= 100 mA). Wi-Fi transmission is powered exclusively from USB VBUS (5.0V) through Schottky diode D4, while P-FET Q2 completely isolates the battery. No firmware throttling claims are asserted as firmware implementation is outside this digital hardware release scope.*
 
 ### 5.2 Worst-Case Loop Resistance & LDO Headroom at Low Battery
 Total loop DC resistance from cell core through PCM, wiring, and P-FET $Q_2$:
