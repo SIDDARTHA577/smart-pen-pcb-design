@@ -1,0 +1,37 @@
+name: Native CAD Kernel & BRep Geometry Validation
+
+on:
+  push:
+    branches: [ engineering/revg-production, main ]
+  pull_request:
+    branches: [ engineering/revg-production, main ]
+  workflow_dispatch:
+
+jobs:
+  validate-step-cad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install FreeCAD and Native CAD Kernel Dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y freecad python3-freecad xvfb || sudo apt-get install -y freecad xvfb
+
+      - name: Execute Native CAD BRep Kernel Validation
+        run: |
+          if command -v freecadcmd >/dev/null 2>&1; then
+            echo "Executing native CAD validation via freecadcmd..."
+            xvfb-run -a freecadcmd scripts/ci_native_cad_validation.py
+          elif command -v FreeCADCmd >/dev/null 2>&1; then
+            echo "Executing native CAD validation via FreeCADCmd..."
+            xvfb-run -a FreeCADCmd scripts/ci_native_cad_validation.py
+          else
+            for p in /usr/lib/freecad/lib /usr/lib/freecad-python3/lib /usr/share/freecad/lib /usr/lib/x86_64-linux-gnu/freecad/lib; do
+              if [ -d "$p" ]; then
+                export PYTHONPATH="$p:$PYTHONPATH"
+              fi
+            done
+            /usr/bin/python3 scripts/ci_native_cad_validation.py || python3 scripts/ci_native_cad_validation.py
+          fi
