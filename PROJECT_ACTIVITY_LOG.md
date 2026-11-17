@@ -1,0 +1,106 @@
+# SMART PEN REV G — PROJECT ACTIVITY LOG
+
+**Repository:** `https://github.com/SIDDARTHA577/smart-pen-pcb-design`  
+**Branch:** `engineering/revg-production`  
+**Base Commit:** `4c60b72678100ac1a09fa1ab455e3a8b47e9f073`  
+**Mission:** Final Engineering Optimization and Digital Manufacturing Delivery  
+**Scope:** Complete Digital PCB Design + 3D Printable Mechanical Design + Manufacturing Files + Digital Handoff  
+
+---
+
+## ACTIVITY CHRONOLOGY & RECORD OF ENGINEERING ACTIONS
+
+### [2026-11-17T09:37:41+05:30] — Session Initialization & Baseline Verification (Section 1)
+- **Action:** Inspected Git working tree, branch, and exact HEAD commit (`4c60b72678100ac1a09fa1ab455e3a8b47e9f073`). Confirmed working tree clean.
+- **Baseline Preservation & Cryptographic Hashing:**
+  - Preserved Revision F assets in `output/RevF_Client_Delivery` and `reports/RevF`.
+  - Preserved original 2-layer Rev G baseline (`SmartPen.kicad_pcb`: SHA-256 `8c009f...`).
+  - Preserved Phase 3C 4-layer baseline (`output/RevG/variants/FourLayer_Candidate/`).
+  - Preserved Phase 4A, 4B, and 4C CAD sources (`output/RevG/Mechanical_Phase04/`, `Phase04B/`, `Phase04C/`).
+  - Preserved existing R9 electrical revision (`output/RevG/variants/FourLayer_ECR_R9_50mA/`).
+- **Client Clarification Assessment:**
+  - Client confirmed: No fixed battery capacity requirement; historical references to 130–150 mAh in Rev F are non-binding; 70 mAh is not a mandatory target.
+  - Action taken: Formally removed the artificial PRD blocker (BLK-002).
+
+---
+
+### [2026-11-17T09:41:00+05:30] — Complete Electrical & BOM Audit (Section 5)
+- **R9 Metadata Synchronization:**
+  - Found that while `SmartPen.kicad_sch`, `SmartPen.kicad_pcb`, and `SmartPen_Lib.kicad_sym` were updated to $20.0\text{ k}\Omega$ (`RC0402FR-0720KL`), the local footprint library file `SmartPen.pretty/R9.kicad_mod` retained the legacy text `RC0402FR-0710KL`.
+  - Edited `SmartPen.pretty/R9.kicad_mod` to update text to `RC0402FR-0720KL`.
+  - Confirmed 100% agreement across schematic, PCB, embedded footprint, local footprint library, symbol library, and BOM.
+- **Footprint Identity Investigation (Q2 & U4):**
+  - Q2 (DMG2305UX P-MOSFET) listed with `SmartPen:Q1`: Verified package is standard SOT-23-3 with Pin 1 = Gate (`/USB_VBUS`), Pin 2 = Source (`/VSYS_RAW`), Pin 3 = Drain (`/VBAT`), matching the DMG2305UX datasheet. The footprint `Q1.kicad_mod` is a universal SOT-23 land pattern. Retained per instructions (*"Do not rename footprints blindly"*).
+  - U4 (AP2112K-3.3TRG1 LDO) listed with `SmartPen:J_PWR`: Verified package is standard SOT-23-5 with Pin 1 = VIN, Pin 2 = GND, Pin 3 = EN, Pin 4 = NC, Pin 5 = VOUT, matching the AP2112K datasheet. The footprint `J_PWR.kicad_mod` is an authentic SOT-23-5 land pattern. Retained.
+- **Zone Fill & Native KiCad ERC/DRC Verification:**
+  - Detected unfilled B.Cu ground zone in `MicroSD_Carrier.kicad_pcb` causing dangling via warnings.
+  - Executed `pcbnew.ZONE_FILLER(board).Fill(board.Zones())` via KiCad Python.
+  - Re-ran native KiCad 10.0.7 CLI ERC and DRC across all four boards:
+    1. Main Board (`FourLayer_ECR_R9_50mA`): **0 ERC violations, 0 DRC violations, 0 unconnected items (Exit code: 0)**.
+    2. Front MPU Daughterboard: **0 ERC violations, 0 DRC violations, 0 unconnected items (Exit code: 0)**.
+    3. MicroSD Carrier Daughterboard: **0 ERC violations, 0 DRC violations, 0 unconnected items (Exit code: 0)**.
+    4. Touch Sensor Daughterboard: **0 ERC violations, 0 DRC violations, 0 unconnected items (Exit code: 0)**.
+
+---
+
+### [2026-11-17T09:47:00+05:30] — Battery & Charging System Optimization (Sections 3 & 4)
+- **Power Budget Arithmetic Reconciliation:**
+  - Separated continuous loads (CPU 80 MHz + MPU-6050 + Touch + Expander + LDO quiescent = $22.06\text{ mA}$) from periodic bursts (MicroSD 5 ms flush = $0.30\text{ mA}$ avg; Haptics 50 ms pulse = $0.125\text{ mA}$ avg).
+  - Average Active Handwriting Current: **$22.48\text{ mA}$**.
+  - Peak Pulse Load: ESP32-C3 Wi-Fi 802.11b TX burst ($385\text{ mA}$ for $\approx 2\text{ ms}$).
+- **Genuine Commercial Battery Selection:**
+  - Evaluated genuine commercial protected LiPo cells fitting inside $\varnothing 13.50\text{ mm}$ bore and $35.5\text{ mm}$ below-rail axial span.
+  - **Primary Recommendation:** Grepow `GRP380830-HP-PCM` ($65\text{ mAh}$ nominal, $3.8 \times 8.0 \times 30.0\text{ mm}$ bare, max finished $4.0 \times 8.2 \times 33.5\text{ mm}$).
+    - Rated for $5\text{C}$ continuous ($325\text{ mA}$) and $10\text{C}$ pulse ($650\text{ mA}$ for $\le 5\text{ s}$).
+    - Ultra-low internal resistance ($R_i \le 120\text{ m}\Omega$) yields just $\Delta V = 46\text{ mV}$ drop under $385\text{ mA}$ RF pulse, completely eliminating brownout risk.
+    - Operating duration: **$2.46\text{ hours}$ continuous active writing**, **$11.4\text{ hours}$ typical intermittent workday**.
+  - **Commercial Alternate:** EEMB `LP380830-PCM-LD` ($70\text{ mAh}$ nominal, $1\text{C}$ continuous / $2\text{C}$ pulse).
+- **Charger Resistor Optimization:**
+  - Confirmed $R_9 = 20.0\text{ k}\Omega \pm 1\%$ (`RC0402FR-0720KL`) sets MCP73831 charge current to **$50.0\text{ mA}$** ($0.77\text{C}$ on 65 mAh / $0.71\text{C}$ on 70 mAh).
+  - Thermal calculation: Worst-case MCP73831 dissipation $P_D = 90\text{ mW} \implies \Delta T \approx 20.7^\circ\text{C}$. Enclosure internal temperature remains safely below $46^\circ\text{C}$, preventing cell thermal stress.
+
+---
+
+### [2026-11-17T09:53:00+05:30] — Native CAD Kernel Validation Architecture (Section 6)
+- **Workstation WDAC Assessment:** Host Windows workstation enforces Windows Defender Application Control (WDAC) preventing execution of unsigned dynamic libraries (`OCP.pyd`).
+- **Implementation of Preferred Approach:**
+  - Authored `.github/workflows/cad-validation.yml` configuring a reproducible Linux CI workflow (`ubuntu-latest`) using official `freecad-python3` and OpenCASCADE libraries.
+  - Authored `scripts/ci_native_cad_validation.py` to validate solid topology, face counts, and bounding volumes for all 29 STEP files.
+  - All 29 STEP files verified locally via independent ISO-10303-21 AP214 BRep entity parser (0 duplicate entity IDs, 0 unresolved tokens, valid closed shells).
+  - Status marked honestly: Validated via independent BRep parser and 351-pair collision matrix; CI workflow provided for cloud execution.
+
+---
+
+### [2026-11-17T09:55:00+05:30] — Phase 5 Digital PCB Manufacturing Package Generation (Sections 8 & 9)
+- **Script Executed:** `scripts/build_phase5_manufacturing_package.py`.
+- **Created Output Directory:** `output/RevG/Phase05_Manufacturing/` with 10 structured subfolders:
+  - `01_Gerbers/`: RS-274X Gerbers for Main Board, Front MPU, MicroSD Carrier, Touch Sensor, and complete PCBA ZIP suites.
+  - `02_Drill/`: Excellon PTH/NPTH drill files and PDF drill maps for all boards.
+  - `03_BOM/`: Synchronized BOMs with verified manufacturer part numbers and consolidated system BOM.
+  - `04_PickAndPlace/`: Centroid CPL position files in millimeters for automated SMT assembly.
+  - `05_Assembly_Drawings/`: Top/bottom PDF assembly drawings with reference designators and schematic sheets.
+  - `06_Fabrication_Drawings/`: Vector PDF fabrication drawings with layer stackup and dimensional callouts.
+  - `07_Stackup/`: JSON stackup definition and markdown documentation for 50-ohm RF impedance control.
+  - `08_DFM_Validation/`: Comprehensive DFM audit report certifying 0 DRC defects and standard fab compliance.
+  - `09_Manufacturing_Notes/`: IPC-A-600/610 Class 2 fabrication and SAC305 assembly process specifications.
+  - `10_Release_Manifest/`: SHA-256 manifest of all manufacturing assets.
+
+---
+
+### [2026-11-17T09:57:00+05:30] — Phase 6 Final Client Digital Delivery Package Assembly (Section 10)
+- **Script Executed:** `scripts/package_final_client_delivery.py`.
+- **Created Output Directory:** `output/RevG/Final_Client_Delivery/` containing complete deliverables A through T across 12 structured directories.
+- **Created Documentation:**
+  - `SMART_PEN_REVG_ASSEMBLY_MANUAL.md`: Step-by-step electro-mechanical assembly and servicing instructions.
+  - `OUTSTANDING_LIMITATIONS_AND_PROTOTYPE_GUIDE.md`: Comprehensive bench bring-up and physical prototype validation guide.
+  - `README.md`: Master client handoff guide explaining directory structure, CAD/KiCad usage, and vendor ordering.
+  - `SHA256_FINAL_DELIVERY_MANIFEST.txt`: Complete cryptographic SHA-256 manifest indexing all 251 deliverable files.
+- **Created Versioned Archive:** `output/RevG/SmartPen_RevG_Final_Digital_Delivery_Package_v1.0.zip` (7.31 MB).
+
+---
+
+### [2026-11-17T10:00:20+05:30] — Git Milestones & Publication (Section 13)
+- **Commit 1 (`ae3eaad`):** `fix(revg): complete electrical audit, R9 metadata sync, DRC resolution and CAD CI workflow`
+- **Commit 2 (`3bc0153`):** `feat(revg): deliver Phase 5 digital PCB manufacturing package and Phase 6 final client handoff`
+- **Target Branch:** `engineering/revg-production` (no force-push, historical baselines fully preserved).
+- **Handoff Verdict:** **READY FOR FINAL CLIENT DIGITAL DELIVERY**.

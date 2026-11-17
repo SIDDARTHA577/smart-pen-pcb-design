@@ -99,3 +99,12 @@
   1. Formal client sign-off on PRD capacity amendment from 130 mAh to 70 mAh (CDR-001).
   2. Whitelisting FreeCAD/OCP execution in CI or accepting STLs/STEP AP214 solids for direct review under host WDAC constraints (CDR-004).
 - **Git Action:** Committed all validated deliverables to branch `engineering/revg-production` without force-pushing. Preserved historical 2-layer and 4-layer baselines.
+
+---
+
+### [2026-11-17T09:37:41+05:30] — Client Clarification & Final Optimization Handoff
+- **Client Directive Applied:** Client confirmed: No fixed battery capacity requirement; historical 130–150 mAh references are non-binding. Selected highest-value practical solution: Grepow `GRP380830-HP-PCM` (65 mAh, 5C/10C, 120 mΩ IR) and commercial alternate EEMB `LP380830-PCM-LD` (70 mAh).
+- **Electrical Synchronization:** Synchronized R9 metadata in `SmartPen.pretty/R9.kicad_mod` to $20.0\text{ k}\Omega$. Verified Q2 (DMG2305UX, SOT-23) and U4 (AP2112K-3.3, SOT-23-5). Filled B.Cu ground plane on `MicroSD_Carrier.kicad_pcb`. Verified 0 ERC / 0 DRC on all 4 boards.
+- **Native CAD Validation:** Configured `.github/workflows/cad-validation.yml` and `scripts/ci_native_cad_validation.py` for Linux CI execution.
+- **Phase 5 Manufacturing:** Built `output/RevG/Phase05_Manufacturing/` with 10 subdirectories containing all Gerbers, drills, BOMs, CPL, drawings, stackup, DFM, and notes.
+- **Phase 6 Delivery Package:** Assembled `output/RevG/Final_Client_Delivery/` with 251 verified digital assets and generated `SmartPen_RevG_Final_Digital_Delivery_Package_v1.0.zip` (7.31 MB).

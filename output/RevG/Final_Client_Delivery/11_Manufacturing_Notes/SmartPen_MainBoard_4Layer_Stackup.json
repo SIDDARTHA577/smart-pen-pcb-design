@@ -1,0 +1,71 @@
+{
+  "board_name": "SmartPen_RevG_MainBoard",
+  "nominal_thickness_mm": 1.6,
+  "layer_count": 4,
+  "standard_stackup_id": "JLC04161H-7628 / Standard 4-Layer 1.6mm FR-4",
+  "copper_finish": "ENIG (Electroless Nickel Immersion Gold, 1-2 uin Au, 120-200 uin Ni)",
+  "solder_mask": "Matte Black (0.015-0.025 mm thickness)",
+  "silkscreen": "White (0.010 mm thickness)",
+  "layers": [
+    {
+      "layer_id": 1,
+      "name": "F.Cu",
+      "type": "Copper (Signal / Component Top)",
+      "thickness_mm": 0.035,
+      "copper_weight_oz": 1.0
+    },
+    {
+      "layer_id": 2,
+      "name": "Prepreg_1",
+      "type": "Dielectric (7628 Prepreg x 1)",
+      "thickness_mm": 0.2104,
+      "dielectric_constant_er": 4.5
+    },
+    {
+      "layer_id": 3,
+      "name": "In1.Cu",
+      "type": "Copper (Ground Plane Plane)",
+      "thickness_mm": 0.0175,
+      "copper_weight_oz": 0.5
+    },
+    {
+      "layer_id": 4,
+      "name": "Core",
+      "type": "FR-4 Core Dielectric",
+      "thickness_mm": 1.065,
+      "dielectric_constant_er": 4.6
+    },
+    {
+      "layer_id": 5,
+      "name": "In2.Cu",
+      "type": "Copper (Power Plane Plane - 3V3)",
+      "thickness_mm": 0.0175,
+      "copper_weight_oz": 0.5
+    },
+    {
+      "layer_id": 6,
+      "name": "Prepreg_2",
+      "type": "Dielectric (7628 Prepreg x 1)",
+      "thickness_mm": 0.2104,
+      "dielectric_constant_er": 4.5
+    },
+    {
+      "layer_id": 7,
+      "name": "B.Cu",
+      "type": "Copper (Signal / Component Bottom)",
+      "thickness_mm": 0.035,
+      "copper_weight_oz": 1.0
+    }
+  ],
+  "total_calculated_thickness_mm": 1.5908,
+  "impedance_control": {
+    "single_ended_rf_50_ohm": {
+      "layer": "F.Cu",
+      "reference_layer": "In1.Cu",
+      "target_impedance_ohm": 50.0,
+      "calculated_trace_width_mm": 0.38,
+      "dielectric_height_mm": 0.2104,
+      "tolerance_percent": 10.0
+    }
+  }
+}

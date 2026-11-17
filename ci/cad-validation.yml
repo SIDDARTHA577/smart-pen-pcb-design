@@ -1,0 +1,29 @@
+name: Native CAD Kernel & BRep Geometry Validation
+
+on:
+  push:
+    branches: [ engineering/revg-production, main ]
+  pull_request:
+    branches: [ engineering/revg-production, main ]
+  workflow_dispatch:
+
+jobs:
+  validate-step-cad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FreeCAD and Native CAD Kernel Dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y freecad-python3 libocct-data-exchange-dev libocct-foundation-dev
+
+      - name: Execute Native CAD BRep Kernel Validation
+        run: |
+          python3 scripts/ci_native_cad_validation.py
