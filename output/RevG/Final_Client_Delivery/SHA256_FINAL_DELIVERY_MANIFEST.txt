@@ -1,7 +1,7 @@
-# SMART PEN REV G — FINAL DIGITAL DELIVERY PACKAGE v1.2 SHA-256 MANIFEST
-# Archive: SmartPen_RevG_Final_Digital_Delivery_Package_v1.2.zip
+# SMART PEN REV G — FINAL DIGITAL DELIVERY PACKAGE v1.3 SHA-256 MANIFEST
+# Archive: SmartPen_RevG_Final_Digital_Delivery_Package_v1.3.zip
 # Generated directly from uncompressed byte streams inside the delivery archive
-# Date: 2026-11-17T20:30:00+05:30
+# Date: 2026-11-18T07:45:00+05:30
 # Total Files: 290
 # ================================================================================
 SHA-256 Hash                                                      Size (bytes)  Archive Path
@@ -283,16 +283,16 @@ fa7c825b241c2873251c900d9df5b0f159f9461dbc286dcc50ab1c4c5ca2b991  7484          
 e8bcede2b2a2525d3a1408e277855aea97036aaeefe805b53706554333277344  106118        08_Mechanical_Drawings_and_Visuals/SmartPen_RevG_Phase4C_Longitudinal_Assembly.svg
 ef41e3d693302603d3d36bf0a5faa0588a19bd9d78064284cdcf90a0ea77de7c  585425        08_Mechanical_Drawings_and_Visuals/SmartPen_RevG_Phase4C_Transverse_Sections.png
 1abb9ca618bb721de946328242ca9dc1d5e2392efad1dd582dd78d1643908c24  118789        08_Mechanical_Drawings_and_Visuals/SmartPen_RevG_Phase4C_Transverse_Sections.svg
-42610e1448c11dff31752d408196b6162ec2ce1854f8e3d0a2c4fa30156895a4  3308          09_Assembly_Instructions/SMART_PEN_REVG_ASSEMBLY_MANUAL.md
-1307a1498e3475dd4497ead13ea991fed67670c31b0b07a7a705a9712e03056d  10009         10_Engineering_Verification_Reports/01_POWER_BUDGET_AND_CAPACITY_REPORT.md
-8e6733bac3d76ae3a3cfd75f733066371d75aa08ac4d31064b344bedd3e5d9c1  13499         10_Engineering_Verification_Reports/02_BATTERY_SELECTION_AND_BORE_CLEARANCE_AUDIT.md
-3203f5cdd95e75a05ce6f639bba1ae0a2ed997600d1ba2935bebcb751d4f1e3a  6236          10_Engineering_Verification_Reports/03_CHARGER_R9_ECR_REPORT.md
+7c726bceb7dbd99a7345976c78f52fd595652a0364bf558db33b675f78ae727a  4551          09_Assembly_Instructions/SMART_PEN_REVG_ASSEMBLY_MANUAL.md
+b37cdcedaf4c9f0617bbebc80fb4b16b2e16e69dbdb49c9d670dbaca111140ae  10853         10_Engineering_Verification_Reports/01_POWER_BUDGET_AND_CAPACITY_REPORT.md
+33580e4319059f9ced330d8c47ae631dcbda24afd12af6bc2fab21720b10b49d  14872         10_Engineering_Verification_Reports/02_BATTERY_SELECTION_AND_BORE_CLEARANCE_AUDIT.md
+49d40f757ff7dabbaa0c7747e85beadda67990f2dbca1fd5444dfec0d6b44d47  7208          10_Engineering_Verification_Reports/03_CHARGER_R9_ECR_REPORT.md
 21f45d66c3d88c881854be7a4d8fded3ba3ee80c427504e8be1d1ae74579e633  5985          10_Engineering_Verification_Reports/04_KICAD_ERC_DRC_VERIFICATION.md
-8db01d8ec8dc1d3e874d6a1ae64dda1ea7829e674f10b3ad3241fa050547b06c  9178          10_Engineering_Verification_Reports/05_CAD_ASSEMBLY_351_COLLISION_AUDIT.md
+a8fe2ef7ee4637de35d7b1919060dc10f9f0b3ff8ce2ec7489747cfbe55a0858  9468          10_Engineering_Verification_Reports/05_CAD_ASSEMBLY_351_COLLISION_AUDIT.md
 ecbcd276255c68a398c96d72a973d7946344c3a98d5794e9207a769d0f4ae413  3245          10_Engineering_Verification_Reports/06_DFM_AND_GERBER_VALIDATION.md
 6a9741bdd049ce0df18f765b117a71de4ffd8515d3eedb45ef47fc21470e41f2  1399          11_Manufacturing_Notes/SMART_PEN_PCBA_ASSEMBLY_NOTES.md
 1fbb0285efb607fc4e313532ce0b6dbaf52e98fb28bb40815a3d95325d614287  2025          11_Manufacturing_Notes/SMART_PEN_PCB_FABRICATION_NOTES.md
 c8d78c3c62fe6b581b2a2688a658431c340647597441160d3f2f0c4250e65476  1938          11_Manufacturing_Notes/SmartPen_MainBoard_4Layer_Stackup.json
 117db7e8924f75c77dfcca8050a45f348cede2ba07f396c83560459e4e98f7da  2821          11_Manufacturing_Notes/SmartPen_MainBoard_4Layer_Stackup_Specification.md
-86183351fb52f040be92828cbdaa173f6c04e3a56becaebf7c348040c38941fe  3016          12_Prototype_Validation_and_Limitations/OUTSTANDING_LIMITATIONS_AND_PROTOTYPE_GUIDE.md
-f833fa26396fd5d9976dbd9c5f6bfc1b1c95ad8e7b20d14675d1506634cb6780  3897          README.md
+0ff197d53207e1e394c14ab488990b5cc74e189d446b6f289045551c8da3f560  5641          12_Prototype_Validation_and_Limitations/OUTSTANDING_LIMITATIONS_AND_PROTOTYPE_GUIDE.md
+9e68689b52bca32071de720818ac3d75289d31fc575a61b423657a845fe12718  6671          README.md

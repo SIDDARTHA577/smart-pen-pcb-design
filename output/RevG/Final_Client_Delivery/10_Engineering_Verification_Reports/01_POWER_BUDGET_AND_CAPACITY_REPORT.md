@@ -77,27 +77,27 @@ When the pen rests on a desk, the TTP223 touch sensor detects no contact, and th
 
 ---
 
-## 4. BATTERY RUN-TIME PROJECTIONS FOR 70 mAh CANDIDATE
+## 4. BATTERY RUN-TIME PROJECTIONS FOR SELECTED 50 mAh CELL (LP300830-PCM)
 
-Assuming the commercial protected `LP380830` pack ($70\text{ mAh}$ nominal, $0.26\text{ Wh}$, with $85\%$ usable capacity to $3.3\text{V}$ cutoff):
-$$\text{Usable Energy} = 70\text{ mAh} \times 0.85 = \mathbf{59.5\text{ mAh}}$$
+For the verified commercial protected cell **Model LP300830-PCM** (\text{ mAh}$ nominal capacity, .185\text{ Wh}$, with \%$ usable capacity to .30\text{ V}$ cutoff):
+\text{Usable Energy} = 50\text{ mAh} \times 0.85 = \mathbf{42.5\text{ mAh}}
 
 | Operational Scenario | Average Current | Calculated Operating Life | Real-World User Equivalency |
 | :--- | :---: | :---: | :--- |
-| **Continuous Active Handwriting (Mode 1)** | $22.48\text{ mA}$ | **$2.65\text{ hours}$ ($159\text{ minutes}$)** | $> 25\text{ pages of continuous writing}$ |
-| **Live BLE Mobile Streaming (Mode 2)** | $28.86\text{ mA}$ | **$2.06\text{ hours}$ ($124\text{ minutes}$)** | $2\text{ full classroom lectures}$ |
-| **Typical Daily Workday Profile\*** | $4.85\text{ mA}$ avg | **$12.3\text{ hours}$** | **Full working day on single charge** |
-| **Deep Sleep / Storage** | $15.0\ \mu\text{A}$ | **$> 3,900\text{ hours}$ ($> 5\text{ months}$)** | Shelf life without degradation |
+| **Continuous Active Handwriting (Mode 1)** | .48\text{ mA}$ | **.89\text{ hours}$ (\text{ minutes}$)** | \text{--}25\text{ handwritten pages}$ |
+| **Live BLE Mobile Streaming (Mode 2)** | .86\text{ mA}$ | **.47\text{ hours}$ (\text{ minutes}$)** | .5\text{ full classroom lectures}$ |
+| **Typical Daily Workday Profile\*** | .85\text{ mA}$ avg | **.76\text{ hours}$** | **Full business workday on single charge** |
+| **Deep Sleep / Storage** | .0\ \mu\text{A}$ | **$> 2,800\text{ hours}$ ($> 3.8\text{ months}$)** | Shelf life without degradation |
 
-*\*Typical Workday Profile: $1.5\text{ hr}$ writing ($22.5\text{ mA}$) $+ 6.5\text{ hr}$ standby on desk ($0.85\text{ mA}$) $+ 16\text{ hr}$ deep sleep ($0.015\text{ mA}$).*
+*\*Typical Workday Profile: .0\text{ hr}$ active handwriting (.5\text{ mA}$) $+ 7.0\text{ hr}$ standby on desk (.85\text{ mA}$) $+ 16\text{ hr}$ deep sleep (.015\text{ mA})$.*
 
-**Conclusion:** A $70\text{ mAh}$ pack delivers over **$2.5\text{ hours}$ of continuous non-stop writing** and comfortably spans an entire work day of typical intermittent note-taking.
+*(Note: For the earlier provisional \text{ mAh}$ candidate, usable capacity was .5\text{ mAh}$, yielding .65\text{ hours}$ in Mode 1. As established in Phase 6A, the client has no binding battery capacity requirement, and the \text{ mAh}$ pack is chosen to ensure positive bore clearance and zero mechanical clash).*
 
 ---
 
 ## 5. POWER-PATH HARDWARE VERIFICATION
 
-```
+`
                          HARDWARE DYNAMIC POWER-PATH OPERATION
                      USB VBUS (+5.0V)
                             │
@@ -105,11 +105,11 @@ $$\text{Usable Energy} = 70\text{ mAh} \times 0.85 = \mathbf{59.5\text{ mAh}}$$
              │                             │
              ▼                             ▼
      [U2: MCP73831]                  [D4: Schottky]
-      Charger IC                     (MBR0520L, Vf = 0.34V)
+      Charger IC                     (1N5819HW-7-F, Vf = 0.35V)
       Prog: R9 = 20k -> 50 mA              │
              │                             ▼
              ▼                      +---------------+
-       [Protected Cell]             | /VSYS (4.66V) |
+       [Protected Cell]             | /VSYS (4.65V) |
              │                      +---------------+
              ▼                             │
        [Q2: DMG2305UX]                     ▼
@@ -119,17 +119,18 @@ $$\text{Usable Energy} = 70\text{ mAh} \times 0.85 = \mathbf{59.5\text{ mAh}}$$
                                     +---------------+
                                     | 3.3V Rail     |
                                     +---------------+
-```
+`
 
 When USB-C is plugged in:
-1. **Diode D4 Conduction:** VBUS ($5.0\text{ V}$) forward-biases Schottky diode D4, supplying the LDO input (`/VSYS`) at $\approx 4.66\text{ V}$.
-2. **MOSFET Q2 Isolation:** The gate of P-channel MOSFET Q2 is tied to VBUS, driving $V_{GS} \approx 0\text{ V}$ and turning Q2 completely OFF.
-3. **Battery Decoupling:** The battery is completely isolated from the system load. The MCP73831 charger charges the battery at a pure, undisturbed constant current of $50\text{ mA}$.
-4. **Thermal Stability:** Because the system load runs directly off USB and does not pass through the linear charger, the charger does not suffer elevated thermal dissipation from MCU activity.
+1. **Diode D4 Conduction:** VBUS (.0\text{ V}$) forward-biases Schottky diode D4, supplying the LDO input (/VSYS) at $\approx 4.65\text{ V}$.
+2. **MOSFET Q2 Isolation:** The gate of P-channel MOSFET Q2 is tied to VBUS, driving {GS} \approx +0.35\text{ V} > 0\text{ V}$ and turning Q2 completely OFF. Body diode is reverse-biased by $-0.45\text{ V}$.
+3. **Battery Decoupling:** The battery is completely isolated from the system load. The MCP73831 charger charges the battery at a pure, undisturbed constant current of \text{ mA}$.
+4. **Thermal Stability:** Because the system load runs directly off USB and does not pass through the linear charger, the charger does not suffer elevated thermal dissipation from MCU activity. Worst-case charger dissipation is  = (5.0\text{ V} - 3.0\text{ V}) \times 50\text{ mA} = 100\text{ mW}$ ( \approx 48.0^\circ\text{C}$).
 
 ---
 
 ## 6. LOAD CONCURRENCY & BROWN-OUT PREVENTION SUMMARY
 
 1. **Non-Simultaneous Concurrency Rule:** Firmware must prevent concurrent execution of haptic motor buzz and Wi-Fi transmission frames.
-2. **Capacitive Buffering:** The onboard power rail features $30\ \mu\text{F}$ ceramic decoupling ($C_{11}, C_{12}, C_{13}$) across the 3.3V rail. For high-drain Wi-Fi bursts, a high-rate cell (Grepow $5\text{C}$ continuous) or an additional $100\ \mu\text{F}$ tantalum capacitor maintains supply rail stability above $3.30\text{ V}$, eliminating brownout risks.
+2. **High-Power Wi-Fi Operation Boundary:** Full-power Wi-Fi transmission (\text{ mA}$ peak at $+19.5\text{ dBm}$) is intended exclusively for **USB-connected operation**, where power is sourced directly from USB {\text{BUS}}$ through diode D4. Firmware enforcement restricting Wi-Fi transmission when operating on battery power is an external software integration requirement and has not been implemented or verified within this digital hardware design deliverable.
+3. **Capacitive Buffering:** The onboard power rail features \ \mu\text{F}$ ceramic decoupling ({11}, C_{12}, C_{13}$) across the 3.3V rail. For BLE streaming and transient loads, this maintains supply rail stability above .10\text{ V}$, eliminating brownout risks.

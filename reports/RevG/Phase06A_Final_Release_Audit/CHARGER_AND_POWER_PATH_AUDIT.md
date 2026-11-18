@@ -1,8 +1,8 @@
 # CHARGER AND POWER-PATH ELECTRICAL AUDIT
 
 **Document ID:** SRG-P6A-PWR-005  
-**Revision:** 1.0  
-**Date:** November 17, 2026  
+**Revision:** 1.1 (Phase 6B Corrected Release)  
+**Date:** November 18, 2026  
 **Electrical Revision:** `output/RevG/variants/FourLayer_ECR_R9_50mA/`  
 **Status:** **ELECTRICAL AUDIT COMPLETE — ZERO VIOLATIONS**
 
@@ -29,21 +29,23 @@ This precisely matches the maximum recommended fast-charge rating ($1.0\text{C}$
 ## 2. MCP73831 THERMAL DISSIPATION & JUNCTION TEMPERATURE AUDIT
 
 ### 2.1 Power Dissipation Calculation
-In the KiCad schematic (`SmartPen.kicad_sch`), MCP73831 pin 4 ($V_{\text{DD}}$) connects directly to the `USB_VBUS` rail ($5.00\text{ V}$ nominal), while diode $D_4$ (`1N5819HW-7-F`) provides the separate OR-ing path from `USB_VBUS` to `VSYS_RAW` for the AP2112K-3.3 system LDO.
+In the KiCad schematic (`SmartPen.kicad_sch`), MCP73831 pin 4 ($V_{\text{DD}}$) connects directly to the `USB_VBUS` rail ($5.00\text{ V}$ nominal), while diode $D_4$ (`1N5819HW-7-F` / `MBR0520L`) provides the separate OR-ing path from `USB_VBUS` to `VSYS_RAW` for the AP2112K-3.3 system LDO.
 
 The maximum thermal stress on charger IC $U_2$ occurs at the onset of constant-current (CC) charging with a deeply discharged cell ($V_{\text{BAT}} = 3.00\text{ V}$):
 - Input voltage at MCP73831 $V_{\text{DD}}$: $V_{\text{IN}} = V_{\text{BUS}} = \mathbf{5.00\text{ V}}$
-- Battery voltage: $V_{\text{BAT}} = \mathbf{3.00\text{ V}}$
+- Minimum battery cell voltage: $V_{\text{BAT}} = \mathbf{3.00\text{ V}}$
 - Linear pass transistor voltage drop: $\Delta V = V_{\text{IN}} - V_{\text{BAT}} = 5.00\text{ V} - 3.00\text{ V} = \mathbf{2.00\text{ V}}$
 - Programmed charge current: $I_{\text{charge}} = \mathbf{50.0\text{ mA}} \quad (0.050\text{ A})$
-- Worst-Case IC Power Dissipation:
+- **Worst-Case IC Power Dissipation:**
   $$P_D = \Delta V \times I_{\text{charge}} = 2.00\text{ V} \times 0.050\text{ A} = \mathbf{0.100\text{ W} \quad (100.0\text{ mW})}$$
+
+*(Note: Prior draft calculations citing $82.5\text{ mW}$ assumed an unverified $V_{\text{IN}} = 4.65\text{ V}$ input. Under the actual direct $5.00\text{ V}$ $V_{\text{BUS}}$ connection, worst-case dissipation is exactly $100.0\text{ mW}$.)*
 
 ### 2.2 IC Silicon Junction Temperature vs. Battery Cell Surface Temperature
 A critical engineering distinction must be maintained between the charger IC silicon die temperature and the battery pouch cell temperature:
 
 1. **Charger IC Silicon Die Temperature ($T_{J,\text{IC}}$):**
-   - Package: SOT-23-5 on 4-layer FR4 with continuous ground planes
+   - Package: SOT-23-5 on 4-layer FR4 with continuous internal ground planes
    - Thermal resistance: $\theta_{\text{JA}} \approx 230^\circ\text{C/W}$
    - IC Silicon Temperature Rise:
      $$\Delta T_{\text{IC}} = P_D \times \theta_{\text{JA}} = 0.100\text{ W} \times 230^\circ\text{C/W} = \mathbf{23.0^\circ\text{C}}$$
@@ -91,9 +93,9 @@ An inspection of the KiCad schematic (`SmartPen.kicad_sch`) clarifies the diode 
 
 ---
 
-## 3. POWER-PATH LOAD SWITCHING & BODY DIODE ANALYSIS
+## 4. POWER-PATH TOPOLOGY & TRUTH TABLE
 
-The circuit employs an automatic power-path switch consisting of P-channel MOSFET $Q_2$ (`DMG2305UX`), pull-down resistor $R_8$ ($100\text{ k}\Omega$), and Schottky diode $D_3$ (`1N5819HW-7-F`).
+The circuit employs an automatic power-path switch consisting of P-channel MOSFET $Q_2$ (`DMG2305UX`), pull-down resistor $R_{26}$ ($100\text{ k}\Omega$), and Schottky diode $D_4$ (`1N5819HW-7-F`):
 
 ```
                     POWER-PATH TOPOLOGY & TRUTH TABLE
@@ -101,7 +103,7 @@ The circuit employs an automatic power-path switch consisting of P-channel MOSFE
                              │
                   ┌──────────┴──────────┐
                   │                     │
-                  ▼ D3 (Schottky)       ▼ MCP73831 Charger
+                  ▼ D4 (Schottky)       ▼ MCP73831 Charger
              (VF = 0.35V)          (I_chg = 50 mA)
                   │                     │
                   ├─────────┐           ▼
@@ -109,21 +111,21 @@ The circuit employs an automatic power-path switch consisting of P-channel MOSFE
                   │         │           │
                   │         ▼ Source    ▼ Drain
                VSYS_RAW ───[ Q2 P-FET ]───
-                            ▲ Gate (Driven by VBUS)
+                            ▲ Gate (Driven by VBUS, R26 pull-down)
 ```
 
-### 3.1 State 1: Battery-Only Operation (USB Unplugged, $V_{\text{BUS}} = 0\text{ V}$)
-- Gate of $Q_2$ is tied to GND via $R_8$ ($100\text{ k}\Omega$): $V_G = 0\text{ V}$.
+### 4.1 State 1: Battery-Only Operation (USB Unplugged, $V_{\text{BUS}} = 0\text{ V}$)
+- Gate of $Q_2$ is tied to GND via $R_{26}$ ($100\text{ k}\Omega$): $V_G = 0\text{ V}$.
 - Source of $Q_2$ is connected to $V_{\text{SYS\_RAW}}$: $V_S \approx V_{\text{BAT}} = 3.7\text{ V}$.
 - Gate-to-Source Voltage: $V_{GS} = 0\text{ V} - 3.7\text{ V} = -3.7\text{ V}$.
-- Since threshold voltage $V_{GS(\text{th})} \in [-0.5, -1.0]\text{ V}$, $Q_2$ is fully turned ON with $R_{DS(\text{on})} \approx 40\text{ m}\Omega$.
+- Since threshold voltage $V_{GS(\text{th})} \in [-0.5, -1.0]\text{ V}$, $Q_2$ is fully turned ON with $R_{DS(\text{on})} \approx 42\text{ m}\Omega$.
 - At typical active writing load ($22.5\text{ mA}$), voltage drop is only:
-  $$\Delta V = 0.0225\text{ A} \times 0.040\ \Omega = \mathbf{0.9\text{ mV}}$$
-- Diode $D_3$ is reverse-biased, isolating the disconnected USB connector.
+  $$\Delta V = 0.0225\text{ A} \times 0.042\ \Omega = \mathbf{0.95\text{ mV}}$$
+- Diode $D_4$ is reverse-biased, isolating the disconnected USB connector.
 
-### 3.2 State 2: USB Attached & Charging ($V_{\text{BUS}} = 5.0\text{ V}$)
+### 4.2 State 2: USB Attached & Charging ($V_{\text{BUS}} = 5.0\text{ V}$)
 - Gate of $Q_2$ is driven directly by $V_{\text{BUS}}$: $V_G = 5.00\text{ V}$.
-- Diode $D_3$ conducts, powering $V_{\text{SYS\_RAW}}$: $V_S = 5.00\text{ V} - 0.35\text{ V} = 4.65\text{ V}$.
+- Diode $D_4$ conducts, powering $V_{\text{SYS\_RAW}}$: $V_S = 5.00\text{ V} - 0.35\text{ V} = 4.65\text{ V}$.
 - Gate-to-Source Voltage: $V_{GS} = 5.00\text{ V} - 4.65\text{ V} = \mathbf{+0.35\text{ V} > 0\text{ V}}$.
 - $Q_2$ is turned completely OFF.
 - **Body Diode Orientation:** The internal parasitic body diode of $Q_2$ points from Drain ($V_{\text{BAT}} \le 4.20\text{ V}$) to Source ($V_S = 4.65\text{ V}$). Because $V_S > V_{\text{BAT}}$, the body diode is **reverse-biased by at least $0.45\text{ V}$**.

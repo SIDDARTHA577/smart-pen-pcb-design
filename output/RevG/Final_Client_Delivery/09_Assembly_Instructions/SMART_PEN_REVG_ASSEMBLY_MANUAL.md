@@ -1,8 +1,8 @@
 # SMART PEN REV G — ELECTRO-MECHANICAL ASSEMBLY & SERVICE MANUAL
 
 **Document ID:** SRG-DOC-ASM-001  
-**Revision:** 1.0 (Rev G Production Baseline)  
-**Date:** November 17, 2026  
+**Revision:** 1.1 (Rev G Phase 6B Production Baseline)  
+**Date:** November 18, 2026  
 
 ---
 
@@ -30,11 +30,18 @@
    - Connect the 3-pin JST-SH wire harness to `Touch_Sensor.kicad_pcb`. Slide into the internal grip recess.
 
 ### Stage 2: Electronics Rail Integration
-1. Mount the vibration motor into `13_Vibration_Motor_Mount.stl` and route wires to `J_MOT` on the Main PCB.
-2. Place the battery pack (`Grepow GRP380830-HP-PCM` or `EEMB LP380830`) into `05_Battery_Cradle.stl`. Route the silicone leads through the rear wire conduit to `J_BAT`.
-3. Slide `05_Battery_Cradle.stl` into the bottom retention rails of `04_Removable_Electronics_Rail.stl`.
-4. Affix the Molex 146153 antenna onto `14_Antenna_Mount.stl` and connect the U.FL micro-coaxial cable to connector `J_RF` on the Main PCB.
-5. Snap the Main PCB into the top deck of `04_Removable_Electronics_Rail.stl`. Connect all JST wire harnesses.
+1. **Haptic Vibration Motor:**
+   - Mount the vibration motor into `13_Vibration_Motor_Mount.stl` and route leads to receptacle `J_MOT` on the Main PCB.
+   - Note: The motor drive circuit on the Main PCB incorporates inductive flyback clamp diode **`D3`** (`1N5819HW-7-F`) across the motor terminals to suppress inductive turn-off voltage transients.
+2. **Battery Cradle & Cell Installation:**
+   - Place the LiPo battery pack (Model **`LP300830-PCM`**, $50\text{ mAh}$, max finished dimensions $33.00 \times 8.20 \times 3.30\text{ mm}$) into `05_Battery_Cradle.stl`.
+   - Route the 28 AWG silicone leads through the integrated rear wire conduit to connector `J_BAT` on the Main PCB.
+3. **Rail Mating:**
+   - Slide `05_Battery_Cradle.stl` into the bottom retention rails of `04_Removable_Electronics_Rail.stl`.
+4. **Antenna & RF Cabling:**
+   - Affix the Molex 146153 wideband antenna onto `14_Antenna_Mount.stl` and connect the U.FL micro-coaxial cable to receptacle `J_RF` on the Main PCB.
+5. **Main Board Snap-In:**
+   - Snap the Main PCB into the top deck of `04_Removable_Electronics_Rail.stl`. Connect all daughterboard harnesses.
 
 ### Stage 3: Click Mechanism & Refill Insertion
 1. Drop the helical return spring (`21_Helical_Return_Spring.stl`) into the front nose cone (`03_Front_Nose_Cone.stl`).
@@ -46,8 +53,20 @@
    - Insert plunger button (`10A_Click_Plunger_Button.stl`) into the rotor.
 5. Mate the rear bayonet collar (`11_Rear_Bayonet_Collar.stl`) by pressing axially and rotating $30^\circ$ clockwise until detent clicks.
 
-### Stage 4: Enclosure Closure & Testing
+### Stage 4: Enclosure Closure & Operational Testing
 1. Slide the outer barrel (`01_Outer_Barrel.stl`) over the assembled chassis.
 2. Thread the front grip (`02_Front_Grip.stl`) and nose cone (`03_Front_Nose_Cone.stl`) onto the barrel.
-3. Cycle the click mechanism 5 times to confirm positive tip extension and retraction.
-4. Connect USB-C cable through port bezel (`08_USB_C_Access_Feature.stl`) to verify charging LED `D2` illumination and enumeration on host PC.
+3. Cycle the click mechanism 5 times to confirm positive tip extension ($4.50\text{ mm}$ travel) and retraction.
+4. Connect USB-C cable through port bezel (`08_USB_C_Access_Feature.stl`) to verify:
+   - Charging LED `D2` illuminates.
+   - Power-path diode **`D4`** (`1N5819HW-7-F` / `MBR0520L`) and P-FET `Q2` (`DMG2305UX`) seamlessly route USB $V_{\text{BUS}}$ power to `VSYS_RAW`, isolating the battery during charging.
+   - ESP32-C3 enumerates on host PC via USB-JTAG/Serial interface.
+
+---
+
+## 3. PHYSICAL ASSEMBLY & PROTOTYPE BOUNDARIES
+
+This manual describes assembly sequences based on validated 3D CAD geometry. Physical validation requires prototype execution:
+- Exact mold/print tolerances, snap-fit retention forces, and thermal convection profiles are unverified on physical hardware.
+- Solder reflow profiles across the 4-layer FR4 PCB must be established by the assembly house.
+- Exact battery supplier qualification and PCM trip thresholds must be verified with physical battery samples.

@@ -41,6 +41,7 @@ desktop.ini
 *-save
 _autosave-*
 *.tmp
+.kicad_config/
 
 
 # Temporary test execution and scratch artifacts (preserves raw QA evidence in qa_raw/)

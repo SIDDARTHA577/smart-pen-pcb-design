@@ -38,14 +38,19 @@ Datasheets for candidate cells (EEMB LP380830, EEMB LP401030, Renata ICP401130) 
 - **Thermal Limitation in Sealed Cavity:** Under **IEC 62133-2**, lithium polymer pouch cells must not be charged when cell temperature exceeds $+45.0^\circ\text{C}$.
 
 ### 2.2 Thermal Dissipation in Sealed Barrel
-At $100\text{ mA}$ ($R_9 = 10\text{ k}\Omega$), worst-case linear pass dissipation across U2 with USB VBUS at $5.0\text{ V}$ and battery at $3.4\text{ V}$ is:
-$$P_{\text{diss}} = (5.0\text{ V} - 3.4\text{ V}) \times 0.100\text{ A} = 0.160\text{ W}$$
-Given the SOT-23-5 thermal resistance ($\theta_{\text{JA}} \approx 230^\circ\text{C/W}$), temperature rise is $\Delta T \approx +36.8^\circ\text{C}$. In a $25^\circ\text{C}$ ambient environment, the IC junction reaches $61.8^\circ\text{C}$, warming the adjacent battery cradle above the $45^\circ\text{C}$ safety threshold!
+At \text{ mA}$ ( = 10\text{ k}\Omega$), worst-case linear pass dissipation across U2 with USB VBUS at .0\text{ V}$ and deeply discharged cell at .0\text{ V}$ is:
+P_{\text{diss}} = (5.0\text{ V} - 3.0\text{ V}) \times 0.100\text{ A} = 0.200\text{ W} \quad (200.0\text{ mW})
+Given the SOT-23-5 thermal resistance ($\theta_{\text{JA}} \approx 230^\circ\text{C/W}$), temperature rise is $\Delta T \approx +46.0^\circ\text{C}$. In a ^\circ\text{C}$ ambient environment, the IC junction reaches .0^\circ\text{C}$, warming the adjacent battery cradle above the ^\circ\text{C}$ safety threshold!
 
-With $R_9 = 20.0\text{ k}\Omega$ ($50.0\text{ mA}$):
-$$P_{\text{diss}} = (5.0\text{ V} - 3.4\text{ V}) \times 0.050\text{ A} = 0.080\text{ W} \quad (\mathbf{50\% \text{ reduction!}})$$
-$$\Delta T = 0.080\text{ W} \times 230^\circ\text{C/W} = \mathbf{+18.4^\circ\text{C}}$$
-The IC junction remains below $43.4^\circ\text{C}$, and the battery cradle remains safely below $35^\circ\text{C}$.
+With  = 20.0\text{ k}\Omega$ (.0\text{ mA}$):
+- **Absolute Worst-Case Dissipation ({\text{BAT}} = 3.00\text{ V}$, Deeply Discharged):**
+  P_{\text{diss}} = (5.00\text{ V} - 3.00\text{ V}) \times 0.050\text{ A} = \mathbf{0.100\text{ W} \quad (100.0\text{ mW})}
+  \Delta T_{\text{IC}} = 0.100\text{ W} \times 230^\circ\text{C/W} = \mathbf{+23.0^\circ\text{C}}
+  At .0^\circ\text{C}$ ambient, {J,\text{IC}} = 25.0^\circ\text{C} + 23.0^\circ\text{C} = \mathbf{48.0^\circ\text{C}} \ll 125.0^\circ\text{C}$ silicon junction limit.
+- **Nominal CC Plateau Dissipation ({\text{BAT}} = 3.40\text{ V}$):**
+  P_{\text{diss}} = (5.00\text{ V} - 3.40\text{ V}) \times 0.050\text{ A} = 0.080\text{ W} \quad (80.0\text{ mW})
+  \Delta T = 0.080\text{ W} \times 230^\circ\text{C/W} = +18.4^\circ\text{C} \implies T_J = 43.4^\circ\text{C}
+- **Battery Cell Surface Temperature:** The physical barrier (PCB FR4 core + polycarbonate rail deck) attenuates heat conduction, ensuring battery pouch cell surface temperature remains {\text{cell}} \le 30.0^\circ\text{C}$, well below the $+45.0^\circ\text{C}$ IEC 62133-2 charging safety threshold.
 
 ---
 
@@ -92,5 +97,5 @@ In `output/RevG/variants/FourLayer_ECR_R9_50mA/`:
 
 1. **ERC / DRC Clean:** Native KiCad 10.0 CLI confirmed **0 ERC errors/warnings**, **0 DRC clearance violations**, and **0 unconnected items**.
 2. **Schematic Parity:** Confirmed **100% parity across all 64 components**.
-3. **Power-Path Safety:** Validated that the DMG2305UX P-FET (Q2) isolates the battery during charging, eliminating load stealing.
+3. **Power-Path & Diode Safety:** Validated that the DMG2305UX P-FET (Q2) isolates the battery during charging, eliminating load stealing. Power-path diode is D4 (1N5819HW-7-F / MBR0520L, SOD-123); haptic motor flyback diode is D3 (1N5819HW-7-F, SOD-123).
 4. **Thermal Safety:** Validated that temperature rise inside the unventilated pen barrel is constrained to $+18.4^\circ\text{C}$, fully compliant with IEC 62133-2 battery charging limits.

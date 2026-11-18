@@ -151,3 +151,19 @@ Because 130 mAh cannot physically exist in an LP380830 envelope inside a $\varno
 ## 6. CONCLUSION
 
 The 130 mAh requirement originated from an older 40 mm cell and cannot physically fit within the Rev G below-rail cradle inside a $\varnothing 13.5\text{ mm}$ barrel. Candidate 1 (`LP380830`, 70 mAh) provides a verified zero-clash fit when constrained to nominal tolerances. Client approval on Alternative A (70 mAh PRD amendment) is required to close this gate.
+
+
+---
+
+## 7. PHASE 6A/6B FINAL SELECTION CLOSURE & OUTSTANDING LIMITATIONS
+
+In Phase 6A, the client clarified that there is **no fixed battery capacity requirement**. Capacity is governed strictly by physical barrel bore clearances, safe charging rates, and commercial cell availability.
+
+1. **Final Implemented Cell Specification:**
+   - **Model:** LP300830-PCM (\text{ mAh}$ nominal, .7\text{ V}$ LiPo).
+   - **Maximum Finished Pack Envelope:** .00\text{ mm}$ (L) $\times 8.20\text{ mm}$ (W) $\times 3.30\text{ mm}$ (T).
+   - **Cradle Cavity:** .00\text{ mm}$ (L) $\times 8.40\text{ mm}$ (W) $\times 3.50\text{ mm}$ (T) ($+1.00\text{ mm}$ length, $+0.20\text{ mm}$ width, $+0.20\text{ mm}$ thickness clearance).
+   - **Bore Radial Clearance:** $+0.437\text{ mm}$ positive margin to inner barrel bore. Zero CAD clash confirmed across all 351 assembly pairs.
+2. **Explicit Hardware & Vendor Qualification Boundaries:**
+   - The exact battery supplier and finished pack specification are uncertified by physical hardware testing.
+   - UN 38.3 transport safety certification, IEC 62133-2 safety compliance, and bench runtime discharge tests require physical vendor sample testing and prototype validation.

@@ -168,3 +168,36 @@
   - Recomputed `SHA256_FINAL_DELIVERY_MANIFEST.txt` and verified archive integrity with `zipfile.testzip()`.
 - **GitHub Actions Workflow & CI Native CAD Configuration (Task 1):**
   - Prepared `.github/workflows/cad-validation.yml` and `scripts/ci_native_cad_validation.py` for headless execution via `xvfb-run -a freecadcmd` and native Python FreeCAD modules.
+
+
+---
+
+### [2026-11-18T08:00:00+05:30] — Phase 6B Final Client Handover Cleanup & Release v1.3
+- **Authoritative Native CAD CI Verification (Requirement 1 & 2):**
+  - Confirmed successful execution of GitHub Actions Run `44128253975` on commit `9f7776ee3ebd3369c7f872b654676acc6addfb41` (URL: `https://github.com/SIDDARTHA577/smart-pen-pcb-design/actions/runs/44128253975`).
+  - Native FreeCAD 0.19 headless kernel on Ubuntu 22.04 runner verified 29/29 STEP models (27 parts + 2 assemblies), confirming all solids have valid BRep closed topology and non-zero volume.
+  - Updated Criterion 01 in all acceptance documents to `PASS (CI Native CAD Kernel / FreeCAD 0.19)`. Retained honest disclosure that local Windows workstation CAD execution is restricted by host Windows Defender Application Control (WDAC) policy.
+- **Release ZIP Archive History Audit & Restoration (Requirement 4 & 5):**
+  - Investigated historical v1.0 ZIP size discrepancy: an uncoordinated packaging run had accidentally overwritten v1.0 with 6,797,988 bytes.
+  - Restored authoritative historical v1.0 archive from commit `cea7e7ea999c1b2bf4a2b78a1166d96b63e77685` (exact size: **7,311,129 bytes**).
+  - Verified and preserved intermediate baseline v1.1 (**8,604,846 bytes**) and baseline v1.2 (**7,969,398 bytes**) immutably without modification.
+  - Reconciled v1.2 file counts: confirmed 290 deliverable files plus 1 manifest (`SHA256_FINAL_DELIVERY_MANIFEST.txt`), totaling 291 entries in the archive. Replaced obsolete claims of 292 files. 100% of archive entries verified against embedded SHA-256 hashes.
+- **Technical Documentation & Circuit Identifier Corrections (Requirement 3):**
+  - Reconciled diode reference designators:
+    - **`D4`** is the Schottky power-path OR-ing diode (`1N5819HW-7-F` / `MBR0520L`, SOD-123) between `USB_VBUS` and `VSYS_RAW`.
+    - **`D3`** is the inductive flyback clamp diode (`1N5819HW-7-F`, SOD-123) across ERM vibration motor `M1`.
+    - Unrelated diodes (`D1`, `D2`, etc.) remain unaltered.
+  - Reconciled charger worst-case power dissipation: updated to **100.0 mW** ($V_{\text{BUS}} = 5.0\text{ V}, V_{\text{BAT}} = 3.0\text{ V}, I_{\text{CHG}} = 50.0\text{ mA}$). Confirmed IC junction temperature $T_{J,\text{IC}} = 48.0^\circ\text{C} \ll 125.0^\circ\text{C}$ silicon limit, and battery surface temperature $T_{\text{cell}} \le 30.0^\circ\text{C} < 45.0^\circ\text{C}$ IEC 62133-2 charging safety limit. Removed obsolete $82.5\text{ mW}$ figure across all documentation.
+  - Synchronized client README, assembly manual, prototype bring-up guide, and engineering verification reports.
+- **Explicit Outstanding Hardware & Vendor Qualifications (Requirement 6):**
+  - Fully documented the four mandatory real-world qualification boundaries:
+    1. Exact battery supplier and protected-pack specification (`LP300830-PCM`, 50 mAh) are uncertified by physical hardware testing. UN 38.3, IEC 62133-2, and runtime require physical vendor evidence and prototype bench testing.
+    2. Full-power Wi-Fi (385 mA TX peak) is intended for USB-connected operation only. Firmware enforcement is an external integration requirement and has not been implemented or verified in this hardware release.
+    3. RF antenna OTA performance, radiation patterns, and hand phantom detuning remain untested without physical RF chamber measurements.
+    4. Physical mechanical assembly tolerances, click mechanism cyclic wear, and resin/mold shrinkage require physical prototype bring-up.
+- **Delivery Package v1.3 Generation & Independent Manifest Audit (Requirements 7 & 8):**
+  - Authored `scripts/prepare_final_delivery_v1_3.py`.
+  - Packaged `SmartPen_RevG_Final_Digital_Delivery_Package_v1.3.zip` (**7,973,719 bytes**, SHA-256: `b1007bb879c79e916aaef6e66774747e7fa7b86610e3db316a06d72d7e78109c`).
+  - Total files in archive: 290 deliverable files + 1 manifest = 291 entries.
+  - 100% verified byte-for-byte against embedded `SHA256_FINAL_DELIVERY_MANIFEST.txt` with zero corruption.
+  - Updated `scripts/run_phase6a_release_tests.py` to audit v1.0, v1.1, v1.2, and v1.3. Executed test suite: **13 PASSED, 0 FAILED, 1 BLOCKED (Host WDAC)**.

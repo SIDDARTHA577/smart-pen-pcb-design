@@ -37,11 +37,11 @@ Every critical mechanical subsystem was evaluated for dimensional conformance, p
 ```
 
 ### 2.1 Battery, Cradle, Barrel & Rail Clearances
-- **Battery Envelope:** Retained as $32.0\text{ mm}$ length $\times 7.60\text{ mm}$ width $\times 3.60\text{ mm}$ thickness (`19_LiPo_Battery_LP380830.step`), representing the exact mathematically optimized volume fitting in a $\varnothing 13.50\text{ mm}$ bore.
-- **Cradle Pocket:** Internal cavity is $33.0\text{ mm}$ length $\times 8.00\text{ mm}$ width $\times 3.80\text{ mm}$ depth (`05_Battery_Cradle.stl`), providing $0.20\text{ mm}$ lateral clearance.
-- **Rail Sliding Clearance:** Removable electronics rail (`04_Removable_Electronics_Rail.stl`) has guide rib outer diameter $\varnothing 13.10\text{ mm}$ inside barrel bore $\varnothing 13.50\text{ mm}$, providing $\Delta r = 0.20\text{ mm}$ radial sliding clearance.
+### 2.1 Battery, Cradle, Barrel & Rail Clearances
+- **Battery Envelope:** Synchronized commercial pack Model `LP300830-PCM` ($50\text{ mAh}$ nominal, max finished dimensions $33.00\text{ mm}$ length $\times 8.20\text{ mm}$ width $\times 3.30\text{ mm}$ thickness, `19_LiPo_Battery_LP300830_PCM.step`).
+- **Cradle Pocket:** Internal cavity is $34.00\text{ mm}$ length $\times 8.40\text{ mm}$ width $\times 3.50\text{ mm}$ depth (`05_Battery_Cradle.stl`), providing $+1.00\text{ mm}$ axial, $+0.20\text{ mm}$ lateral, and $+0.20\text{ mm}$ thickness clearance margins.
+- **Bore & Rail Clearance:** Removable electronics rail (`04_Removable_Electronics_Rail.stl`) has guide rib outer diameter $\varnothing 13.10\text{ mm}$ inside barrel bore $\varnothing 13.50\text{ mm}$ (radial sliding clearance $\Delta r = 0.20\text{ mm}$). Battery corner to cylindrical bore radial clearance is $+0.437\text{ mm}$.
 - **Wire Routing Chase:** Integrated rear wire chase in cradle ($Z = 106.0\text{--}109.5\text{ mm}$, channel $2.4\text{ mm}$ wide $\times 2.5\text{ mm}$ deep) accommodates two 28 AWG silicone leads routing smoothly to connector `J_BAT` on the PCB deck.
-
 ### 2.2 Actual Front MPU Connector & Detachable Carrier
 - **Connector Type:** JST `SM04B-SRSS-TB(LF)(SN)` (1.0 mm pitch SMT horizontal receptacle, `J_IMU` on PCB).
 - **Mating Harness:** JST `SHR-04V-S-B` with 30 AWG flexible leads (3V3, GND, SCL, SDA).
